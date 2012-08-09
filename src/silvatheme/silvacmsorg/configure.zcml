@@ -9,6 +9,7 @@
    <include package="silva.core.views" />
    <include package="silva.core.layout" />
    <include package="silva.resourceinclude" />
+   <include package="grokcore.chameleon" />
 
    <!-- Grok this package -->
    <grok:grok package="." />

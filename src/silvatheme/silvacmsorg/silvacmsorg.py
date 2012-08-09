@@ -10,7 +10,7 @@ class ISilvaCmsOrg(IPorto):
     """Layer for SilvaCMS.org theme
     """
 
-    silvaconf.resource('silvacmsorg.css')
+    silvaconf.resource('css/silvacmsorg.css')
 
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):

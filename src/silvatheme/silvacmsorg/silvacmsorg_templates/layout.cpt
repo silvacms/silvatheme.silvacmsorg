@@ -1,0 +1,43 @@
+<div id="container">
+  <header>
+    <div id="headercontent">
+      <div id="logo">
+        <h1><a href="#"
+               tal:attributes="href provider.publication_url"
+               tal:content="provider.publication_title">Silva</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li tal:repeat="publication provider.top_menu_items()"
+              tal:attributes="class provider.current_publication_class(publication)">
+            <a tal:attributes="href path:publication/@@absolute_url"
+               tal:content="publication.get_title()">
+              publication title goes here
+            </a>
+        </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- start content -->
+  <div id="content">
+    <div class="silva-content"
+         tal:content="structure view.content()">
+      Silva Content
+    </div>
+  </div>
+  <!-- end content -->
+
+  <!-- start footer -->
+  <footer>
+    <div class="wrap" tal:replace="structure provider:footer">
+    </div>
+    <div id="legal">
+      &copy; 2009-2012 <a href="http://infrae.com">Infrae</a>.
+    </div>
+  </footer>
+  <!-- end footer -->
+</div>
+

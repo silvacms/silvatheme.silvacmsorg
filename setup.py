@@ -32,8 +32,6 @@ setup(name='silvatheme.silvacmsorg',
           'silva.core.conf',
           'silva.core.interfaces',
           'silva.core.layout',
-          'silva.core.views',
-          'silva.resourceinclude',
           'zope.cachedescriptors',
       ],
       )

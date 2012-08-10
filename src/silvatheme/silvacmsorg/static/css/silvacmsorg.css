@@ -1,1 +1,454 @@
 /* silvacms.org styling */
+
+/* -- general settings -- */ 
+
+body {
+  background: #FCFCFC;
+}
+
+#container {
+  margin: 0 auto;
+}
+
+#content {
+  margin: 50px auto; 
+  width: 960px;
+}
+
+a:link, a:visited { 
+  color:#3B342D; 
+  font-weight:bold; 
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover { 
+  color: #3B342D; 
+  text-decoration: none; 
+}
+
+h2 {
+  border-bottom: 2px solid #1A8922;
+}
+
+h3 {
+ border-bottom: 1px solid #E3E3E3;
+}
+
+h4 {
+  color: #1A8922;
+  margin: 10px 0; 
+}
+
+/* -- header settings -- */ 
+
+header {
+  background: #696969; 
+  background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#313131)); /* for Webkit browsers */
+  background: -moz-linear-gradient(top, #696969, #313131); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131'); /* for IE */
+  border-bottom: 2px solid #797979;
+  height: 45px;
+}
+
+header #headercontent {
+  margin: 0 auto;
+  width: 960px;
+}
+
+header #logo {
+  padding-top: 7px;
+}
+
+header #logo h1 {
+  margin: -3px 0 0 15px;
+  color: #FFF;
+  display: inline-block;
+  position: relative;
+  text-indent: 0;
+}
+
+header nav {  
+  padding-top: 0;
+  margin-top: -44px;
+}  
+
+header nav ul {
+  float: right;
+}
+
+header nav li {
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
+  height: 32px;
+  padding-top: 10px;
+}
+
+header nav li.last {
+ border-right: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+header nav li.selected {
+  background: #696969;
+  background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#C2C2C2)); /* for Webkit browsers */
+  background: -moz-linear-gradient(top, #696969, #797979); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131'); /* for IE */
+}
+
+header nav a:link, header nav a:visited {
+  color: #FFF;
+}
+
+header nav li:hover, header nav li:focus {
+  background: #444;
+  color: #FFF;
+}
+
+/* -- list style settings -- */
+
+li {
+  list-style: none;
+}
+
+/* -- footer settings -- */ 
+
+footer {
+  border-top: 1px solid #E3E3E3;
+  position: relative; 
+  text-align: center; 
+}
+
+/* button styling */
+
+#home #display #buttons {
+  /*background: E3E3E3;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);*/
+  padding: 15px 10px;
+}
+
+#home #display a#download_button, #home #display a#demo_button, #download .box a {
+  background: #7Ab317; 
+  background: -webkit-gradient(linear, top, bottom, from(#7Ab317), to(#519A0F)); /* for Webkit browsers */
+  background: -moz-linear-gradient(center top, #7Ab317, #519A0F); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7Ab317', endColorstr='#519A0F'); /* for IE */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 2px 0 #1A8922;
+  color: #FFF;
+  display: inline-block;
+  padding: 3px 0; 
+  text-align: center;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  width: 150px;
+}
+
+#home #display a#demo_button {
+  background: #543511; 
+  background: -webkit-gradient(linear, top, bottom, from(#A89078), to(#543511;)); /* for Webkit browsers */
+  background: -moz-linear-gradient(center top, #A89078, #543511); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A89078', endColorstr='#543511;'); /* for IE */
+  box-shadow: 0 2px 0 #775533;
+}
+
+#download .box a {
+  margin: 35px;
+  padding: 2px 0; 
+}
+
+/*   ++++++ page specific styles: home ++++++ */
+
+#home #content {
+  width: 100%;
+}
+
+#home h2 {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#home #display {
+  background: #FFF;
+  border-top: 1px solid #EFEFEF;
+  border-bottom: 1px solid #CCC;
+  box-shadow: 0 3px 5px rgba(0, 0 ,0, 0.2);
+  height: 310px;
+  margin-top: 80px;
+}
+
+#home #displaycontent {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#home #displayleft {
+  float: left;
+  margin-top: 40px;
+  width: 380px;
+}
+
+#home #features {
+  clear: both;
+  height: 400px;
+  width: 960px;
+  margin: 40px auto;
+}
+
+#home #features #featureslist {
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+  width: 700px;
+}
+
+#home #features .box {
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  float: left;
+  margin: 0 13px;
+  height: 230px;
+  width: 205px;
+} 
+
+#home .box h1 {
+  border-radius: 4px 4px 0 0;
+}
+
+#home .box p {
+  padding: 10px 15px;
+}
+
+#home .readmore_button a {
+  color: #1A8922;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#home .readmore_button a{
+  padding-left: 15px;
+}
+
+#home #morefeatures {
+  float: right; 
+  height: 200px;
+  width: 205px;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+#home #morefeatures li {
+  border-bottom: 1px solid #DDD;
+}
+
+#home #morefeatures a:link, #home #morefeatures a:link:visited {
+  color: #0E060C;
+  font-weight: normal;
+}
+
+#home #morefeatures img {
+  vertical-align: sub;
+}
+
+/*   ++++++ page specific styles: Download ++++++ */
+
+#download #get_silva {
+  margin: 0 auto;
+  width: 760px;
+  height: 320px; 
+}
+
+#download .box {
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 0px;
+  box-shadow: 1px 1px 10px 1px #EFEFEF inset;
+  float: left;
+  margin: 30px 0;
+  width: 250px;
+}
+
+#download .boxleft {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#download .box h1 {
+  background: #006000;
+  color: #FFF;
+  float: left;
+  font-size: 125%;
+  font-weight: bold;
+  margin: 0 0 20px;
+  padding: 4px 15px;
+  position: relative;
+  width: 220px;
+}
+
+#download .box p {
+  padding: 10px 15px;
+  height: 320px;
+}
+
+/*   ++++++ page specific styles: documentation ++++++ */
+
+/* tab navigation styling */ 
+
+#documentation #content nav a:link, #documentation #content nav a:visited {
+  background: #EFEFEF;
+  border-width: 1px 2px 0 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px 4px 0 0;
+  color: #0E060C;
+  float: left;
+  margin: 22px 10px 0 0;
+  padding-top: 3px;
+  text-align: center;
+  vertical-align: bottom;
+  width: 225px;
+}
+
+#documentation #content nav a.selected, #documentation #content nav a.selected:link:hover {
+  background: #006000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#006000), to(#1A8922)); /* for Webkit browsers */
+  background: -moz-linear-gradient(top, #006000, #1A8922); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006000', endColorstr='#1A8922'); /* for IE */
+  color: #fff;
+}
+
+#documentation #content nav a:link:hover, #documentation #content nav a:visited:hover {
+  background: #E3E3E3;
+  border-width: 1px 2px 0 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1)
+}
+
+/* section styling */ 
+
+#documentation #content section#users {
+  background: #FFF;
+  border-color: #1A8922 #E3E3E3 #E3E3E3; 
+  border-style: solid;
+  border-width: 5px 1px 1px;
+  clear: both;
+}
+
+#documentation #content #slot-one {
+  display: inline-block;
+  margin: 20px 20px 20px 60px;
+  width: 510px;
+  vertical-align: top;
+}
+
+#documentation #content #slot-two {
+  display: inline-block;
+  padding: 20px 0;
+  width: 300px;
+}
+
+/* sidebar nav styling */ 
+
+#documentation #slot-two {
+  border: 1px solid #DDD;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-left: 24px;
+}
+
+#documentation #slot-two ul {
+  margin: 5px 10px;
+}
+
+#documentation #slot-two ul ul {
+  margin-left: 15px;
+}
+
+#documentation #slot-two a.firstlevel {
+  border-bottom: 1px solid #DDD;
+  display: block;
+  font-weight: bold;
+}
+
+#documentation #slot-two a {
+  font-weight: normal;
+}
+
+#documentation #slot-two li {
+  margin: 0 1px;
+}
+
+#documentation #slot-two img {
+  margin-right: 3px;
+  vertical-align: sub;
+}
+
+
+
+/*   ++++++ page specific styles: Support ++++++ */
+
+#support header {
+  position: fixed;
+  left: auto;
+  top: 0;
+  width: 100%;
+}
+
+#support #content {
+  margin-top: 120px;
+}
+
+#support #supportoptions {
+  height: 230px;
+  width: 960px;
+  margin: 40px auto;
+} 
+
+#support .box h1, #home .box h1 {
+  background: #006000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#006000), to(#1A8922)); /* for Webkit browsers */
+  background: -moz-linear-gradient(top, #006000, #1A8922); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006000', endColorstr='#1A8922'); /* for IE */
+  color: #FFF;
+  margin: 0;
+  padding: 5px 10px 15px 10px;
+  font-size: 125%;
+}
+
+#support .box {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  float: left;
+  margin: 0 10px;
+  height: 230px;
+  width: 218px;
+}
+
+#support .box a {
+  background: #006000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#006000), to(#1A8922)); /* for Webkit browsers */
+  background: -moz-linear-gradient(top, #006000, #1A8922); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006000', endColorstr='#1A8922'); /* for IE */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  color: #FFF;
+  display: block;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 2px 0; 
+  text-align: center;
+  text-transform: uppercase;
+  height: 20px;
+  width: 22px;
+}
+
+#support p {
+  width: 650px;
+}
+
+#support #supportoptions .box p {
+  background: #FFF;
+  width: 195px;
+  padding: 10px;
+}

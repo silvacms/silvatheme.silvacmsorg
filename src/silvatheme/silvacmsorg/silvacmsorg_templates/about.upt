@@ -1,0 +1,16 @@
+<tal:content tal:content="structure slot:aboutcontent" />
+
+<div id="screenshots">
+
+<tal:screenshots tal:content="structure slot:screenshots" />
+
+</div>
+
+<div id="features">
+<div id="featureslist">
+<tal:first tal:content="structure slot:boxfirst" />
+<tal:second tal:content="structure slot:boxsecond" />
+<tal:third tal:content="structure slot:boxthird" />
+</div>
+<tal:morefeatures tal:content="structure slot:morefeatures" />
+</div>

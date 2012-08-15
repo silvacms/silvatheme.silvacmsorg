@@ -61,13 +61,7 @@
     <tal:second tal:content="structure slot:boxsecond" />
     <tal:third tal:content="structure slot:boxthird" />
   </div>
-  <div id="morefeatures">
+  <aside>
     <tal:morefeatures tal:content="structure slot:morefeatures" />
-  </div>
+  </aside>
 </div>
-
-<script>
-  $(function() {
-    $('#slidorion').slidorion();
-  });
-</script>

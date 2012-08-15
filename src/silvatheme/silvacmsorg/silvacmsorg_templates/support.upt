@@ -10,9 +10,15 @@
 </div>
 
 <div id="supportoptions">
-  <tal:first tal:content="structure slot:boxfirst" />
-  <tal:second tal:content="structure slot:boxsecond" />
-  <tal:third tal:content="structure slot:boxthird" />
+  <section>
+    <tal:first tal:content="structure slot:boxfirst" />
+  </section>
+  <section>
+    <tal:second tal:content="structure slot:boxsecond" />
+  </section>
+  <section>
+    <tal:third tal:content="structure slot:boxthird" />
+  </section>
 </div>
 
 

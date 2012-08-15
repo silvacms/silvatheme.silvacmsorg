@@ -61,7 +61,9 @@
     <tal:second tal:content="structure slot:boxsecond" />
     <tal:third tal:content="structure slot:boxthird" />
   </div>
-  <tal:morefeatures tal:content="structure slot:morefeatures" />
+  <div id="morefeatures">
+    <tal:morefeatures tal:content="structure slot:morefeatures" />
+  </div>
 </div>
 
 <script>

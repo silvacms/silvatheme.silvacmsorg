@@ -1,4 +1,5 @@
 from zope.cachedescriptors.property import CachedProperty
+from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 from silva.app.page.interfaces import IPage
 from silva.core.contentlayout import Design, Slot
@@ -7,6 +8,7 @@ from silva.core import conf as silvaconf
 from silva.core.layout.porto import porto
 from silva.core.layout.porto.interfaces import IPorto
 from silva.core.interfaces import IPublication
+from silva.fanstatic import need
 
 from five import grok
 
@@ -19,12 +21,6 @@ class ISilvaCmsOrg(IPorto):
     silvaconf.resource('css/typography.css')
     silvaconf.resource('css/visitorvu.css')
     silvaconf.resource('css/silvacmsorg.css')
-
-    # xxx these should only get registered for about
-    silvaconf.resource('slidorion/css/slidorion.css')
-    silvaconf.resource('slidorion/js/jquery.min.js')
-    silvaconf.resource('slidorion/js/jquery.easing.js')
-    silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):
     """Skin for SilvaCMS.org theme
@@ -73,13 +69,11 @@ class Favicon(porto.Favicon):
     pass
 
 
-# class IAboutResources(IDefaultBrowserLayer):
-#   silvaconf.resource('slidorion/css/reset.css')
-#   silvaconf.resource('slidorion/css/slideorion.css')
-#   silvaconf.resource('slidorion/css/style.css')
-#   silvaconf.resource('slidorion/js/jquery.min.js')
-#   silvaconf.resource('slidorion/js/jquery.easing.js')
-#   silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
+class IAboutResources(IDefaultBrowserLayer):
+   silvaconf.resource('slidorion/css/slidorion.css')
+   silvaconf.resource('slidorion/js/jquery.min.js')
+   silvaconf.resource('slidorion/js/jquery.easing.js')
+   silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
 
 
 class About(Design):
@@ -97,4 +91,5 @@ class About(Design):
 
    def update(self):
        self.title = self.content.get_title_or_id()
+       need(IAboutResources)
 

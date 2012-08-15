@@ -93,3 +93,19 @@ class About(Design):
        self.title = self.content.get_title_or_id()
        need(IAboutResources)
 
+class Support(Design):
+   grok.name('support')
+   grok.title('Support')
+   grok.context(IPage)
+
+   slots = {
+       'supportcontent': Slot(css_class='support-content'),
+       'introshort': Slot(css_class=''),
+       'introsupport': Slot(css_class='support-content'),
+       'boxfirst': Slot(css_class='box'),
+       'boxsecond': Slot(css_class='box'),
+       'boxthird': Slot(css_class='box')}
+
+   def update(self):
+       self.title = self.content.get_title_or_id()
+

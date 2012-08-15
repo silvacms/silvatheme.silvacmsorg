@@ -1,4 +1,4 @@
-/* -- general settings -- */ 
+/* -- general settings -- */
 
 body {
   background: #FCFCFC;
@@ -12,25 +12,25 @@ body {
 #content {
   background: #FFF;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  margin: 75px auto; 
+  margin: 75px auto;
   width: 960px;
   min-height: 700px;
 }
 
-a:link, a:visited { 
-  color:#3B342D; 
-  font-weight:bold; 
+a:link, a:visited {
+  color:#3B342D;
+  font-weight:bold;
   text-decoration: none;
 }
 
-a:link:hover, a:visited:hover { 
-  color: #3B342D; 
-  text-decoration: none; 
+a:link:hover, a:visited:hover {
+  color: #3B342D;
+  text-decoration: none;
 }
 
 h2 {
   border-style: solid;
-  border-width: 0 0 2px 0; 
+  border-width: 0 0 2px 0;
   border-color: #1A8922;
   color: #333;
   font-size: 160%;
@@ -44,13 +44,13 @@ h3 {
 
 h4 {
   color: #1A8922;
-  margin: 10px 0; 
+  margin: 10px 0;
 }
 
-/* -- header settings -- */ 
+/* -- header settings -- */
 
 header {
-  background: #696969; 
+  background: #696969;
   background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#313131)); /* for Webkit browsers */
   background: -moz-linear-gradient(top, #696969, #313131); /* for Firefox 3.6 */
   background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131'); /* for IE */
@@ -75,10 +75,10 @@ header #logo h1 {
   text-indent: 0;
 }
 
-header nav {  
+header nav {
   padding-top: 0;
   margin-top: -44px;
-}  
+}
 
 header nav ul {
   float: right;
@@ -116,12 +116,12 @@ li {
   list-style: none;
 }
 
-/* -- footer settings -- */ 
+/* -- footer settings -- */
 
 footer {
   border-top: 1px solid #E3E3E3;
-  position: relative; 
-  text-align: center; 
+  position: relative;
+  text-align: center;
 }
 
 /* button styling */
@@ -135,7 +135,7 @@ footer {
 }
 
 #about #display a#download_button, #about #display a#demo_button, #download .box a#download {
-  background: #7AB317; 
+  background: #7AB317;
   background: -webkit-gradient(linear, top, bottom, from(#7AB317), to(#519A0F)); /* for Webkit browsers */
   background: -moz-linear-gradient(center top, #7AB317, #519A0F); /* for Firefox 3.6 */
   background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7AB317', endColorstr='#519A0F'); /* for IE */
@@ -146,7 +146,7 @@ footer {
   display: inline-block;
   font-weight: bold;
   margin: 0 10px;
-  padding: 3px 0; 
+  padding: 3px 0;
   text-align: center;
   text-decoration: none;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
@@ -165,7 +165,7 @@ footer {
 #download .box a#download {
   display: block;
   margin: 20px auto;
-  padding: 0; 
+  padding: 0;
   width: 120px;
 }
 
@@ -224,7 +224,7 @@ footer {
   margin: 0 13px;
   height: 230px;
   width: 205px;
-} 
+}
 
 #about .box h1 {
   border-radius: 4px 4px 0 0;
@@ -245,7 +245,7 @@ footer {
 }
 
 #about #morefeatures {
-  float: right; 
+  float: right;
   height: 200px;
   width: 205px;
   margin-top: 10px;
@@ -281,7 +281,7 @@ footer {
 #download #get_silva {
   margin: 30px auto;
   width: 760px;
-  height: 320px; 
+  height: 320px;
 }
 
 #download .box {
@@ -328,7 +328,7 @@ footer {
 
 /*   ++++++ page specific styles: Documentation ++++++ */
 
-/* tab navigation styling */ 
+/* tab navigation styling */
 
 #documentation #content nav a:link, #documentation #content nav a:visited {
   background: rgba(89, 168, 15, 0.3);
@@ -357,11 +357,11 @@ footer {
   border-color: rgba(0, 0, 0, 0.1)
 }
 
-/* section styling */ 
+/* section styling */
 
 #documentation #content section#users {
   background: #FFF;
-  border-color: #59A80F #E3E3E3 #E3E3E3; 
+  border-color: #59A80F #E3E3E3 #E3E3E3;
   border-style: solid;
   border-width: 5px 1px 1px;
   clear: both;
@@ -374,7 +374,7 @@ footer {
   vertical-align: top;
 }
 
-/* sidebar nav styling */ 
+/* sidebar nav styling */
 
 #documentation #content #slot-two {
   display: inline-block;
@@ -395,11 +395,11 @@ footer {
 }
 
 #documentation #navcontainer ul ul li {
-  background: #F5F5F5; 
+  background: #F5F5F5;
   background: -webkit-gradient(linear, top, bottom, from(#F5F5F5), to(#F9F9F9)); /* for Webkit browsers */
   background: -moz-linear-gradient(center top, #F5F5F5, #F9F9F9); /* for Firefox 3.6 */
   background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#F9F9F9'); /* for IE */
-  border-width: 1px; 
+  border-width: 1px;
   border-style: solid;
   border-color: rgba(0,0,0,0.1);
   border-radius: 3px;
@@ -456,18 +456,18 @@ footer {
   border-width: 2px 0;
   border-style: solid;
   border-color: #E3E3E3;
-  float: left; 
-  padding: 27px; 
+  float: left;
+  padding: 27px;
   height: 175px;
 }
 
-#support p#introshort {
+#support #introshort p {
   color: #1A8922;
   font-size: 125%;
   width: 210px;
 }
 
-#support p#introsupport {
+#support #introsupport p {
   font-size: 110%;
   width: 500px;
 }
@@ -478,7 +478,7 @@ footer {
   width: 720px;
   margin: 40px auto;
   padding-top: 30px;
-} 
+}
 
 #support .box h1, #about .box h1 {
   background: #59A80F;
@@ -509,4 +509,4 @@ footer {
 
 
 
- 
+

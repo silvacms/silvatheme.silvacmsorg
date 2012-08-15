@@ -1,0 +1,18 @@
+<tal:content tal:content="structure slot:supportcontent" />
+
+<div id="intro">
+  <div id="introshort">
+    <tal:content tal:content="structure slot:introshort" />
+  </div>
+  <div id="introsupport">
+    <tal:content tal:content="structure slot:introsupport" />
+  </div>
+</div>
+
+<div id="supportoptions">
+  <tal:first tal:content="structure slot:boxfirst" />
+  <tal:second tal:content="structure slot:boxsecond" />
+  <tal:third tal:content="structure slot:boxthird" />
+</div>
+
+

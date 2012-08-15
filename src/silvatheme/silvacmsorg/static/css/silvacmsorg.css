@@ -17,14 +17,8 @@ body {
   min-height: 700px;
 }
 
-a:link, a:visited {
-  color:#3B342D;
-  font-weight:bold;
-  text-decoration: none;
-}
-
-a:link:hover, a:visited:hover {
-  color: #3B342D;
+a:link, a:visited, a:link:hover, a:visited:hover { 
+  color: #000;
   text-decoration: none;
 }
 
@@ -42,10 +36,6 @@ h3 {
  border-bottom: 1px solid #E3E3E3;
 }
 
-h4 {
-  color: #1A8922;
-  margin: 10px 0;
-}
 
 /* -- header settings -- */
 
@@ -126,22 +116,9 @@ footer {
 
 /* button styling */
 
-#about #display #buttons {
-  /*background: E3E3E3;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 32px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);*/
-  padding: 15px 10px;
-}
-
-#about #display a#download_button, #about #display a#demo_button, #download .box a#download {
-  background: #7AB317;
-  background: -webkit-gradient(linear, top, bottom, from(#7AB317), to(#519A0F)); /* for Webkit browsers */
-  background: -moz-linear-gradient(center top, #7AB317, #519A0F); /* for Firefox 3.6 */
-  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7AB317', endColorstr='#519A0F'); /* for IE */
+#about #display a, #download section a#download {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 18px;
-  box-shadow: 0 2px 0 #59A80F;
   color: #FFF;
   display: inline-block;
   font-weight: bold;
@@ -154,6 +131,19 @@ footer {
   width: 150px;
 }
 
+#about #display a#download_button, #download section a#download {
+  background: #7AB317; 
+  background: -webkit-gradient(linear, top, bottom, from(#7AB317), to(#519A0F)); /* for Webkit browsers */
+  background: -moz-linear-gradient(center top, #7AB317, #519A0F); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7AB317', endColorstr='#519A0F'); /* for IE */
+  box-shadow: 0 2px 0 #59A80F; 
+}
+
+#about #display a#download_button:hover, #about #display a#download_button:focus,
+#download section a#download:hover, #download section a#download:focus {
+  background: rgba( 81, 154, 15, 2.0);
+  box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
+}
 #about #display a#demo_button {
   background: #FA9F29;
   background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#313131)); /* for Webkit browsers */
@@ -162,7 +152,12 @@ footer {
   box-shadow: 0 2px 0 #CE5E06;
 }
 
-#download .box a#download {
+#about #display a#demo_button:hover, #about #display a#demo_button:focus {
+  background: rgba(237, 135, 45, 1.8);
+  box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
+}
+
+#download section a.download {
   display: block;
   margin: 20px auto;
   padding: 0;
@@ -174,11 +169,6 @@ footer {
 #about #content {
   background: #F9F9F9;
   width: 100%;
-}
-
-#about h2 {
-  margin: 0 auto;
-  width: 960px;
 }
 
 #about #display {
@@ -234,17 +224,24 @@ footer {
   padding: 10px 15px;
 }
 
-#about .readmore_button a {
+#about .box a.readmore {
+  background-image: url("../images/read_more_icon.gif"); 
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+  display: inline-block;
   color: #59A80F;
   font-weight: bold;
-  text-transform: uppercase;
-}
-
-#about .readmore_button a{
   padding-left: 15px;
+  text-transform: uppercase;
+  width: 115px;
 }
 
-#about #morefeatures {
+#about .box a.readmore:hover, #about .box a.readmore:focus {
+  color: #008800;
+  text-decoration: underline;
+}
+
+#about aside {
   float: right;
   height: 200px;
   width: 205px;
@@ -252,22 +249,43 @@ footer {
   padding: 15px;
 }
 
-#about #morefeatures li {
+#about aside h1 {
+  color: #006000;
+  font-size: 120%; 
+  font-weight: bold;
+}
+
+#about aside li {
   border-bottom: 1px solid #DDD;
 }
 
-#about #morefeatures a:link, #about #morefeatures a:link:visited {
+#about aside a.feature {
+  background-image: url("../images/bullet_triangle_green.png");
+  background-repeat: no-repeat; 
+  background-position: 0 50%;
+  width: 200px;
+}
+
+#about aside span {
+  margin-left: 10px;
+}
+
+#about aside a.feature:link, #about aside a.feature:link:visited {
   color: #0E060C;
   font-weight: normal;
 }
 
-#about #morefeatures img {
-  vertical-align: sub;
+#about aside a.feature:hover, #about aside a.feature:focus {
+  background-color: #FAFAFA;
+  background-image: url("../images/bullet_triangle_green.png");
+  background-repeat: no-repeat; 
+  background-position: 0 50%;
+  text-decoration: underline;
 }
 
 /*   ++++++ page specific styles: Download ++++++ */
 
-#download #content p#intro {
+#download #content #intro p {
   border-width: 1px 0;
   border-style: solid;
   border-color: #E3E3E3;
@@ -284,7 +302,7 @@ footer {
   height: 320px;
 }
 
-#download .box {
+#download section {
   background: #FFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-left: 0px;
@@ -296,11 +314,11 @@ footer {
 }
 
 
-#download .boxleft {
+#download section.boxleft {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#download #get_silva h1 {
+#download section h1 {
   background: #59A80F;
   color: #FFF;
   float: left;
@@ -312,17 +330,17 @@ footer {
   width: 220px;
 }
 
-#download #get_silva .box p {
+#download section p {
   padding: 10px 15px;
 }
 
-#download .box a, #support .box a {
+#download section a, #support section a {
   color: #FF9900;
   text-decoration: underline;
   font-weight: normal;
 }
 
-#download .box a:hover, #support .box a:hover {
+#download section a:hover, #support section a:hover {
   color: #FF6600;
 }
 
@@ -357,9 +375,7 @@ footer {
   border-color: rgba(0, 0, 0, 0.1)
 }
 
-/* section styling */
-
-#documentation #content section#users {
+#documentation #content #users {
   background: #FFF;
   border-color: #59A80F #E3E3E3 #E3E3E3;
   border-style: solid;
@@ -376,25 +392,26 @@ footer {
 
 /* sidebar nav styling */
 
-#documentation #content #slot-two {
+#documentation #slot-two {
   display: inline-block;
   padding: 20px 0;
   width: 275px;
 }
 
-#documentation #navcontainer {
+#documentation #slot-two #navcontainer {
+  display: inline-block;
   margin-left: 24px;
 }
 
-#documentation #navcontainer ul {
+#documentation #slot-two #navcontainer > ul {
   margin: 5px 10px;
 }
 
-#documentation #navcontainer ul ul {
+#documentation #slot-two #navcontainer ul ul {
   margin-left: 0;
 }
 
-#documentation #navcontainer ul ul li {
+#documentation #slot-two #navcontainer ul ul li {
   background: #F5F5F5;
   background: -webkit-gradient(linear, top, bottom, from(#F5F5F5), to(#F9F9F9)); /* for Webkit browsers */
   background: -moz-linear-gradient(center top, #F5F5F5, #F9F9F9); /* for Firefox 3.6 */
@@ -404,11 +421,11 @@ footer {
   border-color: rgba(0,0,0,0.1);
   border-radius: 3px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;
-  margin: 2px -10px 0 0;
+  margin-top: 2px;
   padding: 0 10px;
 }
 
-#documentation #navcontainer a.firstlevel {
+#documentation #slot-two #navcontainer ul li.toplevel > a {
   background: rgba(89, 168, 15, 0.7);
   border: 1px solid rgba(0,0,0,0.2);
   border-radius: 5px;
@@ -419,31 +436,19 @@ footer {
   padding: 0 10px;
 }
 
-#documentation #navcontainer a {
+#documentation #slot-two #navcontainer a {
   font-weight: normal;
 }
 
-#documentation #navcontainer li {
+#documentation #slot-two #navcontainer a:hover, #documentation #slot-two #navcontainer a:focus {
+  text-decoration: underline;
+}
+
+#documentation #slot-two #navcontainer li {
   margin: 0 1px;
 }
 
-#documentation #navcontainer img {
-  margin-right: 3px;
-  vertical-align: sub;
-}
-
 /*   ++++++ page specific styles: Support ++++++ */
-
-#support header {
-  position: fixed;
-  left: auto;
-  top: 0;
-  width: 100%;
-}
-
-#support #content {
-  margin-top: 120px;
-}
 
 #support #content #intro {
   margin: 0 auto;

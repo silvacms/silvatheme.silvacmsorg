@@ -157,7 +157,7 @@ footer {
   box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
 }
 
-#download section a#download {
+#download section a.download {
   display: block;
   margin: 20px auto;
   padding: 0; 
@@ -288,7 +288,7 @@ footer {
 
 /*   ++++++ page specific styles: Download ++++++ */
 
-#download #content p#intro {
+#download #content #intro p {
   border-width: 1px 0;
   border-style: solid;
   border-color: #E3E3E3;
@@ -468,13 +468,13 @@ footer {
   height: 175px;
 }
 
-#support p#introshort {
+#support #introshort p {
   color: #1A8922;
   font-size: 125%;
   width: 210px;
 }
 
-#support p#introsupport {
+#support #introsupport p {
   font-size: 110%;
   width: 500px;
 }

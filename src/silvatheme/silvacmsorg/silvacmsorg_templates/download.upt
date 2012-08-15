@@ -1,0 +1,20 @@
+<div id="intro">
+  <tal:content tal:content="structure slot:downloadcontent" />
+</div>
+
+<div id="get_silva">
+  <section class="boxleft">
+    <tal:first tal:content="structure slot:boxfirst" />
+    <!-- xxx these buttons/links should they be editable -->
+    <a class="download" href="#">Download VMWare image</a><br />
+    <a class="download" href="#">Download Virtualbox image</a>
+  </section>
+  <section>
+    <tal:second tal:content="structure slot:boxsecond" />
+  </section>
+  <section>
+    <tal:third tal:content="structure slot:boxthird" />
+  </section>
+</div>
+
+

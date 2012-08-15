@@ -1,0 +1,512 @@
+/* -- general settings -- */ 
+
+body {
+  background: #FCFCFC;
+}
+
+#container {
+  background: #FCFCFC;
+  margin: 0 auto;
+}
+
+#content {
+  background: #FFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin: 75px auto; 
+  width: 960px;
+  min-height: 700px;
+}
+
+a:link, a:visited { 
+  color:#3B342D; 
+  font-weight:bold; 
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover { 
+  color: #3B342D; 
+  text-decoration: none; 
+}
+
+h2 {
+  border-style: solid;
+  border-width: 0 0 2px 0; 
+  border-color: #1A8922;
+  color: #333;
+  font-size: 160%;
+  margin: 0 71px;
+  padding: 25px 0 0 0;
+}
+
+h3 {
+ border-bottom: 1px solid #E3E3E3;
+}
+
+h4 {
+  color: #1A8922;
+  margin: 10px 0; 
+}
+
+/* -- header settings -- */ 
+
+header {
+  background: #696969; 
+  background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#313131)); /* for Webkit browsers */
+  background: -moz-linear-gradient(top, #696969, #313131); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131'); /* for IE */
+  border-bottom: 2px solid #797979;
+  height: 45px;
+}
+
+header #headercontent {
+  margin: 0 auto;
+  width: 960px;
+}
+
+header #logo {
+  padding-top: 7px;
+}
+
+header #logo h1 {
+  margin: -3px 0 0 15px;
+  color: #FFF;
+  display: inline-block;
+  position: relative;
+  text-indent: 0;
+}
+
+header nav {  
+  padding-top: 0;
+  margin-top: -44px;
+}  
+
+header nav ul {
+  float: right;
+}
+
+header nav li {
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
+  height: 32px;
+  padding-top: 10px;
+}
+
+header nav li.last {
+ border-right: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+header nav li.selected {
+  background: #696969;
+  background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#C2C2C2)); /* for Webkit browsers */
+  background: -moz-linear-gradient(top, #696969, #797979); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131'); /* for IE */
+}
+
+header nav a:link, header nav a:visited {
+  color: #FFF;
+}
+
+header nav li:hover, header nav li:focus {
+  background: #444;
+  color: #FFF;
+}
+
+/* -- list style settings -- */
+
+li {
+  list-style: none;
+}
+
+/* -- footer settings -- */ 
+
+footer {
+  border-top: 1px solid #E3E3E3;
+  position: relative; 
+  text-align: center; 
+}
+
+/* button styling */
+
+#about #display #buttons {
+  /*background: E3E3E3;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);*/
+  padding: 15px 10px;
+}
+
+#about #display a#download_button, #about #display a#demo_button, #download .box a#download {
+  background: #7AB317; 
+  background: -webkit-gradient(linear, top, bottom, from(#7AB317), to(#519A0F)); /* for Webkit browsers */
+  background: -moz-linear-gradient(center top, #7AB317, #519A0F); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7AB317', endColorstr='#519A0F'); /* for IE */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 2px 0 #59A80F;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 3px 0; 
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  width: 150px;
+}
+
+#about #display a#demo_button {
+  background: #FA9F29;
+  background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#313131)); /* for Webkit browsers */
+  background: -moz-linear-gradient(top, #FA9F29, #ED872D); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131'); /* for IE */
+  box-shadow: 0 2px 0 #CE5E06;
+}
+
+#download .box a#download {
+  display: block;
+  margin: 20px auto;
+  padding: 0; 
+  width: 120px;
+}
+
+/*   ++++++ page specific styles: about ++++++ */
+
+#about #content {
+  background: #F9F9F9;
+  width: 100%;
+}
+
+#about h2 {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#about #display {
+  background: #FFF;
+  border-top: 1px solid #EFEFEF;
+  border-bottom: 1px solid #CCC;
+  box-shadow: 0 3px 5px rgba(0, 0 ,0, 0.2);
+  height: 310px;
+}
+
+#about #displaycontent {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#about #displayleft {
+  float: left;
+  margin-top: 40px;
+  padding: 20px;
+  width: 380px;
+}
+
+#about #features {
+  clear: both;
+  height: 400px;
+  width: 960px;
+  margin: 40px auto;
+}
+
+#about #features #featureslist {
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+  width: 700px;
+}
+
+#about #features .box {
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  float: left;
+  margin: 0 13px;
+  height: 230px;
+  width: 205px;
+} 
+
+#about .box h1 {
+  border-radius: 4px 4px 0 0;
+}
+
+#about .box p {
+  padding: 10px 15px;
+}
+
+#about .readmore_button a {
+  color: #59A80F;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#about .readmore_button a{
+  padding-left: 15px;
+}
+
+#about #morefeatures {
+  float: right; 
+  height: 200px;
+  width: 205px;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+#about #morefeatures li {
+  border-bottom: 1px solid #DDD;
+}
+
+#about #morefeatures a:link, #about #morefeatures a:link:visited {
+  color: #0E060C;
+  font-weight: normal;
+}
+
+#about #morefeatures img {
+  vertical-align: sub;
+}
+
+/*   ++++++ page specific styles: Download ++++++ */
+
+#download #content p#intro {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #E3E3E3;
+  color: #1A8922;
+  font-size: 130%;
+  margin: 40px 0 0 71px;
+  padding: 10px;
+  width: 350px;
+}
+
+#download #get_silva {
+  margin: 30px auto;
+  width: 760px;
+  height: 320px; 
+}
+
+#download .box {
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 0px;
+  box-shadow: 1px 1px 10px 1px #EFEFEF inset;
+  float: left;
+  margin: 30px 0;
+  height: 320px;
+  width: 250px;
+}
+
+
+#download .boxleft {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#download #get_silva h1 {
+  background: #59A80F;
+  color: #FFF;
+  float: left;
+  font-size: 125%;
+  font-weight: bold;
+  margin: 0 0 20px;
+  padding: 6px 15px;
+  position: relative;
+  width: 220px;
+}
+
+#download #get_silva .box p {
+  padding: 10px 15px;
+}
+
+#download .box a, #support .box a {
+  color: #FF9900;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+#download .box a:hover, #support .box a:hover {
+  color: #FF6600;
+}
+
+/*   ++++++ page specific styles: Documentation ++++++ */
+
+/* tab navigation styling */ 
+
+#documentation #content nav a:link, #documentation #content nav a:visited {
+  background: rgba(89, 168, 15, 0.3);
+  border-width: 1px 2px 0 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px 4px 0 0;
+  color: #0E060C;
+  float: left;
+  margin: 22px 0 0 10px;
+  padding-top: 3px;
+  text-align: center;
+  vertical-align: bottom;
+  width: 225px;
+}
+
+#documentation #content nav a.selected, #documentation #content nav a.selected:link:hover {
+  background: #59A80F;
+  color: white;
+}
+
+#documentation #content nav a:link:hover, #documentation #content nav a:visited:hover {
+  background: rgba(89, 168, 15, 0.5);
+  border-width: 1px 2px 0 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1)
+}
+
+/* section styling */ 
+
+#documentation #content section#users {
+  background: #FFF;
+  border-color: #59A80F #E3E3E3 #E3E3E3; 
+  border-style: solid;
+  border-width: 5px 1px 1px;
+  clear: both;
+}
+
+#documentation #content #slot-one {
+  display: inline-block;
+  margin: 20px 20px 20px 60px;
+  width: 510px;
+  vertical-align: top;
+}
+
+/* sidebar nav styling */ 
+
+#documentation #content #slot-two {
+  display: inline-block;
+  padding: 20px 0;
+  width: 275px;
+}
+
+#documentation #navcontainer {
+  margin-left: 24px;
+}
+
+#documentation #navcontainer ul {
+  margin: 5px 10px;
+}
+
+#documentation #navcontainer ul ul {
+  margin-left: 0;
+}
+
+#documentation #navcontainer ul ul li {
+  background: #F5F5F5; 
+  background: -webkit-gradient(linear, top, bottom, from(#F5F5F5), to(#F9F9F9)); /* for Webkit browsers */
+  background: -moz-linear-gradient(center top, #F5F5F5, #F9F9F9); /* for Firefox 3.6 */
+  background: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#F9F9F9'); /* for IE */
+  border-width: 1px; 
+  border-style: solid;
+  border-color: rgba(0,0,0,0.1);
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;
+  margin: 2px -10px 0 0;
+  padding: 0 10px;
+}
+
+#documentation #navcontainer a.firstlevel {
+  background: rgba(89, 168, 15, 0.7);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  color: #FFF;
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0 0;
+  padding: 0 10px;
+}
+
+#documentation #navcontainer a {
+  font-weight: normal;
+}
+
+#documentation #navcontainer li {
+  margin: 0 1px;
+}
+
+#documentation #navcontainer img {
+  margin-right: 3px;
+  vertical-align: sub;
+}
+
+/*   ++++++ page specific styles: Support ++++++ */
+
+#support header {
+  position: fixed;
+  left: auto;
+  top: 0;
+  width: 100%;
+}
+
+#support #content {
+  margin-top: 120px;
+}
+
+#support #content #intro {
+  margin: 0 auto;
+  padding-top: 30px;
+  height: 200px;
+  width: 818px;
+}
+
+#support #intro p {
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #E3E3E3;
+  float: left; 
+  padding: 27px; 
+  height: 175px;
+}
+
+#support p#introshort {
+  color: #1A8922;
+  font-size: 125%;
+  width: 210px;
+}
+
+#support p#introsupport {
+  font-size: 110%;
+  width: 500px;
+}
+
+#support #supportoptions {
+  clear: both;
+  height: 280px;
+  width: 720px;
+  margin: 40px auto;
+  padding-top: 30px;
+} 
+
+#support .box h1, #about .box h1 {
+  background: #59A80F;
+  color: #FFF;
+  margin: 0;
+  padding: 5px 10px 15px 10px;
+  font-size: 125%;
+}
+
+#support .box {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  float: left;
+  margin: 0 10px;
+  height: 280px;
+  width: 218px;
+}
+
+#support #supportoptions .box p {
+  background: #FFF;
+  width: 195px;
+  padding: 10px;
+}
+
+
+
+
+
+
+ 

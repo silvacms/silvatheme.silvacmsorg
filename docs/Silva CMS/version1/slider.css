@@ -1,0 +1,72 @@
+* {
+	margin: 0; 
+	padding: 0;
+}
+body {
+	background: #ccc; 
+	font-family: arial, verdana, tahoma;
+}
+
+#screenshots {
+	width: 360px; height: 240px;
+	overflow: hidden;
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers. This will give ample space to the last 
+item to move instead of falling down/flickering during hovers.*/
+#screenshots ul {
+	width: 2000px;
+	margin: 0;
+}
+
+#screenshots li {
+	position: relative;
+	display: block;
+	width: 90px; /* 360px/4=90px */
+	float: left;
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.8s ease;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce width of un-hovered elements*/
+
+#screenshots ul:hover li {
+   width: 40px;
+}
+
+#screenshots ul li:hover {
+   width: 240px;
+}
+
+#screenshots li img {
+	display: block;
+}
+
+#screenshots .image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+    width: 240px;	
+}
+
+#screenshots .image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 16px;
+}

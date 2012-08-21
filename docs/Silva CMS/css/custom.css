@@ -157,7 +157,7 @@ footer a:link, footer a:visited {
 #download section a#download {
   display: block;
   margin: 20px auto;
-  padding: 0;
+  padding: 1px 0 0 0;
   width: 120px;
 }
 
@@ -212,6 +212,10 @@ footer a:link, footer a:visited {
 #about #features .box h1 {
   background: #59A80F;
   border-radius: 4px 4px 0 0;
+  color: #FFF;
+  margin: 0;
+  padding: 5px 10px 15px 10px;
+  font-size: 125%;
 }
 
 #about #features .box p {
@@ -245,7 +249,7 @@ footer a:link, footer a:visited {
   border-width: 1px 0;
   border-style: solid;
   border-color: #E3E3E3;
-  color: #519A07;
+  color: #007500;
   font-size: 140%;
   margin: 40px 0 0 97px;
   padding: 10px;
@@ -304,23 +308,24 @@ footer a:link, footer a:visited {
 
 /*   ++++++ page specific styles: Documentation ++++++ */
 
+#documentation #content {
+  background: #FCFCFC; 
+  border-style: none;
+  box-shadow: none;
+}
+
 #documentation #content #users {
   background: #FFF;
   border-color: #59A80F #E3E3E3 #E3E3E3;
   border-style: solid;
   border-width: 5px 1px 1px;
   clear: both;
-  margin: 0 30px;
 }
 
 /* tab navigation styling */
 
 #documentation #content {
   padding-bottom: 50px;
-}
-
-#documentation #content nav ul {
-  margin-left: 25px;
 }
 
 #documentation #content nav a:link, #documentation #content nav a:visited {  
@@ -336,7 +341,7 @@ footer a:link, footer a:visited {
   border-radius: 4px 4px 0 0;
   color: #6A6A6A;
   float: left;
-  margin: 30px 0 0 5px;
+  margin: 0 8px 0 0;
   padding-top: 3px;
   text-align: center;
   vertical-align: bottom;
@@ -352,10 +357,11 @@ footer a:link, footer a:visited {
     background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#DEDEDE');      
     background-image: -o-linear-gradient(top, #FFF, #DEDEDE);
   border-color: rgba(0, 0, 0, 0.3);
+  color: #333;
   text-decoration: none;
 }
 
-#documentation #content nav a.selected, #documentation #content nav a.selected:hover
+#documentation #content nav a.selected, #documentation #content nav a.selected:hover,
 #documentation #content nav a.selected:focus {
   background: #59A80F;
   color: white;
@@ -377,7 +383,6 @@ footer a:link, footer a:visited {
 }
 
 #documentation #slot-two #navcontainer {
-  display: inline-block;
   margin: 15px 0 0 24px;
 }
 
@@ -389,42 +394,50 @@ footer a:link, footer a:visited {
   margin-left: 0;
 }
 
-#documentation #slot-two #navcontainer ul ul li {
-  background: #FCFCFC;
-  border-width: 1px 0;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.1);
-  margin-top: 2px;
+#documentation #slot-two #navcontainer ul ul li a {
+  background-color: #FFF; 
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
+    background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -moz-linear-gradient(top, #FFF, #F2F2F2); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');      
+    background-image: -o-linear-gradient(top, #FFF, #F2F2F2); 
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
   padding: 2px 10px;
+  font-weight: normal;
+  color: #000;
+  margin: 0;
+}
+
+#documentation #slot-two #navcontainer ul ul li a:hover, 
+#documentation #slot-two #navcontainer ul ul li a:focus {
+  background: #F1F1F1; 
+  text-decoration: none;
 }
 
 #documentation #slot-two #navcontainer ul li.toplevel > a {
   background-color: #919191; 
-    background-image: -webkit-gradient(linear, right top, right bottom, from(#919191), to(#555));
-    background-image: -webkit-linear-gradient(right, #919191, #555);
-    background-image: -moz-linear-gradient(right, #919191, #555); 
+    background-image: -webkit-gradient(linear, top right, bottom right, from(#919191), to(#555));
+    background-image: -webkit-linear-gradient(top, #919191, #555);
+    background-image: -moz-linear-gradient(top, #919191, #555); 
     background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#919191', endColorstr='#555');      
-    background-image: -o-linear-gradient(right, #919191, #555);
+    background-image: -o-linear-gradient(top, #919191, #555);
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
   color: #FFF;
   display: block;
   font-weight: bold;
-  margin: 4px 0 0 0;
+  margin: 0;
   padding: 2px 10px;
+  text-shadow: 1px 1px 1px #000;
 }
 
 #documentation #slot-two #navcontainer ul li.toplevel > a:hover,
 #documentation #slot-two #navcontainer ul li.toplevel > a:focus {
-  background: #555;
+  background: #4F4F4F;
   text-decoration: none;
-}
-
-#documentation #slot-two #navcontainer a {
-  font-weight: normal;
-  color: #000;
-}
-
-#documentation #slot-two #navcontainer a:hover, #documentation #slot-two #navcontainer a:focus {
-  text-decoration: underline;
 }
 
 #documentation #slot-two #navcontainer li {
@@ -432,13 +445,6 @@ footer a:link, footer a:visited {
 }
 
 /*   ++++++ page specific styles: Support ++++++ */
-
-#support #content #intro {
-  margin: 0 auto;
-  padding-top: 30px;
-  height: 200px;
-  width: 818px;
-}
 
 #support p {
   border-width: 2px 0;
@@ -449,7 +455,7 @@ footer a:link, footer a:visited {
 }
 
 #support #introshort p{
-  color: #519A07;
+  color: #007500;
   float: left;
   font-size: 125%;
   margin-left: 85px;
@@ -464,39 +470,47 @@ footer a:link, footer a:visited {
 
 #support #supportoptions {
   clear: both;
-  height: 280px;
-  width: 720px;
-  margin: 40px auto;
-  padding-top: 30px;
+  margin: 0 auto; padding: 30px 0;
+  width: 599px;
 }
 
-#support .box h1, #about .box h1 {
-  color: #FFF;
-  margin: 0;
-  padding: 5px 10px 15px 10px;
-  font-size: 125%;
+#support section {
+  
+  margin: 8px 0; padding: 15px 0;
 }
 
 #support .box h1 { 
- background: #59A80F;
-}
-
-#support .box {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  float: left;
-  margin: 0 10px;
-  height: 280px;
-  width: 218px;
+  background-color: #59A80F;
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
+    background-image: -webkit-linear-gradient(top, #519A0F, #7AB317);
+    background-image: -moz-linear-gradient(top, #59A80F, #7AB317); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#519A0F', endColorstr='#7AB317');      
+    background-image: -o-linear-gradient(top, #519A0F, #7AB317);
+  box-shadow: 0 1px 0 #59A80F; 
+    webkit-box-shadow: 0 1px 0 #59A80F;
+  border: 1px solid green;
+  border-radius: 10px 0 0 10px;
+  color: #FFF; 
+  display: inline-block;
+  font-size: 125%;
+  height: 100px; width: 200px;
+  padding: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  vertical-align: top;
 }
 
 #support #supportoptions .box p {
   background: #FFF;
-  border-style: none;
-  width: 195px;
-  margin: 0; padding: 10px;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+  border-color: #CCC;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); 
+    webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  height: 100px;
+  width: 350px;
+  margin: 0 -4px; padding: 10px 15px;
 }
 
 

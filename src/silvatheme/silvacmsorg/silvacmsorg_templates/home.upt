@@ -1,16 +1,19 @@
 <div id="home">
 
   <div id="display">
-    <div id="displaycontent">
-      <div id="displayleft">
-        <tal:content tal:content="structure slot:homecontent" />
-        <!- xxx should these become content and how if so? -->
-        <div id="buttons">
-          <a title="Experience Silva" href="download.html" id="download_button">Download Silva</a>
-          <a title="Experience Silva" href="#" id="demo_button">Try the demo</a>
-        </div>
-      </div>
+    <tal:content tal:content="structure slot:homecontent" />
+    <!- xxx should these become content and how if so? -->
+    <div id="buttons">
+      <a title="Experience Silva" href="download.html" id="download_button">Download Silva</a>
+      <a title="Experience Silva" href="#" id="demo_button">Try the demo</a>
     </div>
+  </div>
+
+  <!-- boxes -->
+  <div id="features">
+    <tal:boxes tal:content="structure slot:boxfirst" />
+    <tal:boxes tal:content="structure slot:boxsecond" />
+    <tal:boxes tal:content="structure slot:boxthird" />
   </div>
 
   <div id="screenshots">

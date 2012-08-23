@@ -4,10 +4,6 @@ body {
   background: #FCFCFC;
 }
 
-*::-selection {background: #E6F8BA;}
-*::-moz-selection {background: #E6F8BA;}
-*::-webkit-selection {background: #E6F8BA;} 
-
 #content {
   background: #FFF;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -17,21 +13,39 @@ body {
   width: 960px;
 }
 
-h2 {
+h3 {
   border-bottom: 1px solid #E3E3E3;
   color: #007500;
-  font-size: 120%;
+  font-size: 125%;
+}
+
+p, li {
+  line-height: 19px;
 }
 
 a {
   text-decoration: none;
 }
 
-#content a {
-    color: #FF9900;
-    font-weight: bold;
+li {
+  list-style: none;
 }
 
+#content a {
+  color: #FF9900;
+  font-weight: bold;
+}
+
+#content a:hover, #content a:focus, #content a:visited:focus, #content a:visited:hover {
+  color: #FF6600;
+}
+
+#content a:visited {
+  color: #D06004;
+}
+
+::-selection {background: #E6F8BA;}
+::-moz-selection {background: #E6F8BA;}
 
 /* -- header settings -- */
 
@@ -43,7 +57,19 @@ header {
     background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131');      
     background-image: -o-linear-gradient(top, #696969, #313131);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  height: 59px;
+  height: 60px;
+}
+
+header a:link, header a:visited, header a:link:hover, header a:visited:hover {
+  color: #FFF;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+}
+
+header a:focus {
+  text-decoration: underline;
 }
 
 header img {
@@ -59,26 +85,15 @@ header h1 {
   width: 120px;
 }
 
-header h1 a:link, header h1 a:visited, header h1 a:link:hover, header h1 a:visited:hover {
-  color: #FFF;
-  text-decoration: none;
-}
-
 header nav {  
   float: left;
   margin: 0; padding: 0;
   width: 565px;
-  font-size: 105%;
 }  
-
-header nav ol { list-style:none; margin:0; padding:0; }
-header nav li { float:left; }
-header nav a:link, header nav a:visited {
-  display:block; margin:0; color:#bbb; text-decoration:none; font-weight:bold;
-}
 
 header nav li {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
+  float: left;
   text-align: center;
   width: 140px;
 }
@@ -100,17 +115,9 @@ header nav li.selected {
     background-image: -o-linear-gradient(top, #696969, #797979);
 }
 
-header nav a:link, header nav a:visited {
-  color: #FFF;
-}
-
 header nav li:hover {
   background: #444;
   color: #FFF;
-}
-
-header nav li a:focus {
-  text-decoration: underline;
 }
 
 form {
@@ -137,7 +144,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 input[type="text"] {
-  border: 1px solid rgba(255,255,255, 0.1);
+  border: 1px solid #777;
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 2px;
@@ -153,12 +160,6 @@ input:-moz-placeholder {color: #A1A1A1;}
 input:-moz-placeholder:hover {color: #555;}
 input:-ms-placeholder {color: #A1A1A1;}  
 input:-ms-placeholder:hover {color: #555;}
-
-/* -- list style settings -- */
-
-li {
-  list-style: none;
-}
 
 /* -- footer settings -- */
 
@@ -299,16 +300,10 @@ footer a:link, footer a:visited {
   background-repeat: no-repeat;
   background-position: 85% 50%;
   display: inline-block;
-  color: #59A80F;
   font-weight: bold;
   padding-left: 15px;
   text-transform: uppercase;
   width: 125px;
-}
-
-#about .box a.readmore:hover, #about .box a.readmore:focus {
-  color: #008800;
-  text-decoration: underline;
 }
 
 /*   ++++++ page specific styles: Aboutpage ++++++ */
@@ -330,8 +325,7 @@ footer a:link, footer a:visited {
     background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#519A0F', endColorstr='#7AB317');      
     background-image: -o-linear-gradient(top, #519A0F, #7AB317);
   color: #FFF;
-  display: block;
-  font-size: 110%;
+  display: block;;
   font-weight: bold;
   margin: 0;
   padding: 6px 0;
@@ -343,7 +337,7 @@ footer a:link, footer a:visited {
   text-decoration: none;
 }
 
-#features #content nav ul li a.selected {
+#features #content nav ul li a.selected, #aboutpage #content nav ul li a.selected {
   background: #008B00;
 }
 
@@ -418,16 +412,14 @@ footer a:link, footer a:visited {
 
 #aboutpage #content aside h2 {
   color: #684781;
-  font-size: 100%;
+  font-size: 110%;
   margin-top: 15px;
 }
 
 #aboutpage #content aside p {
   color: #333;
-  font-size: 100%; 
   margin: 0; padding: 0;
 }
-
 
 /*   ++++++ page specific styles: Download ++++++ */
 
@@ -440,7 +432,6 @@ footer a:link, footer a:visited {
   border-style: solid;
   border-color: #E3E3E3;
   color: #007500;
-  font-size: 140%;
   margin: 40px 0 0 97px;
   padding: 10px;
   width: 350px;
@@ -490,18 +481,12 @@ footer a:link, footer a:visited {
   padding: 10px 15px;
 }
 
-#download #content a:hover, #support section a:hover,
-#download #content a:focus, #support section a:focus {
-  color: #FF6600;
-}
-
 #download #releases { 
   margin: auto; padding: 40px 0;
   width: 760px; 
 }
 
 table {
-  font-size: 110%;
   margin-top: 30px; 
   width: 580px;
 }
@@ -535,7 +520,6 @@ table td {
 #download #content table a {
   font-weight: normal;
 }
-
 
 /*   ++++++ page specific styles: Documentation ++++++ */
 
@@ -601,7 +585,7 @@ table td {
 
 #documentation #content #slot-one {
   display: inline-block;
-  margin: 35px 20px 20px 60px;
+  margin: 15px 20px 20px 60px;
   width: 510px;
   vertical-align: top;
 }
@@ -702,7 +686,6 @@ table td {
 
 #support #introsupport p {
   float: left;
-  font-size: 110%;
   width: 500px;
 }
 
@@ -772,13 +755,13 @@ table td {
   width: 240px;
 }
 
-#features #content h2, #features #content p, #features #content ul.featureslist {
+#features #content h3, #features #content p, #features #content ul.featureslist {
   clear: both;
   margin: 0 auto;
   width: 700px;
 }
 
-#features #content h2 {
+#features #content h3 {
   padding-top: 20px;
   margin-bottom: 10px;
 }

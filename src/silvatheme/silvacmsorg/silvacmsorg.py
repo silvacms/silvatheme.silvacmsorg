@@ -115,9 +115,9 @@ class Support(Design):
        'supportcontent': Slot(css_class='support-content'),
        'introshort': Slot(css_class=''),
        'introsupport': Slot(css_class='support-intro'),
-       'boxfirst': Slot(css_class='box'),
-       'boxsecond': Slot(css_class='box'),
-       'boxthird': Slot(css_class='box')}
+       'boxfirst': Slot(css_class=''),
+       'boxsecond': Slot(css_class=''),
+       'boxthird': Slot(css_class='')}
 
    def update(self):
        self.title = self.content.get_title_or_id()

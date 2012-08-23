@@ -1,7 +1,8 @@
 <div id="container">
   <header>
-      <a href=".">
-        <img class="logo" src="/images/silva.png" alt="Silva logo" />
+      <a tal:attributes="href path:context/@@absolute_url">
+        <img class="logo" alt="Silva logo"
+             tal:attributes="src path:static/images/silva.png" />
           <h1>Silva</h1>
       </a>
       <nav>

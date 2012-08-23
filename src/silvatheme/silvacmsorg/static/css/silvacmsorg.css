@@ -177,7 +177,7 @@ footer a:link, footer a:visited {
 
 /* button styling */
 
-#home #display a, #download section a#download {
+#silvacms #display a, #download section a#download {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 18px;
   color: #FFF;
@@ -191,7 +191,7 @@ footer a:link, footer a:visited {
   width: 160px;
 }
 
-#home #display a#download_button, #download section a#download {
+#silvacms #display a#download_button, #download section a#download {
   background-color: #7AB317;
     background-image: -webkit-gradient(linear, top left, bottom left, from(#7AB317), color-stop(0.5, #519A0F), to(#7AB317));
     background-image: -webkit-linear-gradient(top, #7AB317, #519A0F, #7AB317);
@@ -202,7 +202,7 @@ footer a:link, footer a:visited {
     webkit-box-shadow: 0 2px 0 #59A80F;
 }
 
-#home #display a#download_button:hover, #home #display a#download_button:focus,
+#silvacms #display a#download_button:hover, #silvacms #display a#download_button:focus,
 #download section a#download:hover, #download section a#download:focus {
   background: #519A0F;
   box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
@@ -210,7 +210,7 @@ footer a:link, footer a:visited {
   color: #FFF;
 }
 
-#home #display a#demo_button {
+#silvacms #display a#demo_button {
   background-color: #FA9F29;
     background-image: -webkit-gradient(linear, top left, bottom left, from(#FA9F29), color-stop(0.5, #ED872D) to(#FA9F29));
     background-image: -webkit-linear-gradient(top, #FA9F29, #ED872D, #FA9F29);
@@ -221,7 +221,7 @@ footer a:link, footer a:visited {
     webkit-box-shadow: 0 2px 0 #CE5E06;
 }
 
-#home #display a#demo_button:hover, #home #display a#demo_button:focus {
+#silvacms #display a#demo_button:hover, #silvacms #display a#demo_button:focus {
   background: #ED872D;
   box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
     webkit-box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
@@ -236,13 +236,13 @@ footer a:link, footer a:visited {
 
 /*   ++++++ page specific styles: about / home ++++++ */
 
-#home #content {
+#silvacms #content {
   background: #F9F9F9;
   margin: 75px 0 0 0;
   width: 100%;
 }
 
-#home #display {
+#silvacms #display {
   background: #FFF;
   border-top: 1px solid #EFEFEF;
   border-bottom: 1px solid #CCC;
@@ -251,26 +251,26 @@ footer a:link, footer a:visited {
   height: 310px;
 }
 
-#home #display p {
+#silvacms #display p {
   margin: 50px 0 20px 150px;
   width: 380px;
 }
 
-#home #display a {
+#silvacms #display a {
   margin-left: 20px;
 }
 
-#home #display a#download_button {
+#silvacms #display a#download_button {
   margin-left: 160px;
 }
 
-#home #features {
+#silvacms #features {
   clear: both;
   margin: 80px auto;
   width: 726px;
 }
 
-#home #features .box {
+#silvacms #features .box {
   background: #FFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -282,7 +282,7 @@ footer a:link, footer a:visited {
   width: 200px;
 }
 
-#home #features .box h1 {
+#silvacms #features .box h1 {
   background: #59A80F;
   border-radius: 4px 4px 0 0;
   color: #FFF;
@@ -291,11 +291,11 @@ footer a:link, footer a:visited {
   font-size: 125%;
 }
 
-#home #features .box p {
+#silvacms #features .box p {
   padding: 10px 15px;
 }
 
-#home .box a.readmore {
+#silvacms .box a.readmore {
   background-image: url("../images/read_more_icon.gif");
   background-repeat: no-repeat;
   background-position: 85% 50%;

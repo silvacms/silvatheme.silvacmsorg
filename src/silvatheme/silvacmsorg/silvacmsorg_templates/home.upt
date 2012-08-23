@@ -16,6 +16,8 @@
     <tal:boxes tal:content="structure slot:boxthird" />
   </div>
 
+  <!-- screenshots -->
+  <br clear="all" />
   <div id="screenshots">
     <tal:screenshots tal:content="structure slot:screenshots" />
   </div>

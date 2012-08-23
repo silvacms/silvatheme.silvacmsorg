@@ -53,7 +53,7 @@ class Layout(porto.Layout):
 
     def current_publication_class(self, publication):
         if publication in self.request.PARENTS:
-            return 'active'
+            return 'selected'
         return ''
 
 

@@ -4,6 +4,10 @@ body {
   background: #FCFCFC;
 }
 
+*::-selection {background: #E6F8BA;}
+*::-moz-selection {background: #E6F8BA;}
+*::-webkit-selection {background: #E6F8BA;} 
+
 #content {
   background: #FFF;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -14,9 +18,20 @@ body {
 }
 
 h2 {
- border-bottom: 1px solid #E3E3E3;
- font-size: 120%;
+  border-bottom: 1px solid #E3E3E3;
+  color: #007500;
+  font-size: 120%;
 }
+
+a {
+  text-decoration: none;
+}
+
+#content a {
+    color: #FF9900;
+    font-weight: bold;
+}
+
 
 /* -- header settings -- */
 
@@ -30,23 +45,42 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   height: 59px;
 }
+
+header img {
+  float: left;
+  margin: 12px 0 0 80px;
+}
  
 header h1 {
   color: #FFF;
-  display: inline-block;
-  margin: 12px 0 0 120px;
-  position: relative;
+  float:left;
+  margin: 12px 0 0 20px;
   text-indent: 0;
+  width: 120px;
+}
+
+header h1 a:link, header h1 a:visited, header h1 a:link:hover, header h1 a:visited:hover {
+  color: #FFF;
+  text-decoration: none;
 }
 
 header nav {  
-  float: right;
-  margin-right: 120px; padding: 0;
-  width: 437px;
+  float: left;
+  margin: 0; padding: 0;
+  width: 565px;
+  font-size: 105%;
 }  
+
+header nav ol { list-style:none; margin:0; padding:0; }
+header nav li { float:left; }
+header nav a:link, header nav a:visited {
+  display:block; margin:0; color:#bbb; text-decoration:none; font-weight:bold;
+}
 
 header nav li {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 140px;
 }
 
 header nav li.last {
@@ -54,7 +88,7 @@ header nav li.last {
 }
 
 header nav li a {
-  padding: 18px 0;
+  padding: 21px 0;
 }
 
 header nav li.selected {
@@ -79,6 +113,47 @@ header nav li a:focus {
   text-decoration: underline;
 }
 
+form {
+  float: right;
+  margin: 18px 30px 0 0; 
+  width: 258px;
+}
+
+input[type="submit"] {
+  background-color: #696969; 
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#797979));
+    background-image: -webkit-linear-gradient(top, #696969, #797979);
+    background-image: -moz-linear-gradient(top, #696969, #797979); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#797979');      
+    background-image: -o-linear-gradient(top, #696969, #797979);
+  border: 1px solid rgba(255,255,255, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background: #519A0F;
+}
+
+input[type="text"] {
+  border: 1px solid rgba(255,255,255, 0.1);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px;
+}
+
+input[type="text"]:focus {
+  border-color: #000;
+}
+
+input::-webkit-input-placeholder {color: #A1A1A1;}
+input::-webkit-placeholder:hover {color: #555;}
+input:-moz-placeholder {color: #A1A1A1;}  
+input:-moz-placeholder:hover {color: #555;}
+input:-ms-placeholder {color: #A1A1A1;}  
+input:-ms-placeholder:hover {color: #555;}
+
 /* -- list style settings -- */
 
 li {
@@ -88,13 +163,9 @@ li {
 /* -- footer settings -- */
 
 footer {
-  background-color: #696969; 
-    background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#313131));
-    background-image: -webkit-linear-gradient(top, #696969, #313131);
-    background-image: -moz-linear-gradient(top, #696969, #313131); 
-    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131');      
-    background-image: -o-linear-gradient(top, #696969, #313131);
+  background-color: #313131;
   color: #CDCDCD;
+  height: 80px;
   position: relative; 
   text-align: center; 
 }
@@ -116,7 +187,7 @@ footer a:link, footer a:visited {
   text-decoration: none;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-  width: 150px;
+  width: 160px;
 }
 
 #about #display a#download_button, #download section a#download {
@@ -135,6 +206,7 @@ footer a:link, footer a:visited {
   background: #519A0F;
   box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
     webkit-box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
+  color: #FFF;
 }
 
 #about #display a#demo_button {
@@ -156,12 +228,12 @@ footer a:link, footer a:visited {
 
 #download section a#download {
   display: block;
-  margin: 20px auto;
-  padding: 1px 0 0 0;
+  margin: 15px auto 20px auto;
+  padding: 3px 0 2px 0;
   width: 120px;
 }
 
-/*   ++++++ page specific styles: about ++++++ */
+/*   ++++++ page specific styles: about / home ++++++ */
 
 #about #content {
   background: #F9F9F9;
@@ -188,7 +260,7 @@ footer a:link, footer a:visited {
 }
 
 #about #display a#download_button {
-  margin-left: 165px;
+  margin-left: 160px;
 }
 
 #about #features {
@@ -231,13 +303,131 @@ footer a:link, footer a:visited {
   font-weight: bold;
   padding-left: 15px;
   text-transform: uppercase;
-  width: 115px;
+  width: 125px;
 }
 
 #about .box a.readmore:hover, #about .box a.readmore:focus {
   color: #008800;
   text-decoration: underline;
 }
+
+/*   ++++++ page specific styles: Aboutpage ++++++ */
+
+#aboutpage #content nav li, #features #content nav li {
+  border-left: 1px solid #007500;
+  border-bottom: 1px solid #007500;
+  border-top: 1px solid #007500;
+  float: left;
+  text-align: center;
+  width: 239px;
+}
+
+#aboutpage #content nav ul li a, #features #content nav li a {
+  background-color: #59A80F;
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
+    background-image: -webkit-linear-gradient(top, #519A0F, #7AB317);
+    background-image: -moz-linear-gradient(top, #59A80F, #7AB317); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#519A0F', endColorstr='#7AB317');      
+    background-image: -o-linear-gradient(top, #519A0F, #7AB317);
+  color: #FFF;
+  display: block;
+  font-size: 110%;
+  font-weight: bold;
+  margin: 0;
+  padding: 6px 0;
+}
+
+#aboutpage #content nav ul li a:hover, #features #content nav li a:hover,
+#aboutpage #content nav ul li a:focus, #features #content nav li a:focus {
+  background: #519A0F;
+  text-decoration: none;
+}
+
+#features #content nav ul li a.selected {
+  background: #008B00;
+}
+
+#aboutpage #content #aboutsilva {
+  float: left;
+  margin-top: 40px; padding: 0 50px;
+  width: 620px;
+}
+
+#aboutpage #content #aboutsilva p:first-of-type {
+  background: #FFF;
+}
+
+#aboutpage #content #aboutsilva p {
+  background-color: #FEFEFE; 
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
+    background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
+    background-image: -moz-linear-gradient(top, #FEFEFE, #F8F8F8); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F8F8F8');      
+    background-image: -o-linear-gradient(top, #FEFEFE, #F8F8F8); 
+  border-width: 1px 0;
+  padding: 10px 0;
+}
+
+#aboutpage #content aside {
+   background-color: #;
+   border: 1px solid #CCC;
+   border-radius: 0px;
+   box-shadow: 1px 1px 10px 1px #EFEFEF inset;
+     webkit-box-shadow: 1px 1px 10px 1px #EFEFEF inset;
+   color: #fff;
+   float: right;
+   margin: 40px 20px 0 0; padding: 10px 20px;
+   min-height: 300px; width: 160px;
+}
+
+#aboutpage #content aside h1 {
+  background-color: #808080; 
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#808080), to(#5A5A5A));
+    background-image: -webkit-linear-gradient(top, #808080, #5A5A5A);
+    background-image: -moz-linear-gradient(top, #808080, #5A5A5A); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#5A5A5A');      
+    background-image: -o-linear-gradient(top, #808080, #5A5A5A);
+  border-top: 1px solid #111;
+  color: #FFF;
+  font-size: 130%;
+  margin: 5px -30px;
+  padding: 3px 30px;
+  position: relative;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#aboutpage #content aside h1:before, #aboutpage #content aside h1:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+  bottom: -10px;
+}
+    
+#aboutpage #content aside h1:before{
+  border-width: 0 10px 10px 0;
+  border-right-color: #222;
+  left: 0;
+}
+    
+#aboutpage #content aside h1:after {
+  border-width: 0 0 10px 10px;
+  border-left-color: #222;
+  right: 0;
+}
+
+#aboutpage #content aside h2 {
+  color: #684781;
+  font-size: 100%;
+  margin-top: 15px;
+}
+
+#aboutpage #content aside p {
+  color: #333;
+  font-size: 100%; 
+  margin: 0; padding: 0;
+}
+
 
 /*   ++++++ page specific styles: Download ++++++ */
 
@@ -280,7 +470,12 @@ footer a:link, footer a:visited {
 }
 
 #download section h1 {
-  background: #59A80F;
+  background-color: #919191; 
+    background-image: -webkit-gradient(linear, top right, bottom right, from(#919191), to(#555));
+    background-image: -webkit-linear-gradient(top, #919191, #555);
+    background-image: -moz-linear-gradient(top, #919191, #555); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#919191', endColorstr='#555');      
+    background-image: -o-linear-gradient(top, #919191, #555);
   color: #FFF;
   float: left;
   font-size: 125%;
@@ -295,16 +490,52 @@ footer a:link, footer a:visited {
   padding: 10px 15px;
 }
 
-#download section a, #support section a {
-  color: #FF9900;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-#download section a:hover, #support section a:hover,
-#download section a:focus, #support section a:focus {
+#download #content a:hover, #support section a:hover,
+#download #content a:focus, #support section a:focus {
   color: #FF6600;
 }
+
+#download #releases { 
+  margin: auto; padding: 40px 0;
+  width: 760px; 
+}
+
+table {
+  font-size: 110%;
+  margin-top: 30px; 
+  width: 580px;
+}
+
+table th {
+  background-color: #919191; 
+    background-image: -webkit-gradient(linear, top right, bottom right, from(#919191), to(#555));
+    background-image: -webkit-linear-gradient(top, #919191, #555);
+    background-image: -moz-linear-gradient(top, #919191, #555); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#919191', endColorstr='#555');      
+    background-image: -o-linear-gradient(top, #919191, #555);
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 5px 12px; 
+}
+
+table td {
+  background-color: #FFF; 
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
+    background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -moz-linear-gradient(top, #FFF, #F2F2F2); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');      
+    background-image: -o-linear-gradient(top, #FFF, #F2F2F2); 
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px 12px; 
+}
+
+#download #content table a {
+  font-weight: normal;
+}
+
 
 /*   ++++++ page specific styles: Documentation ++++++ */
 
@@ -340,12 +571,13 @@ footer a:link, footer a:visited {
   border-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px 4px 0 0;
   color: #6A6A6A;
+  font-weight: bold;
   float: left;
   margin: 0 8px 0 0;
-  padding-top: 3px;
+  padding: 5px 0;
   text-align: center;
   vertical-align: bottom;
-  width: 225px;
+  width: 235px;
 }
 
 #documentation #content nav a:link:hover, #documentation #content nav a:visited:hover,
@@ -369,7 +601,7 @@ footer a:link, footer a:visited {
 
 #documentation #content #slot-one {
   display: inline-block;
-  margin: 20px 20px 20px 60px;
+  margin: 35px 20px 20px 60px;
   width: 510px;
   vertical-align: top;
 }
@@ -404,7 +636,7 @@ footer a:link, footer a:visited {
   border-top: 1px solid #FFF;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   display: block;
-  padding: 2px 10px;
+  padding: 4px 10px 6px;
   font-weight: normal;
   color: #000;
   margin: 0;
@@ -430,7 +662,7 @@ footer a:link, footer a:visited {
   display: block;
   font-weight: bold;
   margin: 0;
-  padding: 2px 10px;
+  padding: 4px 10px 6px;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -447,10 +679,16 @@ footer a:link, footer a:visited {
 /*   ++++++ page specific styles: Support ++++++ */
 
 #support p {
-  border-width: 2px 0;
+  background-color: #FEFEFE; 
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
+    background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
+    background-image: -moz-linear-gradient(top, #FEFEFE, #F8F8F8); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F8F8F8');      
+    background-image: -o-linear-gradient(top, #FEFEFE, #F8F8F8); 
+  border-width: 1px 0;
   border-style: solid;
-  border-color: #E3E3E3;
-  margin-top: 40px; padding: 20px;
+  border-color: #EFEFEF;
+  margin-top: 60px; padding: 20px;
   height: 160px;
 }
 
@@ -512,6 +750,57 @@ footer a:link, footer a:visited {
   width: 350px;
   margin: 0 -4px; padding: 10px 15px;
 }
+
+/*   ++++++ page specific styles: Features ++++++ */
+
+#features nav#corefeatures li {
+  background-color: #FFF; 
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
+    background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -moz-linear-gradient(top, #FFF, #F2F2F2); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');      
+    background-image: -o-linear-gradient(top, #FFF, #F2F2F2); 
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  clear: both;
+  color: #333;
+  display: inline-block;
+  float: left;
+  font-weight: bold;
+  padding: 3px 0;
+  width: 240px;
+}
+
+#features #content h2, #features #content p, #features #content ul.featureslist {
+  clear: both;
+  margin: 0 auto;
+  width: 700px;
+}
+
+#features #content h2 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+#features #content p:first-of-type {
+  padding-top: 40px;
+}
+
+#features #content ul.featureslist li {
+  margin-left: 30px;
+  list-style: disc;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

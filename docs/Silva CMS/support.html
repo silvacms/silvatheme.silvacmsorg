@@ -6,7 +6,6 @@
     <title>Silva</title>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/typography.css">
-    <link rel="stylesheet" type="text/css" href="css/visitorvu.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <meta name="generator" content="Silva"> 
     <link rel="shortcut icon" href="http://www.silvacms.org/++static++/silva.core.layout.porto/:version:2012-05-31T12:10:54/
@@ -19,14 +18,15 @@
   <div id="container">
   
      <header>
-            <h1>Silva</h1>
+            <a href="home.html"><img class="logo" alt="Infrae_logo"src="images/silva.png">
+            <h1>Silva</h1></a>
             <nav>
               <ul>
                 <li>
                   <a href="about.html">About</a>
                 </li>
                 <li>
-                  <a href="download.html">Download Silva</a>
+                  <a href="download.html">Download</a>
                 </li>
                 <li>
                   <a href="documentation.html">Documentation</a>
@@ -36,6 +36,10 @@
                 </li>
               </ul>
             </nav>
+            <form method="get" name="search">
+               <input type="text" placeholder="Search the Silva CMS site..."/>
+               <input type="submit" value="search"/>
+            </form>
      </header>
     
     <!-- end header -->

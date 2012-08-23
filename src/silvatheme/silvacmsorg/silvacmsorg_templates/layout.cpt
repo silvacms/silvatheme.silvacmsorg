@@ -1,6 +1,6 @@
 <div id="container">
   <header>
-      <a tal:attributes="href path:context/@@absolute_url">
+      <a tal:attributes="href layout.root_url">
         <img class="logo" alt="Silva logo"
              tal:attributes="src path:static/images/silva.png" />
           <h1>Silva</h1>

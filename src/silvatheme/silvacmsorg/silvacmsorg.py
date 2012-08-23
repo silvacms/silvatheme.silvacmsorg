@@ -78,7 +78,7 @@ class IAboutResources(IDefaultBrowserLayer):
 
 class Home(Design):
    grok.name('home')
-   grok.title('home')
+   grok.title('Home')
    grok.context(IPage)
 
    slots = {

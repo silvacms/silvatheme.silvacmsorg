@@ -133,7 +133,8 @@ class Download(Design):
        'downloadcontent': Slot(css_class='download-content'),
        'boxfirst': Slot(css_class=''),
        'boxsecond': Slot(css_class=''),
-       'boxthird': Slot(css_class='')}
+       'boxthird': Slot(css_class=''),
+       'releasescontent': Slot(css_class='')}
 
    def update(self):
        self.title = self.content.get_title_or_id()

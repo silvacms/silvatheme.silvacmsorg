@@ -1,67 +1,8 @@
-<div id="display">
-  <div id="displaycontent">
-    <div id="displayleft">
-      <tal:content tal:content="structure slot:aboutcontent" />
-      <!- xxx should these become content and how if so? -->
-      <div id="buttons">
-        <a title="Experience Silva" href="download.html" id="download_button">Download Silva</a>
-        <a title="Experience Silva" href="#" id="demo_button">Try the demo</a>
-      </div>
-    </div>
-  </div>
+<div id="silvacontent">
+  <tal:content tal:content="structure slot:aboutcontent" />
 </div>
 
-<div id="screenshots">
-  <tal:screenshots tal:content="structure slot:screenshots" />
+<aside>
+  <tal:news tal:content="structure slot:news" />
 </div>
 
-<!-- start of hardcoded carousel -->
-<div id="slidorion">
-  <h2>Hardcoded carousel for testing</h2>
-  <div id="slider">
-	<div id="slide1" class="slide">
-	  <img src="++static++/silvatheme.silvacmsorg/images/spiderman.jpg" width="488" height="400" />
-	</div>
-	<div id="slide2" class="slide">
-	  <img src="++static++/silvatheme.silvacmsorg/images/kick-ass.jpg" width="488" height="400" />
-	</div>
-	<div id="slide3" class="slide">
-	  <img src="++static++/silvatheme.silvacmsorg/images/thor.jpg" width="488" height="400" />
-	</div>
-  </div>
-  <div id="accordion">
-	<div class="link-header">Spiderman</div>
-	<div class="link-content">
-	  <p>Based on Marvel Comics' superhero character, this is a story of Peter Parker who is a nerdy high-schooler; bullied by jocks and can't confess his crush for his stunning neighborhood girl Mary Jane Watson.</p>
-	  <p>To say his life is "miserable" is an understatement. But one day while on an excursion to a laboratory a runaway radioactive spider bites him...</p>
-	</div>
-	<div class="link-header">Kick Ass</div>
-	<div class="link-content">
-	  <p>Dave Lizewski is an unnoticed high school student and comic book fan with a few friends and who lives alone with his father. His life is not very difficult and his personal trials not that overwhelming.</p>
-	  <p>However, one day he makes the simple decision to become a super-hero even though he has no powers or training.</p>
-	</div>
-	<div class="link-header">Thor</div>
-	<div class="link-content">
-	  <p>The warrior Thor is cast out of the fantastic realm of Asgard by his father Odin for his arrogance and sent to Earth to live among humans.</p>
-	  <p>Falling in love with scientist Jane Foster teaches Thor much-needed lessons, and his new-found strength comes into play as a villain from his homeland sends dark forces toward Earth.</p>
-	</div>
-  </div>
-</div>
-<script>
-	$(function() {
-		$('#slidorion').slidorion();
-	});
-</script>
-<!-- end of hardcoded carousel -->
-
-
-<div id="features">
-  <div id="featureslist">
-    <tal:first tal:content="structure slot:boxfirst" />
-    <tal:second tal:content="structure slot:boxsecond" />
-    <tal:third tal:content="structure slot:boxthird" />
-  </div>
-  <aside>
-    <tal:morefeatures tal:content="structure slot:morefeatures" />
-  </aside>
-</div>

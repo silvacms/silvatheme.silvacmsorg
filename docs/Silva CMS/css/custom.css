@@ -177,7 +177,7 @@ footer a:link, footer a:visited {
 
 /* button styling */
 
-#about #display a, #download section a#download {
+#home #display a, #download section a#download {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 18px;
   color: #FFF;
@@ -191,7 +191,7 @@ footer a:link, footer a:visited {
   width: 160px;
 }
 
-#about #display a#download_button, #download section a#download {
+#home #display a#download_button, #download section a#download {
   background-color: #7AB317; 
     background-image: -webkit-gradient(linear, top left, bottom left, from(#7AB317), color-stop(0.5, #519A0F), to(#7AB317));
     background-image: -webkit-linear-gradient(top, #7AB317, #519A0F, #7AB317);
@@ -202,7 +202,7 @@ footer a:link, footer a:visited {
     webkit-box-shadow: 0 2px 0 #59A80F;
 }
 
-#about #display a#download_button:hover, #about #display a#download_button:focus,
+#home #display a#download_button:hover, #home #display a#download_button:focus,
 #download section a#download:hover, #download section a#download:focus {
   background: #519A0F;
   box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
@@ -210,7 +210,7 @@ footer a:link, footer a:visited {
   color: #FFF;
 }
 
-#about #display a#demo_button {
+#home #display a#demo_button {
   background-color: #FA9F29; 
     background-image: -webkit-gradient(linear, top left, bottom left, from(#FA9F29), color-stop(0.5, #ED872D) to(#FA9F29));
     background-image: -webkit-linear-gradient(top, #FA9F29, #ED872D, #FA9F29);
@@ -221,7 +221,7 @@ footer a:link, footer a:visited {
     webkit-box-shadow: 0 2px 0 #CE5E06;
 }
 
-#about #display a#demo_button:hover, #about #display a#demo_button:focus {
+#home #display a#demo_button:hover, #home #display a#demo_button:focus {
   background: #ED872D;
   box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
     webkit-box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
@@ -236,13 +236,13 @@ footer a:link, footer a:visited {
 
 /*   ++++++ page specific styles: about / home ++++++ */
 
-#about #content {
+#home #content {
   background: #F9F9F9;
   margin: 75px 0 0 0;
   width: 100%;
 }
 
-#about #display {
+#home #display {
   background: #FFF;
   border-top: 1px solid #EFEFEF;
   border-bottom: 1px solid #CCC;
@@ -251,26 +251,26 @@ footer a:link, footer a:visited {
   height: 310px;
 }
 
-#about #display p {
+#home #display p {
   margin: 50px 0 20px 150px;
   width: 380px;
 }
 
-#about #display a {
+#home #display a {
   margin-left: 20px;
 }
 
-#about #display a#download_button {
+#home #display a#download_button {
   margin-left: 160px;
 }
 
-#about #features {
+#home #features {
   clear: both;
   margin: 80px auto;
   width: 726px;
 }
 
-#about #features .box {
+#home #features .box {
   background: #FFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -282,7 +282,7 @@ footer a:link, footer a:visited {
   width: 200px;
 }
 
-#about #features .box h1 {
+#home #features .box h1 {
   background: #59A80F;
   border-radius: 4px 4px 0 0;
   color: #FFF;
@@ -291,11 +291,11 @@ footer a:link, footer a:visited {
   font-size: 125%;
 }
 
-#about #features .box p {
+#home #features .box p {
   padding: 10px 15px;
 }
 
-#about .box a.readmore {
+#home .box a.readmore {
   background-image: url("../images/read_more_icon.gif"); 
   background-repeat: no-repeat;
   background-position: 85% 50%;
@@ -308,7 +308,7 @@ footer a:link, footer a:visited {
 
 /*   ++++++ page specific styles: Aboutpage ++++++ */
 
-#aboutpage #content nav li, #features #content nav li {
+#about #content nav li, #features #content nav li {
   border-left: 1px solid #007500;
   border-bottom: 1px solid #007500;
   border-top: 1px solid #007500;
@@ -317,7 +317,7 @@ footer a:link, footer a:visited {
   width: 239px;
 }
 
-#aboutpage #content nav ul li a, #features #content nav li a {
+#about #content nav ul li a, #features #content nav li a {
   background-color: #59A80F;
     background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
     background-image: -webkit-linear-gradient(top, #519A0F, #7AB317);
@@ -325,33 +325,33 @@ footer a:link, footer a:visited {
     background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#519A0F', endColorstr='#7AB317');      
     background-image: -o-linear-gradient(top, #519A0F, #7AB317);
   color: #FFF;
-  display: block;;
+  display: block;
   font-weight: bold;
   margin: 0;
   padding: 6px 0;
 }
 
-#aboutpage #content nav ul li a:hover, #features #content nav li a:hover,
-#aboutpage #content nav ul li a:focus, #features #content nav li a:focus {
+#about #content nav ul li a:hover, #features #content nav li a:hover,
+#about #content nav ul li a:focus, #features #content nav li a:focus {
   background: #519A0F;
   text-decoration: none;
 }
 
-#features #content nav ul li a.selected, #aboutpage #content nav ul li a.selected {
+#features #content nav ul li a.selected, #about #content nav ul li a.selected {
   background: #008B00;
 }
 
-#aboutpage #content #aboutsilva {
+#about #content #aboutsilva {
   float: left;
   margin-top: 40px; padding: 0 50px;
   width: 620px;
 }
 
-#aboutpage #content #aboutsilva p:first-of-type {
+#about #content #aboutsilva p:first-of-type {
   background: #FFF;
 }
 
-#aboutpage #content #aboutsilva p {
+#about #content #aboutsilva p {
   background-color: #FEFEFE; 
     background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
     background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
@@ -362,7 +362,7 @@ footer a:link, footer a:visited {
   padding: 10px 0;
 }
 
-#aboutpage #content aside {
+#about #content aside {
    background-color: #;
    border: 1px solid #CCC;
    border-radius: 0px;
@@ -374,7 +374,7 @@ footer a:link, footer a:visited {
    min-height: 300px; width: 160px;
 }
 
-#aboutpage #content aside h1 {
+#about #content aside h1 {
   background-color: #808080; 
     background-image: -webkit-gradient(linear, top left, bottom left, from(#808080), to(#5A5A5A));
     background-image: -webkit-linear-gradient(top, #808080, #5A5A5A);
@@ -390,7 +390,7 @@ footer a:link, footer a:visited {
   text-shadow: 1px 1px 1px #000;
 }
 
-#aboutpage #content aside h1:before, #aboutpage #content aside h1:after {
+#about #content aside h1:before, #about #content aside h1:after {
   content: '';
   position: absolute;
   border-style: solid;
@@ -398,25 +398,25 @@ footer a:link, footer a:visited {
   bottom: -10px;
 }
     
-#aboutpage #content aside h1:before{
+#about #content aside h1:before{
   border-width: 0 10px 10px 0;
   border-right-color: #222;
   left: 0;
 }
     
-#aboutpage #content aside h1:after {
+#about #content aside h1:after {
   border-width: 0 0 10px 10px;
   border-left-color: #222;
   right: 0;
 }
 
-#aboutpage #content aside h2 {
+#about #content aside h2 {
   color: #684781;
   font-size: 110%;
   margin-top: 15px;
 }
 
-#aboutpage #content aside p {
+#about #content aside p {
   color: #333;
   margin: 0; padding: 0;
 }

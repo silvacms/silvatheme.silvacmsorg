@@ -76,6 +76,24 @@ class IAboutResources(IDefaultBrowserLayer):
    silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
 
 
+class Home(Design):
+   grok.name('home')
+   grok.title('home')
+   grok.context(IPage)
+
+   slots = {
+       'homecontent': Slot(css_class='about-content'),
+       'screenshots': Slot(css_class='screenshots'),
+       'boxfirst': Slot(css_class='box'),
+       'boxsecond': Slot(css_class='box'),
+       'boxthird': Slot(css_class='box'),
+       'morefeatures': Slot(css_class='more-features')}
+
+   def update(self):
+       self.title = self.content.get_title_or_id()
+       need(IAboutResources)
+
+
 class About(Design):
    grok.name('about')
    grok.title('About')
@@ -83,11 +101,7 @@ class About(Design):
 
    slots = {
        'aboutcontent': Slot(css_class='about-content'),
-       'screenshots': Slot(css_class='screenshots'),
-       'boxfirst': Slot(css_class='box'),
-       'boxsecond': Slot(css_class='box'),
-       'boxthird': Slot(css_class='box'),
-       'morefeatures': Slot(css_class='more-features')}
+       'news': Slot(css_class='silva-news')}
 
    def update(self):
        self.title = self.content.get_title_or_id()

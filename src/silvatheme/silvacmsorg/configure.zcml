@@ -3,6 +3,7 @@
    xmlns:grok="http://namespaces.zope.org/grok">
 
    <include package="grokcore.chameleon" />
+   <include package="silvatheme.infraecommon" />
 
    <!-- Grok this package -->
    <grok:grok package="." />

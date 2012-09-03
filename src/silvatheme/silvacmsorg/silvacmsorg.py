@@ -10,15 +10,15 @@ from silva.core.layout.porto.interfaces import IPorto
 from silva.core.interfaces import IPublication
 from silva.fanstatic import need
 
+from silvatheme.infraecommon import ITypography
+
 from five import grok
 
 
-class ISilvaCmsOrg(IPorto):
+class ISilvaCmsOrg(ITypography, IPorto):
     """Layer for SilvaCMS.org theme
     """
 
-    silvaconf.resource('css/html5reset.css')
-    silvaconf.resource('css/typography.css')
     silvaconf.resource('css/silvacmsorg.css')
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):

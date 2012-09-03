@@ -3,4 +3,5 @@ grokcore.chameleon
 silva.core.conf
 silva.core.interfaces
 silva.core.layout
+silvatheme.infraecommon
 zope.cachedescriptors

@@ -143,6 +143,21 @@ input[type="submit"]:hover, input[type="submit"]:focus {
   background: #519A0F;
 }
 
+input.submit {
+  background: #519A0F;
+  margin-top: 5px;
+}
+
+input.cancel {
+  background: #F9F9F9;
+  border: 1px solid #F9F9F9;
+  border-radius: 8px;
+  color: #D83018;
+  font-size: 90%;
+  margin-top: 7px;
+  text-decoration: underline;
+}
+
 input[type="text"] {
   border: 1px solid #777;
   border-radius: 5px;
@@ -160,6 +175,11 @@ input:-moz-placeholder {color: #A1A1A1;}
 input:-moz-placeholder:hover {color: #555;}
 input:-ms-placeholder {color: #A1A1A1;}
 input:-ms-placeholder:hover {color: #555;}
+
+div.login-form div.form-actions input.cancel {
+  float: none;
+}
+
 
 /* -- footer settings -- */
 
@@ -777,14 +797,22 @@ table td {
   list-style: disc;
 }
 
+/* -- login page -- */ 
 
+.silva-content div.login-form {
+  margin-left: 100px;
+  padding-top: 50px;
+  height: 100px;
+}
 
+.silva-content div.login-form div.form-title {
+  font-weight: normal; 
+}
 
-
-
-
-
-
+.silva-content div.login-form div.form-label {
+  font-weight: bold;
+  padding: 2px 0;
+}
 
 
 

@@ -30,6 +30,7 @@ class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):
 
 silvaconf.layer(ISilvaCmsOrg)
 
+
 class Navigation(porto.Navigation):
     max_depth = 1
 
@@ -73,6 +74,14 @@ class IAboutResources(IDefaultBrowserLayer):
    silvaconf.resource('slidorion/js/jquery.min.js')
    silvaconf.resource('slidorion/js/jquery.easing.js')
    silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
+
+class ICommunityResources(IDefaultBrowserLayer):
+   silvaconf.resource('slidorion/css/slidorion.css')
+   silvaconf.resource('css/community.css')
+   silvaconf.resource('slidorion/js/jquery.min.js')
+   silvaconf.resource('slidorion/js/jquery.easing.js')
+   silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
+   silvaconf.resource('js/community.js')
 
 
 class Home(Design):
@@ -137,3 +146,23 @@ class Download(Design):
 
    def update(self):
        self.title = self.content.get_title_or_id()
+
+class Community(Design):
+   grok.name('community')
+   grok.title('community')
+   grok.context(IPage)
+
+   slots = {
+       'communitycontent': Slot(css_class='community-content'),
+       'contributecontent': Slot(css_class='contribute-content'),
+       'reportbugscontent': Slot(css_class='report-bugs-content'),
+       'silvairccontent': Slot(css_class='silva-irc-content'),
+       'screenshots': Slot(css_class='screenshots'),
+       'boxfirst': Slot(css_class='box'),
+       'boxsecond': Slot(css_class='box'),
+       'boxthird': Slot(css_class='box')}
+
+   def update(self):
+       self.title = self.content.get_title_or_id()
+       need(ICommunityResources)
+

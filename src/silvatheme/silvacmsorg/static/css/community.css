@@ -14,39 +14,39 @@ html, body {
   min-height: 1000px;
 }
 
-/* link settings */
+/* link settings */ 
 
 #community header a:link, #community header a:visited {
   color: #FEFEFE;
 }
 
-/* navigation settings */
+/* navigation settings */ 
 
 #community #content nav {
   border-bottom: 1px solid #E7E7E7;
-  height: 51px;
+  height: 51px; 
 }
 
 #community #content #tabs {
-  padding-top: 20px;
+  padding-top: 20px; 
   margin: 0 0 0 20px;
 }
 
 #community #tabs a {
   background: #2F2B2C;
-  border-top: 1px solid #464646;
-  border-right: 1px solid #464646;
+  border-top: 1px solid #464646; 
+  border-right: 1px solid #464646; 
   border-left: 1px solid #464646;
   float: left;
-  margin: 0 5px; padding: 6px 0 6px 18px;
+  margin: 0 5px; padding: 6px 0 6px 18px; 
   width: 21%;
 }
 
 #community #tabs #current a {
   background: #1E1A1B;
-  border-top: 1px solid #EEE;
-  border-right: 1px solid #EEE;
-  border-left: 1px solid #EEE;
+  border-top: 1px solid #EEE; 
+  border-right: 1px solid #EEE; 
+  border-left: 1px solid #EEE; 
   border-bottom: 1px solid #1E1A1B;
   display: block;
   float: left;
@@ -61,21 +61,21 @@ html, body {
   background: #272324;
 }
 
-/* search bar settings */
+/* search bar settings */ 
 
 #community #searchBox {
   height: 85px;
 }
 
 #community #searchCommunity {
-  float: none;
+  float: none; 
   padding: 18px 0;
   width: 100%;
 }
 
 #community #searchCommunity input[type="submit"] {
   float: right;
-  margin: 8px 12px 0 0;
+  margin: 8px 12px 0 0; 
 }
 
 #community #searchCommunity input[type="text"] {
@@ -94,7 +94,7 @@ html, body {
 }
 
 
-/* tab settings */
+/* tab settings */ 
 
 #community #tabNav .tab {
   margin-top: 40px;
@@ -105,26 +105,26 @@ html, body {
   padding: 10px 40px;
 }
 
-/* tab1 settings ~ community ~ */
+/* tab1 settings ~ community ~ */ 
 
-#community #tab1 section.left {
+#community #tab1 section.left { 
   clear: both;
-  float: left;
+  float: left; 
   margin: 20px 0 0 40px; padding-bottom: 40px;
-  width: 56%;
+  width: 56%; 
 }
 
-#community #tab1 h1 {
+#community #tab1 h1 { 
   background-color: #59A80F;
     background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
     background-image: -webkit-linear-gradient(top, #519A0F, #7AB317);
-    background-image: -moz-linear-gradient(top, #59A80F, #7AB317);
-    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#519A0F', endColorstr='#7AB317');
+    background-image: -moz-linear-gradient(top, #59A80F, #7AB317); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#519A0F', endColorstr='#7AB317');      
     background-image: -o-linear-gradient(top, #519A0F, #7AB317);
-  box-shadow: 0 1px 0 #59A80F;
+  box-shadow: 0 1px 0 #59A80F; 
     webkit-box-shadow: 0 1px 0 #59A80F;
   border: 1px solid green;
-  color: #FFF;
+  color: #FFF; 
   font-size: 1.2em;
   padding: 6px 0 6px 20px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
@@ -132,7 +132,7 @@ html, body {
 
 #community #tab1 section.left p {
   border: 1px solid #474747;
-  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1) inset; 
     webkit-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1) inset;
   height: 180px;
   padding: 15px;
@@ -140,9 +140,9 @@ html, body {
 
 #community #tab1 section.right .box {
   border: 1px solid #1B1B1B;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) inset; 
     webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) inset;
-  float: right;
+  float: right; 
   margin: 20px 40px 0 0;
   width: 28%;
 }
@@ -152,26 +152,26 @@ html, body {
 }
 
 
-/* media queries */
+/* media queries */ 
 
 @media only screen and (min-width: 1045px) and (max-width: 1211px) {
-
+  
   p {
     color: crimson;
   }
-
+  
   header .title {
     width: 18%;
   }
-
+    
   header nav {
     width: 66%;
   }
-
+  
   header form {
     width: 15%
   }
-
+  
 }
 
 @media only screen and (min-width: 968px) and (max-width: 1045px) {

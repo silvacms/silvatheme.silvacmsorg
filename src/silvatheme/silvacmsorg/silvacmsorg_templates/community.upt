@@ -1,38 +1,6 @@
 <div id="container">
 
-  <header>
-    <div class="title">
-      <a href="#"><img class="logo" alt="Infrae_logo"src="images/silva.png"><h1>Silva</h1></a>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="download.html">Download</a>
-        </li>
-        <li class="selected">
-          <a href="documentation.html">Documentation</a>
-        </li>
-        <li>
-          <a href="community.html">Community</a>
-        </li>
-        <li class="last">
-          <a href="support.html">Support</a>
-        </li>
-      </ul>
-    </nav>
-    <form method="get" name="search">
-      <input type="text" placeholder="Search the Silva CMS site"/>
-      <input type="submit" value="search"/>
-    </form>
-  </header>
-
-  <!-- end header -->
-
   <!-- start content -->
-
   <div id="content">
 
     <nav>

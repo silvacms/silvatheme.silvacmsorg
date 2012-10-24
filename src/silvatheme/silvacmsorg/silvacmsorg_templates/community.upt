@@ -23,7 +23,7 @@
           </div>
 
           <!-- start of hardcoded carousel -->
-          <div id="slidorion">
+          <!--<div id="slidorion">
             <h2>Hardcoded carousel for testing</h2>
             <div id="slider">
               <div id="slide1" class="slide">
@@ -53,7 +53,7 @@
                 <p>Falling in love with scientist Jane Foster teaches Thor much-needed lessons, and his new-found strength comes into play as a villain from his homeland sends dark forces toward Earth.</p>
               </div>
             </div>
-          </div>
+          </div>-->
       </section>
 
     </div>

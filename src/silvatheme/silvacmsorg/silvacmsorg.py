@@ -153,7 +153,9 @@ class Community(Design):
    grok.context(IPage)
 
    slots = {
-       'communitycontent': Slot(css_class='community-content'),
+       'contributeboxcontent': Slot(css_class='box'),
+       'reportbugsboxcontent': Slot(css_class='box'),
+       'silvaircboxcontent': Slot(css_class='box'),
        'screenshots': Slot(css_class='screenshots'),
        'contributecontent': Slot(css_class='contribute-content'),
        'reportbugscontent': Slot(css_class='report-bugs-content'),

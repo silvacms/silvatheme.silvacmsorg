@@ -10,9 +10,17 @@
 <div id="tabNav">
   <div class="tab" id="tab1">
     <section class="left">
-      <div class="box">
-        <h2>Community content</h2>
-        <tal:content tal:content="structure slot:communitycontent" />
+
+        <h2>Community content - contribute</h2>
+        <tal:content tal:content="structure slot:contributeboxcontent" />
+
+
+        <h2>Community content - Report bugs</h2>
+        <tal:content tal:content="structure slot:reportbugsboxcontent" />
+
+        <h2>Community content - Silva irc channel</h2>
+        <tal:content tal:content="structure slot:silvaircboxcontent" />
+
         <h2>Screenshots content</h2>
         <tal:content tal:content="structure slot:screenshots" />
       </div>

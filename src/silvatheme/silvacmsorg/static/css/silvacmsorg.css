@@ -189,6 +189,7 @@ footer {
   height: 80px;
   position: relative;
   text-align: center;
+  clear: both;
 }
 
 footer a:link, footer a:visited {

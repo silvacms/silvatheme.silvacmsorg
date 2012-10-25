@@ -42,24 +42,20 @@
 </div>
 
 <section class="right">
+
   <div id="searchBox" class="box">
     <form id="searchCommunity" method="get" name="search">
       <input type="text" placeholder="Search the community" />
       <input type="submit" value="search" />
     </form>
   </div>
-  <div class="box">
-    <h2>First box content</h2>
-    <tal:boxes tal:content="structure slot:boxfirst" />
-  </div>
-  <div class="box">
-    <h2>Second box content</h2>
-    <tal:boxes tal:content="structure slot:boxsecond" />
-  </div>
-  <div class="box">
-    <h2>Third box content</h2>
-    <tal:boxes tal:content="structure slot:boxthird" />
-  </div>
+  <h2>First box content</h2>
+  <tal:boxes tal:content="structure slot:boxfirst" />
+  <h2>Second box content</h2>
+  <tal:boxes tal:content="structure slot:boxsecond" />
+  <h2>Third box content</h2>
+  <tal:boxes tal:content="structure slot:boxthird" />
+
 </section>
 
 

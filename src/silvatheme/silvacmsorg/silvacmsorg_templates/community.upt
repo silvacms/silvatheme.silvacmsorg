@@ -11,32 +11,24 @@
   <div class="tab" id="tab1">
     <section class="left">
 
-        <h2>Community content - contribute</h2>
-        <tal:content tal:content="structure slot:contributeboxcontent" />
+      <tal:content tal:content="structure slot:contributeboxcontent" />
 
+      <tal:content tal:content="structure slot:reportbugsboxcontent" />
 
-        <h2>Community content - Report bugs</h2>
-        <tal:content tal:content="structure slot:reportbugsboxcontent" />
+      <tal:content tal:content="structure slot:silvaircboxcontent" />
 
-        <h2>Community content - Silva irc channel</h2>
-        <tal:content tal:content="structure slot:silvaircboxcontent" />
-
-        <h2>Screenshots content</h2>
-        <tal:content tal:content="structure slot:screenshots" />
-     </section>
+      <tal:content tal:content="structure slot:screenshots" />
+    </section>
   </div>
   <div class="tab" id="tab2">
-    <h2>Contribute content</h2>
     <tal:content tal:content="structure slot:contributecontent" />
   </div>
 
   <div class="tab" id="tab3">
-    <h2>Report bugs content</h2>
     <tal:content tal:content="structure slot:reportbugscontent" />
   </div>
 
   <div class="tab" id="tab4">
-    <h2>Silva irc content</h2>
     <tal:content tal:content="structure slot:silvairccontent" />
   </div>
 </div>
@@ -49,11 +41,11 @@
       <input type="submit" value="search" />
     </form>
   </div>
-  <h2>First box content</h2>
+
   <tal:boxes tal:content="structure slot:boxfirst" />
-  <h2>Second box content</h2>
+
   <tal:boxes tal:content="structure slot:boxsecond" />
-  <h2>Third box content</h2>
+
   <tal:boxes tal:content="structure slot:boxthird" />
 
 </section>

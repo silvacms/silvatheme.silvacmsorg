@@ -154,10 +154,10 @@ class Community(Design):
 
    slots = {
        'communitycontent': Slot(css_class='community-content'),
+       'screenshots': Slot(css_class='screenshots'),
        'contributecontent': Slot(css_class='contribute-content'),
        'reportbugscontent': Slot(css_class='report-bugs-content'),
        'silvairccontent': Slot(css_class='silva-irc-content'),
-       'screenshots': Slot(css_class='screenshots'),
        'boxfirst': Slot(css_class='box'),
        'boxsecond': Slot(css_class='box'),
        'boxthird': Slot(css_class='box')}

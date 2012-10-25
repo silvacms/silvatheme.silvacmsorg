@@ -11,20 +11,25 @@
   <div class="tab" id="tab1">
     <section class="left">
       <div class="box">
+        <h2>Community content</h2>
         <tal:content tal:content="structure slot:communitycontent" />
+        <h2>Screenshots content</h2>
+        <tal:content tal:content="structure slot:screenshots" />
       </div>
     </section>
   </div>
-
   <div class="tab" id="tab2">
+    <h2>Contribute content</h2>
     <tal:content tal:content="structure slot:contributecontent" />
   </div>
 
   <div class="tab" id="tab3">
+    <h2>Report bugs content</h2>
     <tal:content tal:content="structure slot:reportbugscontent" />
   </div>
 
   <div class="tab" id="tab4">
+    <h2>Silva irc content</h2>
     <tal:content tal:content="structure slot:silvairccontent" />
   </div>
 </div>
@@ -37,12 +42,15 @@
     </form>
   </div>
   <div class="box">
+    <h2>First box content</h2>
     <tal:boxes tal:content="structure slot:boxfirst" />
   </div>
   <div class="box">
+    <h2>Second box content</h2>
     <tal:boxes tal:content="structure slot:boxsecond" />
   </div>
   <div class="box">
+    <h2>Third box content</h2>
     <tal:boxes tal:content="structure slot:boxthird" />
   </div>
 </section>

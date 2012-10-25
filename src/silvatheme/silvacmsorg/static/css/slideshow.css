@@ -1,0 +1,37 @@
+#thumbs { 
+  padding-top: 10px; 
+  overflow: hidden; 
+}
+
+#thumbs img, #largeImage {
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 4px;
+  background-color: white;
+}
+
+#thumbs img {
+  cursor: pointer;
+  float: left;
+  margin: 0 6px 8px 0;
+}
+
+#panel { 
+  position: relative; 
+}
+
+#description {
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 14px;
+  padding: 10px 20px;
+  width: 525px;
+  margin: 5px;
+}
+
+
+
+
+
+

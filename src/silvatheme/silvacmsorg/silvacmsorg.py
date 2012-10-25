@@ -76,11 +76,10 @@ class IAboutResources(IDefaultBrowserLayer):
    silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
 
 class ICommunityResources(IDefaultBrowserLayer):
-   silvaconf.resource('slidorion/css/slidorion.css')
+   silvaconf.resource('css/slideshow.css')
    silvaconf.resource('css/community.css')
-   silvaconf.resource('slidorion/js/jquery.min.js')
-   silvaconf.resource('slidorion/js/jquery.easing.js')
-   silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
+   silvaconf.resource('js/jquery.min.js')
+   silvaconf.resource('js/slideshow.js')
    silvaconf.resource('js/community.js')
 
 

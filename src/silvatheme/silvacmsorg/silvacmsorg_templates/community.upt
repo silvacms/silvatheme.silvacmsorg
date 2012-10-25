@@ -18,6 +18,22 @@
       <tal:content tal:content="structure slot:silvaircboxcontent" />
 
       <tal:content tal:content="structure slot:screenshots" />
+
+	  <div id="thumbs">
+        <img src="++static++/silvatheme.silvacmsorg/images/image_01_thumb.jpg" alt="1st image description" />
+        <img src="++static++/silvatheme.silvacmsorg/images/image_02_thumb.jpg" alt="2nd image description" />
+        <img src="++static++/silvatheme.silvacmsorg/images/image_03_thumb.jpg" alt="3rd image description" />
+        <img src="++static++/silvatheme.silvacmsorg/images/image_04_thumb.jpg" alt="4th image description" />
+        <img src="++static++/silvatheme.silvacmsorg/images/image_05_thumb.jpg" alt="5th image description" />
+	  </div>
+
+      <div id="gallery">
+	    <div id="panel">
+		  <img id="largeImage" src="++static++/silvatheme.silvacmsorg/images/image_01_large.jpg" />
+		  <div id="description">First image description</div>
+	    </div>
+      </div>
+
     </section>
   </div>
   <div class="tab" id="tab2">

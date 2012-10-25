@@ -23,8 +23,7 @@
 
         <h2>Screenshots content</h2>
         <tal:content tal:content="structure slot:screenshots" />
-      </div>
-    </section>
+     </section>
   </div>
   <div class="tab" id="tab2">
     <h2>Contribute content</h2>

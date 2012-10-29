@@ -4,14 +4,14 @@ html, body {
 }
 
 #community {
-  background: #211D1E;
+  background: #353535;
   color: #E7E7E7;
 }
 
 #community #content {
-  background: #1E1A1B;
+  background: #313131;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  height: 100%;
+  height: 100%; width: 80%;
 }
 
 #community section.right .box {
@@ -24,7 +24,7 @@ html, body {
 }
 
 #community section.right p {
-  padding: 15px;
+  padding: 45px;
 }
 
 /* link settings */

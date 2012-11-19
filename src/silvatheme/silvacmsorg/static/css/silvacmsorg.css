@@ -8,9 +8,9 @@ body {
   background: #FFF;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  margin: 75px auto;
+  margin: 100px auto;
   min-height: 700px;
-  width: 960px;
+  width: 85%;
 }
 
 h3 {
@@ -23,7 +23,7 @@ p, li {
   line-height: 19px;
 }
 
-a {
+a, a:hover, a:focus {
   text-decoration: none;
 }
 
@@ -47,91 +47,20 @@ li {
 ::-selection {background: #E6F8BA;}
 ::-moz-selection {background: #E6F8BA;}
 
-/* -- header settings -- */
 
-header {
-  background-color: #696969;
-    background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#313131));
-    background-image: -webkit-linear-gradient(top, #696969, #313131);
-    background-image: -moz-linear-gradient(top, #696969, #313131);
-    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131');
-    background-image: -o-linear-gradient(top, #696969, #313131);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  height: 60px;
-}
+/* form settings */ 
 
-header a:link, header a:visited, header a:link:hover, header a:visited:hover {
-  color: #FFF;
-  display: block;
-  font-weight: bold;
-  margin: 0;
-  text-decoration: none;
-}
-
-header a:focus {
-  text-decoration: underline;
-}
-
-header img {
-  float: left;
-  margin: 12px 0 0 80px;
-}
-
-header h1 {
-  color: #FFF;
-  float:left;
-  margin: 12px 0 0 20px;
-  text-indent: 0;
-  width: 120px;
-}
-
-header nav {
-  float: left;
-  margin: 0; padding: 0;
-  width: 565px;
-}
-
-header nav li {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  float: left;
-  text-align: center;
-  width: 110px;
-}
-
-header nav li.last {
- border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-header nav li a {
-  padding: 21px 0;
-}
-
-header nav li.selected {
-  background-color: #696969;
-    background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#797979));
-    background-image: -webkit-linear-gradient(top, #696969, #797979);
-    background-image: -moz-linear-gradient(top, #696969, #797979);
-    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#797979');
-    background-image: -o-linear-gradient(top, #696969, #797979);
-}
-
-header nav li:hover {
-  background: #444;
-  color: #FFF;
-}
-
-form {
+form, .headerForm {
   float: right;
-  margin: 18px 30px 0 0;
-  width: 258px;
+  margin-top: 10px;
 }
 
 input[type="submit"] {
-  background-color: #696969;
+  background-color: #696969; 
     background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#797979));
     background-image: -webkit-linear-gradient(top, #696969, #797979);
-    background-image: -moz-linear-gradient(top, #696969, #797979);
-    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#797979');
+    background-image: -moz-linear-gradient(top, #696969, #797979); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#797979');      
     background-image: -o-linear-gradient(top, #696969, #797979);
   border: 1px solid rgba(255,255,255, 0.3);
   border-radius: 8px;
@@ -141,21 +70,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover, input[type="submit"]:focus {
   background: #519A0F;
-}
-
-input.submit {
-  background: #519A0F;
-  margin-top: 5px;
-}
-
-input.cancel {
-  background: #F9F9F9;
-  border: 1px solid #F9F9F9;
-  border-radius: 8px;
-  color: #D83018;
-  font-size: 90%;
-  margin-top: 7px;
-  text-decoration: underline;
 }
 
 input[type="text"] {
@@ -171,14 +85,10 @@ input[type="text"]:focus {
 
 input::-webkit-input-placeholder {color: #A1A1A1;}
 input::-webkit-placeholder:hover {color: #555;}
-input:-moz-placeholder {color: #A1A1A1;}
+input:-moz-placeholder {color: #A1A1A1;}  
 input:-moz-placeholder:hover {color: #555;}
-input:-ms-placeholder {color: #A1A1A1;}
+input:-ms-placeholder {color: #A1A1A1;}  
 input:-ms-placeholder:hover {color: #555;}
-
-div.login-form div.form-actions input.cancel {
-  float: none;
-}
 
 
 /* -- footer settings -- */
@@ -814,11 +724,5 @@ table td {
   font-weight: bold;
   padding: 2px 0;
 }
-
-
-
-
-
-
 
 

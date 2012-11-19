@@ -7,9 +7,9 @@
   </ul>
 </nav>
 
-<div id="tabNav">
+<div id="tabNav" class="row-fluid">
   <div class="tab" id="tab1">
-    <section class="left">
+    <section class="left span8">
 
       <tal:content tal:content="structure slot:contributeboxcontent" />
 
@@ -49,7 +49,7 @@
   </div>
 </div>
 
-<section class="right">
+<section class="right span4">
 
   <div id="searchBox" class="box">
     <form id="searchCommunity" method="get" name="search">

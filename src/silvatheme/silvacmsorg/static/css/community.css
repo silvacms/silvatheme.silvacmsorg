@@ -12,9 +12,19 @@
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 html, body {
+  background-image: url(../images/assault.png);
+  background-color: #333;
+  color: #E7E7E7;
   margin: 0; padding: 0;
   width: 100%;
 }
+
+.bg1 { background-image: url(../images/assault.png); background-color: #333; }
+.bg2 { background-image: url(../images/cream_dust.png); background-color: #5A2A00; color: #2F2B2B;}
+
+.tabsLight {background-color:#F1F1F1 !important; color: #2F2B2B !important; }
+.tabsLight:hover, .tabsLight:focus {text-shadow:none !important; color: #000 !important}
+#current .tabsLight {background-color:#E5E5E5 !important;}
 
 a:link, a:visited {
   color: #FEFEFE;
@@ -25,20 +35,22 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-#community {
-  background-color: #333;
-  background-image: url(../images/assault.png);
-  color: #E7E7E7;
+img {
+  max-width: 100%;
+}
+
+#pippi {
+  float: left;
+  margin: 5px 25px 10px 0;
 }
 
 #community #container {
-    position: relative; /* set to relative for sticky sidebar */ 
+  position: relative; /* set to relative for sticky sidebar */ 
 }
 
 #community #content {
   height: 100%; width: 80%;
   margin: 100px auto 30px auto;
-
 }
 
 /* -- header settings -- */
@@ -96,7 +108,7 @@ input[type="text"]:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #B6A8FF;
 }
 
-#community header .headerForm {
+#community header .headerForm { 
   margin: 10px 10px 0 0;
   float: right;
 }  
@@ -106,7 +118,6 @@ input[type="text"]:focus {
 }
   
 #community .headerForm input[type="text"] {
-  height: 26px;
   vertical-align: top;
 }  
 
@@ -202,7 +213,7 @@ input[type="text"]:focus {
 }
 
 #community section.right .contactCommunity {
-  display: none;
+  display: none;("#content").removeClass('color1').addClass("color2")
 }
 
 /* slideshow styling */
@@ -251,12 +262,34 @@ input[type="text"]:focus {
 .menu { 
  background-color: #464545; 
  border-radius: 6px 0 0 6px;
+ box-shadow: -4px 2px 7px rgba(0, 0, 0, 0.7);
  position:absolute; 
  right: 0; 
  left: auto; 
  margin-top: 200px; padding:10px; 
- min-height: 120px; width: 60px; 
+ width: 52px; 
  top: 60px;
+}
+
+.infoButton {
+  background-image: url("../images/info.png");
+  background-repeat: no-repeat;
+  cursor: pointer; 
+  margin:1px;
+  padding: 5px 10px;
+  position: relative;
+  height: 34px; width: 58px;
+}
+
+.infoText {
+  background-color: #464545; 
+  border-radius: 6px 0 6px 6px;
+  box-shadow: -4px 2px 7px rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  position: absolute;
+  right: 48px;
+  top: 0;
+  width: 250px;
 }
 				
 .transition200 .duration, .transition200 .delay { 
@@ -278,7 +311,16 @@ input[type="text"]:focus {
   margin: 10px 0 0 15px;
 }
 
-#community header #backgroundPicker span { 
+#community header #backgroundPicker ul {
+  display: inline-block; 
+  list-style: none;
+  margin: 0; padding: 0;
+  vertical-align: bottom;
+}
+
+
+#community header #backgroundPicker li { 
+  float: left;
   margin: 0 0 0 4px;
 }
 
@@ -306,7 +348,7 @@ input[type="text"]:focus {
 
 #community #searchCommunity input[type="submit"] {
   float: right;
-  margin: 8px 12px 0 0;
+  margin: 0px 12px 0 0;
 }
 
 #community #searchCommunity input[type="text"] {
@@ -327,6 +369,22 @@ input[type="text"]:focus {
   width: 92%;
 }
 
+input[type="submit"] {
+  background-color: #696969; 
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#797979));
+    background-image: -webkit-linear-gradient(top, #696969, #797979);
+    background-image: -moz-linear-gradient(top, #696969, #797979); 
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#797979');      
+    background-image: -o-linear-gradient(top, #696969, #797979);
+  border: 1px solid rgba(255,255,255, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background: #519A0F;
+}
 
 /* styles for dropdownNav - display: none when > 480px - */ 
 
@@ -365,6 +423,26 @@ header #dropdownNav {
      
 .dropdown-menu li a:hover, .dropdown-menu li a:focus {
     background: #626262;
+}
+
+/* -- footer settings -- */
+
+footer {
+  background-color: #1D1E21;
+  border-top: 1px solid #3A3A3A;
+  color: #CDCDCD;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  clear: both;
+}
+
+footer a:link, footer a:visited {
+  color: #CDCDCD;
+}
+
+footer #legal {
+  padding-top: 20px;
 }
 
 /* -- media queries -- */ 
@@ -473,6 +551,11 @@ header #dropdownNav {
 
 #community #tabNav section {
   margin-top: 25px;
+}
+
+
+#pippi {
+  width: 34%;
 }
 
 }

@@ -12,6 +12,8 @@ from silva.fanstatic import need
 
 from silvatheme.infraecommon import ITypography
 
+from js.jquery import jquery
+
 from five import grok
 
 
@@ -34,6 +36,22 @@ silvaconf.layer(ISilvaCmsOrg)
 
 class Navigation(porto.Navigation):
     max_depth = 1
+
+
+class IAboutResources(IDefaultBrowserLayer, ISilvaCmsOrg):
+   silvaconf.resource('slidorion/css/slidorion.css')
+   silvaconf.resource(jquery)
+   silvaconf.resource('slidorion/js/jquery.easing.js')
+   silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
+
+
+class ICommunityResources(IDefaultBrowserLayer, ISilvaCmsOrg):
+   silvaconf.resource('css/bootstrap.min.css')
+   silvaconf.resource('css/slideshow.css')
+   silvaconf.resource('css/community.css')
+   silvaconf.resource(jquery)
+   silvaconf.resource('js/slideshow.js')
+   silvaconf.resource('js/community.js')
 
 
 class Layout(porto.Layout):
@@ -70,21 +88,6 @@ class Favicon(porto.Favicon):
     pass
 
 
-class IAboutResources(IDefaultBrowserLayer):
-   silvaconf.resource('slidorion/css/slidorion.css')
-   silvaconf.resource('slidorion/js/jquery.min.js')
-   silvaconf.resource('slidorion/js/jquery.easing.js')
-   silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
-
-class ICommunityResources(IDefaultBrowserLayer):
-   silvaconf.resource('css/bootstrap.min.css')
-   silvaconf.resource('css/slideshow.css')
-   silvaconf.resource('css/community.css')
-   silvaconf.resource('js/jquery.min.js')
-   silvaconf.resource('js/slideshow.js')
-   silvaconf.resource('js/community.js')
-
-
 class Home(Design):
    grok.name('home')
    grok.title('Home')
@@ -115,6 +118,7 @@ class About(Design):
    def update(self):
        self.title = self.content.get_title_or_id()
        need(IAboutResources)
+
 
 class Support(Design):
    grok.name('support')
@@ -148,6 +152,7 @@ class Download(Design):
    def update(self):
        self.title = self.content.get_title_or_id()
 
+
 class Community(Design):
    grok.name('community')
    grok.title('community')
@@ -168,4 +173,3 @@ class Community(Design):
    def update(self):
        self.title = self.content.get_title_or_id()
        need(ICommunityResources)
-

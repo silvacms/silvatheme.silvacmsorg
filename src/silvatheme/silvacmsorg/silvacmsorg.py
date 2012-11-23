@@ -20,6 +20,7 @@ class ISilvaCmsOrg(ITypography, IPorto):
     """
 
     silvaconf.resource('css/silvacmsorg.css')
+    silvaconf.resource('js/community.js')
 
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):
@@ -82,7 +83,6 @@ class ICommunityResources(IDefaultBrowserLayer):
    silvaconf.resource('css/community.css')
    silvaconf.resource('js/jquery.min.js')
    silvaconf.resource('js/slideshow.js')
-   silvaconf.resource('js/community.js')
 
 
 class Home(Design):

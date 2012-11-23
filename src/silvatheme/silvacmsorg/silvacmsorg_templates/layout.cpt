@@ -1,20 +1,20 @@
 <div id="container">
   <header>
         <div id="backgroundPicker">
-        Pick a theme:
-          <span><a class="selected">Dark</a></span>
-          <span><a>Light</a></span>
-        </div> 
+        Theme:
+          <ul>
+            <li id="dark"><a>Dark</a></li>
+            <li id="light"><a>Light</a></li>
+          </ul>			
+		    </div> 
         <div class="headerForm">
-          <input id="toggleBar" placeholder="Search the Silva CMS site..." type="text"/>
+          <input id="toggleBar" placeholder="Search the Silva CMS site" type="text"/>
           <button id="toggleButton" type="submit"><img src="images/search.png"></button>
         </div>                     
   
       <div id="heading" class="row-fluid"> 
         <div class="title span3 offset1">
         <a tal:attributes="href layout.root_url">
-          <img class="logo" alt="Silva logo"
-               tal:attributes="src path:static/images/silva.png" />
             <h1>Silva</h1>
         </a>
         </div>
@@ -54,6 +54,16 @@
          tal:content="structure view.content()">
       Silva Content
     </div>
+    
+      <!-- sticky sidebar -->
+    <div class="menu menu2">
+        <p class="infoButton"></p>
+        <div class="infoText">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit orem ipsum dolor sit amet, consectetuer adipiscing elit
+          consectetuer adipiscing elit orem ipsum! Consectetuer adipiscing elit orem ipsum!
+        </div>
+		</div>
+    
   </div>
   <!-- end content -->
 

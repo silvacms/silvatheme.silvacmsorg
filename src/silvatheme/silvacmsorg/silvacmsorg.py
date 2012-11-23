@@ -21,6 +21,7 @@ class ISilvaCmsOrg(ITypography, IPorto):
 
     silvaconf.resource('css/silvacmsorg.css')
 
+
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):
     """Skin for SilvaCMS.org theme
     """
@@ -76,6 +77,7 @@ class IAboutResources(IDefaultBrowserLayer):
    silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
 
 class ICommunityResources(IDefaultBrowserLayer):
+   silvaconf.resource('css/bootstrap.min.css')
    silvaconf.resource('css/slideshow.css')
    silvaconf.resource('css/community.css')
    silvaconf.resource('js/jquery.min.js')

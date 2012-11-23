@@ -17,7 +17,6 @@
       {
         $(this).next(".infoText").slideToggle('slow');
       });
-    });
     
       $("#toggleButton").click(function () {
       $("#toggleBar").toggle('slow');

@@ -15,12 +15,10 @@ html, body {
   background-image: url(../images/assault.png) !important;
   background-color: #333 !important;
   color: #E7E7E7;
-  margin: 0; padding: 0;
-  width: 100%;
 }
 
 .bg1 { background-image: url(../images/assault.png); background-color: #333; }
-.bg2 { background-image: url(../images/cream_dust.png); background-color: #5A2A00; color: #2F2B2B;}
+.bg2 { background-image: url(../images/cream_dust.png) !important; background-color: #5A2A00 !important; color: #2F2B2B !important;}
 
 .tabsLight {background-color:#F1F1F1 !important; color: #2F2B2B !important; }
 .tabsLight:hover, .tabsLight:focus {text-shadow:none !important; color: #000 !important}
@@ -198,7 +196,7 @@ input[type="text"]:focus {
 #community #tab1 section.left h1 {
   border-bottom: 1px solid #B2DB24;
   font-family: 'Sansation', Arial, Helvetica, Verdana, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 #community #tab1 section.left .box p {
@@ -238,8 +236,7 @@ input[type="text"]:focus {
 #thumbs img {
   cursor: pointer;
   float: left;
-  margin-bottom: 10px;
-  padding: 0 5px;
+  margin: 0 6px 8px 4px; padding: 2px;
   width: 20%;
 }
 

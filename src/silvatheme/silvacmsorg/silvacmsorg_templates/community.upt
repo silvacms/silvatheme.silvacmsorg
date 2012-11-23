@@ -8,6 +8,7 @@
 </nav>
 
 <div id="tabNav" class="row-fluid">
+  
   <div class="tab" id="tab1">
     <section class="left span8">
 
@@ -28,14 +29,15 @@
 	  </div>
 
       <div id="gallery">
-	    <div id="panel">
-		  <img id="largeImage" src="++static++/silvatheme.silvacmsorg/images/image_01_large.jpg" />
-		  <div id="description">First image description</div>
-	    </div>
+	      <div id="panel">
+		      <img id="largeImage" src="++static++/silvatheme.silvacmsorg/images/image_01_large.jpg" />
+		      <div id="description">First image description</div>
+	      </div>
       </div>
 
     </section>
   </div>
+  
   <div class="tab" id="tab2">
     <tal:content tal:content="structure slot:contributecontent" />
   </div>
@@ -47,7 +49,6 @@
   <div class="tab" id="tab4">
     <tal:content tal:content="structure slot:silvairccontent" />
   </div>
-</div>
 
 <section class="right span4">
 
@@ -66,4 +67,5 @@
 
 </section>
 
+</div>
 

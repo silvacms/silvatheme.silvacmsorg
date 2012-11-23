@@ -20,9 +20,9 @@ html, body {
 .bg1 { background-image: url(../images/assault.png); background-color: #333; }
 .bg2 { background-image: url(../images/cream_dust.png) !important; background-color: #5A2A00 !important; color: #2F2B2B !important;}
 
-.tabsLight {background-color:#F1F1F1 !important; color: #2F2B2B !important; }
-.tabsLight:hover, .tabsLight:focus {text-shadow:none !important; color: #000 !important}
-#current .tabsLight {background-color:#E5E5E5 !important;}
+.tabsLight {background-color:#F1F1F1; color: #2F2B2B; }
+.tabsLight:hover, .tabsLight:focus {text-shadow:none; color: #000;}
+#current .tabsLight {background-color:#E5E5E5}
 
 a:link, a:visited {
   color: #FEFEFE;
@@ -93,10 +93,6 @@ img {
 
 #community header nav ul li.selected {
   border-bottom: 2px solid #B2DB24; 
-}
-
-#community header nav ul li a {
-  font-weight: bold;
 }
 
 #community header nav li a:hover, header nav li a:focus {
@@ -236,7 +232,7 @@ input[type="text"]:focus {
 #thumbs img {
   cursor: pointer;
   float: left;
-  margin: 0 6px 8px 4px; padding: 2px;
+  margin: 0 0 6px 0; padding: 1px;
   width: 20%;
 }
 
@@ -254,7 +250,7 @@ input[type="text"]:focus {
   position: absolute;
   bottom: 14px; 
   padding: 10px 21px;
-  width: 100%;
+  width: 98%;
 }
 
 /* sticky nav settings */ 

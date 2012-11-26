@@ -17,12 +17,15 @@ html, body {
   color: #E7E7E7;
 }
 
-.bg1 { background-image: url(../images/assault.png); background-color: #333; }
-.bg2 { background-image: url(../images/cream_dust.png); background-color: #5A2A00; color: #2F2B2B;}
-
-.tabsLight {background-color:#F1F1F1; color: #2F2B2B; }
-.tabsLight:hover, .tabsLight:focus {text-shadow:none; color: #000;}
-#current .tabsLight {background-color:#E5E5E5}
+.bg1 { 
+  background-image: url(../images/assault.png); 
+  background-color: #333;
+}
+.bg2 { 
+  background-image: url(../images/cream_dust.png) !important; 
+  background-color: #F4F4F4 !important; 
+  color: #2F2B2B !important; 
+}
 
 a:link, a:visited {
   color: #FEFEFE;
@@ -37,11 +40,6 @@ img {
   max-width: 100%;
 }
 
-#pippi {
-  float: left;
-  margin: 5px 25px 10px 0;
-}
-
 #community #container {
   position: relative; /* set to relative for sticky sidebar */
 }
@@ -49,9 +47,9 @@ img {
 #community #content {
   background-image: url(../images/assault.png);
   background-color: #333;
+  box-shadow: none;
   height: 100%; width: 80%;
   margin: 100px auto 30px auto;
-  box-shadow: none;
 }
 
 /* content styling */ 
@@ -60,7 +58,7 @@ img {
 
 #community #content nav {
   border-bottom: 1px solid #464646;
-  height: 33px;
+  height: 34px;
 }
 
 #community #tabs {
@@ -201,6 +199,7 @@ img {
 .infoButton {
   background-image: url("../images/info.png");
   background-repeat: no-repeat;
+  background-position: 1px 0px; 
   cursor: pointer;
   margin:1px;
   padding: 5px 10px;
@@ -258,6 +257,16 @@ img {
   color: #FEFEFE;
   cursor: pointer;
   margin-right: 4px; padding: 1px 4px; 
+}
+
+#community header #backgroundPicker li#dark a:hover, 
+#community header #backgroundPicker li#dark a:focus {
+  background-color: #333232;
+}
+
+#community header #backgroundPicker li#light a:hover, 
+#community header #backgroundPicker li#light a:focus {
+  background-color: #A3A2A2;
 }
 
 #community header #backgroundPicker a.selected {
@@ -481,7 +490,7 @@ footer #legal {
 @media only screen and (max-width: 767px) {
 
 #community #tabNav section {
-  margin-top: 25px;
+  margin-top: 0;
 }
 
 

@@ -23,19 +23,12 @@
     });
     
       $("#dark").click( function(){ $
-		  ("body").removeClass('bg2').addClass("bg1");
+		  ("section").removeClass('bg2').addClass("bg1");
 
 	  });
 
 	    $("#light").click( function(){ $
-		  ("body").removeClass("bg1").addClass("bg2");
-	  });
-
-	    $("#light").click( function(){ $
-		  ("#community #tabs li a").addClass("tabsLight")
-	  });
-	  $("#dark").click( function(){ $
-		  ("#community #tabs li a").removeClass("tabsLight")
+		  ("section").removeClass("bg1").addClass("bg2");
 	  });
 	  
 	  (function($){

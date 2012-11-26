@@ -60,19 +60,23 @@ li {
 
 /* -- header settings -- */
 
-#community header {
+header {
   background-color: #1D1E21;
   border-bottom: 1px solid #5B5B5B;
   height: 90px;
 }
 
-#community header #heading {
+header #heading {
   padding-top: 18px;
+}
+
+header #backgroundPicker {
+  display: none;
 }
 
 /* title settings */
 
-#community header h1 {
+header h1 {
   font-family: 'Sansation', Arial, Helvetica, Verdana, sans-serif;
   line-height: 15px;
 }

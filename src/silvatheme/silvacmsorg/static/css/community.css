@@ -1,4 +1,4 @@
-html, body {
+body {
   background-image: url(../images/assault.png);
   background-color: #333;
   color: #E7E7E7;
@@ -40,7 +40,7 @@ html, body {
   margin: 0 auto;
 }
 
-#tabs li a {
+#tabs li a:link, #tabs li a:visited {
   background: #2F2B2C;
   border-top: 1px solid #464646;
   border-right: 1px solid #464646;
@@ -66,8 +66,9 @@ html, body {
 
 #tabs li a:hover, #tabs li a:focus,
 #tabs li#current a:hover, #tabs li#current a:focus {
-  color: #C4ED36;
+  color: #C4ED36 !important;
   text-shadow: 0px 0px 7px #98DB32;
+  tex-decoration: none; 
 }
 
 /* tab content settings */
@@ -233,14 +234,9 @@ header #backgroundPicker a {
   margin-right: 4px; padding: 1px 4px; 
 }
 
-li#dark a:hover, 
-li#dark a:focus {
+#backgroundPicker li a:hover, 
+#backgroundPicker li a:focus {
   background-color: #333232;
-}
-
-li#light a:hover, 
-li#light a:focus {
-  background-color: #7F7E7E;
 }
 
 header #backgroundPicker a.selected {

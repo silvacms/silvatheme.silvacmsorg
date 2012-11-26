@@ -30,10 +30,6 @@ h3 {
   font-size: 125%;
 }
 
-p {
-  font-size: 0.9em;
-}
-
 p, li {
   line-height: 19px;
 }
@@ -62,6 +58,74 @@ li {
 ::-selection {background: #E6F8BA;}
 ::-moz-selection {background: #E6F8BA;}
 
+/* -- header settings -- */
+
+#community header {
+  background-color: #1D1E21;
+  border-bottom: 1px solid #5B5B5B;
+  height: 90px;
+}
+
+#community header #heading {
+  padding-top: 18px;
+}
+
+/* title settings */
+
+#community header h1 {
+  font-family: 'Sansation', Arial, Helvetica, Verdana, sans-serif;
+  line-height: 15px;
+}
+
+/* header navigation settings */
+
+header nav {
+  margin-top: 15px;
+  padding-right: 70px;
+}
+
+header nav ul {
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+header nav ul li.selected {
+  border-bottom: 2px solid #B2DB24;
+}
+
+header nav li a:hover, header nav li a:focus {
+  color: #B2DB24;
+}
+
+/* search settings */
+
+input[type="text"]:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #B6A8FF;
+}
+
+header .headerForm {
+  margin: 10px 10px 0 0;
+  float: right;
+}
+
+header .headerForm #toggleBar {
+  display: none;
+}
+
+.headerForm input[type="text"] {
+  vertical-align: top;
+}
+
+  background: none;
+  border: none;
+  padding-top: 4px;
+}
 
 /* form settings */ 
 

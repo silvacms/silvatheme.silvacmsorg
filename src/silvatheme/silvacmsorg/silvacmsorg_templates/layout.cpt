@@ -9,7 +9,7 @@
 		    </div> 
         <div class="headerForm">
           <input id="toggleBar" placeholder="Search the Silva CMS site" type="text"/>
-          <button id="toggleButton" type="submit"><img src="../static/images/search.png"></button>
+          <button id="toggleButton" type="submit"><img src=""++static++/silvatheme.silvacmsorg/images/search.png"></button>
         </div>                     
   
       <div id="heading" class="row-fluid"> 

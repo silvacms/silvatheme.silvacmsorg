@@ -9,9 +9,7 @@
 		    </div> 
         <div class="headerForm">
           <input id="toggleBar" placeholder="Search the Silva CMS site" type="text"/>
-          <button id="toggleButton" type="submit">
-            <img src="++static++/silvatheme.silvacmsorg/images/search.png" alt="search">
-          </button>
+          <button id="toggleButton" type="submit"></button>
         </div>                     
   
       <div id="heading" class="row-fluid"> 
@@ -20,7 +18,7 @@
             <h1>Silva</h1>
         </a>
         </div>
-        <nav class="8">
+        <nav class="span8">
           <ul>
             <li tal:repeat="publication provider.top_menu_items()"
                 tal:attributes="class provider.current_publication_class(publication)">

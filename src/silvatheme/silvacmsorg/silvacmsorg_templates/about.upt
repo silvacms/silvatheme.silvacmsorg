@@ -1,8 +1,12 @@
+<nav>
+  <ul>
+    <li><a class="selected" href="#">About Silva</a></li>
+    <li><a href="features.html">Core features</a></li>
+    <li><a href="#">Get involved</a></li>
+    <li><a href="#">Something</a></li>
+  </ul>
+</nav> 
+
 <div id="silvacontent">
   <tal:content tal:content="structure slot:aboutcontent" />
 </div>
-
-<aside>
-  <tal:news tal:content="structure slot:news" />
-</aside>
-

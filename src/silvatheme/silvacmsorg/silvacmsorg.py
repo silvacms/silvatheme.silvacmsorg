@@ -23,6 +23,7 @@ class ISilvaCmsOrg(ITypography, IPorto):
 
     silvaconf.resource('css/bootstrap.min.css')
     silvaconf.resource('css/silvacmsorg.css')
+    silvaconf.resource('js/silvacmsorg.js')
 
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):

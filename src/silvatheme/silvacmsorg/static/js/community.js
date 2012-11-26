@@ -18,10 +18,6 @@
         $(this).next(".infoText").slideToggle('slow');
       });
     
-      $("#toggleButton").click(function () {
-      $("#toggleBar").toggle('slow');
-    });
-    
       $("#dark").click( function(){ $
 		  ("section").removeClass('bg2').addClass("bg1");
 
@@ -29,6 +25,14 @@
 
 	    $("#light").click( function(){ $
 		  ("section").removeClass("bg1").addClass("bg2");
+	  });
+	  
+	    $("#light").click( function(){ $
+		  ("content").addClass("bgGreen");
+	  });
+	  
+	    $("#light").click( function(){ $
+		  ("body").addClass("bgGreen");
 	  });
 	  
 	  (function($){

@@ -20,7 +20,6 @@
     
       $("#dark").click( function(){ $
 		  ("section").removeClass('bg2').addClass("bg1");
-
 	  });
 
 	    $("#light").click( function(){ $
@@ -34,6 +33,10 @@
 	    $("#light").click( function(){ $
 		  ("body").addClass("bgGreen");
 	  });
+	  
+	   $("#toggleButton").click(function () {
+     $("#toggleBar").toggle('slow');
+  });
 	  
 	  (function($){
 	  var doc	= $(document),

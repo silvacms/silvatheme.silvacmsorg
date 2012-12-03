@@ -1,7 +1,3 @@
-<!--[if lt IE 9]>
-  <script src="++static++/silvatheme.silvacmsorg/js/css3-mediaqueries.js"></script>
-<![endif]-->
-
 <nav>
   <ul id="tabs">
     <li><a href="#" title="tab1">Community</a></li>

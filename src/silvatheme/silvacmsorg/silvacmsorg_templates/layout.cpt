@@ -5,14 +5,14 @@
           <ul>
             <li id="dark"><a>Dark</a></li>
             <li id="light"><a>Light</a></li>
-          </ul>			
-		    </div> 
+          </ul>
+		    </div>
         <div class="headerForm">
           <input id="toggleBar" placeholder="Search the Silva CMS site" type="text"/>
           <button id="toggleButton" type="submit"></button>
-        </div>                     
-  
-      <div id="heading" class="row-fluid"> 
+        </div>
+
+      <div id="heading" class="row-fluid">
         <div class="title span3 offset1">
         <a tal:attributes="href layout.root_url">
             <h1>Silva</h1>
@@ -54,7 +54,7 @@
          tal:content="structure view.content()">
       Silva Content
     </div>
-    
+
       <!-- sticky sidebar -->
     <div class="menu menu2">
         <p class="infoButton"></p>
@@ -63,7 +63,7 @@
           consectetuer adipiscing elit orem ipsum! Consectetuer adipiscing elit orem ipsum!
         </div>
 		</div>
-    
+
   </div>
   <!-- end content -->
 

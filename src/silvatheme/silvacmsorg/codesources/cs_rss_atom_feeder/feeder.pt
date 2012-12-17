@@ -1,0 +1,32 @@
+<!-- RSS/Atom Feeder code source -->
+<div class="align-right info plot"
+  tal:define="
+    heading        options/headingfield;
+    container      context/aq_parent/get_container;
+    containerurl   container/absolute_url;
+    containertitle container/get_title;
+">
+<h3>
+  <a title="Subscribe to a RSS/Atom feed"
+     tal:attributes="href string:$containerurl/rss.xml">
+  <img style="margin-right:3px" src="++static++/silvatheme.silvacmsorg/images/rss.png" alt="feed icon" height="16" width="16" />
+  </a>
+  <tal:inc tal:content="structure python:heading and heading or default">
+    Atom/<abbr title="Rich Site Summary">RSS</abbr> feed
+  </tal:inc>
+</h3>
+<p>
+  Subscribe to a
+  <a tal:attributes="
+    href string:$containerurl/rss.xml;
+    title string:$containertitle RSS feed;
+  ">RSS</a>
+  or
+  <a tal:attributes="
+    href string:$containerurl/atom.xml;
+    title string:$containertitle Atom feed;
+  ">Atom</a>
+  feed of the <tal:ins tal:replace="containertitle" /> packages.
+</p>
+</div>
+<!-- End RSS/Atom Feeder code source -->

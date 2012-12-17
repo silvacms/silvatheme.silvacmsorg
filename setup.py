@@ -32,7 +32,12 @@ setup(name='silvatheme.silvacmsorg',
           'silva.core.conf',
           'silva.core.interfaces',
           'silva.core.layout',
+          'silva.app.news',
           'silvatheme.infraecommon',
           'zope.cachedescriptors',
       ],
+      entry_points="""
+      [Products.SilvaExternalSources.sources]
+      defaults = silvatheme.silvacmsorg.codesources
+      """,
       )

@@ -9,7 +9,7 @@
   <enctype></enctype>
   <encoding>UTF-8</encoding>
   <stored_encoding>ISO-8859-1</stored_encoding>
-  <unicode_mode>false</unicode_mode>
+  <unicode_mode>true</unicode_mode>
   <i18n_domain></i18n_domain>
   <groups>
     <group>

@@ -1,10 +1,11 @@
 <!-- RSS/Atom Feeder code source -->
 <div class="align-right info plot"
   tal:define="
+    view           here;
     heading        options/headingfield;
-    container      context/aq_parent/get_container;
-    containerurl   container/absolute_url;
-    containertitle container/get_title;
+    container      python: context.aq_parent.get_container();
+    containerurl   python: container.absolute_url;
+    containertitle python: container.get_title;
 ">
 <h3>
   <a title="Subscribe to a RSS/Atom feed"

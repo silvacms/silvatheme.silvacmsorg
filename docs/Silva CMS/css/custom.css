@@ -13,6 +13,12 @@ body {
   width: 960px;
 }
 
+h1, h2, h3 {
+  font-family: 'Sansation', Arial, Helvetica, Verdana, sans-serif;
+  font-size: 1.1em;
+  line-height: 20px;
+}
+
 h3 {
   border-bottom: 1px solid #E3E3E3;
   color: #007500;
@@ -23,8 +29,17 @@ p, li {
   line-height: 19px;
 }
 
-a {
+a:link, a:visited {
+  color: #FEFEFE;
+  cursor: pointer;
+}
+
+a:link, a:visited, a:hover, a:focus {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 li {
@@ -71,11 +86,11 @@ header a:link, header a:visited, header a:link:hover, header a:visited:hover {
 header a:focus {
   text-decoration: underline;
 }
-
 header img {
   float: left;
   margin: 12px 0 0 80px;
 }
+/* title settings */
  
 header h1 {
   color: #FFF;
@@ -84,6 +99,7 @@ header h1 {
   text-indent: 0;
   width: 120px;
 }
+/* header navigation settings */
 
 header nav {  
   float: left;
@@ -779,15 +795,85 @@ table td {
 
 
 
+/* -- login page -- */ 
+
+.silva-content div.login-form {
+  margin-left: 100px;
+  padding-top: 50px;
+  height: 100px;
+}
+
+.silva-content div.login-form div.form-title {
+  font-weight: normal; 
+}
+
+.silva-content div.login-form div.form-label {
+  font-weight: bold;
+  padding: 2px 0;
+}
+
+/* search settings */
+
+input[type="text"]:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #B6A8FF;
+}
+
+/* removed selectors after merge with custom.css */
+
+/*
+@font-face {
+	font-family: 'Sansation';
+	src: url('../fonts/Sansation-fontfacekit/Sansation_Regular-webfont.eot');
+	src: local('â˜º'), 
+	url('../fonts/Sansation-fontfacekit/Sansation_Regular-webfont.woff') format('woff'), 
+	url('../fonts/Sansation-fontfacekit/Sansation_Regular-webfont.ttf') format('truetype'), 
+	url('../fonts/Sansation-fontfacekit/Sansation_Regular-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body  { 
+  margin: 0; padding: 0;
+  width: 100%;
+}
+
+header #backgroundPicker {
+  display: none;
+}
+
+
+header nav ul {
+  float: right;
+}
+
+header .headerForm {
+  margin: 10px 10px 0 0;
+  float: right;
+}
+
+header .headerForm #toggleBar {
+  display: none;
+}
+
+.headerForm input[type="text"] {
+  vertical-align: top;
+}
+
+.headerForm button[type="submit"] {
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat; 
+  background-position: 0px 0px; 
+  background-color: #1D1E21;
+  border: none;
+  padding-top: 4px;
+  height: 18px; width: 18px; 
+}
 
 
 
-
-
-
-
-
-
-
-
-
+header #dropdownNav {
+  display: none;
+}
+*/

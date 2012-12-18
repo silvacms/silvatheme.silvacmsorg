@@ -76,6 +76,10 @@ class Layout(porto.Layout):
         return ''
 
 
+class AboutLayout(Layout):
+    pass
+
+
 class Favicon(porto.Favicon):
     """Declare that we have a favicon for this layer.
 

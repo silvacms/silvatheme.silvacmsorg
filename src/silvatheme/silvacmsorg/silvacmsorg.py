@@ -98,8 +98,7 @@ class Home(Design):
        'screenshots': Slot(css_class='screenshots'),
        'boxfirst': Slot(css_class='box'),
        'boxsecond': Slot(css_class='box'),
-       'boxthird': Slot(css_class='box'),
-       'morefeatures': Slot(css_class='more-features')}
+       'boxthird': Slot(css_class='box')}
 
    def update(self):
        self.title = self.content.get_title_or_id()

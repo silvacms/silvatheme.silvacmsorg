@@ -1,21 +1,28 @@
 <div id="silvacontent">
+
+  <!-- tab navigation -->
   <nav>
     <ul>
       <li><a class="selected" href="#">About Silva</a></li>
-      <li><a href="features.html">Core features</a></li>
+      <li><a href="#">Core features</a></li>
       <li><a href="#">Get involved</a></li>
       <li><a href="#">Something</a></li>
     </ul>
   </nav>
-
+  <!-- content slots -->
   <tal:content tal:content="structure slot:aboutcontent" />
+  <tal:content tal:content="structure slot:featurescontent" />
+  <tal:content tal:content="structure slot:involvedcontent" />
+  <tal:content tal:content="structure slot:somethingcontent" />
 
+  <!-- news slot -->
   <aside>
-    <h1>News</h1>
+    <!--<h1>News</h1>
     <h2>What's up</h2>
     <p>Something about what has been happening with Silva.</p>
     <h2>What's up</h2>
-    <p>And another interesting news fact.</p>
+    <p>And another interesting news fact.</p>-->
+    <tal:content tal:content="structure slot:news" />
   </aside>
 
 </div>

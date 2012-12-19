@@ -75,7 +75,7 @@ class Layout(porto.Layout):
         return ''
 
 
-class AboutLayout(Layout):
+class CommunityLayout(Layout):
     pass
 
 
@@ -115,6 +115,9 @@ class About(Design):
 
    slots = {
        'aboutcontent': Slot(css_class='about-content'),
+       'featurescontent': Slot(css_class='features-content'),
+       'involvedcontent': Slot(css_class='involved-content'),
+       'somethingcontent': Slot(css_class='something-content'),
        'news': Slot(css_class='silva-news')}
 
    def update(self):

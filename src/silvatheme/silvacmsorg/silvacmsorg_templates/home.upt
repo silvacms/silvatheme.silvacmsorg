@@ -3,8 +3,8 @@
 
   <!- xxx should these become content and how if so? -->
   <div id="buttons">
-    <a title="Experience Silva" href="download.html" id="download_button">Download Silva</a>
-    <a title="Experience Silva" href="#" id="demo_button">Try the demo</a>
+    <a title="Experience Silva" href="http://silvacms.org/download" id="download_button">Download Silva</a>
+    <a title="Experience Silva" href="http://demo30.silvacms.org" id="demo_button">Try the demo</a>
   </div>
 
 </div>

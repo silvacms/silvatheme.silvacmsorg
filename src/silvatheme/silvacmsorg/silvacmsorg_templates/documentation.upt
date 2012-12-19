@@ -1,0 +1,43 @@
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="selected">Documentation for users</a>
+              </li>
+            <li>
+              <a href="#">Documentation for developers</a>
+            </li>
+            <li>
+              <a href="#">Tutorials</a>
+            </li>
+          </ul>
+        </nav>
+
+<section id="users">
+
+  <!-- slot with actual content -->
+  <tal:content tal:content="structure slot:slotone" />
+
+  <!-- slot with the toc for navigation -->
+  <tal:content tal:content="structure slot:slottwo" />
+
+</section>
+
+<section id="developer">
+
+  <!-- slot with actual content -->
+  <tal:content tal:content="structure slot:slotthree" />
+
+  <!-- slot with the toc for navigation -->
+  <tal:content tal:content="structure slot:slotfour" />
+
+</section>
+
+<section id="tutorials">
+
+  <!-- slot with actual content -->
+  <tal:content tal:content="structure slot:slotfive" />
+
+  <!-- slot with the toc for navigation -->
+  <tal:content tal:content="structure slot:slotsix" />
+
+</section>

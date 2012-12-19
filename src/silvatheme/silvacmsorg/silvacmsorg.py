@@ -142,6 +142,23 @@ class Support(Design):
        self.title = self.content.get_title_or_id()
 
 
+class Documentation(Design):
+   grok.name('documentation')
+   grok.title('Documentation')
+   grok.context(IPage)
+
+   slots = {
+       'slotone': Slot(css_class='slot-one'),
+       'slottwo': Slot(css_class='slot-two'),
+       'slotthree': Slot(css_class='slot-three'),
+       'slotfour': Slot(css_class='slot-four'),
+       'slotfive': Slot(css_class='slot-five'),
+       'slotsix': Slot(css_class='slot-six')}
+
+   def update(self):
+       self.title = self.content.get_title_or_id()
+
+
 class Download(Design):
    grok.name('download')
    grok.title('Download')
@@ -160,7 +177,7 @@ class Download(Design):
 
 class Community(Design):
    grok.name('community')
-   grok.title('community')
+   grok.title('Community')
    grok.context(IPage)
 
    slots = {

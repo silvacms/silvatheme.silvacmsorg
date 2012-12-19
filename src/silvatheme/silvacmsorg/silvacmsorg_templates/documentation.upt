@@ -1,43 +1,39 @@
-        <nav>
-          <ul>
-            <li>
-              <a href="#" class="selected">Documentation for users</a>
-              </li>
-            <li>
-              <a href="#">Documentation for developers</a>
-            </li>
-            <li>
-              <a href="#">Tutorials</a>
-            </li>
-          </ul>
-        </nav>
+<nav>
+  <ul>
+    <li>
+      <a href="#" class="selected">Documentation for users</a>
+    </li>
+    <li>
+      <a href="#">Documentation for developers</a>
+    </li>
+    <li>
+      <a href="#">Tutorials</a>
+    </li>
+  </ul>
+</nav>
 
 <section id="users">
-
   <!-- slot with the toc for navigation -->
-  <tal:content tal:content="structure slot:two" />
+  <div id="navcontainer">
+    <tal:content tal:content="structure slot:two" />
+  </div>
 
   <!-- slot with actual content -->
   <tal:content tal:content="structure slot:one" />
-
 </section>
 
 <section id="developer">
-
   <!-- slot with actual content -->
   <tal:content tal:content="structure slot:three" />
 
   <!-- slot with the toc for navigation -->
   <tal:content tal:content="structure slot:four" />
-
 </section>
 
 <section id="tutorials">
-
   <!-- slot with actual content -->
   <tal:content tal:content="structure slot:five" />
 
   <!-- slot with the toc for navigation -->
   <tal:content tal:content="structure slot:six" />
-
 </section>

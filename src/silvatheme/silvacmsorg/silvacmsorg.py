@@ -41,10 +41,7 @@ class Navigation(porto.Navigation):
 
 
 class IAboutResources(IDefaultBrowserLayer, ISilvaCmsOrg):
-   silvaconf.resource('slidorion/css/slidorion.css')
-   silvaconf.resource(jquery)
-   silvaconf.resource('slidorion/js/jquery.easing.js')
-   silvaconf.resource('slidorion/js/jquery.slidorion.min.js')
+    pass
 
 
 class ICommunityResources(IDefaultBrowserLayer, ISilvaCmsOrg):

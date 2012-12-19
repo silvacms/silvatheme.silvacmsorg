@@ -14,11 +14,11 @@
 
 <section id="users">
 
-  <!-- slot with actual content -->
-  <tal:content tal:content="structure slot:one" />
-
   <!-- slot with the toc for navigation -->
   <tal:content tal:content="structure slot:two" />
+
+  <!-- slot with actual content -->
+  <tal:content tal:content="structure slot:one" />
 
 </section>
 

@@ -21,7 +21,8 @@ class ISilvaCmsOrg(ITypography, IPorto):
     """Layer for SilvaCMS.org theme
     """
 
-    silvaconf.resource('css/bootstrap.min.css')
+    silvaconf.resource('css/html5reset.css')
+    silvaconf.resource('css/typography.css')
     silvaconf.resource('css/silvacmsorg.css')
 
 
@@ -47,6 +48,7 @@ class IAboutResources(IDefaultBrowserLayer, ISilvaCmsOrg):
 
 
 class ICommunityResources(IDefaultBrowserLayer, ISilvaCmsOrg):
+   silvaconf.resource('css/bootstrap.min.css')
    silvaconf.resource('css/slideshow.css')
    silvaconf.resource('css/community.css')
    silvaconf.resource(jquery)

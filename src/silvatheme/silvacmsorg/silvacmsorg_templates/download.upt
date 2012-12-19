@@ -15,9 +15,9 @@
   <section>
     <tal:third tal:content="structure slot:boxthird" />
   </section>
+</div>
 <div id="releases">
   <tal:content tal:content="structure slot:releasescontent" />
-</div>
 </div>
 
 

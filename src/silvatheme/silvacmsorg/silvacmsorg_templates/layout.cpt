@@ -25,7 +25,7 @@
   <!-- end header -->
 
   <!-- start content -->
-  <div id="content">
+  <div id="content" class="clearfix">
     <div class="silva-content"
          tal:content="structure view.content()">
       Silva Content

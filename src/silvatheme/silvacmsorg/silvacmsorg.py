@@ -148,12 +148,12 @@ class Documentation(Design):
    grok.context(IPage)
 
    slots = {
-       'slotone': Slot(css_class='one'),
-       'slottwo': Slot(css_class='two'),
-       'slotthree': Slot(css_class='three'),
-       'slotfour': Slot(css_class='four'),
-       'slotfive': Slot(css_class='five'),
-       'slotsix': Slot(css_class='six')}
+       'one': Slot(css_class='slot-one'),
+       'two': Slot(css_class='slot-two'),
+       'three': Slot(css_class='slot-three'),
+       'four': Slot(css_class='slot-four'),
+       'five': Slot(css_class='slot-five'),
+       'six': Slot(css_class='slot-six')}
 
    def update(self):
        self.title = self.content.get_title_or_id()

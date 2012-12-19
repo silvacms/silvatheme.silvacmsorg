@@ -15,29 +15,29 @@
 <section id="users">
 
   <!-- slot with actual content -->
-  <tal:content tal:content="structure slot:slotone" />
+  <tal:content tal:content="structure slot:one" />
 
   <!-- slot with the toc for navigation -->
-  <tal:content tal:content="structure slot:slottwo" />
+  <tal:content tal:content="structure slot:two" />
 
 </section>
 
 <section id="developer">
 
   <!-- slot with actual content -->
-  <tal:content tal:content="structure slot:slotthree" />
+  <tal:content tal:content="structure slot:three" />
 
   <!-- slot with the toc for navigation -->
-  <tal:content tal:content="structure slot:slotfour" />
+  <tal:content tal:content="structure slot:four" />
 
 </section>
 
 <section id="tutorials">
 
   <!-- slot with actual content -->
-  <tal:content tal:content="structure slot:slotfive" />
+  <tal:content tal:content="structure slot:five" />
 
   <!-- slot with the toc for navigation -->
-  <tal:content tal:content="structure slot:slotsix" />
+  <tal:content tal:content="structure slot:six" />
 
 </section>

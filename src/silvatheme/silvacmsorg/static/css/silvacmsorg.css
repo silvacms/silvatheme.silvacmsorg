@@ -613,7 +613,7 @@ table td {
 
 /* sidebar nav styling */
 
-#documentation #slot-two {
+#documentation #navcontainer {
   display: inline-block;
   padding: 20px 0;
   width: 275px;

@@ -16,7 +16,7 @@ body {
 h3 {
   border-bottom: 1px solid #E3E3E3;
   color: #007500;
-  font-size: 125%;
+  font-size: 120%;
 }
 
 p, li {
@@ -447,6 +447,9 @@ footer a:link, footer a:visited {
   width: 350px;
 }
 
+#download h2, #download h3, #download h4 {
+  margin: 10px 20px; 
+}
 #download #get_silva {
   clear: both; 
   margin: 30px auto;
@@ -461,8 +464,7 @@ footer a:link, footer a:visited {
   box-shadow: 1px 1px 10px 1px #EFEFEF inset;
     webkit-box-shadow: 1px 1px 10px 1px #EFEFEF inset;
   float: left;
-  margin: 30px 0;
-  height: 320px;
+  height: 500px;
   width: 250px;
 }
 
@@ -485,6 +487,10 @@ footer a:link, footer a:visited {
   padding: 6px 15px;
   position: relative;
   width: 220px;
+}
+
+#download section h3 {
+  margin: 0 15px;
 }
 
 #download section p {
@@ -602,25 +608,25 @@ table td {
 
 /* sidebar nav styling */
 
-#documentation #slot-two {
+#documentation #navcontainer {
   display: inline-block;
   padding: 20px 0;
   width: 275px;
 }
 
-#documentation #slot-two #navcontainer {
+#documentation #navcontainer #slot-two {
   margin: 15px 0 0 24px;
 }
 
-#documentation #slot-two #navcontainer > ul {
+#documentation #navcontainer #slot-two > ul {
   margin: 5px 10px;
 }
 
-#documentation #slot-two #navcontainer ul ul {
+#documentation #navcontainer #slot-two ul ul {
   margin-left: 0;
 }
 
-#documentation #slot-two #navcontainer ul ul li a {
+#documentation #navcontainer #slot-two ul ul li a {
   background-color: #FFF; 
     background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
     background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
@@ -636,13 +642,13 @@ table td {
   margin: 0;
 }
 
-#documentation #slot-two #navcontainer ul ul li a:hover, 
-#documentation #slot-two #navcontainer ul ul li a:focus {
+#documentation #navcontainer #slot-two ul ul li a:hover,
+#documentation #navcontainer #slot-two ul ul li a:focus {
   background: #F1F1F1; 
   text-decoration: none;
 }
 
-#documentation #slot-two #navcontainer ul li.toplevel > a {
+#documentation #navcontainer #slot-two ul li.toplevel > a {
   background-color: #919191; 
     background-image: -webkit-gradient(linear, top right, bottom right, from(#919191), to(#555));
     background-image: -webkit-linear-gradient(top, #919191, #555);
@@ -660,13 +666,13 @@ table td {
   text-shadow: 1px 1px 1px #000;
 }
 
-#documentation #slot-two #navcontainer ul li.toplevel > a:hover,
-#documentation #slot-two #navcontainer ul li.toplevel > a:focus {
+#documentation #navcontainer #slot-two ul li.toplevel > a:hover,
+#documentation #navcontainer #slot-two ul li.toplevel > a:focus {
   background: #4F4F4F;
   text-decoration: none;
 }
 
-#documentation #slot-two #navcontainer li {
+#documentation #navcontainer #slot-two li {
   margin: 0 1px;
 }
 

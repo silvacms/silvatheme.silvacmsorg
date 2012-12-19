@@ -264,8 +264,12 @@ footer a:link, footer a:visited {
   height: 310px;
 }
 
+#silvacms #display h2 {
+  margin: 25px 0 0 150px;
+}
+
 #silvacms #display p {
-  margin: 50px 0 20px 150px;
+  margin: 25px 0 20px 150px;
   width: 380px;
 }
 
@@ -450,7 +454,7 @@ footer a:link, footer a:visited {
   width: 350px;
 }
 
-#download h2, #download h3, #download h4 {
+#download #intro h2, #download #intro h3, #download #intro h4 {
   margin: 10px 20px; 
 }
 

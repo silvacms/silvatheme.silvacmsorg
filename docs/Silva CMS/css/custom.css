@@ -354,17 +354,17 @@ footer a:link, footer a:visited {
   background: #008B00;
 }
 
-#about #content #aboutsilva {
+#about #content #slot-aboutcontent {
   float: left;
   margin-top: 40px; padding: 0 50px;
   width: 620px;
 }
 
-#about #content #aboutsilva p:first-of-type {
+#about #content #slot-aboutcontent p:first-of-type {
   background: #FFF;
 }
 
-#about #content #aboutsilva p {
+#about #content #slot-aboutcontent p {
   background-color: #FEFEFE; 
     background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
     background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);

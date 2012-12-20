@@ -91,6 +91,12 @@ class Favicon(porto.Favicon):
     pass
 
 
+class Footer(porto.Footer):
+    """Silvacms.org site footer.
+    """
+    grok.name('footer')
+
+
 class Home(Design):
    grok.name('home')
    grok.title('Home')

@@ -36,9 +36,6 @@
   <!-- start footer -->
   <footer>
     <div class="wrap" tal:replace="structure provider:footer">Footer content</div>
-    <div id="legal">
-      &copy; 2009-2012 <a href="http://infrae.com">Infrae</a>.
-    </div>
   </footer>
   <!-- end footer -->
 

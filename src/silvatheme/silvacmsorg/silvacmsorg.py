@@ -117,7 +117,7 @@ class About(Design):
        'aboutcontent': Slot(css_class='about-content'),
        'featurescontent': Slot(css_class='features-content'),
        'involvedcontent': Slot(css_class='involved-content'),
-       'somethingcontent': Slot(css_class='something-content'),
+       'democontent': Slot(css_class='demo-content'),
        'news': Slot(css_class='silva-news')}
 
    def update(self):

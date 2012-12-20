@@ -725,7 +725,7 @@ table td {
   margin: 8px 0; padding: 15px 0;
 }
 
-#support .box h1 {
+#support .box h2 {
   background-color: #59A80F;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
   background-image: -webkit-linear-gradient(top, #519A0F, #7AB317);

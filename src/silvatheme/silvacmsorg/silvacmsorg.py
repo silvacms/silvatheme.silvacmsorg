@@ -75,10 +75,6 @@ class Layout(porto.Layout):
         return ''
 
 
-class CommunityLayout(Layout):
-    pass
-
-
 class Favicon(porto.Favicon):
     """Declare that we have a favicon for this layer.
 
@@ -179,25 +175,3 @@ class Download(Design):
 
    def update(self):
        self.title = self.content.get_title_or_id()
-
-
-class Community(Design):
-   grok.name('community')
-   grok.title('Community')
-   grok.context(IPage)
-
-   slots = {
-       'contributeboxcontent': Slot(css_class='box'),
-       'reportbugsboxcontent': Slot(css_class='box'),
-       'silvaircboxcontent': Slot(css_class='box'),
-       'screenshots': Slot(css_class='screenshots'),
-       'contributecontent': Slot(css_class='contribute-content'),
-       'reportbugscontent': Slot(css_class='report-bugs-content'),
-       'silvairccontent': Slot(css_class='silva-irc-content'),
-       'boxfirst': Slot(css_class='box'),
-       'boxsecond': Slot(css_class='box'),
-       'boxthird': Slot(css_class='box')}
-
-   def update(self):
-       self.title = self.content.get_title_or_id()
-       need(ICommunityResources)

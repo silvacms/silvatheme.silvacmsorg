@@ -44,15 +44,6 @@ class IAboutResources(IDefaultBrowserLayer, ISilvaCmsOrg):
     pass
 
 
-class ICommunityResources(IDefaultBrowserLayer, ISilvaCmsOrg):
-   silvaconf.resource('css/bootstrap.min.css')
-   silvaconf.resource('css/slideshow.css')
-   silvaconf.resource('css/community.css')
-   silvaconf.resource(jquery)
-   silvaconf.resource('js/slideshow.js')
-   silvaconf.resource('js/community.js')
-
-
 class Layout(porto.Layout):
 
     @CachedProperty

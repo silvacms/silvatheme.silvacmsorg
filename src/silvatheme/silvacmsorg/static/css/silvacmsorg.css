@@ -190,7 +190,7 @@ footer a:link, footer a:visited {
 
 /* button styling */
 
-#silvacms #display a, #download section a#download {
+#silvacms #display a, #getsilva section a#getsilva {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 18px;
   color: #FFF;
@@ -204,7 +204,7 @@ footer a:link, footer a:visited {
   width: 160px;
 }
 
-#silvacms #display a#download_button, #download section a#download {
+#silvacms #display a#getsilva_button, #getsilva section a#getsilva {
   background-color: #7AB317;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#7AB317), color-stop(0.5, #519A0F), to(#7AB317));
   background-image: -webkit-linear-gradient(top, #7AB317, #519A0F, #7AB317);
@@ -215,8 +215,8 @@ footer a:link, footer a:visited {
   webkit-box-shadow: 0 2px 0 #59A80F;
 }
 
-#silvacms #display a#download_button:hover, #silvacms #display a#download_button:focus,
-#download section a#download:hover, #download section a#download:focus {
+#silvacms #display a#getsilva_button:hover, #silvacms #display a#getsilva_button:focus,
+#getsilva section a#getsilva:hover, #getsilva section a#getsilva:focus {
   background: #519A0F;
   box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
   webkit-box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
@@ -240,7 +240,7 @@ footer a:link, footer a:visited {
   webkit-box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
 }
 
-#download section a#download {
+#getsilva section a#getsilva {
   display: block;
   margin: 15px auto 20px auto;
   padding: 3px 0 2px 0;
@@ -277,7 +277,7 @@ footer a:link, footer a:visited {
   margin-left: 20px;
 }
 
-#silvacms #display a#download_button {
+#silvacms #display a#getsilva_button {
   margin-left: 160px;
 }
 
@@ -438,13 +438,13 @@ footer a:link, footer a:visited {
   margin: 0; padding: 0;
 }
 
-/*   ++++++ page specific styles: Download ++++++ */
+/*   ++++++ page specific styles: getsilva ++++++ */
 
-#download #content #intro {
+#getsilva #content #intro {
   padding-top: 20px;
 }
 
-#download #content #intro p {
+#getsilva #content #intro p {
   border-width: 1px 0;
   border-style: solid;
   border-color: #E3E3E3;
@@ -454,18 +454,18 @@ footer a:link, footer a:visited {
   width: 350px;
 }
 
-#download #intro h2, #download #intro h3, #download #intro h4 {
-  margin: 10px 20px; 
+#getsilva #intro h2, #getsilva #intro h3, #getsilva #intro h4 {
+  margin: 10px 20px;
 }
 
-#download #get_silva {
+#getsilva #get_silva {
   clear: both;
   margin: 30px auto;
   width: 760px;
   height: 320px;
 }
 
-#download section {
+#getsilva section {
   background: #FFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-left: 0px;
@@ -476,11 +476,11 @@ footer a:link, footer a:visited {
   width: 250px;
 }
 
-#download section.boxleft {
+#getsilva section.boxleft {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#download section h1 {
+#getsilva section h1 {
   background-color: #919191;
   background-image: -webkit-gradient(linear, top right, bottom right, from(#919191), to(#555));
   background-image: -webkit-linear-gradient(top, #919191, #555);
@@ -497,15 +497,15 @@ footer a:link, footer a:visited {
   width: 220px;
 }
 
-#download section h3 {
+#getsilva section h3 {
   margin: 0 15px;
 }
 
-#download section p {
+#getsilva section p {
   padding: 10px 15px;
 }
 
-#download #releases {
+#getsilva #releases {
   margin: auto; padding: 40px 0;
   width: 760px;
 }
@@ -541,7 +541,7 @@ table td {
   padding: 5px 12px;
 }
 
-#download #content table a {
+#getsilva #content table a {
   font-weight: normal;
 }
 

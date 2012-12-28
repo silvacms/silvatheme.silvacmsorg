@@ -2,52 +2,52 @@
 <div class="footer-nav-wrapper">
   <div class="column first">
     <ul>
-      <li class="0 first"><a href="http://silvacms.org/news">Silva News</a></li>
-      <li class="1"><a href="http://silvacms.org/community/news" title="News from Silva community members">Silva Community News</a></li>
-      <li class="2 last"><a href="http://silvacms.org/support/security" title="Security advice">Security Announcements</a></li>
+      <li class="0 first"><a href="${layout.root_url}/news">Silva News</a></li>
+      <li class="1"><a href="${layout.root_url}/community/news" title="News from Silva community members">Silva Community News</a></li>
+      <li class="2 last"><a href="${layout.root_url}/support/security" title="Security advice">Security Announcements</a></li>
     </ul>
   </div>
   <div class="column">
     <ul>
-      <li class="0 first"><a href="http://silvacms.org/documentation">Get Started</a></li>
-      <li class="1"><a href="http://silvacms.org/documentation" title="Guidebooks and documentation for working with Silva">User Documentation</a></li>
+      <li class="0 first"><a href="${layout.root_url}/documentation">Get Started</a></li>
+      <li class="1"><a href="${layout.root_url}/documentation" title="Guidebooks and documentation for working with Silva">User Documentation</a></li>
       <li class="2"><a href="http://docs.infrae.com/silva/trunk/buildout.html" title="Guide for installing Silva">Buildout Installation Guide</a></li>
       <li class="3"><a href="http://docs.infrae.com" title="Guide for building and extending Silva sites">Developer Documentation</a></li>
-      <li class="4"><a href="http://silvacms.org/support/hosting" title="Organizations offering Silva hosting">Hosting</a></li>
-      <li class="5"><a href="http://silvacms.org/support" title="Silva support options">Support</a></li>
+      <li class="4"><a href="${layout.root_url}/support/hosting" title="Organizations offering Silva hosting">Hosting</a></li>
+      <li class="5"><a href="${layout.root_url}/support" title="Silva support options">Support</a></li>
       <li class="6 last"><a href="http://docs.infrae.com/silva/trunk/api/index.html" title="Silva API Reference">Silva API</a></li>
     </ul>
   </div>
   <div class="column">
     <ul>
-      <li class="0 first"><a href="http://silvacms.org/download">Download &amp; Extend</a></li>
-      <li class="1"><a href="http://silvacms.org/download" title="Install the latest version of the Silva software">Set Up Silva</a></li>
-      <li class="2"><a href="http://silvacms.org/download/extensions" title="Install extra add-on features and functionality">Extensions</a></li>
-      <li class="3"><a href="http://silvacms.org/download/extensions/themes" title="Install pre-designed web layouts for Silva">Themes</a></li>
-      <li class="4 last"><a href="http://silvacms.org/download/virtual" title="Download virtual images with a pre configured Silva site">Virtual Machine Images</a></li>
+      <li class="0 first"><a href="${layout.root_url}/download">Download &amp; Extend</a></li>
+      <li class="1"><a href="${layout.root_url}/download" title="Install the latest version of the Silva software">Set Up Silva</a></li>
+      <li class="2"><a href="${layout.root_url}/download/extensions" title="Install extra add-on features and functionality">Extensions</a></li>
+      <li class="3"><a href="${layout.root_url}/download/extensions/themes" title="Install pre-designed web layouts for Silva">Themes</a></li>
+      <li class="4 last"><a href="${layout.root_url}/download/virtual" title="Download virtual images with a pre configured Silva site">Virtual Machine Images</a></li>
     </ul>
   </div>
 
   <div class="column">
     <ul>
-      <li class="0 first"><a href="http://silvacms.org/community">Community</a></li>
-      <li class="1"><a href="http://silvacms.org/community/involved" title="Learn how to contribute to the Silva project">Getting Involved</a></li>
-      <li class="2"><a href="http://silvacms.org/community/references" title="Silva references">Silva references</a></li>
-      <li class="3 last"><a href="http://silvacms.org/community/agenda" title="Meetings and sprints organized to improve Silva">Sprints &amp; Meetups</a></li>
+      <li class="0 first"><a href="${layout.root_url}/community">Community</a></li>
+      <li class="1"><a href="${layout.root_url}/community/involved" title="Learn how to contribute to the Silva project">Getting Involved</a></li>
+      <li class="2"><a href="${layout.root_url}/community/references" title="Silva references">Silva references</a></li>
+      <li class="3 last"><a href="${layout.root_url}/community/agenda" title="Meetings and sprints organized to improve Silva">Sprints &amp; Meetups</a></li>
     </ul>
   </div>
 
   <div class="column last">
     <ul>
-      <li class="0 first"><a href="http://silvacms.org/about">About</a></li>
-      <li class="1"><a href="http://silvacms.org/about/torvaldb" title="Silva’s DTML editor">Torvald de Boskat</a></li>
-      <li class="2 last"><a href="http://silvacms.org/about/features">Silva features</a></li>
+      <li class="0 first"><a href="${layout.root_url}/about">About</a></li>
+      <li class="1"><a href="${layout.root_url}/about/torvalddb" title="Silva’s DTML editor">Torvald de Boskat</a></li>
+      <li class="2 last"><a href="${layout.root_url}/about/features">Silva features</a></li>
     </ul>
   </div>
 </div>
 <!-- end footer nav -->
 
 <div id="legal">
-  &copy; 2009-2012 <a href="http://infrae.com">Infrae</a>.
+  &copy; 2009-${provider.get_current_year()} <a href="http://infrae.com">Infrae</a>.
 </div>
 

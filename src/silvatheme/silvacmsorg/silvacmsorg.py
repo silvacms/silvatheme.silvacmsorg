@@ -1,3 +1,5 @@
+import datetime
+
 from zope.cachedescriptors.property import CachedProperty
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
@@ -83,6 +85,9 @@ class Footer(porto.Footer):
     """
     grok.name('footer')
 
+    def get_current_year(self):
+        current_year = datetime.datetime.now().year
+        return current_year
 
 class Home(Design):
    grok.name('home')

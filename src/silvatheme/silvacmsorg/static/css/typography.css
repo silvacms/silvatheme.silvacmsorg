@@ -40,7 +40,7 @@ img.float-right { margin:6px 0 5px 10px; }  /* nested x height */
 div.login-form { width: 25em; }
 div.login-form p { line-height:inherit; }
 /* for a stacked form remove floats and heights */
-div.login-form div.form-element { height: 2em; }
+div.login-form div.form-element { height: 2em; clear:both; }
 div.login-form div.form-title { height: 1.6em; font-size: 1.2em; font-weight: bold; }
 div.login-form div.form-label { float: left; width: 6em; }
 div.login-form div.form-label label { display: block; margin: 0.2em 0 0; }

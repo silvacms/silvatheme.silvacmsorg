@@ -177,15 +177,42 @@ input:-ms-placeholder:hover {color: #555;}
 /* -- footer settings -- */
 
 footer {
-  background-color: #313131;
-  color: #CDCDCD;
-  height: 80px;
+  background-color: #292A2D;
+  border-top: 1px solid #1B1B1B; 
+  color: #959595;
   position: relative;
-  text-align: center;
 }
 
+footer #legal {
+  margin: 0 auto; padding: 15px 0;
+  width: 960px;
+} 
+
 footer a:link, footer a:visited {
-  color: #CDCDCD;
+  color: #A6A6A6;
+  font-weight: bold;
+  font-size: 90%;
+  text-shadow: 0 -1px 1px #050505;
+  text-transform: uppercase;
+}
+
+footer a:hover, footer a:focus {
+  color: #E2E2E2;
+}
+
+footer ul {
+  display: inline-block;
+  margin: 0;
+}
+
+footer li {
+  float: left;
+  margin: 0 25px 20px 0;
+}
+
+footer span a:link, footer span a:visited {
+  font-size: 90%;
+  text-transform: none;
 }
 
 /* button styling */
@@ -687,18 +714,25 @@ table td {
 
 /*   ++++++ page specific styles: Support ++++++ */
 
-#support p {
+#support #slot-boxfirst, #support #slot-boxsecond {
+  width: 80%; 
+  margin: 20px auto;
+}
+
+#support .box p {
   background-color: #FEFEFE;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
   background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
   background-image: -moz-linear-gradient(top, #FEFEFE, #F8F8F8);
   background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F8F8F8');
   background-image: -o-linear-gradient(top, #FEFEFE, #F8F8F8);
-  border-width: 1px 0;
+  border-width: 1px 1px 1px 0;
   border-style: solid;
-  border-color: #EFEFEF;
-  margin-top: 60px; padding: 20px;
-  height: 160px;
+  border-color: #E9E9E9;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 1px 0 #EEE;
+  margin: 10px 0; padding: 20px;
+  height: 100px;
 }
 
 #support #introshort p{
@@ -706,11 +740,6 @@ table td {
   float: left;
   font-size: 125%;
   margin-left: 85px;
-  width: 210px;
-}
-
-#support #introsupport p {
-  float: left;
   width: 500px;
 }
 

@@ -1,8 +1,8 @@
 <!-- start footer -->
 <div class="footer">
-<div id="legal">
-  &copy; ${provider.get_current_year()} <a href="http://infrae.com">
-  All contributors</a>.
-</div>
+  <div id="legal">
+    &copy; ${provider.get_current_year()} <a href="http://infrae.com/">
+    All contributors</a>.
+  </div>
 </div>
 <!-- end footer -->

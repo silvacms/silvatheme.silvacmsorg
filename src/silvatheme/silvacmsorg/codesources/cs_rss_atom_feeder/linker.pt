@@ -1,4 +1,4 @@
-<!-- RSS/Atom Feeder code source -->
+<!-- Atom/RSS Linker code source -->
 <div class="align-right info plot"
   tal:define="
     view           here;
@@ -8,7 +8,7 @@
     containertitle python: container.get_title;
 ">
 <h3>
-  <a title="Subscribe to a RSS/Atom feed"
+  <a title="Subscribe to an Atom/RSS feed"
      tal:attributes="href string:$containerurl/rss.xml">
   <img style="margin-right:3px" src="++static++/silvatheme.silvacmsorg/images/rss.png" alt="feed icon" height="16" width="16" />
   </a>
@@ -17,17 +17,17 @@
   </tal:inc>
 </h3>
 <p>
-  Subscribe to a
-  <a tal:attributes="
-    href string:$containerurl/rss.xml;
-    title string:$containertitle RSS feed;
-  ">RSS</a>
-  or
+  Subscribe to an
   <a tal:attributes="
     href string:$containerurl/atom.xml;
     title string:$containertitle Atom feed;
   ">Atom</a>
-  feed of the <tal:ins tal:replace="containertitle" /> packages.
+  or
+  <a tal:attributes="
+    href string:$containerurl/rss.xml;
+    title string:$containertitle RSS feed;
+  ">RSS</a>
+  feed of the <tal:ins tal:replace="containertitle" /> area.
 </p>
 </div>
-<!-- End RSS/Atom Feeder code source -->
+<!-- End Atom/RSS Linker code source -->

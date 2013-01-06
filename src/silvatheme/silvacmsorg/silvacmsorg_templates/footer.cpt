@@ -1,5 +1,5 @@
-    <div id="legal">
-      &copy; ${provider.get_current_year()} <a href="http://infrae.com/">
+<div id="legal">
+      &copy; 2002-${provider.get_current_year()} <a href="http://infrae.com/">
       All contributors</a>.
     </div>
     <tal:snippet tal:replace="structure path:context/footer/view | default">

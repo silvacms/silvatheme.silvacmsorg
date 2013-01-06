@@ -23,8 +23,6 @@ class ISilvaCmsOrg(ITypography, IPorto):
     """Layer for SilvaCMS.org theme
     """
 
-    silvaconf.resource('css/html5reset.css')
-    silvaconf.resource('css/typography.css')
     silvaconf.resource('css/silvacmsorg.css')
 
 

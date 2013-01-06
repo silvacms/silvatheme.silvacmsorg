@@ -1,4 +1,4 @@
-  <header>
+<header>
       <div class="title">
       <a tal:attributes="href layout.root_url">
         <img class="logo" alt="Silva logo"
@@ -21,8 +21,8 @@
         <input type="text" placeholder="Search the Silva CMS site..." />
         <input type="submit" value="search" />
       </form>
-  </header>
-  <!-- end header -->
+    </header>
+    <!-- end header -->
 
   <!-- start content -->
   <div id="content" class="clearfix">
@@ -38,4 +38,3 @@
     <div class="wrap" tal:replace="structure provider:footer">Footer content</div>
   </footer>
   <!-- end footer -->
-

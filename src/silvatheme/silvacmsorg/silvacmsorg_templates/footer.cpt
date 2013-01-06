@@ -4,5 +4,8 @@
     &copy; ${provider.get_current_year()} <a href="http://infrae.com/">
     All contributors</a>.
   </div>
+  <tal:snippet tal:replace="structure path:context/footer/view | default">
+    Footer content will appear here....
+  </tal:snippet>
 </div>
 <!-- end footer -->

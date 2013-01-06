@@ -4,7 +4,10 @@
     &copy; ${provider.get_current_year()} <a href="http://infrae.com/">
     All contributors</a>.
   </div>
-  <tal:snippet tal:replace="structure path:context/footer/view | default">
+  <tal:snippet
+    tal:define="facet provider.search_document('footer')"
+    tal:condition="facet is not None"
+    tal:replace="structure facet | default">
     Footer content will appear here....
   </tal:snippet>
 </div>

@@ -87,12 +87,13 @@ header img {
 
 /* title settings */
 
-header h1 {
-  color: #FFF;
-  float:left;
-  margin: 12px 0 0 20px;
-  text-indent: 0;
+header h6 {
+  float: left;
   width: 120px;
+  margin: 12px 0 0 20px;
+  color: #fff;
+  text-indent: 0;
+  font-size: 2.2em;
 }
 
 /* header navigation settings */
@@ -178,7 +179,7 @@ input:-ms-placeholder:hover {color: #555;}
 
 footer {
   background-color: #292A2D;
-  border-top: 1px solid #1B1B1B; 
+  border-top: 1px solid #1B1B1B;
   color: #959595;
   position: relative;
 }
@@ -186,7 +187,7 @@ footer {
 footer #legal {
   margin: 0 auto; padding: 15px 0;
   width: 960px;
-} 
+}
 
 footer a:link, footer a:visited {
   color: #A6A6A6;
@@ -715,7 +716,7 @@ table td {
 /*   ++++++ page specific styles: Support ++++++ */
 
 #support #slot-boxfirst, #support #slot-boxsecond {
-  width: 80%; 
+  width: 80%;
   margin: 20px auto;
 }
 

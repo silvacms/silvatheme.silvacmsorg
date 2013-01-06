@@ -3,7 +3,7 @@
       <a tal:attributes="href layout.root_url">
         <img class="logo" alt="Silva logo"
              tal:attributes="src path:static/images/silva.png" />
-          <h1>Silva</h1>
+          <h6>Silva</h6>
       </a>
       </div>
       <nav>

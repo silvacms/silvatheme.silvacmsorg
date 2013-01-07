@@ -1,7 +1,6 @@
-<tal:xml><!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       tal:define="
-        siteurl layout.root_url;
         metadata path:layout/metadata/silva-extra;
         lang metadata.language"
       tal:attributes="lang python:lang or None">
@@ -21,34 +20,13 @@
           tal:condition="description"
           tal:attributes="content description" />
     <meta name="generator" content="Silva" />
-    <meta name="viewport" content="width=device-width,user-scalable=yes" />
-    <!-- Custom head elements -->
-    <meta name="robots" content="index, follow" />
-    <meta name="revisit-after" content="10 days" />
-    <!-- Related links -->
     <tal:resource tal:replace="structure provider:resources" />
-    <link rel="apple-touch-icon" href="/mobicon.png"
-      tal:attributes="href path:static/img/mobicon.png" />
-    <link rel="copyright" title="Copyright"
-      tal:attributes="href string:${siteurl}/copyright" />
-    <link rel="alternate" type="application/x-wiki" href="./edit"
-      title="Edit this page (login required)" />
-  <tal:feeds tal:condition="viewlet.have_feeds">  <!-- Feeds are active -->
-    <link rel="alternate" type="application/atom+xml"
-      tal:attributes="
-        href string:${viewlet.feed_url}/atom.xml;
-        title string:Infrae: ${context.get_title()} Atom feed;" />
-    <link rel="alternate" type="application/rss+xml"
-      tal:attributes="
-        href string:${viewlet.feed_url}/rss.xml;
-        title string:Infrae: ${context.get_title()} RSS feed;" />
-  </tal:feeds>
     <tal:extraelements tal:replace="structure provider:htmlheadinsert" />
     <!-- Injector for on-the-fly inclusion -->
     <link tal:replace="structure path:context/head_inject | None" />
   </head>
 
-  <body tal:attributes="class layout.body_id">
+  <body tal:attributes="id layout.body_id">
     <tal:layout tal:replace="structure provider:layout" />
   </body>
-</html></tal:xml>
+</html>

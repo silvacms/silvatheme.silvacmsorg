@@ -1,56 +1,31 @@
 import datetime
 
-from zope.cachedescriptors.property import CachedProperty
-from zope.publisher.interfaces.browser import IDefaultBrowserLayer
-
-from silva.app.page.interfaces import IPage
-from silva.core.contentlayout import Design, Slot
-from silva.core.layout.interfaces import ISilvaSkin
-from silva.core import conf as silvaconf
-from silva.core.layout.porto import porto
-from silva.core.layout.porto.interfaces import IPorto
-from silva.core.interfaces import IPublication
-from silva.fanstatic import need
-
-from silvatheme.infraecommon import ITypography
-
-from js.jquery import jquery
-
 from five import grok
+from zope.cachedescriptors.property import Lazy
+from zope.traversing.browser import absoluteURL
 
+from silva.core import conf as silvaconf
+from silva.core.interfaces import IPublication, IFeedEntryProvider
+from silva.core.layout.porto import porto
+from silva.core.views import views as silvaviews
 
-class ISilvaCmsOrg(ITypography, IPorto):
-    """Layer for SilvaCMS.org theme
-    """
+from .interfaces import ISilvaCmsOrg
 
-    silvaconf.resource('css/silvacmsorg.css')
-
-
-class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):
-    """Skin for SilvaCMS.org theme
-    """
-
-    silvaconf.skin('SilvaCMS')
-
-
+grok.templatedir('templates_silvacmsorg')
 silvaconf.layer(ISilvaCmsOrg)
 
 
-class Navigation(porto.Navigation):
-    max_depth = 1
-
-
-class IAboutResources(IDefaultBrowserLayer, ISilvaCmsOrg):
-    pass
+class MainLayout(porto.MainLayout):
+    grok.template('htmlheadbody')
 
 
 class Layout(porto.Layout):
 
-    @CachedProperty
+    @Lazy
     def publication_title(self):
         return self.context.get_publication().get_title()
 
-    @CachedProperty
+    @Lazy
     def publication_url(self):
         return self.context.get_publication().absolute_url()
 
@@ -65,17 +40,12 @@ class Layout(porto.Layout):
             return 'selected'
         return ''
 
+class Favicon(silvaviews.ContentProvider):
+    grok.template('favicon')
 
-class Favicon(porto.Favicon):
-    """Declare that we have a favicon for this layer.
 
-    Default favicon url is static/favicon.ico so we don't need to
-    do anything besides declaring the Favicon viewlet inside this
-    layer and have a static/favicon.ico file.
-    If you want it to be something different, define a favicon_url property
-    or method for this class.
-    """
-    pass
+class Navigation(porto.Navigation):
+    max_depth = 1
 
 
 class Footer(porto.Footer):
@@ -87,85 +57,27 @@ class Footer(porto.Footer):
         current_year = datetime.datetime.now().year
         return current_year
 
-class Home(Design):
-   grok.name('home')
-   grok.title('Home')
-   grok.context(IPage)
 
-   slots = {
-       'homecontent': Slot(css_class='about-content'),
-       'screenshots': Slot(css_class='screenshots'),
-       'boxfirst': Slot(css_class='box'),
-       'boxsecond': Slot(css_class='box'),
-       'boxthird': Slot(css_class='box')}
-
-   def update(self):
-       self.title = self.content.get_title_or_id()
-       need(IAboutResources)
+class HeadInsert(silvaviews.Viewlet):
+    """ Custom head insertions
+    """
+    grok.viewletmanager(porto.HTMLHeadInsert)
 
 
-class About(Design):
-   grok.name('about')
-   grok.title('About')
-   grok.context(IPage)
+class HeadInsertFeeds(silvaviews.Viewlet):
+    """Rel link insertions when feeds are active
+    """
+    grok.viewletmanager(porto.HTMLHeadInsert)
 
-   slots = {
-       'aboutcontent': Slot(css_class='about-content'),
-       'featurescontent': Slot(css_class='features-content'),
-       'involvedcontent': Slot(css_class='involved-content'),
-       'democontent': Slot(css_class='demo-content'),
-       'news': Slot(css_class='silva-news')}
-
-   def update(self):
-       self.title = self.content.get_title_or_id()
-       need(IAboutResources)
-
-
-class Support(Design):
-   grok.name('support')
-   grok.title('Support')
-   grok.context(IPage)
-
-   slots = {
-       'supportcontent': Slot(css_class='support-content'),
-       'introshort': Slot(css_class=''),
-       'introsupport': Slot(css_class='support-intro'),
-       'boxfirst': Slot(css_class=''),
-       'boxsecond': Slot(css_class=''),
-       'boxthird': Slot(css_class='')}
-
-   def update(self):
-       self.title = self.content.get_title_or_id()
-
-
-class Documentation(Design):
-   grok.name('documentation')
-   grok.title('Documentation')
-   grok.context(IPage)
-
-   slots = {
-       'one': Slot(css_class='slot-one'),
-       'two': Slot(css_class='slot-two'),
-       'three': Slot(css_class='slot-three'),
-       'four': Slot(css_class='slot-four'),
-       'five': Slot(css_class='slot-five'),
-       'six': Slot(css_class='slot-six')}
-
-   def update(self):
-       self.title = self.content.get_title_or_id()
-
-
-class Download(Design):
-   grok.name('download')
-   grok.title('Download')
-   grok.context(IPage)
-
-   slots = {
-       'downloadcontent': Slot(css_class='download-content'),
-       'boxfirst': Slot(css_class=''),
-       'boxsecond': Slot(css_class=''),
-       'boxthird': Slot(css_class=''),
-       'releasescontent': Slot(css_class='')}
-
-   def update(self):
-       self.title = self.content.get_title_or_id()
+    def update(self):
+        feed_provider = IFeedEntryProvider(self.context, None)
+        if feed_provider is None:
+            container = self.context.get_container()
+            self.have_feeds = container.allow_feeds()
+            self.feed_url = absoluteURL(container, self.request)
+        else:
+            if hasattr(self.context, 'allow_feeds'):
+                self.have_feeds = self.context.allow_feeds()
+            else:
+                self.have_feeds = True
+            self.feed_url = absoluteURL(self.context, self.request)

@@ -1,0 +1,10 @@
+<tal:feeds tal:condition="viewlet.have_feeds">  <!-- Feeds are active -->
+  <link rel="alternate" type="application/atom+xml"
+        tal:attributes="
+                        href string:${viewlet.feed_url}/atom.xml;
+                        title string:Infrae: ${context.get_title()} Atom feed;" />
+  <link rel="alternate" type="application/rss+xml"
+        tal:attributes="
+                        href string:${viewlet.feed_url}/rss.xml;
+                        title string:Infrae: ${context.get_title()} RSS feed;" />
+</tal:feeds>

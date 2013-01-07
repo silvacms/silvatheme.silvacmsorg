@@ -715,44 +715,9 @@ table td {
 
 /*   ++++++ page specific styles: Support ++++++ */
 
-#support #slot-boxfirst, #support #slot-boxsecond {
-  width: 80%;
-  margin: 20px auto;
-}
-
-#support .box p {
-  background-color: #FEFEFE;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
-  background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
-  background-image: -moz-linear-gradient(top, #FEFEFE, #F8F8F8);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F8F8F8');
-  background-image: -o-linear-gradient(top, #FEFEFE, #F8F8F8);
-  border-width: 1px 1px 1px 0;
-  border-style: solid;
-  border-color: #E9E9E9;
-  border-radius: 0 10px 10px 0;
-  box-shadow: 0 1px 0 #EEE;
-  margin: 10px 0; padding: 20px;
-  height: 100px;
-}
-
-#support #introshort p{
-  color: #007500;
-  float: left;
-  font-size: 125%;
-  margin-left: 85px;
-  width: 500px;
-}
-
-#support #supportoptions {
-  clear: both;
-  margin: 0 auto; padding: 30px 0;
-  width: 600px;
-}
-
 #support section {
-
-  margin: 8px 0; padding: 15px 0;
+  width: 85%;
+  margin: 20px auto;
 }
 
 #support .box h2 {
@@ -767,7 +732,7 @@ table td {
   border: 1px solid green;
   border-radius: 10px 0 0 10px;
   color: #FFF;
-  display: inline-block;
+  float: left; 
   font-size: 125%;
   height: 100px; width: 200px;
   padding: 10px;
@@ -775,18 +740,22 @@ table td {
   vertical-align: top;
 }
 
-#support #supportoptions .box p {
-  background: #FFF;
-  border-style: solid;
+#support .box p {
+  background-color: #FEFEFE;
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
+  background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
+  background-image: -moz-linear-gradient(top, #FEFEFE, #F8F8F8);
+  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F8F8F8');
+  background-image: -o-linear-gradient(top, #FEFEFE, #F8F8F8);
   border-width: 1px 1px 1px 0;
-  border-color: #CCC;
+  border-style: solid;
+  border-color: #E9E9E9;
   border-radius: 0 10px 10px 0;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-  webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  height: 100px;
-  width: 350px;
-  margin: 0 -4px; padding: 10px 15px;
+  box-shadow: 0 1px 0 #EEE;
+  margin-bottom: 32px; padding: 20px;
+  height: 80px;
+  float: left;
+  width: 500px;
 }
 
 /*   ++++++ page specific styles: Features ++++++ */

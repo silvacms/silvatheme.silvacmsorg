@@ -8,6 +8,5 @@
       tal:attributes="href path:static/mobicon.png" />
     <link rel="copyright" title="Copyright"
       tal:attributes="href string:${siteurl}/copyright" />
-    <link rel="alternate" type="application/x-wiki" href="./edit"
-      title="Edit this page (login required)" />
+    <link rel="alternate" type="application/x-wiki" href="./edit" title="Edit this page (login required)" />
 </tal:headinsert>

@@ -1,12 +1,11 @@
 <tal:headinsert
   tal:define="siteurl layout.root_url;">    <!-- Custom head elements -->
     <meta name="viewport" content="width=device-width,user-scalable=yes" />
-    <!-- Custom head elements -->
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="10 days" />
     <!-- Related links -->
     <link rel="apple-touch-icon" href="/mobicon.png"
-      tal:attributes="href path:static/img/mobicon.png" />
+      tal:attributes="href path:static/mobicon.png" />
     <link rel="copyright" title="Copyright"
       tal:attributes="href string:${siteurl}/copyright" />
     <link rel="alternate" type="application/x-wiki" href="./edit"

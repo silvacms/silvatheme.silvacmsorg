@@ -38,3 +38,21 @@
     <div class="wrap" tal:replace="structure provider:footer">Footer content</div>
   </footer>
   <!-- end footer -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$('#tabs section').hide();
+$('#tabs section:first').show();
+$('#tabs ul li:first').addClass('selected');
+$('#tabs ul li a').click(function(){
+$('#tabs ul li').removeClass('selected');
+$(this).parent().addClass('selected');
+var currentTab = $(this).attr('href');
+$('#tabs section').hide();
+$(currentTab).show();
+return false;
+});
+});
+</script>

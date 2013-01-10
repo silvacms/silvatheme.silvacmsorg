@@ -582,7 +582,8 @@ table td {
   box-shadow: none;
 }
 
-#documentation #content #users {
+#documentation #content #users, #documentation #content #developers,
+#documentation #content #sysadmins, #documentation #content #tutorials {
   background: #FFF;
   border-color: #59A80F #E3E3E3 #E3E3E3;
   border-style: solid;
@@ -614,7 +615,7 @@ table td {
   padding: 5px 0;
   text-align: center;
   vertical-align: bottom;
-  width: 235px;
+  width: 220px;
 }
 
 #documentation #content .tab-nav a:link:hover, #documentation #content .tab-nav a:visited:hover,
@@ -630,8 +631,8 @@ table td {
   text-decoration: none;
 }
 
-#documentation #content .tab-nav a.selected, #documentation #content .tab-nav a.selected:hover,
-#documentation #content .tab-nav a.selected:focus {
+#documentation #content .tab-nav .selected a, #documentation #content .tab-nav .selected a:hover,
+#documentation #content .tab-nav .selected a:focus {
   background: #59A80F;
   color: white;
 }

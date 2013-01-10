@@ -5,11 +5,13 @@ from silva.core.layout.porto.interfaces import IPorto
 from silva.core.layout.interfaces import ISilvaSkin
 from silva.core import conf as silvaconf
 
+from js.jquery import jquery
 
 class ISilvaCmsOrg(ITypography, IPorto):
     """Layer for SilvaCMS.org theme
     """
     silvaconf.resource('css/silvacmsorg.css')
+    silvaconf.resource(jquery)
 
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):

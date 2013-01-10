@@ -596,7 +596,7 @@ table td {
   padding-bottom: 50px;
 }
 
-#documentation #content nav a:link, #documentation #content nav a:visited {
+#documentation #content .tab-nav a:link, #documentation #content .tab-nav a:visited {
   background-color: #FEFEFE;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#E6E6E6));
   background-image: -webkit-linear-gradient(top, #FEFEFE, #E6E6E6);
@@ -617,8 +617,8 @@ table td {
   width: 235px;
 }
 
-#documentation #content nav a:link:hover, #documentation #content nav a:visited:hover,
-#documentation #content nav a:link:focus, #documentation #content nav a:visited:focus {
+#documentation #content .tab-nav a:link:hover, #documentation #content .tab-nav a:visited:hover,
+#documentation #content .tab-nav a:link:focus, #documentation #content .tab-nav a:visited:focus {
   background-color: #FFF;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#DEDEDE));
   background-image: -webkit-linear-gradient(top, #FFF, #DEDEDE);
@@ -630,8 +630,8 @@ table td {
   text-decoration: none;
 }
 
-#documentation #content nav a.selected, #documentation #content nav a.selected:hover,
-#documentation #content nav a.selected:focus {
+#documentation #content .tab-nav a.selected, #documentation #content .tab-nav a.selected:hover,
+#documentation #content .tab-nav a.selected:focus {
   background: #59A80F;
   color: white;
 }

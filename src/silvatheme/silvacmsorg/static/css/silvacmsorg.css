@@ -573,31 +573,9 @@ table td {
   font-weight: normal;
 }
 
+/* generic tab navigation styling */
 
-/*   ++++++ page specific styles: Documentation ++++++ */
-
-#documentation #content {
-  background: #FCFCFC;
-  border-style: none;
-  box-shadow: none;
-}
-
-#documentation #content #users, #documentation #content #developers,
-#documentation #content #sysadmins, #documentation #content #tutorials {
-  background: #FFF;
-  border-color: #59A80F #E3E3E3 #E3E3E3;
-  border-style: solid;
-  border-width: 5px 1px 1px;
-  clear: both;
-}
-
-/* tab navigation styling */
-
-#documentation #content {
-  padding-bottom: 50px;
-}
-
-#documentation #content .tab-nav a:link, #documentation #content .tab-nav a:visited {
+#content .tab-nav a:link, #content .tab-nav a:visited {
   background-color: #FEFEFE;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#E6E6E6));
   background-image: -webkit-linear-gradient(top, #FEFEFE, #E6E6E6);
@@ -618,8 +596,8 @@ table td {
   width: 220px;
 }
 
-#documentation #content .tab-nav a:link:hover, #documentation #content .tab-nav a:visited:hover,
-#documentation #content .tab-nav a:link:focus, #documentation #content .tab-nav a:visited:focus {
+#content .tab-nav a:link:hover,#content .tab-nav a:visited:hover,
+#content .tab-nav a:link:focus, #content .tab-nav a:visited:focus {
   background-color: #FFF;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#DEDEDE));
   background-image: -webkit-linear-gradient(top, #FFF, #DEDEDE);
@@ -631,10 +609,31 @@ table td {
   text-decoration: none;
 }
 
-#documentation #content .tab-nav .selected a, #documentation #content .tab-nav .selected a:hover,
-#documentation #content .tab-nav .selected a:focus {
+#content .tab-nav .selected a,#content .tab-nav .selected a:hover,
+#content .tab-nav .selected a:focus {
   background: #59A80F;
   color: white;
+}
+
+/*   ++++++ page specific styles: Documentation ++++++ */
+
+#documentation #content {
+  background: #FCFCFC;
+  border-style: none;
+  box-shadow: none;
+}
+
+#documentation #content #users, #documentation #content #developers,
+#documentation #content #sysadmins, #documentation #content #tutorials {
+  background: #FFF;
+  border-color: #59A80F #E3E3E3 #E3E3E3;
+  border-style: solid;
+  border-width: 5px 1px 1px;
+  clear: both;
+}
+
+#documentation #content {
+  padding-bottom: 50px;
 }
 
 #documentation #content #slot-one {

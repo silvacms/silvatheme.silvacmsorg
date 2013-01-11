@@ -5,31 +5,32 @@ body {
 }
 
 #content {
-  background: #FFF;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   margin: 75px auto;
   min-height: 700px;
-  width: 960px;
+  width: 85%;
 }
 
 h3 {
-  border-bottom: 1px solid #E3E3E3;
   color: #007500;
-  font-size: 120%;
+  font-size: 1.2em;
 }
 
 p, li {
   line-height: 19px;
 }
 
-a:link, a:visited {
-  color: #FEFEFE;
-  cursor: pointer;
-}
-
 a:link, a:visited, a:hover, a:focus {
   text-decoration: none;
+}
+a:link {
+  color: #FF9900;
+  font-weight: bold;
+}
+a:visited {
+  color: #D06004;
+}
+a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
+  color: #FF6600;
 }
 
 img {
@@ -40,30 +41,19 @@ li {
   list-style: none;
 }
 
-#content a {
-  color: #FF9900;
-  font-weight: bold;
-}
-
-#content a:hover, #content a:focus, #content a:visited:focus, #content a:visited:hover {
-  color: #FF6600;
-}
-#content a:visited {
-  color: #D06004;
-}
-
 ::-selection {background: #E6F8BA;}
 ::-moz-selection {background: #E6F8BA;}
 
 /* -- header settings -- */
 
 header {
-  background-color: #696969;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#313131));
+  background-color: #484848;
+  background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#313131));
   background-image: -webkit-linear-gradient(top, #696969, #313131);
   background-image: -moz-linear-gradient(top, #696969, #313131);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#313131');
   background-image: -o-linear-gradient(top, #696969, #313131);
+  background-image: linear-gradient(to bottom, #696969, #313131);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   height: 60px;
 }
@@ -76,13 +66,9 @@ header a:link, header a:visited, header a:link:hover, header a:visited:hover {
   text-decoration: none;
 }
 
-header a:focus {
-  text-decoration: underline;
-}
-
 header img {
   float: left;
-  margin: 12px 0 0 80px;
+  margin: 12px 0 0 60px;
 }
 
 /* title settings */
@@ -90,7 +76,7 @@ header img {
 header h6 {
   float: left;
   width: 120px;
-  margin: 12px 0 0 20px;
+  margin: 12px 0 0 16px;
   color: #fff;
   text-indent: 0;
   font-size: 2.2em;
@@ -115,38 +101,41 @@ header nav li.last {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-
 header nav li a {
   padding: 21px 0;
 }
 
 header nav li.selected {
-  background-color: #696969;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#797979));
+  background-color: #797979;
+  background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
   background-image: -webkit-linear-gradient(top, #696969, #797979);
   background-image: -moz-linear-gradient(top, #696969, #797979);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#797979');
   background-image: -o-linear-gradient(top, #696969, #797979);
+  background-image: linear-gradient(to bottom, #696969, #797979);
 }
 
-header nav li:hover {
-  background: #444;
+header nav li:hover, header nav li:focus {
+  background: #373737;
   color: #FFF;
 }
 
-form {
+header form {
   float: right;
   margin: 18px 30px 0 0;
   width: 258px;
 }
 
+/* input settings */ 
+
 input[type="submit"] {
-  background-color: #696969;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#696969), to(#797979));
+  background-color: #797979;
+  background-image: none;  
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
   background-image: -webkit-linear-gradient(top, #696969, #797979);
   background-image: -moz-linear-gradient(top, #696969, #797979);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696969', endColorstr='#797979');
   background-image: -o-linear-gradient(top, #696969, #797979);
+  background-image: linear-gradient(to bottom, #696969, #797979);
   border: 1px solid rgba(255,255,255, 0.3);
   border-radius: 8px;
   color: white;
@@ -160,7 +149,6 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 input[type="text"] {
   border: 1px solid #777;
   border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 2px;
 }
 
@@ -181,12 +169,17 @@ footer {
   background-color: #292A2D;
   border-top: 1px solid #1B1B1B;
   color: #959595;
+  height: 90px;
   position: relative;
 }
 
-footer #legal {
-  margin: 0 auto; padding: 15px 0;
+footer #legal, footer ul {
+  margin: 0 auto;
   width: 960px;
+}
+
+footer #legal {
+  padding: 15px 0;
 }
 
 footer a:link, footer a:visited {
@@ -197,82 +190,13 @@ footer a:link, footer a:visited {
   text-transform: uppercase;
 }
 
-footer a:hover, footer a:focus {
-  color: #E2E2E2;
-}
-
-footer ul {
-  display: inline-block;
-  margin: 0;
+footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visited:focus {
+  color: #E2E2E2; 
 }
 
 footer li {
   float: left;
   margin: 0 25px 20px 0;
-}
-
-footer span a:link, footer span a:visited {
-  font-size: 90%;
-  text-transform: none;
-}
-
-/* button styling */
-
-#silvacms #display a, #getsilva section a#getsilva {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 18px;
-  color: #FFF;
-  display: inline-block;
-  font-weight: bold;
-  padding: 3px 0;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-  width: 160px;
-}
-
-#silvacms #display a#getsilva_button, #getsilva section a#getsilva {
-  background-color: #7AB317;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#7AB317), color-stop(0.5, #519A0F), to(#7AB317));
-  background-image: -webkit-linear-gradient(top, #7AB317, #519A0F, #7AB317);
-  background-image: -moz-linear-gradient(top, #7AB317, #519A0F, #7AB317);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7AB317', endColorstr='#519A0F');
-  background-image: -o-linear-gradient(top, #7AB317, #519A0F, #7AB317);
-  box-shadow: 0 2px 0 #59A80F;
-  webkit-box-shadow: 0 2px 0 #59A80F;
-}
-
-#silvacms #display a#getsilva_button:hover, #silvacms #display a#getsilva_button:focus,
-#getsilva section a#getsilva:hover, #getsilva section a#getsilva:focus {
-  background: #519A0F;
-  box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
-  webkit-box-shadow: 0 2px 0 rgba(89, 168, 15, 0.5);
-  color: #FFF;
-}
-
-#silvacms #display a#demo_button {
-  background-color: #FA9F29;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#FA9F29), color-stop(0.5, #ED872D) to(#FA9F29));
-  background-image: -webkit-linear-gradient(top, #FA9F29, #ED872D, #FA9F29);
-  background-image: -moz-linear-gradient(top, #FA9F29, #ED872D, #FA9F29);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FA9F29', endColorstr='#ED872D');
-  background-image: -o-linear-gradient(top, #FA9F29, #ED872D, #FA9F29);
-  box-shadow: 0 2px 0 #CE5E06;
-  webkit-box-shadow: 0 2px 0 #CE5E06;
-}
-
-#silvacms #display a#demo_button:hover, #silvacms #display a#demo_button:focus {
-  background: #ED872D;
-  box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
-  webkit-box-shadow: 0 2px 0 rgba(206, 94, 6, 0.5);
-}
-
-#getsilva section a#getsilva {
-  display: block;
-  margin: 15px auto 20px auto;
-  padding: 3px 0 2px 0;
-  width: 120px;
 }
 
 /*   ++++++ page specific styles: about / home ++++++ */
@@ -369,35 +293,6 @@ footer span a:link, footer span a:visited {
 
 /*   ++++++ page specific styles: Aboutpage ++++++ */
 
-#about #content nav li, #features #content nav li {
-  border-left: 1px solid #007500;
-  border-bottom: 1px solid #007500;
-  border-top: 1px solid #007500;
-  float: left;
-  text-align: center;
-  width: 239px;
-}
-
-#about #content nav ul li a, #features #content nav li a {
-  background-color: #59A80F;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
-  background-image: -webkit-linear-gradient(top, #519A0F, #7AB317);
-  background-image: -moz-linear-gradient(top, #59A80F, #7AB317);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#519A0F', endColorstr='#7AB317');
-  background-image: -o-linear-gradient(top, #519A0F, #7AB317);
-  color: #FFF;
-  display: block;
-  font-weight: bold;
-  margin: 0;
-  padding: 6px 0;
-}
-
-#about #content nav ul li a:hover, #features #content nav li a:hover,
-#about #content nav ul li a:focus, #features #content nav li a:focus {
-  background: #519A0F;
-  text-decoration: none;
-}
-
 #features #content nav ul li a.selected, #about #content nav ul li a.selected {
   background: #008B00;
 }
@@ -484,74 +379,26 @@ footer span a:link, footer span a:visited {
 
 /*   ++++++ page specific styles: getsilva ++++++ */
 
-#getsilva #content #intro {
-  padding-top: 20px;
-}
-
-#getsilva #content #intro p {
-  border-width: 1px 0;
-  border-style: solid;
-  border-color: #E3E3E3;
-  color: #007500;
-  margin: 40px 0 0 97px;
-  padding: 10px;
-  width: 350px;
-}
-
-#getsilva #intro h2, #getsilva #intro h3, #getsilva #intro h4 {
-  margin: 10px 20px;
-}
-
-#getsilva #get_silva {
-  clear: both;
-  margin: 30px auto;
-  width: 760px;
-  height: 320px;
+#getsilva .silva-content {
+  padding: 20px;
 }
 
 #getsilva section {
-  background: #FFF;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-left: 0px;
-  box-shadow: 1px 1px 10px 1px #EFEFEF inset;
-  webkit-box-shadow: 1px 1px 10px 1px #EFEFEF inset;
+  background-color: #F6F6F6;
   float: left;
-  height: 500px;
-  width: 250px;
+  padding: 15px 33px;
+  height: 350px;
+  min-height: 350px;
+  margin: 40px 0;
+  width: 20%;
 }
 
-#getsilva section.boxleft {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
+#getsilva section h2 {
+  font-size: 1.5em;
 }
 
-#getsilva section h1 {
-  background-color: #919191;
-  background-image: -webkit-gradient(linear, top right, bottom right, from(#919191), to(#555));
-  background-image: -webkit-linear-gradient(top, #919191, #555);
-  background-image: -moz-linear-gradient(top, #919191, #555);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#919191', endColorstr='#555');
-  background-image: -o-linear-gradient(top, #919191, #555);
-  color: #FFF;
-  float: left;
-  font-size: 125%;
-  font-weight: bold;
-  margin: 0 0 20px;
-  padding: 6px 15px;
-  position: relative;
-  width: 220px;
-}
-
-#getsilva section h3 {
-  margin: 0 15px;
-}
-
-#getsilva section p {
-  padding: 10px 15px;
-}
-
-#getsilva #releases {
-  margin: auto; padding: 40px 0;
-  width: 760px;
+#getsilva .info {
+  clear: both;
 }
 
 table {
@@ -561,11 +408,12 @@ table {
 
 table th {
   background-color: #919191;
-  background-image: -webkit-gradient(linear, top right, bottom right, from(#919191), to(#555));
+  background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#919191), to(#555));
   background-image: -webkit-linear-gradient(top, #919191, #555);
   background-image: -moz-linear-gradient(top, #919191, #555);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#919191', endColorstr='#555');
   background-image: -o-linear-gradient(top, #919191, #555);
+  background-image: linear-gradient(to bottom, #919191, #555); 
   border-width: 1px 0 0 0;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.5);
@@ -575,11 +423,12 @@ table th {
 
 table td {
   background-color: #FFF;
+  background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
   background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
   background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');
   background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+  background-image: linear-gradient(to bottom, #FFF, #F2F2F2); 
   border-top: 1px solid #FFF;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 5px 12px;
@@ -593,11 +442,12 @@ table td {
 
 #content .tab-nav a:link, #content .tab-nav a:visited {
   background-color: #FEFEFE;
+  background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#E6E6E6));
   background-image: -webkit-linear-gradient(top, #FEFEFE, #E6E6E6);
   background-image: -moz-linear-gradient(top, #FEFEFE, #E6E6E6);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#E6E6E6');
   background-image: -o-linear-gradient(top, #FEFEFE, #E6E6E6);
+  background-image: linear-gradient(to bottom, #FEFEFE, #E6E6E6); 
   border-width: 1px 2px 0 2px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.2);
@@ -615,11 +465,12 @@ table td {
 #content .tab-nav a:link:hover,#content .tab-nav a:visited:hover,
 #content .tab-nav a:link:focus, #content .tab-nav a:visited:focus {
   background-color: #FFF;
+  background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#DEDEDE));
   background-image: -webkit-linear-gradient(top, #FFF, #DEDEDE);
   background-image: -moz-linear-gradient(top, #FFF, #DEDEDE);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#DEDEDE');
   background-image: -o-linear-gradient(top, #FFF, #DEDEDE);
+  background-image: linear-gradient(to bottom, #FFF, #DEDEDE);  
   border-color: rgba(0, 0, 0, 0.3);
   color: #333;
   text-decoration: none;
@@ -681,11 +532,12 @@ table td {
 
 #documentation #navcontainer #slot-two ul ul li a {
   background-color: #FFF;
+  background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
   background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
   background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');
   background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+  background-image: linear-gradient(to bottom, #FFF, #F2F2F2);  
   border-top: 1px solid #FFF;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   display: block;
@@ -703,11 +555,12 @@ table td {
 
 #documentation #navcontainer #slot-two ul li.toplevel > a {
   background-color: #919191;
-  background-image: -webkit-gradient(linear, top right, bottom right, from(#919191), to(#555));
+  background-image: none;
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#919191), to(#555));
   background-image: -webkit-linear-gradient(top, #919191, #555);
   background-image: -moz-linear-gradient(top, #919191, #555);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#919191', endColorstr='#555');
   background-image: -o-linear-gradient(top, #919191, #555);
+  background-image: linear-gradient(to bottom, #919191, #555);    
   border-width: 1px 0 0 0;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.5);
@@ -731,18 +584,21 @@ table td {
 
 /*   ++++++ page specific styles: Support ++++++ */
 
+
+
 #support section {
-  width: 85%;
+  width: 72%;
   margin: 20px auto;
 }
 
 #support .box h2 {
-  background-color: #59A80F;
+  background-color: #59A80F;  
+  background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
   background-image: -webkit-linear-gradient(top, #519A0F, #7AB317);
-  background-image: -moz-linear-gradient(top, #59A80F, #7AB317);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#519A0F', endColorstr='#7AB317');
+  background-image: -moz-linear-gradient(top, #519A0F, #7AB317);
   background-image: -o-linear-gradient(top, #519A0F, #7AB317);
+  background-image: linear-gradient(to bottom, #519A0F, #7AB317);
   box-shadow: 0 1px 0 #59A80F;
   webkit-box-shadow: 0 1px 0 #59A80F;
   border: 1px solid green;
@@ -750,39 +606,41 @@ table td {
   color: #FFF;
   float: left; 
   font-size: 125%;
-  height: 100px; width: 200px;
+  height: 100px; width: 26%;
   padding: 10px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
   vertical-align: top;
 }
 
 #support .box p {
-  background-color: #FEFEFE;
+  background-color: #FEFEFE;  
+  background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
   background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
   background-image: -moz-linear-gradient(top, #FEFEFE, #F8F8F8);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F8F8F8');
   background-image: -o-linear-gradient(top, #FEFEFE, #F8F8F8);
+  background-image: linear-gradient(to bottom, #FEFEFE, #F8F8F8);
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: #E9E9E9;
   border-radius: 0 10px 10px 0;
   box-shadow: 0 1px 0 #EEE;
-  margin-bottom: 32px; padding: 20px;
+  margin-bottom: 42px; padding: 20px 10px;
   height: 80px;
   float: left;
-  width: 500px;
+  width: 65%;
 }
 
 /*   ++++++ page specific styles: Features ++++++ */
 
 #features nav#corefeatures li {
   background-color: #FFF;
+  background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
   background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
   background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');
-    background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+  background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+  background-image: linear-gradient(to bottom, #FFF, #F2F2F2);
   border-width: 0 1px 1px 0;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.5);
@@ -830,12 +688,6 @@ table td {
 .silva-content div.login-form div.form-label {
   font-weight: bold;
   padding: 2px 0;
-}
-
-/* search settings */
-
-input[type="text"]:focus {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #B6A8FF;
 }
 
 /* removed selectors after merge with custom.css */

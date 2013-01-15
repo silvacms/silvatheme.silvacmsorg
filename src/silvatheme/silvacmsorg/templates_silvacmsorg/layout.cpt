@@ -12,7 +12,7 @@
               tal:attributes="class provider.current_publication_class(publication)">
             <a tal:attributes="href path:publication/@@absolute_url"
                tal:content="publication.get_title()">
-              publication title goes here
+               publication title goes here
             </a>
         </li>
         </ul>

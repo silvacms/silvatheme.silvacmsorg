@@ -11,7 +11,7 @@ body {
 }
 
 h3 {
-  color: #007500;
+  color: #5CAB12;
   font-size: 1.2em;
 }
 
@@ -23,14 +23,14 @@ a:link, a:visited, a:hover, a:focus {
   text-decoration: none;
 }
 a:link {
-  color: #FF9900;
+  color: #E7A012;
   font-weight: bold;
 }
 a:visited {
   color: #D06004;
 }
 a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
-  color: #FF6600;
+  color: #E28C00;
 }
 
 img {
@@ -175,7 +175,7 @@ footer {
 
 footer #legal, footer ul {
   margin: 0 auto;
-  width: 960px;
+  width: 85%;
 }
 
 footer #legal {
@@ -197,40 +197,6 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 footer li {
   float: left;
   margin: 0 25px 20px 0;
-}
-
-/*   ++++++ page specific styles: about / home ++++++ */
-
-#silvacms #content {
-  background: #F9F9F9;
-  margin: 75px 0 0 0;
-  width: 100%;
-}
-
-#silvacms #display {
-  background: #FFF;
-  border-top: 1px solid #EFEFEF;
-  border-bottom: 1px solid #CCC;
-  box-shadow: 0 3px 5px rgba(0, 0 ,0, 0.2);
-  webkit-box-shadow: 0 3px 5px rgba(0, 0 ,0, 0.2);
-  height: 310px;
-}
-
-#silvacms #display h2 {
-  margin: 25px 0 0 150px;
-}
-
-#silvacms #display p {
-  margin: 25px 0 20px 150px;
-  width: 380px;
-}
-
-#silvacms #display a {
-  margin-left: 20px;
-}
-
-#silvacms #display a#getsilva_button {
-  margin-left: 160px;
 }
 
 /* generic features box */
@@ -293,113 +259,62 @@ footer li {
 
 /*   ++++++ page specific styles: Aboutpage ++++++ */
 
-#features #content nav ul li a.selected, #about #content nav ul li a.selected {
-  background: #008B00;
-}
 
-#about #content #slot-aboutcontent {
-  float: left;
-  margin-top: 40px; padding: 0 50px;
-  width: 620px;
-}
+/*   ++++++ page specific styles: Get Silva ++++++ */
 
-#about #content #slot-aboutcontent p:first-of-type {
-  background: #FFF;
-}
-
-#about #content #slot-aboutcontent p {
-  background-color: #FEFEFE;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
-  background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
-  background-image: -moz-linear-gradient(top, #FEFEFE, #F8F8F8);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F8F8F8');
-  background-image: -o-linear-gradient(top, #FEFEFE, #F8F8F8);
-  border-width: 1px 0;
-  padding: 10px 0;
-}
-
-#about #content aside {
-   background-color: #;
-   border: 1px solid #CCC;
-   border-radius: 0px;
-   box-shadow: 1px 1px 10px 1px #EFEFEF inset;
-   webkit-box-shadow: 1px 1px 10px 1px #EFEFEF inset;
-   color: #fff;
-   float: right;
-   margin: 40px 20px 0 0; padding: 10px 20px;
-   min-height: 300px; width: 160px;
-}
-
-#about #content aside h1 {
-  background-color: #808080;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#808080), to(#5A5A5A));
-  background-image: -webkit-linear-gradient(top, #808080, #5A5A5A);
-  background-image: -moz-linear-gradient(top, #808080, #5A5A5A);
-  background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#5A5A5A');
-  background-image: -o-linear-gradient(top, #808080, #5A5A5A);
-  border-top: 1px solid #111;
-  color: #FFF;
-  font-size: 130%;
-  margin: 5px -30px;
-  padding: 3px 30px;
-  position: relative;
-  text-shadow: 1px 1px 1px #000;
-}
-
-#about #content aside h1:before, #about #content aside h1:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-color: transparent;
-  bottom: -10px;
-}
-
-#about #content aside h1:before{
-  border-width: 0 10px 10px 0;
-  border-right-color: #222;
-  left: 0;
-}
-
-#about #content aside h1:after {
-  border-width: 0 0 10px 10px;
-  border-left-color: #222;
-  right: 0;
-}
-
-#about #content aside h2 {
-  color: #684781;
-  font-size: 110%;
-  margin-top: 15px;
-}
-
-#about #content aside p {
-  color: #333;
-  margin: 0; padding: 0;
-}
-
-/*   ++++++ page specific styles: getsilva ++++++ */
-
-#getsilva .silva-content {
-  padding: 20px;
+#getsilva .plain {
+  border-bottom: 2px solid #DDE5E7;
+  font-size: 1.2em;
+  margin-top: 20px;
+  padding-bottom: 30px;
 }
 
 #getsilva section {
-  background-color: #F6F6F6;
+  background-color: #F6F6F3;
+  background-image: none;
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#F8F8F8), to(#F4F4F4));
+  background-image: -webkit-linear-gradient(top, #F8F8F8, #F4F4F4);
+  background-image: -moz-linear-gradient(top, #F8F8F8, #F4F4F4);
+  background-image: -o-linear-gradient(top, #F8F8F8, #F4F4F4);
+  background-image: linear-gradient(to bottom, #F8F8F8, #F4F4F4); 
+  border-bottom: 1px solid #E0E0E0;
   float: left;
-  padding: 15px 33px;
-  height: 350px;
-  min-height: 350px;
-  margin: 40px 0;
-  width: 20%;
+  height: 400px;
+  min-height: 400px;
+  margin: 30px 0;
+  width: 27%;
 }
 
 #getsilva section h2 {
-  font-size: 1.5em;
+  background-color: #59A80F;  
+  background-image: none;
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#7AB317), to(#519A0F));
+  background-image: -webkit-linear-gradient(top, #7AB317, #519A0F);
+  background-image: -moz-linear-gradient(top, #7AB317, #519A0F);
+  background-image: -o-linear-gradient(top, #7AB317, #519A0F);
+  background-image: linear-gradient(to bottom, #7AB317, #519A0F);
+  border-top: 1px solid #1A6900;
+  border-bottom: 1px solid #1A6900;
+  color: #FFF;
+  padding: 8px 12px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+#getsilva section p, #getsilva section h3  {
+  color: #444;
+  padding: 0 16px;
+}
+
+#getsilva h2 {
+  clear: both;
 }
 
 #getsilva .info {
   clear: both;
-}
+  border-left: 1px dashed #B7BEBF;
+  padding: 25px 0 25px 26px;
+
+/* table styling */
 
 table {
   margin-top: 30px;
@@ -432,10 +347,6 @@ table td {
   border-top: 1px solid #FFF;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 5px 12px;
-}
-
-#getsilva #content table a {
-  font-weight: normal;
 }
 
 /* generic tab navigation styling */
@@ -583,8 +494,6 @@ table td {
 }
 
 /*   ++++++ page specific styles: Support ++++++ */
-
-
 
 #support section {
   width: 72%;

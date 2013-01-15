@@ -1,0 +1,30 @@
+<!-- PyPI Linker code source -->
+<div class="align-right">
+<div class="info plot"
+  tal:define="
+    container    options/model/get_container;
+    packagename  container/id;
+    packagetitle container/get_title | nothing;
+    pypiurl      options/package_url | nothing;
+    pypilink     python:pypiurl and pypiurl or 'http://pypi.python.org/pypi/' + packagename;
+">
+<h3>
+  <a href="http://pypi.python.org/pypi" title="Visit the Python Package Index">
+  <img alt="PyPI logo" width="16" height="16" src="++static++/silvatheme.renaissance/img/python.png" />
+  </a>
+  <acronym title="Python Package Index">PyPI</acronym>
+</h3>
+<p>
+  <tal:insert replace="packagetitle"/> is also available on the Python Package Index:
+  <br/>
+  <a tal:content="pypilink"
+    tal:attributes="
+      href pypilink;
+      title string:See $packagetitle on the PyPI site;
+  ">
+    link to PyPI: note that the URL field doesn't need to be filled in if the packagename in the Download area matches that on the PyPI site
+  </a>
+</p>
+</div>
+</div>
+<!-- /PyPI Linker code source -->

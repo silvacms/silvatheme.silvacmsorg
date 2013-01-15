@@ -1,0 +1,35 @@
+<tal:def tal:define="
+  localstyle options/local_style;
+  quotetext  options/quote_text;
+  credittext options/credit_text;
+  sourcelink options/source_link;
+  sourcetext options/source_text;
+  linktitle  options/link_tooltip;
+">
+<!-- Quotor code source (cs_quotor) -->
+<div class="info plot quote"
+  tal:attributes="style python:localstyle or nothing">
+  <h6 class="heading"
+    tal:condition="quotetext"
+    tal:content="structure quotetext">
+    quote....
+  </h6>
+  <p class="credit"
+    tal:condition="credittext"
+    tal:content="structure credittext">
+    credit....
+  </p>
+  <p class="source"
+    tal:condition="sourcetext">
+    <a tal:omit-tag="not:sourcelink"
+      tal:attributes="
+      href sourcelink;
+      title python:linktitle or nothing">
+      <tal:inc tal:replace="structure sourcetext">
+        source....
+      </tal:inc>
+    </a>
+  </p>
+</div>
+<!-- /End Quotor code source -->
+</tal:def>

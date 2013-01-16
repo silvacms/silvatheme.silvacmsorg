@@ -36,8 +36,4 @@ setup(name='silvatheme.silvacmsorg',
           'silvatheme.infraecommon',
           'zope.cachedescriptors',
       ],
-      entry_points="""
-      [Products.SilvaExternalSources.sources]
-      defaults = silvatheme.silvacmsorg.codesources
-      """,
       )

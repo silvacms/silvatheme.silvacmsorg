@@ -497,6 +497,7 @@ body.documentation #navcontainer #slot-two li {
 /*   ++++++ page specific styles: Support ++++++ */
 
 body.support section {
+  clear: both;
   width: 72%;
   margin: 20px auto;
 }

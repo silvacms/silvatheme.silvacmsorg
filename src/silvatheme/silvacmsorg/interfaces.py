@@ -12,6 +12,8 @@ class ISilvaCmsOrg(ITypography, IPorto):
     """
     silvaconf.resource('css/silvacmsorg.css')
     silvaconf.resource(jquery)
+    silvaconf.resource('css/slideshow.css')
+    silvaconf.resource('js/slideshow.js')
 
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):

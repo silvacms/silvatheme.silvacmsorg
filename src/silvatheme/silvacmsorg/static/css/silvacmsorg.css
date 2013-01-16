@@ -261,14 +261,14 @@ footer li {
 
 /*   ++++++ page specific styles: Get Silva ++++++ */
 
-#getsilva .plain {
+body.getsilva .plain {
   border-bottom: 2px solid #DDE5E7;
   font-size: 1.2em;
   margin-top: 20px;
   padding-bottom: 30px;
 }
 
-#getsilva section {
+body.getsilva section {
   background-color: #F6F6F3;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#F8F8F8), to(#F4F4F4));
@@ -284,7 +284,7 @@ footer li {
   width: 27%;
 }
 
-#getsilva section h2 {
+body.getsilva section h2 {
   background-color: #59A80F;  
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#7AB317), to(#519A0F));
@@ -300,16 +300,16 @@ footer li {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 
-#getsilva section p, #getsilva section h3  {
+body.getsilva section p, body.getsilva section h3  {
   color: #444;
   padding: 0 16px;
 }
 
-#getsilva h2 {
+body.getsilva h2 {
   clear: both;
 }
 
-#getsilva .info {
+body.getsilva .info {
   clear: both;
   border-left: 1px dashed #B7BEBF;
   padding: 25px 0 25px 26px;
@@ -395,14 +395,14 @@ table td {
 
 /*   ++++++ page specific styles: Documentation ++++++ */
 
-#documentation #content {
+body.documentation #content {
   background: #FCFCFC;
   border-style: none;
   box-shadow: none;
 }
 
-#documentation #content #users, #documentation #content #developers,
-#documentation #content #sysadmins, #documentation #content #tutorials {
+body.documentation #content #users, body.documentation #content #developers,
+body.documentation #content #sysadmins, body.documentation #content #tutorials {
   background: #FFF;
   border-color: #59A80F #E3E3E3 #E3E3E3;
   border-style: solid;
@@ -410,11 +410,11 @@ table td {
   clear: both;
 }
 
-#documentation #content {
+body.documentation #content {
   padding-bottom: 50px;
 }
 
-#documentation #content #slot-one {
+body.documentation #content #slot-one {
   display: inline-block;
   margin: 15px 20px 20px 60px;
   width: 510px;
@@ -423,25 +423,25 @@ table td {
 
 /* sidebar nav styling */
 
-#documentation #navcontainer {
+body.documentation #navcontainer {
   display: inline-block;
   padding: 20px 0;
   width: 275px;
 }
 
-#documentation #navcontainer #slot-two {
+body.documentation #navcontainer #slot-two {
   margin: 15px 0 0 24px;
 }
 
-#documentation #navcontainer #slot-two > ul {
+body.documentation #navcontainer #slot-two > ul {
   margin: 5px 10px;
 }
 
-#documentation #navcontainer #slot-two ul ul {
+body.documentation #navcontainer #slot-two ul ul {
   margin-left: 0;
 }
 
-#documentation #navcontainer #slot-two ul ul li a {
+body.documentation #navcontainer #slot-two ul ul li a {
   background-color: #FFF;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
@@ -458,13 +458,13 @@ table td {
   margin: 0;
 }
 
-#documentation #navcontainer #slot-two ul ul li a:hover,
-#documentation #navcontainer #slot-two ul ul li a:focus {
+body.documentation #navcontainer #slot-two ul ul li a:hover,
+body.documentation #navcontainer #slot-two ul ul li a:focus {
   background: #F1F1F1;
   text-decoration: none;
 }
 
-#documentation #navcontainer #slot-two ul li.toplevel > a {
+body.documentation #navcontainer #slot-two ul li.toplevel > a {
   background-color: #919191;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#919191), to(#555));
@@ -483,24 +483,24 @@ table td {
   text-shadow: 1px 1px 1px #000;
 }
 
-#documentation #navcontainer #slot-two ul li.toplevel > a:hover,
-#documentation #navcontainer #slot-two ul li.toplevel > a:focus {
+body.documentation #navcontainer #slot-two ul li.toplevel > a:hover,
+body.documentation #navcontainer #slot-two ul li.toplevel > a:focus {
   background: #4F4F4F;
   text-decoration: none;
 }
 
-#documentation #navcontainer #slot-two li {
+body.documentation #navcontainer #slot-two li {
   margin: 0 1px;
 }
 
 /*   ++++++ page specific styles: Support ++++++ */
 
-#support section {
+body.support section {
   width: 72%;
   margin: 20px auto;
 }
 
-#support .box h2 {
+body.support .box h2 {
   background-color: #59A80F;  
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
@@ -521,7 +521,7 @@ table td {
   vertical-align: top;
 }
 
-#support .box p {
+body.support .box p {
   background-color: #FEFEFE;  
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
@@ -542,45 +542,6 @@ table td {
 
 /*   ++++++ page specific styles: Features ++++++ */
 
-#features nav#corefeatures li {
-  background-color: #FFF;
-  background-image: none;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
-  background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: linear-gradient(to bottom, #FFF, #F2F2F2);
-  border-width: 0 1px 1px 0;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.5);
-  clear: both;
-  color: #333;
-  display: inline-block;
-  float: left;
-  font-weight: bold;
-  padding: 3px 0;
-  width: 240px;
-}
-
-#features #content h3, #features #content p, #features #content ul.featureslist {
-  clear: both;
-  margin: 0 auto;
-  width: 700px;
-}
-
-#features #content h3 {
-  padding-top: 20px;
-  margin-bottom: 10px;
-}
-
-#features #content p:first-of-type {
-  padding-top: 40px;
-}
-
-#features #content ul.featureslist li {
-  margin-left: 30px;
-  list-style: disc;
-}
 
 /* -- login page -- */
 

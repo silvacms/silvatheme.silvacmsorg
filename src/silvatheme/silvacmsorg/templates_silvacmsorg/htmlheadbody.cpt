@@ -26,7 +26,7 @@
     <link tal:replace="structure path:context/head_inject | None" />
   </head>
 
-  <body tal:attributes="id layout.body_id">
+  <body tal:attributes="class layout.body_id">
     <tal:layout tal:replace="structure provider:layout" />
   </body>
 </html>

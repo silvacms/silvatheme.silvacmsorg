@@ -1,9 +1,8 @@
 <tal:DOCTYPE tal:replace="structure layout.doctype" />
-<html xmlns="http://www.w3.org/1999/xhtml"
-      tal:define="
-        metadata path:layout/metadata/silva-extra;
-        lang metadata.language"
-      tal:attributes="lang python:lang or None">
+<html tal:define="
+  metadata path:layout/metadata/silva-extra;
+  lang metadata.language"
+  tal:attributes="lang python:lang or None">
   <head>
     <title tal:content="layout.title">Title</title>
     <base tal:attributes="href path:context/@@absolute_url">

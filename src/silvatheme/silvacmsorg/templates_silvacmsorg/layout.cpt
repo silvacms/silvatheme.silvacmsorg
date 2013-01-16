@@ -1,12 +1,19 @@
 <header>
-      <div class="title">
-      <a tal:attributes="href layout.root_url">
-        <img class="logo" alt="Silva logo"
+      <div class="header-form">
+        <form>
+          <input id="toggleBar" placeholder="Search the Silva CMS site" type="text">
+          <button id="toggleButton" type="submit"><img src="../static/images/search.png"></button>          
+        </form>
+      </div>
+      <div class="header-wrapper">
+        <div class="title">
+        <a tal:attributes="href layout.root_url">
+          <img class="logo" alt="Silva logo"
              tal:attributes="src path:static/images/silva.png" />
           <h6>Silva</h6>
-      </a>
-      </div>
-      <nav>
+        </a>
+        </div>
+        <nav>
         <ul>
           <li tal:repeat="publication provider.top_menu_items()"
               tal:attributes="class provider.current_publication_class(publication)">
@@ -14,13 +21,10 @@
                tal:content="publication.get_title()">
                publication title goes here
             </a>
-        </li>
+          </li>
         </ul>
-      </nav>
-      <form name="search" method="get">
-        <input type="text" placeholder="Search the Silva CMS site..." />
-        <input type="submit" value="search" />
-      </form>
+        </nav>
+      </div>
     </header>
     <!-- end header -->
 

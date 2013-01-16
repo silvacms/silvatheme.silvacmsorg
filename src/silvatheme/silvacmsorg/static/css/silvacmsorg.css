@@ -43,21 +43,82 @@ li {
 ::-selection {background: #E6F8BA;}
 ::-moz-selection {background: #E6F8BA;}
 
+
 /* -- header settings -- */
 
 header {
-  background-color: #484848;
-  background-image: none;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#313131));
-  background-image: -webkit-linear-gradient(top, #696969, #313131);
-  background-image: -moz-linear-gradient(top, #696969, #313131);
-  background-image: -o-linear-gradient(top, #696969, #313131);
-  background-image: linear-gradient(to bottom, #696969, #313131);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  height: 60px;
+  background-color: #292A2D;
+  border-bottom: 2px solid #151515;
+  box-shadow: 0 4px 18px #9C9C9C; 
+  height: 78px;
 }
 
-header a:link, header a:visited, header a:link:hover, header a:visited:hover {
+header .header-form {
+  float: right;
+  padding: 8px 8px 0 0;
+}
+
+header .header-form button[type="submit"] {
+  background-color: #292A2D;
+  border-style: none;
+  vertical-align: middle;
+}
+
+header .header-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* title settings */
+
+header .title {
+  clear: both;
+  float: left;
+  margin: 4px 20px 0 0;
+  width: 17%;
+}
+
+header img {
+  float: left;
+}
+
+header h6 {
+  color: #fff;
+  float: left;
+  font-size: 2.2em;
+  margin: 0 0 0 16px;
+}
+
+/* header navigation settings */
+
+header nav {
+  float: right; 
+}
+
+header nav ul li {
+  float: left;
+  margin: 14px 0 0 15px;
+}
+
+header nav ul li a {
+  padding: 3px 12px;
+  text-transform: uppercase;
+}
+
+header nav ul li.selected a {
+  background-color: #59A80F; 
+  background-image: none;  
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7AB317), to(#519A0F));
+  background-image: -webkit-linear-gradient(top, #7AB317, #519A0F);
+  background-image: -moz-linear-gradient(top, #7AB317, #519A0F);
+  background-image: -o-linear-gradient(top, #7AB317, #519A0F);
+  background-image: linear-gradient(to bottom, #7AB317, #519A0F);
+  border: 1px solid #3D8C00;
+  border-radius: 6px; 
+  padding: 2px 11px;
+}
+
+header nav ul li a:link, header nav ul li a:visited {
   color: #FFF;
   display: block;
   font-weight: bold;
@@ -65,64 +126,37 @@ header a:link, header a:visited, header a:link:hover, header a:visited:hover {
   text-decoration: none;
 }
 
-header img {
-  float: left;
-  margin: 12px 0 0 60px;
-}
-
-/* title settings */
-
-header h6 {
-  float: left;
-  width: 120px;
-  margin: 12px 0 0 16px;
-  color: #fff;
-  text-indent: 0;
-  font-size: 2.2em;
-}
-
-/* header navigation settings */
-
-header nav {
-  float: left;
-  margin: 0; padding: 0;
-  width: 670px;
-}
-
-header nav li {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  float: left;
-  text-align: center;
-  width: 130px;
-}
-
-header nav li.last {
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-header nav li a {
-  padding: 21px 0;
-}
-
-header nav li.selected {
-  background-color: #797979;
-  background-image: none;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
-  background-image: -webkit-linear-gradient(top, #696969, #797979);
-  background-image: -moz-linear-gradient(top, #696969, #797979);
-  background-image: -o-linear-gradient(top, #696969, #797979);
-  background-image: linear-gradient(to bottom, #696969, #797979);
-}
-
-header nav li:hover, header nav li:focus {
-  background: #373737;
+header nav li a:link:hover, header nav li a:link:focus,
+header nav li a:visited:hover, header nav li a:visited:focus {
+  background-color: #606060; 
+  background-image: none;  
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7F7F7F), to(#646464));
+  background-image: -webkit-linear-gradient(top, #7F7F7F, #646464);
+  background-image: -moz-linear-gradient(top, #7F7F7F, #646464);
+  background-image: -o-linear-gradient(top, #7F7F7F, #646464);
+  background-image: linear-gradient(to bottom, #7F7F7F, #646464);
+  border: 1px solid #000;
+  border-radius: 6px; 
   color: #FFF;
+  padding: 2px 11px;
 }
 
-header form {
-  float: right;
-  margin: 18px 30px 0 0;
-  width: 258px;
+@media only screen and (max-width: 900px) {
+
+header {
+  height: 120px; 
+}
+
+header .title  {
+  width: 100%;
+}
+
+header .header-wrapper nav {
+  float: left;
+}
+
+header nav ul li {
+  margin: 14px 15px 0 0;
 }
 
 /* input settings */ 

@@ -280,7 +280,7 @@ body.getsilva section {
   float: left;
   height: 400px;
   min-height: 400px;
-  margin: 30px 0;
+  margin: 15px 0;
   width: 27%;
 }
 
@@ -296,7 +296,7 @@ body.getsilva section h2 {
   border-bottom: 1px solid #1A6900;
   color: #FFF;
   font-size: 1.4em;
-  padding: 8px 12px;
+  padding: 6px 12px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 
@@ -313,6 +313,7 @@ body.getsilva .info {
   clear: both;
   border-left: 1px dashed #B7BEBF;
   padding: 25px 0 25px 26px;
+}
 
 /* table styling */
 
@@ -500,7 +501,7 @@ body.support section {
   margin: 20px auto;
 }
 
-body.support .box h2 {
+body.support section h2 {
   background-color: #59A80F;  
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
@@ -521,7 +522,7 @@ body.support .box h2 {
   vertical-align: top;
 }
 
-body.support .box p {
+body.support section p {
   background-color: #FEFEFE;  
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));

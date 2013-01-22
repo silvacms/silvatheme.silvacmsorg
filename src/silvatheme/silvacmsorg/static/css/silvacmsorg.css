@@ -5,9 +5,9 @@ body {
 }
 
 #content {
-  margin: 75px auto;
+  margin: 80px auto;
   min-height: 700px;
-  width: 85%;
+  width: 960px;
 }
 
 h3 {
@@ -19,17 +19,15 @@ p, li {
   line-height: 19px;
 }
 
-a:link, a:visited, a:hover, a:focus {
+a:link, a:visited {
+  font-weight: bold;
   text-decoration: none;
 }
-a:link {
-  font-weight: bold;
-}
-a:visited {
-  color: #D06004;
+a:link, a:visited {
+  color: #58A714;
 }
 a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
-  color: #E28C00;
+  text-decoration: underline;
 }
 
 img {
@@ -40,9 +38,12 @@ li {
   list-style: none;
 }
 
-::-selection {background: #E6F8BA;}
-::-moz-selection {background: #E6F8BA;}
+li a:link, li a:visited {
+  text-decoration: none;
+}
 
+::-selection {background: #7CCB38; color:#FFF;}
+::-moz-selection {background: #7CCB38; color:#FFF;}
 
 /* -- header settings -- */
 
@@ -139,6 +140,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   border-radius: 6px; 
   color: #FFF;
   padding: 2px 11px;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 900px) {
@@ -208,11 +210,16 @@ footer {
 
 footer #legal, footer ul {
   margin: 0 auto;
-  width: 85%;
+  width: 960px;
 }
 
 footer #legal {
   padding: 15px 0;
+}
+
+footer li {
+  float: left;
+  margin: 0 25px 20px 0;
 }
 
 footer a:link, footer a:visited {
@@ -225,11 +232,6 @@ footer a:link, footer a:visited {
 
 footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visited:focus {
   color: #E2E2E2; 
-}
-
-footer li {
-  float: left;
-  margin: 0 25px 20px 0;
 }
 
 /* generic features box */
@@ -265,32 +267,7 @@ footer li {
   padding: 10px 15px;
 }
 
-#features .box a.readmore {
-  background-image: url("../images/read_more_icon.gif");
-  background-repeat: no-repeat;
-  background-position: 85% 50%;
-  display: inline-block;
-  font-weight: bold;
-  padding-left: 15px;
-  text-transform: uppercase;
-  width: 125px;
-}
-
-#features .box.medium {
-  height: 230px;
-  width: 430px;
-}
-
-#features .box.medium h2 {
-  background: #59A80F;
-  border-radius: 4px 4px 0 0;
-  color: #FFF;
-  margin: 0;
-  padding: 5px 10px 15px 10px;
-  font-size: 125%;
-}
-
-/*   ++++++ page specific styles: Aboutpage ++++++ */
+/*   ++++++ page specific styles: About Silva ++++++ */
 
 
 /*   ++++++ page specific styles: Get Silva ++++++ */
@@ -298,39 +275,29 @@ footer li {
 body.getsilva .plain {
   border-bottom: 2px solid #DDE5E7;
   font-size: 1.2em;
-  margin-top: 20px;
+  margin-top: 15px;
   padding-bottom: 30px;
 }
 
 body.getsilva section {
-  background-color: #F6F6F3;
-  background-image: none;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#F8F8F8), to(#F4F4F4));
-  background-image: -webkit-linear-gradient(top, #F8F8F8, #F4F4F4);
-  background-image: -moz-linear-gradient(top, #F8F8F8, #F4F4F4);
-  background-image: -o-linear-gradient(top, #F8F8F8, #F4F4F4);
-  background-image: linear-gradient(to bottom, #F8F8F8, #F4F4F4); 
-  border-bottom: 1px solid #E0E0E0;
+  border: 1px solid #656565;
   float: left;
   height: 400px;
-  min-height: 400px;
   margin: 15px 0;
-  width: 27%;
+  width: 32%;
+}
+
+body.getsilva section.box-middle {
+  border-top: 1px solid #656565;
+  border-bottom: 1px solid #656565;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 body.getsilva section h2 {
-  background-color: #59A80F;  
-  background-image: none;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#7AB317), to(#519A0F));
-  background-image: -webkit-linear-gradient(top, #7AB317, #519A0F);
-  background-image: -moz-linear-gradient(top, #7AB317, #519A0F);
-  background-image: -o-linear-gradient(top, #7AB317, #519A0F);
-  background-image: linear-gradient(to bottom, #7AB317, #519A0F);
-  border-top: 1px solid #1A6900;
-  border-bottom: 1px solid #1A6900;
+  background-color: #C93636;  
   color: #FFF;
-  font-size: 1.4em;
-  padding: 6px 12px;
+  padding: 4px 12px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 
@@ -340,48 +307,40 @@ body.getsilva section p, body.getsilva section h3  {
 }
 
 body.getsilva h2 {
+  color: #C93636;  
   clear: both;
 }
 
-body.getsilva .info {
+body.getsilva .demo {
   clear: both;
-  border-left: 1px dashed #B7BEBF;
-  padding: 25px 0 25px 26px;
+  border: 1px dashed #B7BEBF;
+  height: 370px;
+  min-height: 370px;
+  margin-top: 15px;
+  padding: 15px;
 }
 
-/* table styling */
-
-table {
-  margin-top: 30px;
-  width: 580px;
-}
-
-table th {
-  background-color: #919191;
+body.getsilva .block {
+  background-color: #EFEFEF;
   background-image: none;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#919191), to(#555));
-  background-image: -webkit-linear-gradient(top, #919191, #555);
-  background-image: -moz-linear-gradient(top, #919191, #555);
-  background-image: -o-linear-gradient(top, #919191, #555);
-  background-image: linear-gradient(to bottom, #919191, #555); 
-  border-width: 1px 0 0 0;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.5);
-  color: #FFF;
-  padding: 5px 12px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
+  background-image: -webkit-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: -moz-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
+  border: 1px solid #E0E0E0;
+  margin-top: 50px;
+  padding: 10px 20px;
+  height: 160px;
+  width: 380px;
 }
 
-table td {
-  background-color: #FFF;
-  background-image: none;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
-  background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: linear-gradient(to bottom, #FFF, #F2F2F2); 
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 5px 12px;
+body.getsilva .block-left {
+  float: left;
+}
+
+body.getsilva .block-right {
+  float: right; 
 }
 
 /* generic tab navigation styling */

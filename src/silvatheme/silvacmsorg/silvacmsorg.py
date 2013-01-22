@@ -3,12 +3,15 @@ import datetime
 from five import grok
 from zope.cachedescriptors.property import Lazy
 from zope.traversing.browser import absoluteURL
+from zope.component import getUtility
 
 from silva.core import contentlayout
 from silva.core.interfaces import IPublication, IFeedEntryProvider
 from silva.core.layout.porto import porto
 from silva.core.views import views as silvaviews
 from silva.core.contentlayout import Design, Slot
+
+from Products.SilvaMetadata.interfaces import IMetadataService
 
 from .interfaces import ISilvaCmsOrg, ISilvaSilvaOrgWithNavigation
 
@@ -32,8 +35,15 @@ class Layout(porto.Layout):
 
     def top_menu_items(self):
         root = self.context.get_root()
+        gmv = getUtility(IMetadataService).getMetadataValue
+
         def publishable(x):
-            return x.is_published() and IPublication.providedBy(x)
+            hidden = gmv(
+                x, 'silva-extra', 'hide_from_tocs', acquire=0) == 'hide'
+            return (x.is_published() and
+                    not(hidden) and
+                    IPublication.providedBy(x))
+
         return filter(publishable, root.get_ordered_publishables())
 
     def current_publication_class(self, publication):

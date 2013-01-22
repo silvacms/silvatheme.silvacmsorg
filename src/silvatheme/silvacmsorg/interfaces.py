@@ -6,13 +6,14 @@ from silvatheme.infraecommon import ITypography
 
 from js.jquery import jquery
 
+
 class ISilvaCmsOrg(ITypography, IPorto):
     """Layer for SilvaCMS.org theme
     """
     silvaconf.resource('css/silvacmsorg.css')
     silvaconf.resource(jquery)
-    silvaconf.resource('css/slideshow.css')
-    silvaconf.resource('js/slideshow.js')
+    #silvaconf.resource('css/slideshow.css')
+    #silvaconf.resource('js/slideshow.js')
 
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):

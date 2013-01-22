@@ -4,9 +4,11 @@ from five import grok
 from zope.cachedescriptors.property import Lazy
 from zope.traversing.browser import absoluteURL
 
+from silva.core import contentlayout
 from silva.core.interfaces import IPublication, IFeedEntryProvider
 from silva.core.layout.porto import porto
 from silva.core.views import views as silvaviews
+from silva.core.contentlayout import Design, Slot
 
 from .interfaces import ISilvaCmsOrg, ISilvaSilvaOrgWithNavigation
 
@@ -91,3 +93,12 @@ class HeadInsertFeeds(silvaviews.Viewlet):
             else:
                 self.have_feeds = True
             self.feed_url = absoluteURL(self.context, self.request)
+
+
+class FullPage(contentlayout.Design):
+    grok.name('fullpage')
+    grok.title('Full Page')
+
+    slots = {
+        'fullpage': contentlayout.Slot(css_class='content')}
+

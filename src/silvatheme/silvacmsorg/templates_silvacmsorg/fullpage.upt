@@ -1,0 +1,1 @@
+<tal:content tal:content="structure slot:fullpage" />

@@ -1,62 +1,59 @@
 <header>
-      <div class="header-form">
-        <form>
-          <input id="toggleBar" placeholder="Search the Silva CMS site" type="text">
-          <button id="toggleButton" type="submit"><img src="../static/images/search.png"></button>          
-        </form>
-      </div>
-      <div class="header-wrapper">
-        <div class="title">
-        <a tal:attributes="href layout.root_url">
-          <img class="logo" alt="Silva logo"
-             tal:attributes="src path:static/images/silva.png" />
-          <h6>Silva</h6>
-        </a>
-        </div>
-        <nav>
-        <ul>
-          <li tal:repeat="publication provider.top_menu_items()"
-              tal:attributes="class provider.current_publication_class(publication)">
-            <a tal:attributes="href path:publication/@@absolute_url"
-               tal:content="publication.get_title()">
-               publication title goes here
-            </a>
-          </li>
-        </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- end header -->
-
-  <!-- start content -->
-  <div id="content" class="clearfix">
-    <div class="silva-content"
-         tal:content="structure view.content()">
-      Silva Content
-    </div>
+  <div class="header-form">
+    <form>
+      <input id="toggleBar" placeholder="Search the Silva CMS site" type="text">
+        <button id="toggleButton" type="submit"><img src="../static/images/search.png"></button>          
+    </form>
   </div>
-  <!-- end content -->
+  <div class="header-wrapper">
+    <div class="title">
+      <a tal:attributes="href layout.root_url">
+        <img class="logo" alt="Silva logo"
+             tal:attributes="src path:static/images/silva.png" />
+        <h6>Silva</h6>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li tal:repeat="publication provider.top_menu_items()"
+            tal:attributes="class provider.current_publication_class(publication)">
+          <a tal:attributes="href path:publication/@@absolute_url"
+             tal:content="publication.get_title()">
+            publication title goes here
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- end header -->
 
-  <!-- start footer -->
-  <footer>
-    <div class="wrap" tal:replace="structure provider:footer">Footer content</div>
-  </footer>
-  <!-- end footer -->
+<!-- start content -->
+<div id="content" class="clearfix"
+     tal:content="structure provider:content">
+</div>
+<!-- end content -->
+
+<!-- start footer -->
+<footer>
+  <div class="wrap" tal:replace="structure provider:footer">Footer content</div>
+</footer>
+<!-- end footer -->
 
 <script type="text/javascript">
 
-$(document).ready(function(){
+  $(document).ready(function(){
 
-$('#tabs section').hide();
-$('#tabs section:first').show();
-$('#tabs ul li:first').addClass('selected');
-$('#tabs ul li a').click(function(){
-$('#tabs ul li').removeClass('selected');
-$(this).parent().addClass('selected');
-var currentTab = $(this).attr('href');
-$('#tabs section').hide();
-$(currentTab).show();
-return false;
-});
-});
+  $('#tabs section').hide();
+  $('#tabs section:first').show();
+  $('#tabs ul li:first').addClass('selected');
+  $('#tabs ul li a').click(function(){
+  $('#tabs ul li').removeClass('selected');
+  $(this).parent().addClass('selected');
+  var currentTab = $(this).attr('href');
+  $('#tabs section').hide();
+  $(currentTab).show();
+  return false;
+  });
+  });
 </script>

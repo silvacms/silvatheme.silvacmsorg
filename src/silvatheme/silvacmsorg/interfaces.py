@@ -1,9 +1,8 @@
 
-from silvatheme.infraecommon import ITypography
-from zope.publisher.interfaces.browser import IDefaultBrowserLayer
-from silva.core.layout.porto.interfaces import IPorto
-from silva.core.layout.interfaces import ISilvaSkin
 from silva.core import conf as silvaconf
+from silva.core.layout.interfaces import ISilvaSkin
+from silva.core.layout.porto.interfaces import IPorto
+from silvatheme.infraecommon import ITypography
 
 from js.jquery import jquery
 
@@ -22,5 +21,10 @@ class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):
     silvaconf.skin('SilvaCMS')
 
 
-class IAboutResources(IDefaultBrowserLayer, ISilvaCmsOrg):
+class ISilvaSilvaOrgWithNavigation(ISilvaCmsOrg):
     pass
+
+
+class ISilvaCmsOrgSkinWithNavigation(ISilvaSilvaOrgWithNavigation, ISilvaSkin):
+    silvaconf.skin('SilvaCMS with navigation')
+

@@ -4,15 +4,14 @@ from five import grok
 from zope.cachedescriptors.property import Lazy
 from zope.traversing.browser import absoluteURL
 
-from silva.core import conf as silvaconf
 from silva.core.interfaces import IPublication, IFeedEntryProvider
 from silva.core.layout.porto import porto
 from silva.core.views import views as silvaviews
 
-from .interfaces import ISilvaCmsOrg
+from .interfaces import ISilvaCmsOrg, ISilvaSilvaOrgWithNavigation
 
 grok.templatedir('templates_silvacmsorg')
-silvaconf.layer(ISilvaCmsOrg)
+grok.layer(ISilvaCmsOrg)
 
 
 class MainLayout(porto.MainLayout):
@@ -40,12 +39,23 @@ class Layout(porto.Layout):
             return 'selected'
         return ''
 
-class Favicon(silvaviews.ContentProvider):
-    grok.template('favicon')
+
+class Content(silvaviews.ContentProvider):
+    grok.template('content')
+
+
+class ContentWithNavigation(silvaviews.ContentProvider):
+    grok.layer(ISilvaSilvaOrgWithNavigation)
+    grok.template('contentwithnavigation')
+    grok.name('content')
 
 
 class Navigation(porto.Navigation):
     max_depth = 1
+
+
+class Favicon(silvaviews.ContentProvider):
+    grok.template('favicon')
 
 
 class Footer(porto.Footer):

@@ -1,0 +1,6 @@
+<div class="silva-navigation"
+     tal:content="structure provider:navigation" />
+<div class="silva-content"
+     tal:content="structure view.content()">
+  Silva Content
+</div>

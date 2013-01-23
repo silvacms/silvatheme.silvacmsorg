@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Regular-webfont.eot');
+	src: local('â˜º'),
+	url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+	url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+	url('fonts/Roboto-Regular-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* -- general settings -- */
 
 body {
@@ -10,8 +21,17 @@ body {
   width: 960px;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', Verdana, Calibri, sans-serif;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.4em;
+}
 h3 {
-  color: #5CAB12;
   font-size: 1.2em;
 }
 
@@ -20,12 +40,11 @@ p, li {
 }
 
 a:link, a:visited {
+  color: #58A714;
   font-weight: bold;
   text-decoration: none;
 }
-a:link, a:visited {
-  color: #58A714;
-}
+
 a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
   text-decoration: underline;
 }
@@ -44,6 +63,134 @@ li a:link, li a:visited {
 
 ::-selection {background: #7CCB38; color:#FFF;}
 ::-moz-selection {background: #7CCB38; color:#FFF;}
+
+/* column layout */ 
+
+.maincontent {
+  float: left; 
+  width: 700px;
+}
+
+.sidebar {
+  float: right; 
+  width: 220px;
+}
+
+.maincontentwide {
+  float: left; 
+  width: 780px;
+}
+
+.demo {
+  float: right;
+  width: 140px;
+}
+
+/* ++ box styling ++ */
+
+/* navigation styling */ 
+
+.site-navigation li, .page-navigation li, .related-info li {
+  color: #58A714;
+  list-style: square inside none;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+/* site navigation */ 
+
+.site-navigation {
+  background-color: #EFEFEF;
+  background-image: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
+  background-image: -webkit-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: -moz-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
+  padding: 15px;
+}
+
+.site-navigation ul {
+  margin: 0; padding: 0;
+}
+
+.site-navigation li {
+  margin: 12px 0;
+}
+
+.site-navigation a:link, body.about .aboutnav a:visited {
+  color: #444;
+}
+
+.site-navigation a:hover, body.about .aboutnav a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* page navigation */ 
+
+.page-navigation {
+  background-color: #292A2D;
+  margin-top: 40px;
+}
+
+.page-navigation img {
+  display: block;
+  margin: 0 auto; 
+  padding: 6px 0;
+}
+
+.page-navigation ul {
+  background-color: #F4F4F4;
+  margin: 0 6px;
+  padding: 2px 0;
+}
+
+.page-navigation li {
+  margin: 12px 8px;
+}
+
+.page-navigation li a {
+  color: #333;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.page-navigation li a:hover, .page-navigation li a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* related info navigation */
+
+.related-info {
+  background-color: #58A714;
+  margin: 20px 10px;
+  padding: 2px;
+  width: 220px;
+}
+
+.related-info li {
+  background-color: #FFF;
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
+    background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');
+    background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 4px 10px 6px;
+}
+
+.related-info li a:hover,
+.related-info li a:focus {
+  background: #F1F1F1;
+  text-decoration: none;
+}
+
+.related-info li a {
+  color: #444;
+}
 
 /* -- header settings -- */
 
@@ -163,7 +310,7 @@ header nav ul li {
 
 }
 
-/* generic features box */
+/* generic features box (used now only on home page) */
 
 #features {
   clear: both;
@@ -198,7 +345,7 @@ header nav ul li {
 
 /*   ++++++ page specific styles: About Silva ++++++ */
 
-body.about .silva-content h2 {
+body.about .maincontent h2 {
   clear: both;
   color: #6F084F;
   font-weight: normal;
@@ -206,7 +353,7 @@ body.about .silva-content h2 {
 
 /* features and benefits */ 
 
-body.about .silva-content h1 {
+body.about .maincontent .features h1 {
   background-color: #7C085C; 
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#952175), to(#6E004E));
@@ -221,7 +368,7 @@ body.about .silva-content h1 {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
 
-body.about .silva-content .introfacts {
+body.about .introfacts {
   background-color: #EFEFEF;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
@@ -236,7 +383,7 @@ body.about .silva-content .introfacts {
   margin-bottom: 40px;
 }
 
-body.about .silva-content .introfacts p {
+body.about .maincontent .introfacts p {
   color: #47092E;
   float: right; 
   padding: 10px 15px;
@@ -246,17 +393,17 @@ body.about .silva-content .introfacts p {
   width: 65%;
 }
 
-body.about .silva-content p {
+body.about .maincontent p {
   padding: 0 25px;
 }
 
-body.about .silva-content li {
+body.about .maincontent li {
   background-image: url(images/green_check.png);
   background-repeat: no-repeat;
   background-position: 0px 3px; 
   margin: 12px 0;
   padding-left: 24px;
-}#a40000
+}
 
 /*   ++++++ page specific styles: Get Silva ++++++ */
 
@@ -331,9 +478,25 @@ body.getsilva .block-right {
   float: right; 
 }
 
-/* generic tab navigation styling */
+/*   ++++++ page specific styles: Documentation ++++++ */
 
-#content .tab-nav a:link, #content .tab-nav a:visited {
+body.documentation #tabs {
+  margin-top: 35px;
+}
+
+body.documentation .tab-nav li.selected a, body.documentation .tab-nav li.selected a:hover,
+body.documentation .tab-nav li.selected a:focus {
+  background-color: #ECDA3C;
+  background-image: none;
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#FDEB4D), to(#EDDB3D));
+  background-image: -webkit-linear-gradient(top, #FDEB4D, #EDDB3D);
+  background-image: -moz-linear-gradient(top, #FDEB4D, #EDDB3D);
+  background-image: -o-linear-gradient(top, #FDEB4D, #EDDB3D);
+  background-image: linear-gradient(to bottom, #FDEB4D, #EDDB3D); 
+  color: #303030;
+}
+
+body.documentation .tab-nav a:link, #content .tab-nav a:visited {
   background-color: #FEFEFE;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#E6E6E6));
@@ -343,20 +506,21 @@ body.getsilva .block-right {
   background-image: linear-gradient(to bottom, #FEFEFE, #E6E6E6); 
   border-width: 1px 2px 0 2px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.1);
   border-radius: 4px 4px 0 0;
   color: #6A6A6A;
+  font-size: 0.9em;
   font-weight: bold;
   float: left;
   margin: 0 8px 0 0;
   padding: 5px 0;
   text-align: center;
   vertical-align: bottom;
-  width: 220px;
+  width: 22%;
 }
 
-#content .tab-nav a:link:hover,#content .tab-nav a:visited:hover,
-#content .tab-nav a:link:focus, #content .tab-nav a:visited:focus {
+body.documentation .tab-nav a:link:hover, body.documentation .tab-nav a:visited:hover,
+body.documentation .tab-nav a:link:focus, body.documentation .tab-nav a:visited:focus {
   background-color: #FFF;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#DEDEDE));
@@ -369,31 +533,17 @@ body.getsilva .block-right {
   text-decoration: none;
 }
 
-#content .tab-nav .selected a,#content .tab-nav .selected a:hover,
-#content .tab-nav .selected a:focus {
-  background: #59A80F;
-  color: white;
-}
-
-/*   ++++++ page specific styles: Documentation ++++++ */
-
-body.documentation #content {
-  background: #FCFCFC;
-  border-style: none;
-  box-shadow: none;
-}
-
-body.documentation #content #users, body.documentation #content #developers,
-body.documentation #content #sysadmins, body.documentation #content #tutorials {
-  background: #FFF;
-  border-color: #59A80F #E3E3E3 #E3E3E3;
+body.documentation #users, body.documentation #developers,
+body.documentation #sysadmins, body.documentation #tutorials {
+  background-color: #FFF;
+  border-color: #EDDB3D #BEBEBE #BEBEBE;
   border-style: solid;
   border-width: 5px 1px 1px;
   clear: both;
 }
 
-body.documentation #content {
-  padding-bottom: 50px;
+body.documentation h2 {
+  border-bottom: 2px solid #EDDB3D;
 }
 
 body.documentation #content #slot-one {
@@ -403,88 +553,44 @@ body.documentation #content #slot-one {
   vertical-align: top;
 }
 
-/* sidebar nav styling */
-
-body.documentation #navcontainer {
-  display: inline-block;
-  padding: 20px 0;
-  width: 275px;
+body.documentation section {
+  padding: 30px 50px;
 }
 
-body.documentation #navcontainer #slot-two {
-  margin: 15px 0 0 24px;
-}
+/* tab styles: user documentation */ 
 
-body.documentation #navcontainer #slot-two > ul {
-  margin: 5px 10px;
-}
-
-body.documentation #navcontainer #slot-two ul ul {
-  margin-left: 0;
-}
-
-body.documentation #navcontainer #slot-two ul ul li a {
-  background-color: #FFF;
+body.documentation #users .documentation-intro {
+  background-color: #EFEFEF;
   background-image: none;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
-  background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
-  background-image: linear-gradient(to bottom, #FFF, #F2F2F2);  
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  display: block;
-  padding: 4px 10px 6px;
-  font-weight: normal;
-  color: #000;
-  margin: 0;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
+  background-image: -webkit-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: -moz-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
+  border: 1px solid #E0E0E0;
+  height: 149px;
+  margin: 30px 0 50px 0;
 }
 
-body.documentation #navcontainer #slot-two ul ul li a:hover,
-body.documentation #navcontainer #slot-two ul ul li a:focus {
-  background: #F1F1F1;
-  text-decoration: none;
+body.documentation #users img {
+  float: left;
 }
 
-body.documentation #navcontainer #slot-two ul li.toplevel > a {
-  background-color: #919191;
-  background-image: none;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#919191), to(#555));
-  background-image: -webkit-linear-gradient(top, #919191, #555);
-  background-image: -moz-linear-gradient(top, #919191, #555);
-  background-image: -o-linear-gradient(top, #919191, #555);
-  background-image: linear-gradient(to bottom, #919191, #555);    
-  border-width: 1px 0 0 0;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.5);
-  color: #FFF;
-  display: block;
-  font-weight: bold;
-  margin: 0;
-  padding: 4px 10px 6px;
-  text-shadow: 1px 1px 1px #000;
+body.documentation #users p {
+  float: left;
+  padding: 15px 25px;
+  width: 540px;
 }
 
-body.documentation #navcontainer #slot-two ul li.toplevel > a:hover,
-body.documentation #navcontainer #slot-two ul li.toplevel > a:focus {
-  background: #4F4F4F;
-  text-decoration: none;
+body.documentation #users .info {
+  clear: both;
 }
 
-body.documentation #navcontainer #slot-two li {
-  margin: 0 1px;
-}
+/*   ++++++ page specific styles: Community ++++++ */
 
 /*   ++++++ page specific styles: Support ++++++ */
 
-body.support .wrapper {
-  box-shadow: 0 1px 0 #EEE;
-  webkit-box-shadow: 0 1px 0 #EEE;
-  border: 1px solid #D6D6D6;
-  height: 960px;
-}
-
-body.support .wrapper p.plain {
+body.support p.plain {
   border-left: 5px double #2378DF;
   line-height: 1.7em;
   margin: 30px;
@@ -498,7 +604,7 @@ body.support .image {
 
 body.support .image img {
   border: 2px solid #2378DF;
-  margin: 30px 30px 60px 30px;
+  margin: 0 30px 60px 30px;
 }
 
 body.support section {
@@ -545,23 +651,6 @@ body.support section p {
   height: 100px;
   float: left;
   width: 480px;
-}
-
-/* -- login page -- */
-
-.silva-content div.login-form {
-  margin-left: 100px;
-  padding-top: 50px;
-  height: 100px;
-}
-
-.silva-content div.login-form div.form-title {
-  font-weight: normal;
-}
-
-.silva-content div.login-form div.form-label {
-  font-weight: bold;
-  padding: 2px 0;
 }
 
 /* input settings */ 
@@ -637,60 +726,19 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
   color: #E2E2E2; 
 }
 
-/* removed selectors after merge with custom.css */
+/* -- login page -- */
 
-/*
-@font-face {
-	font-family: 'Sansation';
-	src: url('../fonts/Sansation-fontfacekit/Sansation_Regular-webfont.eot');
-	src: local('â˜º'),
-	url('../fonts/Sansation-fontfacekit/Sansation_Regular-webfont.woff') format('woff'),
-	url('../fonts/Sansation-fontfacekit/Sansation_Regular-webfont.ttf') format('truetype'),
-	url('../fonts/Sansation-fontfacekit/Sansation_Regular-webfont.svg#webfont') format('svg');
-	font-weight: normal;
-	font-style: normal;
+.silva-content div.login-form {
+  margin-left: 100px;
+  padding-top: 50px;
+  height: 100px;
 }
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-html, body  {
-  margin: 0; padding: 0;
-  width: 100%;
+.silva-content div.login-form div.form-title {
+  font-weight: normal;
 }
 
-header #backgroundPicker {
-  display: none;
+.silva-content div.login-form div.form-label {
+  font-weight: bold;
+  padding: 2px 0;
 }
-
-
-header nav ul {
-  float: right;
-}
-
-header .headerForm {
-  margin: 10px 10px 0 0;
-  float: right;
-}
-
-header .headerForm #toggleBar {
-  display: none;
-}
-
-.headerForm input[type="text"] {
-  vertical-align: top;
-}
-
-.headerForm button[type="submit"] {
-  background-image: url(../images/search.png);
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-  background-color: #1D1E21;
-  border: none;
-  padding-top: 4px;
-  height: 18px; width: 18px;
-}
-
-header #dropdownNav {
-  display: none;
-}
-*/

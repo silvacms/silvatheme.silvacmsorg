@@ -15,7 +15,7 @@
     </div>
     <nav>
       <ul>
-        <li tal:repeat="publication provider.top_menu_items()"
+        <li tal:repeat="publication provider.top_menu_items"
             tal:attributes="class provider.current_publication_class(publication)">
           <a tal:attributes="href path:publication/@@absolute_url"
              tal:content="publication.get_title()">

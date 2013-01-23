@@ -33,6 +33,7 @@ class Layout(porto.Layout):
     def publication_url(self):
         return self.context.get_publication().absolute_url()
 
+    @Lazy
     def top_menu_items(self):
         root = self.context.get_root()
         gmv = getUtility(IMetadataService).getMetadataValue

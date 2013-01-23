@@ -161,79 +161,6 @@ header nav ul li {
   margin: 14px 15px 0 0;
 }
 
-/* input settings */ 
-
-input[type="submit"] {
-  background-color: #797979;
-  background-image: none;  
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
-  background-image: -webkit-linear-gradient(top, #696969, #797979);
-  background-image: -moz-linear-gradient(top, #696969, #797979);
-  background-image: -o-linear-gradient(top, #696969, #797979);
-  background-image: linear-gradient(to bottom, #696969, #797979);
-  border: 1px solid rgba(255,255,255, 0.3);
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-}
-
-input[type="submit"]:hover, input[type="submit"]:focus {
-  background: #519A0F;
-}
-
-input[type="text"] {
-  border: 1px solid #777;
-  border-radius: 5px;
-  padding: 2px;
-}
-
-input[type="text"]:focus {
-  border-color: #000;
-}
-
-input::-webkit-input-placeholder {color: #A1A1A1;}
-input::-webkit-placeholder:hover {color: #555;}
-input:-moz-placeholder {color: #A1A1A1;}
-input:-moz-placeholder:hover {color: #555;}
-input:-ms-placeholder {color: #A1A1A1;}
-input:-ms-placeholder:hover {color: #555;}
-
-/* -- footer settings -- */
-
-footer {
-  background-color: #292A2D;
-  border-top: 1px solid #1B1B1B;
-  color: #959595;
-  height: 90px;
-  position: relative;
-}
-
-footer #legal, footer ul {
-  margin: 0 auto;
-  width: 960px;
-}
-
-footer #legal {
-  padding: 15px 0;
-}
-
-footer li {
-  float: left;
-  margin: 0 25px 20px 0;
-}
-
-footer a:link, footer a:visited {
-  color: #A6A6A6;
-  font-weight: bold;
-  font-size: 90%;
-  text-shadow: 0 -1px 1px #050505;
-  text-transform: uppercase;
-}
-
-footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visited:focus {
-  color: #E2E2E2; 
-}
-
 /* generic features box */
 
 #features {
@@ -269,6 +196,65 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 /*   ++++++ page specific styles: About Silva ++++++ */
 
+body.about .silva-content h2 {
+  clear: both;
+  color: #6F084F;
+  font-weight: normal;
+}
+
+/* features and benefits */ 
+
+body.about .silva-content h1 {
+  background-color: #7C085C; 
+  background-image: none;
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#952175), to(#6E004E));
+  background-image: -webkit-linear-gradient(top, #952175, #6E004E);
+  background-image: -moz-linear-gradient(top, #952175, #6E004E);
+  background-image: -o-linear-gradient(top, #952175, #6E004E);
+  background-image: linear-gradient(to bottom, #952175, #6E004E); 
+  border: 1px solid #3E001E;
+  color: #FFF;
+  font-size: 1.4em;
+  margin: 0; padding: 4px 12px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+body.about .silva-content .introfacts {
+  background-color: #EFEFEF;
+  background-image: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
+  background-image: -webkit-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: -moz-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
+  border-left: 1px solid #929299;
+  border-right: 1px solid #929299;
+  border-bottom: 1px solid #929299;
+  height: 280px;
+  margin-bottom: 40px;
+}
+
+body.about .silva-content .introfacts p {
+  color: #47092E;
+  float: right; 
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  width: 65%;
+}
+
+body.about .silva-content p {
+  padding: 0 25px;
+}
+
+body.about .silva-content li {
+  background-image: url(images/green_check.png);
+  background-repeat: no-repeat;
+  background-position: 0px 3px; 
+  margin: 12px 0;
+  padding-left: 24px;
+}
 
 /*   ++++++ page specific styles: Get Silva ++++++ */
 
@@ -489,31 +475,55 @@ body.documentation #navcontainer #slot-two li {
 
 /*   ++++++ page specific styles: Support ++++++ */
 
+body.support .wrapper {
+  box-shadow: 0 1px 0 #EEE;
+  webkit-box-shadow: 0 1px 0 #EEE;
+  border: 1px solid #D6D6D6;
+  height: 960px;
+}
+
+body.support .wrapper p.plain {
+  border-left: 5px double #2378DF;
+  line-height: 1.7em;
+  margin: 30px;
+  padding: 5px 0 5px 12px;
+  width: 620px;
+}
+
+body.support .image {
+  margin: 0;
+}
+
+body.support .image img {
+  border: 2px solid #2378DF;
+  margin: 30px 30px 60px 30px;
+}
+
 body.support section {
   clear: both;
-  width: 72%;
+  width: 700px;
   margin: 20px auto;
 }
 
 body.support section h2 {
-  background-color: #59A80F;  
+  background-color: #2378DF;  
   background-image: none;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#519A0F), to(#7AB317));
-  background-image: -webkit-linear-gradient(top, #519A0F, #7AB317);
-  background-image: -moz-linear-gradient(top, #519A0F, #7AB317);
-  background-image: -o-linear-gradient(top, #519A0F, #7AB317);
-  background-image: linear-gradient(to bottom, #519A0F, #7AB317);
-  box-shadow: 0 1px 0 #59A80F;
-  webkit-box-shadow: 0 1px 0 #59A80F;
-  border: 1px solid green;
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#1280E7), to(#0060C7));
+  background-image: -webkit-linear-gradient(top, #1280E7, #0060C7);
+  background-image: -moz-linear-gradient(top, #1280E7, #0060C7);
+  background-image: -o-linear-gradient(top, #1280E7, #0060C7);
+  background-image: linear-gradient(to bottom, #1280E7, #0060C7);  
+  box-shadow: 0 1px 0 #2378DF;
+  webkit-box-shadow: 0 1px 0 #2378DF;
+  border: 1px solid #0052B9;
   border-radius: 10px 0 0 10px;
   color: #FFF;
   float: left; 
-  font-size: 125%;
-  height: 100px; width: 26%;
-  padding: 10px;
+  height: 100px; 
+  margin: 0; padding: 10px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
   vertical-align: top;
+  width: 175px;
 }
 
 body.support section p {
@@ -526,17 +536,14 @@ body.support section p {
   background-image: linear-gradient(to bottom, #FEFEFE, #F8F8F8);
   border-width: 1px 1px 1px 0;
   border-style: solid;
-  border-color: #E9E9E9;
+  border-color: #D6D6D6;
   border-radius: 0 10px 10px 0;
   box-shadow: 0 1px 0 #EEE;
-  margin-bottom: 42px; padding: 20px 10px;
-  height: 80px;
+  margin-bottom: 42px; padding: 10px;
+  height: 100px;
   float: left;
-  width: 65%;
+  width: 480px;
 }
-
-/*   ++++++ page specific styles: Features ++++++ */
-
 
 /* -- login page -- */
 
@@ -553,6 +560,79 @@ body.support section p {
 .silva-content div.login-form div.form-label {
   font-weight: bold;
   padding: 2px 0;
+}
+
+/* input settings */ 
+
+input[type="submit"] {
+  background-color: #797979;
+  background-image: none;  
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
+  background-image: -webkit-linear-gradient(top, #696969, #797979);
+  background-image: -moz-linear-gradient(top, #696969, #797979);
+  background-image: -o-linear-gradient(top, #696969, #797979);
+  background-image: linear-gradient(to bottom, #696969, #797979);
+  border: 1px solid rgba(255,255,255, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background: #519A0F;
+}
+
+input[type="text"] {
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+input[type="text"]:focus {
+  border-color: #000;
+}
+
+input::-webkit-input-placeholder {color: #A1A1A1;}
+input::-webkit-placeholder:hover {color: #555;}
+input:-moz-placeholder {color: #A1A1A1;}
+input:-moz-placeholder:hover {color: #555;}
+input:-ms-placeholder {color: #A1A1A1;}
+input:-ms-placeholder:hover {color: #555;}
+
+/* -- footer settings -- */
+
+footer {
+  background-color: #292A2D;
+  border-top: 1px solid #1B1B1B;
+  color: #959595;
+  height: 90px;
+  position: relative;
+}
+
+footer #legal, footer ul {
+  margin: 0 auto;
+  width: 960px;
+}
+
+footer #legal {
+  padding: 15px 0;
+}
+
+footer li {
+  float: left;
+  margin: 0 25px 20px 0;
+}
+
+footer a:link, footer a:visited {
+  color: #A6A6A6;
+  font-weight: bold;
+  font-size: 90%;
+  text-shadow: 0 -1px 1px #050505;
+  text-transform: uppercase;
+}
+
+footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visited:focus {
+  color: #E2E2E2; 
 }
 
 /* removed selectors after merge with custom.css */

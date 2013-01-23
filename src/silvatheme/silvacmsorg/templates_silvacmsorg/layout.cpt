@@ -1,8 +1,8 @@
 <header>
   <div class="header-form">
-    <form>
-      <input id="toggleBar" placeholder="Search the Silva CMS site" type="text">
-        <button id="toggleButton" type="submit"><img src="../static/images/search.png"></button>          
+    <form action="${layout.root_url}/search">
+      <input id="toggleBar" placeholder="Search the Silva CMS site" type="text" name="fulltext">
+        <button id="toggleButton" type="submit" name="search_submit"><img src="../static/images/search.png"></button>
     </form>
   </div>
   <div class="header-wrapper">

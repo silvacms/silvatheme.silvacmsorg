@@ -1,0 +1,13 @@
+<div class="tabs">
+  <ul class="tabs-nav">
+    <li tal:repeat="tab view.tabs" class="#"
+        tal:attributes="class repeat.tab.start and 'selected' or None">
+      <a href="#${tab.identifier}">${tab.title}</a>
+    </li>
+  </ul>
+  <section tal:repeat="tab view.tabs"
+           id="${tab.identifier}" class="#"
+           tal:attributes="class string:tabs-content${repeat.tab.start and ' selected' or None}"
+           tal:content="structure tab.content">
+  </section>
+</div>

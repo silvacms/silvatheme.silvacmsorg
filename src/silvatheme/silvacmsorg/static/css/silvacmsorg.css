@@ -81,7 +81,7 @@ li a:link, li a:visited {
   width: 780px;
 }
 
-.demo {
+.sidebarsmall {
   float: right;
   width: 140px;
 }
@@ -90,7 +90,7 @@ li a:link, li a:visited {
 
 /* navigation styling */ 
 
-.site-navigation li, .page-navigation li, .related-info li {
+.site-navigation ul li, .page-navigation ul li, .related-info ul li {
   color: #58A714;
   list-style: square inside none;
   border-bottom: 1px solid #DCDCDC;
@@ -162,14 +162,14 @@ li a:link, li a:visited {
 
 /* related info navigation */
 
-.related-info {
+.related-info ul {
   background-color: #58A714;
   margin: 20px 10px;
   padding: 2px;
   width: 220px;
 }
 
-.related-info li {
+.related-info ul li {
   background-color: #FFF;
     background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
     background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
@@ -182,13 +182,13 @@ li a:link, li a:visited {
   padding: 4px 10px 6px;
 }
 
-.related-info li a:hover,
-.related-info li a:focus {
+.related-info ul li a:hover,
+.related-info ul li a:focus {
   background: #F1F1F1;
   text-decoration: none;
 }
 
-.related-info li a {
+.related-info ul li a {
   color: #444;
 }
 
@@ -353,7 +353,7 @@ body.about .maincontent h2 {
 
 /* features and benefits */ 
 
-body.about .maincontent .features h1 {
+body.factsheet h1 {
   background-color: #7C085C; 
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#952175), to(#6E004E));
@@ -368,7 +368,7 @@ body.about .maincontent .features h1 {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
 
-body.about .introfacts {
+body.factsheet .introfacts {
   background-color: #EFEFEF;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
@@ -383,7 +383,7 @@ body.about .introfacts {
   margin-bottom: 40px;
 }
 
-body.about .maincontent .introfacts p {
+body.factsheet .introfacts p {
   color: #47092E;
   float: right; 
   padding: 10px 15px;
@@ -393,11 +393,11 @@ body.about .maincontent .introfacts p {
   width: 65%;
 }
 
-body.about .maincontent p {
+body.factsheet .maincontent p {
   padding: 0 25px;
 }
 
-body.about .maincontent li {
+body.factsheet .maincontent li {
   background-image: url(images/green_check.png);
   background-repeat: no-repeat;
   background-position: 0px 3px; 
@@ -414,7 +414,7 @@ body.getsilva .plain {
   padding-bottom: 30px;
 }
 
-body.getsilva section {
+body.getsilva section.box {
   border: 1px solid #656565;
   float: left;
   height: 400px;

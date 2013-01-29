@@ -419,7 +419,7 @@ body.getsilva .plain {
 body.getsilva section.box {
   border: 1px solid #656565;
   float: left;
-  min-height: 490px; /* wim: was height 400px before */
+  min-height: 530px; /* wim: was height 400px before */
   margin: 15px 0;
   width: 33.15%;
 }
@@ -466,7 +466,7 @@ body.getsilva .block {
   background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
   background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
   border: 1px solid #E0E0E0;
-  margin-top: 50px;
+  margin-top: 30px; /* wim: was 50px */
   padding: 10px 20px;
   min-height: 340px; /* wim: was height 160px before */
   width: 380px;

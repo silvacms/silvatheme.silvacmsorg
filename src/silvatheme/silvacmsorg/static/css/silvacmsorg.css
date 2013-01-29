@@ -64,20 +64,20 @@ li a:link, li a:visited {
 ::-selection {background: #7CCB38; color:#FFF;}
 ::-moz-selection {background: #7CCB38; color:#FFF;}
 
-/* column layout */ 
+/* column layout */
 
 .maincontent {
-  float: left; 
+  float: left;
   width: 700px;
 }
 
 .sidebar {
-  float: right; 
+  float: right;
   width: 220px;
 }
 
 .maincontentwide {
-  float: left; 
+  float: left;
   width: 780px;
 }
 
@@ -88,7 +88,7 @@ li a:link, li a:visited {
 
 /* ++ box styling ++ */
 
-/* navigation styling */ 
+/* navigation styling */
 
 .site-navigation ul li, .page-navigation ul li, .related-info ul li {
   color: #58A714;
@@ -96,7 +96,7 @@ li a:link, li a:visited {
   border-bottom: 1px solid #DCDCDC;
 }
 
-/* site navigation */ 
+/* site navigation */
 
 .site-navigation {
   background-color: #EFEFEF;
@@ -126,7 +126,7 @@ li a:link, li a:visited {
   text-decoration: none;
 }
 
-/* page navigation */ 
+/* page navigation */
 
 .page-navigation {
   background-color: #292A2D;
@@ -135,7 +135,7 @@ li a:link, li a:visited {
 
 .page-navigation img {
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 6px 0;
 }
 
@@ -197,7 +197,7 @@ li a:link, li a:visited {
 header {
   background-color: #292A2D;
   border-bottom: 2px solid #151515;
-  box-shadow: 0 4px 18px #9C9C9C; 
+  box-shadow: 0 4px 18px #9C9C9C;
   height: 78px;
 }
 
@@ -241,7 +241,7 @@ header h6 {
 /* header navigation settings */
 
 header nav {
-  float: right; 
+  float: right;
 }
 
 header nav ul li {
@@ -255,15 +255,15 @@ header nav ul li a {
 }
 
 header nav ul li.selected a {
-  background-color: #59A80F; 
-  background-image: none;  
+  background-color: #59A80F;
+  background-image: none;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7AB317), to(#519A0F));
   background-image: -webkit-linear-gradient(top, #7AB317, #519A0F);
   background-image: -moz-linear-gradient(top, #7AB317, #519A0F);
   background-image: -o-linear-gradient(top, #7AB317, #519A0F);
   background-image: linear-gradient(to bottom, #7AB317, #519A0F);
   border: 1px solid #3D8C00;
-  border-radius: 6px; 
+  border-radius: 6px;
   padding: 2px 11px;
 }
 
@@ -277,15 +277,15 @@ header nav ul li a:link, header nav ul li a:visited {
 
 header nav li a:link:hover, header nav li a:link:focus,
 header nav li a:visited:hover, header nav li a:visited:focus {
-  background-color: #606060; 
-  background-image: none;  
+  background-color: #606060;
+  background-image: none;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7F7F7F), to(#646464));
   background-image: -webkit-linear-gradient(top, #7F7F7F, #646464);
   background-image: -moz-linear-gradient(top, #7F7F7F, #646464);
   background-image: -o-linear-gradient(top, #7F7F7F, #646464);
   background-image: linear-gradient(to bottom, #7F7F7F, #646464);
   border: 1px solid #000;
-  border-radius: 6px; 
+  border-radius: 6px;
   color: #FFF;
   padding: 2px 11px;
   text-decoration: none;
@@ -294,7 +294,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 @media only screen and (max-width: 900px) {
 
 header {
-  height: 120px; 
+  height: 120px;
 }
 
 header .title  {
@@ -352,16 +352,16 @@ body.about .maincontent h2 {
   font-weight: normal;
 }
 
-/* features and benefits */ 
+/* features and benefits */
 
 body.factsheet h1 {
-  background-color: #7C085C; 
+  background-color: #7C085C;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#952175), to(#6E004E));
   background-image: -webkit-linear-gradient(top, #952175, #6E004E);
   background-image: -moz-linear-gradient(top, #952175, #6E004E);
   background-image: -o-linear-gradient(top, #952175, #6E004E);
-  background-image: linear-gradient(to bottom, #952175, #6E004E); 
+  background-image: linear-gradient(to bottom, #952175, #6E004E);
   border: 1px solid #3E001E;
   color: #FFF;
   font-size: 1.4em;
@@ -386,7 +386,7 @@ body.factsheet .introfacts {
 
 body.factsheet .introfacts p {
   color: #47092E;
-  float: right; 
+  float: right;
   padding: 10px 15px;
   margin: 0;
   font-size: 1.1em;
@@ -402,7 +402,7 @@ body.factsheet .maincontent li,
 body.about .maincontent li {
   background-image: url(images/green_check.png);
   background-repeat: no-repeat;
-  background-position: 0px 3px; 
+  background-position: 0px 3px;
   margin: 12px 0;
   padding-left: 24px;
 }
@@ -421,7 +421,7 @@ body.getsilva section.box {
   float: left;
   min-height: 490px; /* wim: was height 400px before */
   margin: 15px 0;
-  width: 32%;
+  width: 33.15%;
 }
 
 body.getsilva section.box-middle {
@@ -432,7 +432,7 @@ body.getsilva section.box-middle {
 }
 
 body.getsilva section h2 {
-  background-color: #C93636;  
+  background-color: #C93636;
   color: #FFF;
   padding: 4px 12px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
@@ -444,7 +444,7 @@ body.getsilva section p, body.getsilva section h3  {
 }
 
 body.getsilva h2 {
-  color: #C93636;  
+  color: #C93636;
   clear: both;
 }
 
@@ -477,7 +477,7 @@ body.getsilva .block-left {
 }
 
 body.getsilva .block-right {
-  float: right; 
+  float: right;
 }
 
 /*   ++++++ page specific styles: Documentation ++++++ */
@@ -494,7 +494,7 @@ body.documentation .tab-nav li.selected a:focus {
   background-image: -webkit-linear-gradient(top, #FDEB4D, #EDDB3D);
   background-image: -moz-linear-gradient(top, #FDEB4D, #EDDB3D);
   background-image: -o-linear-gradient(top, #FDEB4D, #EDDB3D);
-  background-image: linear-gradient(to bottom, #FDEB4D, #EDDB3D); 
+  background-image: linear-gradient(to bottom, #FDEB4D, #EDDB3D);
   color: #303030;
 }
 
@@ -505,7 +505,7 @@ body.documentation .tab-nav a:link, #content .tab-nav a:visited {
   background-image: -webkit-linear-gradient(top, #FEFEFE, #E6E6E6);
   background-image: -moz-linear-gradient(top, #FEFEFE, #E6E6E6);
   background-image: -o-linear-gradient(top, #FEFEFE, #E6E6E6);
-  background-image: linear-gradient(to bottom, #FEFEFE, #E6E6E6); 
+  background-image: linear-gradient(to bottom, #FEFEFE, #E6E6E6);
   border-width: 1px 2px 0 2px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.1);
@@ -529,7 +529,7 @@ body.documentation .tab-nav a:link:focus, body.documentation .tab-nav a:visited:
   background-image: -webkit-linear-gradient(top, #FFF, #DEDEDE);
   background-image: -moz-linear-gradient(top, #FFF, #DEDEDE);
   background-image: -o-linear-gradient(top, #FFF, #DEDEDE);
-  background-image: linear-gradient(to bottom, #FFF, #DEDEDE);  
+  background-image: linear-gradient(to bottom, #FFF, #DEDEDE);
   border-color: rgba(0, 0, 0, 0.3);
   color: #333;
   text-decoration: none;
@@ -560,7 +560,7 @@ body.documentation section {
   padding: 30px 50px;
 }
 
-/* tab styles: user documentation */ 
+/* tab styles: user documentation */
 
 body.documentation #users .documentation-intro {
   background-color: #EFEFEF;
@@ -617,20 +617,20 @@ body.support section {
 }
 
 body.support section h2 {
-  background-color: #2378DF;  
+  background-color: #2378DF;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#1280E7), to(#0060C7));
   background-image: -webkit-linear-gradient(top, #1280E7, #0060C7);
   background-image: -moz-linear-gradient(top, #1280E7, #0060C7);
   background-image: -o-linear-gradient(top, #1280E7, #0060C7);
-  background-image: linear-gradient(to bottom, #1280E7, #0060C7);  
+  background-image: linear-gradient(to bottom, #1280E7, #0060C7);
   box-shadow: 0 1px 0 #2378DF;
   webkit-box-shadow: 0 1px 0 #2378DF;
   border: 1px solid #0052B9;
   border-radius: 10px 0 0 10px;
   color: #FFF;
-  float: left; 
-  height: 100px; 
+  float: left;
+  height: 100px;
   margin: 0; padding: 10px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
   vertical-align: top;
@@ -638,7 +638,7 @@ body.support section h2 {
 }
 
 body.support section p {
-  background-color: #FEFEFE;  
+  background-color: #FEFEFE;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));
   background-image: -webkit-linear-gradient(top, #FEFEFE, #F8F8F8);
@@ -656,11 +656,11 @@ body.support section p {
   width: 480px;
 }
 
-/* input settings */ 
+/* input settings */
 
 input[type="submit"] {
   background-color: #797979;
-  background-image: none;  
+  background-image: none;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
   background-image: -webkit-linear-gradient(top, #696969, #797979);
   background-image: -moz-linear-gradient(top, #696969, #797979);
@@ -743,7 +743,7 @@ footer li [title="See Ask a Silva Question"] {
 }
 
 footer #legal {
-  clear: both; 
+  clear: both;
   margin: 0 auto;
   padding-top: 15px;
 }
@@ -760,7 +760,7 @@ footer ul li a:link, footer ul li a:visited {
 }
 
 footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visited:focus {
-  color: #E2E2E2; 
+  color: #E2E2E2;
 }
 
 /* -- login page -- */

@@ -165,7 +165,7 @@ li a:link, li a:visited {
 .related-info ul {
   background-color: #58A714;
   margin: 20px 10px;
-  padding: 2px;
+  padding: 1px;
   width: 220px;
 }
 
@@ -210,6 +210,7 @@ header .header-form button[type="submit"] {
   background-color: #292A2D;
   border-style: none;
   vertical-align: middle;
+  padding: 0;
 }
 
 header .header-wrapper {
@@ -397,7 +398,8 @@ body.factsheet .maincontent p {
   padding: 0 25px;
 }
 
-body.factsheet .maincontent li {
+body.factsheet .maincontent li,
+body.about .maincontent li {
   background-image: url(images/green_check.png);
   background-repeat: no-repeat;
   background-position: 0px 3px; 
@@ -544,6 +546,7 @@ body.documentation #sysadmins, body.documentation #tutorials {
 
 body.documentation h2 {
   border-bottom: 2px solid #EDDB3D;
+  clear: both;
 }
 
 body.documentation #content #slot-one {
@@ -693,22 +696,30 @@ input:-ms-placeholder:hover {color: #555;}
 /* -- footer settings -- */
 
 footer {
-  background-color: #292A2D;
+  background-color: #1D1E21;
   border-top: 1px solid #000;
-  color: #959595;
+  color: #B0B0B0;
   height: 90px;
   position: relative;
 }
 
 footer #legal, footer ul {
-  margin: 0 auto;
   width: 960px;
+}
+
+footer ul {
+  margin: 15px auto 0 auto;
+}
+
+footer li {
+  float: left;
+  margin-right: 35px;
 }
 
 footer li [title] {
   background-repeat: no-repeat;
   background-position: 0 -1px;
-  padding-left: 22px;
+  padding-left: 21px;
 }
 
 footer li [title="See Silva News"] {
@@ -732,12 +743,9 @@ footer li [title="See Ask a Silva Question"] {
 }
 
 footer #legal {
-  padding: 15px 0;
-}
-
-footer li {
-  float: left;
-  margin: 0 25px 20px 0;
+  clear: both; 
+  margin: 0 auto;
+  padding-top: 15px;
 }
 
 footer a:link, footer a:visited {
@@ -745,6 +753,9 @@ footer a:link, footer a:visited {
   font-weight: bold;
   font-size: 90%;
   text-shadow: 0 -1px 1px #050505;
+}
+
+footer ul li a:link, footer ul li a:visited {
   text-transform: uppercase;
 }
 

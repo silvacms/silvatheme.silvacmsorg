@@ -451,8 +451,7 @@ body.getsilva h2 {
 body.getsilva .demo {
   clear: both;
   border: 1px dashed #B7BEBF;
-  height: 370px;
-  min-height: 370px;
+  min-height: 300px;
   margin-top: 15px;
   padding: 15px;
 }

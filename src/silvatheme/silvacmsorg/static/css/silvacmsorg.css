@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Roboto';
-	src: url('fonts/Roboto-Regular-webfont.eot');
+	src: url('../fonts/Roboto-Regular-webfont.eot');
 	src: local('â˜º'),
-	url('fonts/Roboto-Regular-webfont.woff') format('woff'),
-	url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-	url('fonts/Roboto-Regular-webfont.svg#webfont') format('svg');
+	url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+	url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+	url('../fonts/Roboto-Regular-webfont.svg#webfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -21,8 +21,12 @@ body {
   width: 960px;
 }
 
+/* heading settings */ 
+
 h1, h2, h3, h4, h5 {
+  clear: both;
   font-family: 'Roboto', Verdana, Calibri, sans-serif;
+  font-weight: normal;
 }
 
 h1 {
@@ -33,6 +37,22 @@ h2 {
 }
 h3 {
   font-size: 1.2em;
+}
+
+body.about h2 {
+  color: #6F084F;
+}
+
+body.getsilva h2 {
+  color: #C93636;
+}
+
+body.documentation h2 {
+  color: #E4D234;
+}
+
+body.support h2 {
+  color: #2378DF;
 }
 
 p, li {
@@ -202,12 +222,104 @@ li a:link, li a:visited {
   color: #444;
 }
 
+/* feeds styling */ 
+
+.newsitem {
+  background-color: #303030; 
+  background-image: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #3D3D3D), color-stop(1, #151515));
+  background-image: -webkit-linear-gradient(left, #3D3D3D 0%, #151515 100%);
+  background-image: -moz-linear-gradient(left, #3D3D3D 0%, #151515 100%);
+  background-image: -o-linear-gradient(left, #3D3D3D 0%, #151515 100%);
+  background-image: linear-gradient(to right, #3D3D3D 0%, #151515 100%);
+  border: 2px solid #000;
+  border-radius: 8px; 
+  box-shadow: 1px 1px 6px #353535;
+  color: #FEFEFE;
+  margin: 15px 5px;
+  padding: 10px 15px;
+  min-height: 150px;
+}
+
+.newsitem .eventdates {
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.newsitem h4 {
+  font-size: 1.1em;
+  margin: 0 0 0.4em 0;
+}
+
+.newsitem a:link, .newsitem a:visited {
+  color: #7BCA37; 
+  text-shadow: 1px 2px 0 #000;
+}
+
+.newsitm p.newslead {
+  font-size: 0.9em;
+}
+
+/* infobox theme */ 
+
+.info { 
+  background-color: #292A2D; 
+  padding:10px; 
+  position:absolute; 
+  top: 160px;
+  right: 0;  
+}
+
+.infoButton {
+  background-image: url("../images/info.png");
+  background-repeat: no-repeat;
+  cursor: pointer; 
+  margin: 1px;
+  position: relative;
+  height: 34px;
+  width: 34px; 
+}
+
+.infoText {
+  background-color: #292A2D; 
+  color: #EFEFEF;
+  font-weight: bold;
+  padding: 15px 25px;
+  position: absolute;
+  right: 56px;
+  top: -4px;
+  width: 250px;
+}
+				
+.transition200 .duration, .transition200 .delay { 
+ visibility:hidden; 
+}
+
+.transition200 { 
+ transition:200ms; 
+ -webkit-transition:200ms; 
+ -o-transition:200ms; 
+}
+
+body.about .menu, body.about .infoText {
+  border-top: 4px solid #9B277B; 
+}
+body.getsilva .menu, body.getsilva .infoText {
+  border-top: 4px solid #C93636;
+}
+body.documentation .menu, body.documentation .infoText {
+  border-top: 4px solid #EDDB3D;
+}
+body.support .menu, body.support .infoText {
+  border-top: 4px solid #2378DF; 
+} 
+
 /* -- header settings -- */
 
 header {
   background-color: #292A2D;
   border-bottom: 2px solid #151515;
-  box-shadow: 0 4px 18px #9C9C9C;
+  box-shadow: 0 2px 10px #9C9C9C;
   height: 78px;
 }
 
@@ -356,12 +468,6 @@ header nav ul li {
 
 /*   ++++++ page specific styles: About Silva ++++++ */
 
-body.about .maincontent h2 {
-  clear: both;
-  color: #6F084F;
-  font-weight: normal;
-}
-
 /* factsheet page */
 
 body.factsheet h1 {
@@ -409,7 +515,8 @@ body.factsheet .maincontent p {
 }
 
 body.factsheet .maincontent li,
-body.about .maincontent li {
+body.about .maincontent li,
+body.documentation li {
   background-image: url(images/green_check.png);
   background-repeat: no-repeat;
   background-position: 0px 3px;
@@ -453,17 +560,12 @@ body.getsilva section p, body.getsilva section h3  {
   padding: 0 16px;
 }
 
-body.getsilva h2 {
-  color: #C93636;
-  clear: both;
-}
-
 body.getsilva .demo {
   clear: both;
   border: 1px dashed #B7BEBF;
-  min-height: 300px;
+  min-height: 260px;
   margin-top: 15px;
-  padding: 15px;
+  padding: 10px 15px;
 }
 
 body.getsilva .block {
@@ -553,11 +655,6 @@ body.documentation #sysadmins, body.documentation #tutorials {
   clear: both;
 }
 
-body.documentation h2 {
-  border-bottom: 2px solid #EDDB3D;
-  clear: both;
-}
-
 body.documentation #content #slot-one {
   display: inline-block;
   margin: 15px 20px 20px 60px;
@@ -604,7 +701,7 @@ body.documentation #users .info {
 body.support p.plain {
   border-left: 5px double #2378DF;
   line-height: 1.7em;
-  margin: 30px 0 60px 0;
+  margin: 30px 0 50px 0;
   padding: 5px 0 5px 12px;
   width: 700px;
 }

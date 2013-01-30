@@ -53,6 +53,11 @@ img {
   max-width: 100%;
 }
 
+span.image-caption {
+  display: block;
+  font-size: 0.8em; 
+}
+
 li {
   list-style: none;
 }
@@ -107,6 +112,11 @@ li a:link, li a:visited {
   background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
   background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
   padding: 15px;
+}
+
+.site-navigation h1 {
+  font-size: 1.1em; 
+  font-weight: normal;
 }
 
 .site-navigation ul {
@@ -352,7 +362,7 @@ body.about .maincontent h2 {
   font-weight: normal;
 }
 
-/* features and benefits */
+/* factsheet page */
 
 body.factsheet h1 {
   background-color: #7C085C;
@@ -581,7 +591,6 @@ body.documentation #users img {
 body.documentation #users p {
   float: left;
   padding: 15px 25px;
-  width: 540px;
 }
 
 body.documentation #users .info {
@@ -595,9 +604,9 @@ body.documentation #users .info {
 body.support p.plain {
   border-left: 5px double #2378DF;
   line-height: 1.7em;
-  margin: 30px;
+  margin: 30px 0 60px 0;
   padding: 5px 0 5px 12px;
-  width: 620px;
+  width: 700px;
 }
 
 body.support .image {
@@ -606,7 +615,7 @@ body.support .image {
 
 body.support .image img {
   border: 2px solid #2378DF;
-  margin: 0 30px 60px 30px;
+  margin: 15px 0 0 0;
 }
 
 body.support section {

@@ -64,7 +64,7 @@ class Navigation(porto.Navigation):
     max_depth = 1
 
 
-class Favicon(silvaviews.ContentProvider):
+class Favicon(porto.Favicon):
     grok.template('favicon')
 
 

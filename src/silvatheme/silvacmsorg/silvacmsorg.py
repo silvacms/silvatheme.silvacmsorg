@@ -9,7 +9,6 @@ from silva.core import contentlayout
 from silva.core.interfaces import IPublication, IFeedEntryProvider
 from silva.core.layout.porto import porto
 from silva.core.views import views as silvaviews
-from silva.core.contentlayout import Design, Slot
 
 from Products.SilvaMetadata.interfaces import IMetadataService
 
@@ -36,16 +35,14 @@ class Layout(porto.Layout):
     @Lazy
     def top_menu_items(self):
         root = self.context.get_root()
-        gmv = getUtility(IMetadataService).getMetadataValue
+        get_metadata = getUtility(IMetadataService).getMetadataValue
+        is_hidden = lambda c: get_metadata(
+            c, 'silva-settings', 'hide_from_tocs', acquire=False) == 'hide'
 
-        def publishable(x):
-            hidden = gmv(
-                x, 'silva-extra', 'hide_from_tocs', acquire=0) == 'hide'
-            return (x.is_published() and
-                    not(hidden) and
-                    IPublication.providedBy(x))
+        def publishable(c):
+            return c.is_published() and not is_hidden(c)
 
-        return filter(publishable, root.get_ordered_publishables())
+        return filter(publishable, root.get_ordered_publishables(IPublication))
 
     def current_publication_class(self, publication):
         if publication in self.request.PARENTS:

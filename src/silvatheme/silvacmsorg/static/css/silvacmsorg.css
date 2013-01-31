@@ -262,7 +262,7 @@ li a:link, li a:visited {
 
 /* infobox theme */ 
 
-.info { 
+.information { 
   background-color: #292A2D; 
   padding:10px; 
   position:absolute; 
@@ -271,7 +271,7 @@ li a:link, li a:visited {
 }
 
 .infoButton {
-  background-image: url("../images/info.png");
+  background-image: url("../images/information.png");
   background-repeat: no-repeat;
   cursor: pointer; 
   margin: 1px;

@@ -32,15 +32,7 @@
 
 <!-- start content -->
 <div id="content" class="clearfix"
-     tal:content="structure provider:content">
-     
-     <div class="info">
-       <p class="infoButton"></p>
-         <div class="infoText">
-           Page info goes here
-         </div>
-		 </div>
-     
+     tal:content="structure provider:content">     
 </div>
 <!-- end content -->
 

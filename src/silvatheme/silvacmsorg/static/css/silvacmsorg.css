@@ -21,7 +21,7 @@ body {
   width: 960px;
 }
 
-/* heading settings */ 
+/* heading settings */
 
 h1, h2, h3, h4, h5 {
   clear: both;
@@ -75,7 +75,7 @@ img {
 
 span.image-caption {
   display: block;
-  font-size: 0.8em; 
+  font-size: 0.8em;
 }
 
 li {
@@ -135,7 +135,7 @@ li a:link, li a:visited {
 }
 
 .site-navigation h1 {
-  font-size: 1.1em; 
+  font-size: 1.1em;
   font-weight: normal;
 }
 
@@ -222,10 +222,10 @@ li a:link, li a:visited {
   color: #444;
 }
 
-/* feeds styling */ 
+/* feeds styling */
 
 .newsitem {
-  background-color: #303030; 
+  background-color: #303030;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #3D3D3D), color-stop(1, #151515));
   background-image: -webkit-linear-gradient(left, #3D3D3D 0%, #151515 100%);
@@ -233,7 +233,7 @@ li a:link, li a:visited {
   background-image: -o-linear-gradient(left, #3D3D3D 0%, #151515 100%);
   background-image: linear-gradient(to right, #3D3D3D 0%, #151515 100%);
   border: 2px solid #000;
-  border-radius: 8px; 
+  border-radius: 8px;
   box-shadow: 1px 1px 6px #353535;
   color: #FEFEFE;
   margin: 15px 5px;
@@ -252,7 +252,7 @@ li a:link, li a:visited {
 }
 
 .newsitem a:link, .newsitem a:visited {
-  color: #7BCA37; 
+  color: #7BCA37;
   text-shadow: 1px 2px 0 #000;
 }
 
@@ -260,28 +260,28 @@ li a:link, li a:visited {
   font-size: 0.9em;
 }
 
-/* infobox theme */ 
+/* infobox theme */
 
-.information { 
-  background-color: #292A2D; 
-  padding:10px; 
-  position:absolute; 
+.information {
+  background-color: #292A2D;
+  padding:10px;
+  position:absolute;
   top: 160px;
-  right: 0;  
+  right: 0;
 }
 
 .infoButton {
   background-image: url("../images/information.png");
   background-repeat: no-repeat;
-  cursor: pointer; 
+  cursor: pointer;
   margin: 1px;
   position: relative;
   height: 34px;
-  width: 34px; 
+  width: 34px;
 }
 
 .infoText {
-  background-color: #292A2D; 
+  background-color: #292A2D;
   color: #EFEFEF;
   font-weight: bold;
   padding: 15px 25px;
@@ -290,19 +290,19 @@ li a:link, li a:visited {
   top: -4px;
   width: 250px;
 }
-				
-.transition200 .duration, .transition200 .delay { 
- visibility:hidden; 
+
+.transition200 .duration, .transition200 .delay {
+ visibility:hidden;
 }
 
-.transition200 { 
- transition:200ms; 
- -webkit-transition:200ms; 
- -o-transition:200ms; 
+.transition200 {
+ transition:200ms;
+ -webkit-transition:200ms;
+ -o-transition:200ms;
 }
 
 body.about .menu, body.about .infoText {
-  border-top: 4px solid #9B277B; 
+  border-top: 4px solid #9B277B;
 }
 body.getsilva .menu, body.getsilva .infoText {
   border-top: 4px solid #C93636;
@@ -311,8 +311,8 @@ body.documentation .menu, body.documentation .infoText {
   border-top: 4px solid #EDDB3D;
 }
 body.support .menu, body.support .infoText {
-  border-top: 4px solid #2378DF; 
-} 
+  border-top: 4px solid #2378DF;
+}
 
 /* -- header settings -- */
 
@@ -594,7 +594,7 @@ body.getsilva .block-right {
 /*   ++++++ page specific styles: Documentation ++++++ */
 
 body.documentation li {
-  margin: 0; 
+  margin: 0;
 }
 
 body.documentation #tabs {
@@ -849,6 +849,10 @@ footer li [title="See Silva Hosting"] {
 
 footer li [title="See Ask a Silva Question"] {
   background-image: url(../images/question-balloon.png);
+}
+
+footer li [title="See Sitemap"] {
+  background-image: url(../images/sitemap.png);
 }
 
 footer #legal {

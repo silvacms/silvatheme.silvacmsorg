@@ -32,7 +32,7 @@
 
 <!-- start content -->
 <div id="content" class="clearfix"
-     tal:content="structure provider:content">     
+     tal:content="structure provider:content">
 </div>
 <!-- end content -->
 
@@ -46,6 +46,8 @@
 
   $(document).ready(function(){
 
+
+  // tab navigation
   $('#tabs section').hide();
   $('#tabs section:first').show();
   $('#tabs ul li:first').addClass('selected');
@@ -57,5 +59,16 @@
   $(currentTab).show();
   return false;
   });
+
+  // sticky panel
+  var stickyPanelOptions = {
+      topPadding: 20,
+      afterDetachCSSClass: null,
+      savePanelSpace: true,
+      parentSelector: null
+      };
+
+  $(".stickypanel").stickyPanel(stickyPanelOptions);
+
   });
 </script>

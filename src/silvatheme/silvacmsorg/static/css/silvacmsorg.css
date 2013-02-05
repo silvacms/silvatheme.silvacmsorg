@@ -892,3 +892,15 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
   font-weight: bold;
   padding: 2px 0;
 }
+
+/* slideshow styling */
+
+.slideshow {
+  clear: both;
+}
+
+.slideshow-info {
+    float: left;
+    padding: 5px;
+    width: 240px;
+}

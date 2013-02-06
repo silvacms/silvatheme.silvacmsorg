@@ -433,7 +433,7 @@ header nav ul li {
 
 }
 
-/* generic features box (used now only on home page) */
+/* box styling */
 
 #features {
   clear: both;
@@ -464,6 +464,25 @@ header nav ul li {
 
 #features .box p {
   padding: 10px 15px;
+}
+
+#features .box .medium {
+  width: 48%;
+}
+
+#features .box .big {
+  width: 96%;
+}
+
+#features .listing {
+  width: 24%;
+  background: #FFF;
+  float: left;
+  height: 230px;
+}
+
+#features .listing h3 {
+  color: #59A80F;
 }
 
 /*   ++++++ page specific styles: About Silva ++++++ */

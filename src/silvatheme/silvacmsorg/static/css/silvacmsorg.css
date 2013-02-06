@@ -115,15 +115,9 @@ li a:link, li a:visited {
 
 /* navigation styling */
 
-.site-navigation ul li, .page-navigation ul li, .related-info ul li {
-  color: #58A714;
-  list-style: square inside none;
-  border-bottom: 1px solid #DCDCDC;
-}
-
 /* site navigation */
 
-.site-navigation {
+.site-navigation, .stickypanel {
   background-color: #EFEFEF;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
@@ -140,11 +134,18 @@ li a:link, li a:visited {
 }
 
 .site-navigation ul {
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation li {
   margin: 12px 0;
+}
+
+.site-navigation ul li, .page-navigation ul li, .related-info ul li {
+  color: #58A714;
+  list-style: square inside none;
+  border-bottom: 1px solid #DCDCDC;
 }
 
 .site-navigation a:link, body.about .aboutnav a:visited {
@@ -446,7 +447,7 @@ header nav ul li {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   float: left;
   margin: 0 8px 15px;
   min-height: 165px;
@@ -723,8 +724,6 @@ body.documentation #users .info {
   clear: both;
 }
 
-/*   ++++++ page specific styles: Community ++++++ */
-
 /*   ++++++ page specific styles: Support ++++++ */
 
 body.support p.plain {
@@ -759,7 +758,7 @@ body.support section h2 {
   background-image: -o-linear-gradient(top, #1280E7, #0060C7);
   background-image: linear-gradient(to bottom, #1280E7, #0060C7);
   box-shadow: 0 1px 0 #2378DF;
-  webkit-box-shadow: 0 1px 0 #2378DF;
+  -webkit-box-shadow: 0 1px 0 #2378DF;
   border: 1px solid #0052B9;
   border-radius: 10px 0 0 10px;
   color: #FFF;

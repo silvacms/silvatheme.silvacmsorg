@@ -46,19 +46,24 @@
 
   $(document).ready(function(){
 
-
   // tab navigation
   $('#tabs section').hide();
   $('#tabs section:first').show();
   $('#tabs ul li:first').addClass('selected');
   $('#tabs ul li a').click(function(){
-  $('#tabs ul li').removeClass('selected');
-  $(this).parent().addClass('selected');
-  var currentTab = $(this).attr('href');
-  $('#tabs section').hide();
-  $(currentTab).show();
-  return false;
-  });
+      $('#tabs ul li').removeClass('selected');
+      $(this).parent().addClass('selected');
+      var currentTab = $(this).attr('href');
+      $('#tabs section').hide();
+      $(currentTab).show();
+      return false;
+      });
+
+  // info box
+  $('.infoText').hide();
+  $('.info p').click(function() {
+      $(this).next('.infoText').slideToggle('slow');
+      });
 
   // sticky panel
   var stickyPanelOptions = {

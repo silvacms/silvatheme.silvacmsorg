@@ -16,7 +16,7 @@ body {
 }
 
 #content {
-  margin: 80px auto;
+  margin: 30px auto;
   min-height: 700px;
   width: 960px;
 }
@@ -437,7 +437,7 @@ header nav ul li {
 
 #features {
   clear: both;
-  margin: 80px auto;
+  margin: 30px auto;
   width: 900px;
 }
 
@@ -476,10 +476,11 @@ header nav ul li {
 }
 
 #features .listing {
-  width: 33%;
+  width: 32%;
   background: #FFF;
   float: left;
   min-height: 175px;
+  padding: 0.4em;
 }
 
 #features .listing h3 {

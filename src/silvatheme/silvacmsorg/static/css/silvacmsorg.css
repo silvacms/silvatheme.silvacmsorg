@@ -472,6 +472,7 @@ header nav ul li {
 
 #features .box.big {
   width: 96%;
+  min-height: 150px;
 }
 
 #features .listing {

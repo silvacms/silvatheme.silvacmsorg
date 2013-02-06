@@ -466,19 +466,19 @@ header nav ul li {
   padding: 10px 15px;
 }
 
-#features .box .medium {
+#features .box.medium {
   width: 48%;
 }
 
-#features .box .big {
+#features .box.big {
   width: 96%;
 }
 
 #features .listing {
-  width: 24%;
+  width: 33%;
   background: #FFF;
   float: left;
-  height: 230px;
+  height: 155px;
 }
 
 #features .listing h3 {

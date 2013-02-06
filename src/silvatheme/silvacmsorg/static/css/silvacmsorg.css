@@ -449,7 +449,7 @@ header nav ul li {
   webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   float: left;
   margin: 0 8px 15px;
-  min-height: 170px;
+  min-height: 165px;
   width: 160px;
 }
 
@@ -472,7 +472,7 @@ header nav ul li {
 
 #features .box.big {
   width: 96%;
-  min-height: 150px;
+  min-height: 125px;
 }
 
 #features .box.big h2 {

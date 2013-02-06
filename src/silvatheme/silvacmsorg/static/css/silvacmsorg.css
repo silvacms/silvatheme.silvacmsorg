@@ -449,7 +449,7 @@ header nav ul li {
   webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   float: left;
   margin: 0 8px 15px;
-  height: 230px;
+  min-height: 170px;
   width: 160px;
 }
 
@@ -478,7 +478,7 @@ header nav ul li {
   width: 33%;
   background: #FFF;
   float: left;
-  height: 155px;
+  min-height: 175px;
 }
 
 #features .listing h3 {

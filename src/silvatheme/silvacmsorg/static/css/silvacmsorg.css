@@ -475,6 +475,10 @@ header nav ul li {
   min-height: 150px;
 }
 
+#features .box.big h2 {
+  margin: 10px 15px 0;
+}
+
 #features .listing {
   width: 31%;
   background: #FFF;

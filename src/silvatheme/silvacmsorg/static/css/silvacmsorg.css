@@ -476,11 +476,11 @@ header nav ul li {
 }
 
 #features .listing {
-  width: 32%;
+  width: 31%;
   background: #FFF;
   float: left;
   min-height: 175px;
-  padding: 0.4em;
+  padding: 0.8em;
 }
 
 #features .listing h3 {

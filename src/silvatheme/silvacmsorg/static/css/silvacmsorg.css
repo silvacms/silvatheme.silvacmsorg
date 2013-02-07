@@ -930,6 +930,19 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 }
 
 /* info box styling */
+
+.info {
+  position:fixed;
+  right:0;
+  top:160px;
+  padding:5px;
+  width:60px;
+  background-color:#292A2D;
+  color:#EFEFEF;
+  cursor:pointer;
+  border-top: 4px solid #59A80F;
+}
+
 .infoText {
   background-color:#292A2D;
   color:#EFEFEF;

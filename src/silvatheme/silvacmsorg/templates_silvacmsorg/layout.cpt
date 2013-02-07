@@ -60,9 +60,10 @@
       });
 
   // info box
-  $('.infoText').hide();
-  $('.info p').click(function() {
-      $(this).next('.infoText').slideToggle('slow');
+  $('.info p:eq(1)').addClass('infoText');
+  $('.info p:eq(1)').hide();
+  $('.info p:eq(0)').click(function() {
+      $(this).next('p').slideToggle('slow');
       });
 
   // sticky panel

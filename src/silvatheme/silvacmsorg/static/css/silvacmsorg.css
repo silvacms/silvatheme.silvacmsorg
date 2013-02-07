@@ -928,3 +928,15 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
     padding: 5px;
     width: 240px;
 }
+
+/* info box styling */
+.infoText {
+  background-color:#292A2D;
+  color:#EFEFEF;
+  padding:10px 20px;
+  position:fixed;
+  right:70px;
+  top:160px;
+  width:250px;
+  border-top: 4px solid #59A80F;
+}

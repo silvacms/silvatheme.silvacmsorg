@@ -72,7 +72,6 @@
       savePanelSpace: true,
       parentSelector: null
       };
-
   $(".stickypanel").stickyPanel(stickyPanelOptions);
 
   });

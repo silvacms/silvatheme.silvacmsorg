@@ -5,6 +5,7 @@ from zope.cachedescriptors.property import Lazy
 from zope.traversing.browser import absoluteURL
 from zope.component import getUtility
 
+from silva.app.document.interfaces import IDocument
 from silva.core import contentlayout
 from silva.core.interfaces import IPublication, IFeedEntryProvider
 from silva.core.layout.porto import porto
@@ -58,6 +59,7 @@ class ContentWithNavigation(silvaviews.ContentProvider):
     grok.layer(ISilvaSilvaOrgWithNavigation)
     grok.template('contentwithnavigation')
     grok.name('content')
+    grok.context(IDocument)
 
 
 class Navigation(porto.Navigation):

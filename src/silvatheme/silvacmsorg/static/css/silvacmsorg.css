@@ -111,6 +111,17 @@ li a:link, li a:visited {
   width: 140px;
 }
 
+/* two column layout */
+
+.silva-navigation {
+  float: right;
+  width: 140px;
+}
+
+.silva-content.two-column {
+  float: left;
+  width: 780px;
+}
 /* ++ box styling ++ */
 
 /* navigation styling */
@@ -694,6 +705,11 @@ body.documentation #content #slot-one {
 
 body.documentation section {
   padding: 30px 50px;
+}
+
+body.documentation #users div.related-info {
+  float: left;
+  width: 40%;
 }
 
 /* tab styles: user documentation */

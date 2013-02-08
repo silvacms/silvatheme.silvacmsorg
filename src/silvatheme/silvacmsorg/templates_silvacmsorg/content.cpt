@@ -1,4 +1,4 @@
-<div class="silva-content"
+<div class="silva-content one-column"
      tal:content="structure view.content()">
   Silva Content
 </div>

@@ -60,9 +60,9 @@
       });
 
   // info box
-  $('.info p:eq(1)').addClass('infoText');
-  $('.info p:eq(1)').hide();
-  $('.info p:eq(0)').click(function() {
+  $('.info-box p:eq(1)').addClass('infoText');
+  $('.info-box p:eq(1)').hide();
+  $('.info-box p:eq(0)').click(function() {
       $(this).next('p').slideToggle('slow');
       });
 

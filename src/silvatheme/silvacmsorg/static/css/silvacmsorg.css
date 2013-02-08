@@ -598,11 +598,12 @@ body.getsilva section p, body.getsilva section h3  {
 }
 
 body.getsilva .demo {
-  clear: both;
   border: 1px dashed #B7BEBF;
   min-height: 260px;
   margin-top: 15px;
   padding: 10px 15px;
+  width: 170px;
+  float: right;
 }
 
 body.getsilva .block {
@@ -947,7 +948,7 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 /* info box styling */
 
-.info {
+.info-box {
   position:fixed;
   right:0;
   top:160px;

@@ -144,26 +144,28 @@ li a:link, li a:visited {
   font-weight: normal;
 }
 
-.site-navigation ul {
+.site-navigation ul, .sidebar ul.toc {
   margin: 0;
   padding: 0;
 }
 
-.site-navigation li {
+.site-navigation li, .sidebar ul.toc li {
   margin: 12px 0;
 }
 
-.site-navigation ul li, .page-navigation ul li, .related-info ul li {
+.site-navigation ul li, .page-navigation ul li, .related-info ul li, .sidebar ul.toc li {
   color: #58A714;
   list-style: square inside none;
   border-bottom: 1px solid #DCDCDC;
 }
 
-.site-navigation a:link, body.about .aboutnav a:visited {
+.site-navigation a:link, body.about .aboutnav a:visited,
+.sidebar ul.toc a:link, .sidebar ul.toc a:visited {
   color: #444;
 }
 
-.site-navigation a:hover, body.about .aboutnav a:focus {
+.site-navigation a:hover, body.about .aboutnav a:focus,
+.sidebar ul.toc a:hover, .sidebar ul.toc a:focus {
   color: #000;
   text-decoration: none;
 }
@@ -934,16 +936,20 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
   padding: 2px 0;
 }
 
-/* slideshow styling */
+/* slideshow page styling */
 
 .slideshow {
   clear: both;
 }
 
 .slideshow-info {
-    float: left;
-    padding: 5px;
-    width: 240px;
+  float: left;
+  padding: 5px;
+  width: 240px;
+}
+
+#slot-belowslideshow {
+  width: 700px;
 }
 
 /* info box styling */

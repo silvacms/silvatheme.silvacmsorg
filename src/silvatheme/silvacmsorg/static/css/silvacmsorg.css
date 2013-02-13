@@ -511,10 +511,6 @@ body.factsheet h1 {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
 
-.slideshow {
-  background-color: #7C085C;
-}
-
 body.factsheet .introfacts {
   background-color: #EFEFEF;
   background-image: none;
@@ -558,6 +554,11 @@ body.documentation li {
 
 body.about h2 {
   color: #6F084F;
+}
+
+body.about .slideshow {
+  background-color: #7C085C;
+  border: 1px solid #430E70;
 }
 
 /*body.about .image img {

@@ -559,6 +559,7 @@ body.about h2 {
 body.about .slideshow {
   background-color: #7C085C;
   border: 1px solid #430E70;
+  box-shadow: 1px 1px 4px #430E70;
 }
 
 /*body.about .image img {

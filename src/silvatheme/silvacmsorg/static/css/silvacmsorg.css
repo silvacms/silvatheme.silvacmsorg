@@ -128,7 +128,7 @@ li a:link, li a:visited {
 
 /* site navigation */
 
-.site-navigation, .stickypanel {
+.site-navigation {
   background-color: #EFEFEF;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
@@ -973,4 +973,10 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
   top:160px;
   width:250px;
   border-top: 4px solid #59A80F;
+}
+
+/* sticky panel */
+
+.stickypanel {
+  z-index: 9999;
 }

@@ -640,6 +640,11 @@ body.documentation li {
   margin: 0;
 }
 
+body.documentation .image img {
+  border: 2px solid #EDDB3D;
+  margin: 30px 0 0 0;
+}
+
 body.documentation #tabs {
   margin-top: 35px;
 }

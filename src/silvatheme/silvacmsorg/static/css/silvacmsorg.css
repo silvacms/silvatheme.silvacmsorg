@@ -503,6 +503,10 @@ header nav ul li {
   color: #59A80F;
 }
 
+#features .listing p {
+  padding-bottom: 0;
+}
+
 /*   ++++++ page specific styles: About Silva ++++++ */
 
 /* factsheet page */

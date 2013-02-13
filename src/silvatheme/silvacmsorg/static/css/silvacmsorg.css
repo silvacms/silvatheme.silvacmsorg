@@ -139,7 +139,7 @@ li a:link, li a:visited {
   padding: 15px;
 }
 
-.site-navigation h1 {
+.site-navigation h1, .site-navigation h3 {
   font-size: 1.1em;
   font-weight: normal;
 }

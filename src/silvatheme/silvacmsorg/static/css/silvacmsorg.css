@@ -573,7 +573,7 @@ body.getsilva .plain {
 body.getsilva section.box {
   border: 1px solid #656565;
   float: left;
-  min-height: 530px; /* wim: was height 400px before */
+  min-height: 550px; /* wim: was height 400px before */
   margin: 15px 0;
   width: 26%;
 }
@@ -599,7 +599,7 @@ body.getsilva section p, body.getsilva section h3  {
 
 body.getsilva .demo {
   border: 1px dashed #B7BEBF;
-  min-height: 260px;
+  min-height: 530px;
   margin-top: 15px;
   padding: 10px 15px;
   width: 170px;

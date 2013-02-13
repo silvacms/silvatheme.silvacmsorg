@@ -562,6 +562,10 @@ body.about .slideshow {
   box-shadow: 1px 1px 4px #430E70;
 }
 
+body.about .slideshow-marker.current:before {
+    background-color: #000;
+}
+
 /*body.about .image img {
   border: 2px solid #6F084F;
 }

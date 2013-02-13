@@ -39,23 +39,6 @@ h3 {
   font-size: 1.2em;
 }
 
-body.about h2 {
-  color: #6F084F;
-}
-
-body.getsilva h2 {
-  color: #C93636;
-}
-
-body.documentation h2 {
-  color: #EDC800;
-  text-shadow: 0.5px 0.5px 0 #999999;
-}
-
-body.support h2 {
-  color: #2378DF;
-}
-
 p, li {
   line-height: 19px;
 }
@@ -428,21 +411,21 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 @media only screen and (max-width: 900px) {
 
-header {
-  height: 120px;
-}
+  header {
+    height: 120px;
+  }
 
-header .title  {
-  width: 100%;
-}
+  header .title  {
+    width: 100%;
+  }
 
-header .header-wrapper nav {
-  float: left;
-}
+  header .header-wrapper nav {
+    float: left;
+  }
 
-header nav ul li {
-  margin: 14px 15px 0 0;
-}
+  header nav ul li {
+    margin: 14px 15px 0 0;
+  }
 
 }
 
@@ -566,7 +549,21 @@ body.documentation li {
   padding-left: 24px;
 }
 
+/*   ++++++ page specific styles: About ++++++ */
+
+body.about h2 {
+  color: #6F084F;
+}
+
+body.about .image img {
+  border: 2px solid #6F084F;
+}
+
 /*   ++++++ page specific styles: Get Silva ++++++ */
+
+body.getsilva h2 {
+  color: #C93636;
+}
 
 body.getsilva .plain {
   border-bottom: 2px solid #DDE5E7;
@@ -635,6 +632,11 @@ body.getsilva .block-right {
 }
 
 /*   ++++++ page specific styles: Documentation ++++++ */
+
+body.documentation h2 {
+  color: #EDC800;
+  text-shadow: 0.5px 0.5px 0 #999999;
+}
 
 body.documentation li {
   margin: 0;
@@ -751,6 +753,10 @@ body.documentation #users .info {
 }
 
 /*   ++++++ page specific styles: Support ++++++ */
+
+body.support h2 {
+  color: #2378DF;
+}
 
 body.support p.plain {
   border-left: 5px double #2378DF;

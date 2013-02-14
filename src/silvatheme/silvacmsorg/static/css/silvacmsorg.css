@@ -118,7 +118,7 @@ li a:link, li a:visited {
 
 /* site navigation */
 
-.site-navigation {
+.silva-navigation {
   background-color: #EFEFEF;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
@@ -130,31 +130,31 @@ li a:link, li a:visited {
   margin-bottom: 15px;
 }
 
-.site-navigation h1, .site-navigation h3 {
+.silva-navigation h1, .silva-navigation h3 {
   font-size: 1.1em;
   font-weight: normal;
 }
 
-.site-navigation ul {
+.silva-navigation ul {
   margin: 0;
   padding: 0;
 }
 
-.site-navigation li {
+.silva-navigation li {
   margin: 12px 0;
 }
 
-.site-navigation ul li, .page-navigation ul li, .related-info ul li {
+.silva-navigation ul li, .page-navigation ul li, .related-info ul li {
   color: #58A714;
   list-style: square inside none;
   border-bottom: 1px solid #DCDCDC;
 }
 
-.site-navigation a:link {
+.silva-navigation a:link {
   color: #444;
 }
 
-.site-navigation a:hover {
+.silva-navigation a:hover {
   color: #000;
   text-decoration: none;
 }

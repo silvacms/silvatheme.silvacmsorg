@@ -1006,13 +1006,17 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 /* form styling */
 
-input:invalid, textarea:invalid {
-  box-shadow: 0 0 5px #ddd;
+.field {
+  margin-bottom: 10px;
 }
 
 textarea {
   width: 340px;
   border: 1px solid #777;
   border-radius: 5px 5px 5px 5px;
-  margin-bottom: 10px;
+}
+
+input:invalid, textarea:invalid {
+  box-shadow: 0 0 5px #ddd;
+  border-radius: 5px 5px 5px 5px;
 }

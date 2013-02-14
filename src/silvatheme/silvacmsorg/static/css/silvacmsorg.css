@@ -645,16 +645,12 @@ body.factsheet .maincontent li,
 /*   ++++++ page specific styles: Documentation ++++++ */
 
 .section-documentation h2 {
-  color: #EDC800;
+  color: #EDA200;
 }
 
 .section-documentation li {
   margin: 0;
 }
-
-/*.section-documentation .image img {
-  border: 2px solid #EDDB3D;
-}*/
 
 .section-documentation #tabs {
   margin-top: 35px;
@@ -662,7 +658,7 @@ body.factsheet .maincontent li,
 
 .section-documentation .tab-nav li.selected a, .section-documentation .tab-nav li.selected a:hover,
 .section-documentation .tab-nav li.selected a:focus {
-  background-color: #ECDA3C;
+  background-color: #EDA200;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FDEB4D), to(#EDDB3D));
   background-image: -webkit-linear-gradient(top, #FDEB4D, #EDDB3D);

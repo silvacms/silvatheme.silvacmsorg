@@ -7,11 +7,10 @@ from zope.component import getUtility
 
 from silva.app.document.interfaces import IDocument
 from silva.core import contentlayout
-from silva.core.interfaces import IPublication, IFeedEntryProvider
+from silva.core.interfaces import IPublication, IRoot, IFeedEntryProvider
 from silva.core.layout.porto import porto
+from silva.core.services.interfaces import IMetadataService
 from silva.core.views import views as silvaviews
-
-from Products.SilvaMetadata.interfaces import IMetadataService
 
 from .interfaces import ISilvaCmsOrg, ISilvaSilvaOrgWithNavigation
 
@@ -49,6 +48,19 @@ class Layout(porto.Layout):
         if publication in self.request.PARENTS:
             return 'selected'
         return ''
+
+
+    def current_section_class(self):
+        before = None
+        for parent in self.request.PARENTS:
+            if IRoot.providedBy(parent):
+                if before is not None:
+                    return 'sexion-{0}'.format(before.getId())
+                else:
+                    break
+            before = parent
+        return 'section-root'
+
 
 
 class Content(silvaviews.ContentProvider):

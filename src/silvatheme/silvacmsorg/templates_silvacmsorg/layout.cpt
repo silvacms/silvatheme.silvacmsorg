@@ -31,7 +31,8 @@
 <!-- end header -->
 
 <!-- start content -->
-<div id="content" class="clearfix"
+<div id="content"
+     tal:attributes="class 'clearfix ' + provider.current_section_class()"
      tal:content="structure provider:content">
 </div>
 <!-- end content -->

@@ -660,11 +660,11 @@ body.factsheet .maincontent li,
 .section-documentation .tab-nav li.selected a:focus {
   background-color: #EDA200;
   background-image: none;
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#FDEB4D), to(#EDDB3D));
-  background-image: -webkit-linear-gradient(top, #FDEB4D, #EDDB3D);
-  background-image: -moz-linear-gradient(top, #FDEB4D, #EDDB3D);
-  background-image: -o-linear-gradient(top, #FDEB4D, #EDDB3D);
-  background-image: linear-gradient(to bottom, #FDEB4D, #EDDB3D);
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#EDDB3D), to(#EDA200));
+  background-image: -webkit-linear-gradient(top, #EDDB3D, #EDA200);
+  background-image: -moz-linear-gradient(top, #EDDB3D, #EDA200);
+  background-image: -o-linear-gradient(top, #EDDB3D, #EDA200);
+  background-image: linear-gradient(to bottom, #EDDB3D, #EDA200);
   color: #303030;
 }
 

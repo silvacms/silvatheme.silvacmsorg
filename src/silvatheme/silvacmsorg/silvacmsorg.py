@@ -68,7 +68,6 @@ class Content(silvaviews.ContentProvider):
 
 
 class ContentWithNavigation(silvaviews.ContentProvider):
-    grok.layer(ISilvaSilvaOrgWithNavigation)
     grok.template('contentwithnavigation')
     grok.name('content')
 

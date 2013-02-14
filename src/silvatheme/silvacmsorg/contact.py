@@ -6,6 +6,7 @@ from zeam.form import silva as silvaforms
 from silva.core.interfaces import IContainer
 from Products.Silva.mail import sendmail
 from silva.translations import translate as _
+from zope.traversing.browser import absoluteURL
 
 TEMPLATE="""
 You have a new contact request!
@@ -48,5 +49,9 @@ class ContactForm(silvaforms.PublicForm):
          sendmail(self.context, TEMPLATE.format(**data.getDictWithDefault()),
                   mto='info@infrae.com', mfrom='info@infrae.com',
                   subject='Contact request from silvacms.org')
-         self.status = _(u'Thank you for your request.')
+         success = self.context.get_root()._getOb('success', None)
+         if success is not None:
+             self.response.redirect(absoluteURL(success, self.request))
+         else:
+             self.status = _(u'Thank you for your request.')
          return silvaforms.SUCCESS

@@ -1020,3 +1020,12 @@ input:invalid, textarea:invalid {
   box-shadow: 0 0 5px #ddd;
   border-radius: 5px 5px 5px 5px;
 }
+
+.form-status {
+  font-weight: bold;
+  border: 1px solid #58A714;
+  padding: 10px;
+  width: 320px;
+  box-shadow: 0 0 5px #ddd;
+  border-radius: 5px 5px 5px 5px;
+}

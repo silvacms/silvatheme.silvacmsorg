@@ -928,6 +928,10 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
   width: 240px;
 }
 
+.slideshow-control {
+  cursor: pointer;
+}
+
 #slot-belowslideshow {
   width: 700px;
 }

@@ -12,7 +12,7 @@ from silva.core.layout.porto import porto
 from silva.core.services.interfaces import IMetadataService
 from silva.core.views import views as silvaviews
 
-from .interfaces import ISilvaCmsOrg, ISilvaSilvaOrgWithNavigation
+from .interfaces import ISilvaCmsOrg
 
 grok.templatedir('templates_silvacmsorg')
 grok.layer(ISilvaCmsOrg)

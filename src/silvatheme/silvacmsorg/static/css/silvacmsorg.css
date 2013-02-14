@@ -70,8 +70,14 @@ li a:link, li a:visited {
   text-decoration: none;
 }
 
-::-selection {background: #7CCB38; color:#FFF;}
-::-moz-selection {background: #7CCB38; color:#FFF;}
+::-selection {
+  background: #7CCB38;
+  color:#FFF;
+}
+::-moz-selection {
+  background: #7CCB38;
+  color:#FFF;
+}
 
 /* column layout */
 
@@ -144,11 +150,11 @@ li a:link, li a:visited {
   border-bottom: 1px solid #DCDCDC;
 }
 
-.site-navigation a:link, .section-about .aboutnav a:visited {
+.site-navigation a:link {
   color: #444;
 }
 
-.site-navigation a:hover, .section-about .aboutnav a:focus {
+.site-navigation a:hover {
   color: #000;
   text-decoration: none;
 }
@@ -255,60 +261,6 @@ li a:link, li a:visited {
 
 .newsitm p.newslead {
   font-size: 0.9em;
-}
-
-/* infobox theme */
-
-.information {
-  background-color: #292A2D;
-  padding:10px;
-  position:absolute;
-  top: 160px;
-  right: 0;
-}
-
-.infoButton {
-  background-image: url("../images/information.png");
-  background-repeat: no-repeat;
-  cursor: pointer;
-  margin: 1px;
-  position: relative;
-  height: 34px;
-  width: 34px;
-}
-
-.infoText {
-  background-color: #292A2D;
-  color: #EFEFEF;
-  font-weight: bold;
-  padding: 15px 25px;
-  position: absolute;
-  right: 56px;
-  top: -4px;
-  width: 250px;
-}
-
-.transition200 .duration, .transition200 .delay {
- visibility:hidden;
-}
-
-.transition200 {
- transition:200ms;
- -webkit-transition:200ms;
- -o-transition:200ms;
-}
-
-.section-about .menu, .section-about .infoText {
-  border-top: 4px solid #9B277B;
-}
-.section-getsilva .menu, .section-getsilva .infoText {
-  border-top: 4px solid #C93636;
-}
-.section-documentation .menu, .section-documentation .infoText {
-  border-top: 4px solid #EDDB3D;
-}
-.section-support .menu, .section-support .infoText {
-  border-top: 4px solid #2378DF;
 }
 
 /* -- header settings -- */
@@ -492,7 +444,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding-bottom: 0;
 }
 
-/*   ++++++ page specific styles: About Silva ++++++ */
+/*   ++++++ page specific styles: Factsheet ++++++ */
 
 /* factsheet page */
 
@@ -556,6 +508,19 @@ body.factsheet .maincontent li,
   color: #6F084F;
 }
 
+.section-about .aboutnav a:visited {
+  color: #444;
+}
+
+.section-about .aboutnav a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.section-about .menu, .section-about .infoText {
+  border-top: 4px solid #9B277B;
+}
+
 .section-about .slideshow {
   background-color: #7C085C;
   border: 1px solid #430E70;
@@ -566,10 +531,6 @@ body.factsheet .maincontent li,
     background-color: #000;
 }
 
-/*.section-about .image img {
-  border: 2px solid #6F084F;
-}
-*/
 /*   ++++++ page specific styles: Get Silva ++++++ */
 
 .section-getsilva h2 {
@@ -973,6 +934,14 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 /* info box styling */
 
+.information {
+  background-color: #292A2D;
+  padding:10px;
+  position:absolute;
+  top: 160px;
+  right: 0;
+}
+
 .info-box {
   position:fixed;
   right:0;
@@ -987,6 +956,8 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 .infoText {
   background-color:#292A2D;
+  background-image: url("../images/information.png");
+  background-repeat: no-repeat;
   color:#EFEFEF;
   padding:10px 20px;
   position:fixed;
@@ -994,6 +965,31 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
   top:160px;
   width:250px;
   border-top: 4px solid #59A80F;
+  cursor: pointer;
+}
+
+.transition200 .duration, .transition200 .delay {
+ visibility:hidden;
+}
+
+.transition200 {
+ transition:200ms;
+ -webkit-transition:200ms;
+ -o-transition:200ms;
+}
+
+.section-about .info-box, .section-about .infoText {
+  border-top: 4px solid #6F084F;
+}
+
+.section-getsilva .info-box, .section-getsilva .infoText {
+  border-top: 4px solid #C93636;
+}
+.section-documentation .info-box, .section-documentation .infoText {
+  border-top: 4px solid #EDDB3D;
+}
+.section-support .info-box, .section-support .infoText {
+  border-top: 4px solid #2378DF;
 }
 
 /* sticky panel */

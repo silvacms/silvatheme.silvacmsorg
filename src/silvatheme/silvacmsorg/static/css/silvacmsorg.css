@@ -1007,7 +1007,7 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 /* form styling */
 
 input:invalid, textarea:invalid {
-    box-shadow: 0 0 5px #ddd;
+  box-shadow: 0 0 5px #ddd;
 }
 
 textarea {

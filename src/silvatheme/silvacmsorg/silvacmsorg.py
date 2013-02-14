@@ -55,7 +55,7 @@ class Layout(porto.Layout):
         for parent in self.request.PARENTS:
             if IRoot.providedBy(parent):
                 if before is not None:
-                    return 'sexion-{0}'.format(before.getId())
+                    return 'section-{0}'.format(before.getId())
                 else:
                     break
             before = parent

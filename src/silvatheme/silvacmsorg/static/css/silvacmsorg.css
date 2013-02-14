@@ -943,33 +943,34 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 }
 
 .info-box {
-  position:fixed;
-  right:0;
-  top:160px;
-  padding:5px;
-  width:60px;
-  background-color:#292A2D;
-  color:#EFEFEF;
-  cursor:pointer;
+  position: fixed;
+  right: 0;
+  top: 160px;
+  padding: 5px;
+  width: 60px;
+  background-color: #292A2D;
+  color: #EFEFEF;
+  cursor: pointer;
   border-top: 4px solid #59A80F;
 }
 
 .infoText {
-  background-color:#292A2D;
+  background-color: #292A2D;
   background-image: url("../images/information.png");
   background-repeat: no-repeat;
+  background-position: 5px;
   color:#EFEFEF;
-  padding:10px 20px;
-  position:fixed;
-  right:70px;
-  top:160px;
-  width:250px;
+  padding: 5px 40px;
+  position: fixed;
+  right: 70px;
+  top: 160px;
+  width: 250px;
   border-top: 4px solid #59A80F;
   cursor: pointer;
 }
 
 .transition200 .duration, .transition200 .delay {
- visibility:hidden;
+ visibility: hidden;
 }
 
 .transition200 {

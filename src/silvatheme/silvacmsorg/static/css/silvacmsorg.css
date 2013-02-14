@@ -144,11 +144,11 @@ li a:link, li a:visited {
   border-bottom: 1px solid #DCDCDC;
 }
 
-.site-navigation a:link, body.about .aboutnav a:visited {
+.site-navigation a:link, .section-about .aboutnav a:visited {
   color: #444;
 }
 
-.site-navigation a:hover, body.about .aboutnav a:focus {
+.site-navigation a:hover, .section-about .aboutnav a:focus {
   color: #000;
   text-decoration: none;
 }
@@ -298,16 +298,16 @@ li a:link, li a:visited {
  -o-transition:200ms;
 }
 
-body.about .menu, body.about .infoText {
+.section-about .menu, .section-about .infoText {
   border-top: 4px solid #9B277B;
 }
-body.getsilva .menu, body.getsilva .infoText {
+.section-getsilva .menu, .section-getsilva .infoText {
   border-top: 4px solid #C93636;
 }
-body.documentation .menu, body.documentation .infoText {
+.section-documentation .menu, .section-documentation .infoText {
   border-top: 4px solid #EDDB3D;
 }
-body.support .menu, body.support .infoText {
+.section-support .menu, .section-support .infoText {
   border-top: 4px solid #2378DF;
 }
 
@@ -541,8 +541,8 @@ body.factsheet .maincontent p {
 }
 
 body.factsheet .maincontent li,
-body.about .maincontent li,
-body.documentation li {
+.section-about .maincontent li,
+.section-documentation li {
   background-image: url(images/green_check.png);
   background-repeat: no-repeat;
   background-position: 0px 3px;
@@ -552,38 +552,38 @@ body.documentation li {
 
 /*   ++++++ page specific styles: About ++++++ */
 
-body.about h2 {
+.section-about h2 {
   color: #6F084F;
 }
 
-body.about .slideshow {
+.section-about .slideshow {
   background-color: #7C085C;
   border: 1px solid #430E70;
   box-shadow: 1px 1px 4px #430E70;
 }
 
-body.about .slideshow-marker.current:before {
+.section-about .slideshow-marker.current:before {
     background-color: #000;
 }
 
-/*body.about .image img {
+/*.section-about .image img {
   border: 2px solid #6F084F;
 }
 */
 /*   ++++++ page specific styles: Get Silva ++++++ */
 
-body.getsilva h2 {
+.section-getsilva h2 {
   color: #C93636;
 }
 
-body.getsilva .plain {
+.section-getsilva .plain {
   border-bottom: 2px solid #DDE5E7;
   font-size: 1.2em;
   margin-top: 15px;
   padding-bottom: 30px;
 }
 
-body.getsilva section.box {
+.section-getsilva section.box {
   border: 1px solid #656565;
   float: left;
   min-height: 550px;
@@ -591,26 +591,26 @@ body.getsilva section.box {
   width: 26%;
 }
 
-body.getsilva section.box-middle {
+.section-getsilva section.box-middle {
   border-top: 1px solid #656565;
   border-bottom: 1px solid #656565;
   border-left: 0px;
   border-right: 0px;
 }
 
-body.getsilva section h2 {
+.section-getsilva section h2 {
   background-color: #C93636;
   color: #FFF;
   padding: 4px 12px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 
-body.getsilva section p, body.getsilva section h3  {
+.section-getsilva section p, .section-getsilva section h3  {
   color: #444;
   padding: 0 16px;
 }
 
-body.getsilva .demo {
+.section-getsilva .demo {
   border: 1px dashed #B7BEBF;
   min-height: 530px;
   margin-top: 15px;
@@ -619,7 +619,7 @@ body.getsilva .demo {
   float: right;
 }
 
-body.getsilva .block {
+.section-getsilva .block {
   background-color: #EFEFEF;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
@@ -634,34 +634,34 @@ body.getsilva .block {
   width: 380px;
 }
 
-body.getsilva .block-left {
+.section-getsilva .block-left {
   float: left;
 }
 
-body.getsilva .block-right {
+.section-getsilva .block-right {
   float: right;
 }
 
 /*   ++++++ page specific styles: Documentation ++++++ */
 
-body.documentation h2 {
+.section-documentation h2 {
   color: #EDC800;
 }
 
-body.documentation li {
+.section-documentation li {
   margin: 0;
 }
 
-/*body.documentation .image img {
+/*.section-documentation .image img {
   border: 2px solid #EDDB3D;
 }*/
 
-body.documentation #tabs {
+.section-documentation #tabs {
   margin-top: 35px;
 }
 
-body.documentation .tab-nav li.selected a, body.documentation .tab-nav li.selected a:hover,
-body.documentation .tab-nav li.selected a:focus {
+.section-documentation .tab-nav li.selected a, .section-documentation .tab-nav li.selected a:hover,
+.section-documentation .tab-nav li.selected a:focus {
   background-color: #ECDA3C;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FDEB4D), to(#EDDB3D));
@@ -672,7 +672,7 @@ body.documentation .tab-nav li.selected a:focus {
   color: #303030;
 }
 
-body.documentation .tab-nav a:link, #content .tab-nav a:visited {
+.section-documentation .tab-nav a:link, #content .tab-nav a:visited {
   background-color: #FEFEFE;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#E6E6E6));
@@ -695,8 +695,8 @@ body.documentation .tab-nav a:link, #content .tab-nav a:visited {
   width: 22%;
 }
 
-body.documentation .tab-nav a:link:hover, body.documentation .tab-nav a:visited:hover,
-body.documentation .tab-nav a:link:focus, body.documentation .tab-nav a:visited:focus {
+.section-documentation .tab-nav a:link:hover, .section-documentation .tab-nav a:visited:hover,
+.section-documentation .tab-nav a:link:focus, .section-documentation .tab-nav a:visited:focus {
   background-color: #FFF;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#DEDEDE));
@@ -709,8 +709,8 @@ body.documentation .tab-nav a:link:focus, body.documentation .tab-nav a:visited:
   text-decoration: none;
 }
 
-body.documentation #users, body.documentation #developers,
-body.documentation #sysadmins, body.documentation #tutorials {
+.section-documentation #users, .section-documentation #developers,
+.section-documentation #sysadmins, .section-documentation #tutorials {
   background-color: #FFF;
   border-color: #EDDB3D #BEBEBE #BEBEBE;
   border-style: solid;
@@ -718,25 +718,25 @@ body.documentation #sysadmins, body.documentation #tutorials {
   clear: both;
 }
 
-body.documentation #content #slot-one {
+.section-documentation #content #slot-one {
   display: inline-block;
   margin: 15px 20px 20px 60px;
   width: 510px;
   vertical-align: top;
 }
 
-body.documentation section {
+.section-documentation section {
   padding: 30px 50px;
 }
 
-body.documentation #users div.related-info {
+.section-documentation #users div.related-info {
   float: left;
   width: 40%;
 }
 
 /* tab styles: user documentation */
 
-body.documentation #users .documentation-intro {
+.section-documentation #users .documentation-intro {
   background-color: #EFEFEF;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
@@ -749,26 +749,26 @@ body.documentation #users .documentation-intro {
   margin: 30px 0 50px 0;
 }
 
-body.documentation #users img {
+.section-documentation #users img {
   float: left;
 }
 
-body.documentation #users p {
+.section-documentation #users p {
   float: left;
   padding: 15px 25px;
 }
 
-body.documentation #users .info {
+.section-documentation #users .info {
   clear: both;
 }
 
 /*   ++++++ page specific styles: Support ++++++ */
 
-body.support h2 {
+.section-support h2 {
   color: #2378DF;
 }
 
-body.support p.plain {
+.section-support p.plain {
   border-left: 5px double #2378DF;
   line-height: 1.7em;
   margin: 30px 0 50px 0;
@@ -776,22 +776,22 @@ body.support p.plain {
   width: 460px;
 }
 
-body.support .image {
+.section-support .image {
   margin: 0;
 }
 
-body.support .image img {
+.section-support .image img {
   border: 2px solid #2378DF;
   margin: 30px 0 0 0;
 }
 
-body.support section {
+.section-support section {
   clear: both;
   width: 700px;
   margin: 20px auto;
 }
 
-body.support section h2 {
+.section-support section h2 {
   background-color: #2378DF;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#1280E7), to(#0060C7));
@@ -812,7 +812,7 @@ body.support section h2 {
   width: 175px;
 }
 
-body.support section p {
+.section-support section p {
   background-color: #FEFEFE;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#F8F8F8));

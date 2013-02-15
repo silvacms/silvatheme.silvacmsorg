@@ -79,7 +79,7 @@ $(document).ready(function(){
   // masonry
   $('.software-groups').masonry({
     // options
-    itemSelector : '.silvatable',
+    itemSelector : '.package',
     columnWidth : 330
   });
 

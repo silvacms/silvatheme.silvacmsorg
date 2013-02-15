@@ -1032,7 +1032,7 @@ input:invalid, textarea:invalid {
 /* make generic for all table that list content */
 table.silvatable.list {
   float: left;
-  width: 350px;
+  width: 330px;
   border: 1px solid #58A714;
   margin: 0 10px 10px 0;
 }

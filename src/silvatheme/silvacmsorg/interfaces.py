@@ -13,7 +13,7 @@ class ISilvaCmsOrg(ITypography, IPorto):
     silvaconf.resource('css/silvacmsorg.css')
     silvaconf.resource(jquery)
     silvaconf.resource('js/jquery.stickyPanel.min.js')
-    silvaconf.resource('jquery.masonry.min.js')
+    silvaconf.resource('js/jquery.masonry.min.js')
 
 
 class ISilvaCmsOrgSkin(ISilvaCmsOrg, ISilvaSkin):

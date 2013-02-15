@@ -1032,15 +1032,20 @@ input:invalid, textarea:invalid {
 /* make generic for all table that list content */
 table.silvatable.list {
   float: left;
-  width: 49%;
-  background-color: #58A714;
-  margin: 20px 10px;
-  padding: 1px;
+  width: 45%;
+  border: 1px solid: #58A714;
+  margin: 20px 30px 20px 0;
 }
 
 table.silvatable.list th {
   text-align: center;
   font-size: 120%;
+}
+
+table.silvatable.list th a:link,
+table.silvatable.list th a:visited {
+  color: #fff;
+  text-decoration: underline;
 }
 
 table.silvatable.list td {

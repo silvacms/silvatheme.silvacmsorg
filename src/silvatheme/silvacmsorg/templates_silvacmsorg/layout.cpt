@@ -45,7 +45,7 @@
 
 <script type="text/javascript">
 
-  $(document).ready(function(){
+$(document).ready(function(){
 
   // tab navigation
   $('#tabs section').hide();
@@ -76,5 +76,14 @@
       };
   $(".stickypanel").stickyPanel(stickyPanelOptions);
 
+  // masonry
+  $(function(){
+    $('.software-groups').masonry({
+      // options
+      itemSelector : '.silvatable',
+      columnWidth : 350
+    });
   });
+
+});
 </script>

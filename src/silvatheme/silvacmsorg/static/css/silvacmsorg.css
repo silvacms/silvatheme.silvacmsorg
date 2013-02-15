@@ -53,9 +53,13 @@ a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
   text-decoration: underline;
 }
 
+/* screws up ie 8
+
 img {
   max-width: 100%;
 }
+
+*/
 
 span.image-caption {
   display: block;

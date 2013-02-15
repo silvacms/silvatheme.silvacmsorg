@@ -495,7 +495,7 @@ body.factsheet .maincontent p {
 
 body.factsheet .maincontent li,
 .section-about .maincontent li,
-.section-documentation li {
+.section-documentation #sysadmins  li {
   background-image: url("../images/green_check.png");
   background-repeat: no-repeat;
   background-position: 0px 3px;

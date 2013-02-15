@@ -1033,10 +1033,10 @@ input:invalid, textarea:invalid {
 table.silvatable.list {
   border: 1px solid #58A714;
   margin: 0 10px 10px 0;
+  width: 100%;
 }
 
 table.silvatable.list th {
-  text-align: center;
   font-size: 120%;
   background-color: #58A714;
   padding: 4px;

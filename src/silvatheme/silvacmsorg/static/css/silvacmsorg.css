@@ -686,7 +686,7 @@ body.factsheet .maincontent li,
 
 .section-documentation #users div.related-info {
   float: left;
-  width: 40%;
+  width: 50%;
 }
 
 /* tab styles: user documentation */
@@ -1059,7 +1059,7 @@ table.silvatable.list td {
   padding: 4px 10px 6px;
 }
 
-/* package */
+/* package specific list */
 
 table.silvatable.list.package {
   float: left;

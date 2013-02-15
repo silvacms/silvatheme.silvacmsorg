@@ -1043,6 +1043,7 @@ table.silvatable.list th {
   background-color: #58A714;
   padding: 4px;
   border-bottom: 1px solid #58A714;
+  color: #fff;
 }
 
 table.silvatable.list th a:link,

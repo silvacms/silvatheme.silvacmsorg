@@ -1060,3 +1060,7 @@ table.silvatable.list td {
   margin: 0;
   padding: 4px 10px 6px;
 }
+
+table.silvatable.list.releases {
+  width: 100%;
+}

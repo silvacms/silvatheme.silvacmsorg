@@ -1065,3 +1065,7 @@ table.silvatable.list.package {
   float: left;
   width: 330px;
 }
+
+table.silvatable.list.package th {
+  text-align: left;
+}

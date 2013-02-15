@@ -1039,7 +1039,7 @@ table.silvatable.list {
 table.silvatable.list th {
   font-size: 120%;
   background-color: #58A714;
-  padding: 4px;
+  padding: 4px 8px;
   border-bottom: 1px solid #58A714;
   color: #fff;
 }

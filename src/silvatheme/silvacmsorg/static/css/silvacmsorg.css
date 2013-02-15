@@ -1064,4 +1064,5 @@ table.silvatable.list td {
 table.silvatable.list.package {
   float: left;
   width: 330px;
+  margin: 0;
 }

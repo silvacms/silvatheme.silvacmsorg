@@ -77,12 +77,10 @@ $(document).ready(function(){
   $(".stickypanel").stickyPanel(stickyPanelOptions);
 
   // masonry
-  $(function(){
-    $('.software-groups').masonry({
-      // options
-      itemSelector : '.silvatable',
-      columnWidth : 350
-    });
+  $('.software-groups').masonry({
+    // options
+    itemSelector : '.silvatable',
+    columnWidth : 350
   });
 
 });

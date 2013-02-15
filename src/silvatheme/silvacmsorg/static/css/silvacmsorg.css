@@ -1033,7 +1033,8 @@ input:invalid, textarea:invalid {
 table.silvatable.list {
   float: left;
   width: 350px;
-  border: 1px solid: #58A714;
+  border: 1px solid #58A714;
+  margin: 0 10px 10px 0;
 }
 
 table.silvatable.list th {

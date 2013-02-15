@@ -53,14 +53,6 @@ a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
   text-decoration: underline;
 }
 
-/* screws up ie 8
-
-img {
-  max-width: 100%;
-}
-
-*/
-
 span.image-caption {
   display: block;
   font-size: 0.8em;
@@ -1033,4 +1025,29 @@ input:invalid, textarea:invalid {
   width: 320px;
   box-shadow: 0 0 5px #ddd;
   border-radius: 5px 5px 5px 5px;
+}
+
+/* software packages */
+
+/* make generic for all table that list content */
+table.silvatable.list {
+  float: left;
+  width: 49%;
+  background-color: #58A714;
+  margin: 20px 10px;
+  padding: 1px;
+}
+
+table.silvatable.list th {
+  text-align: center;
+  font-size: 120%;
+}
+
+table.silvatable.list td {
+  background-color: #FFFFFF;
+  background-image: -moz-linear-gradient(center top , #FFFFFF, #F2F2F2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid #FFFFFF;
+  margin: 0;
+  padding: 4px 10px 6px;
 }

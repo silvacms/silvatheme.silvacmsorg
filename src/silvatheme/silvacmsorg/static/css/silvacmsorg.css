@@ -1032,9 +1032,8 @@ input:invalid, textarea:invalid {
 /* make generic for all table that list content */
 table.silvatable.list {
   float: left;
-  width: 350px;
+  width: 300px;
   border: 1px solid: #58A714;
-  margin: 20px 30px 20px 0;
 }
 
 table.silvatable.list th {
@@ -1046,6 +1045,7 @@ table.silvatable.list th a:link,
 table.silvatable.list th a:visited {
   color: #fff;
   text-decoration: underline;
+  background-color: #58A714;
 }
 
 table.silvatable.list td {

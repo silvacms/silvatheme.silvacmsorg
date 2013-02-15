@@ -80,7 +80,7 @@ $(document).ready(function(){
   $('.software-groups').masonry({
     // options
     itemSelector : '.silvatable',
-    columnWidth : 350
+    columnWidth : 300
   });
 
 });

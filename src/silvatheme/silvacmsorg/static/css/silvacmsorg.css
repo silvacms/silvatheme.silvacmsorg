@@ -1031,8 +1031,6 @@ input:invalid, textarea:invalid {
 
 /* make generic for all table that list content */
 table.silvatable.list {
-  float: left;
-  width: 330px;
   border: 1px solid #58A714;
   margin: 0 10px 10px 0;
 }
@@ -1059,4 +1057,11 @@ table.silvatable.list td {
   border-top: 1px solid #FFFFFF;
   margin: 0;
   padding: 4px 10px 6px;
+}
+
+/* package */
+
+table.silvatable.list.package {
+  float: left;
+  width: 330px;
 }

@@ -533,6 +533,10 @@ body.factsheet .maincontent li,
   width: 280px;
 }
 
+.section-about .slideshow-info h2 {
+  font-size: 185%;
+}
+
 .section-about .slideshow-info p {
   font-size: 120%;
 }
@@ -932,13 +936,9 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
   clear: both;
 }
 
-.slideshow-info h2 {
-  font-size: 100%;
-}
-
 .slideshow-info {
   float: left;
-  padding: 5px;
+  padding: 5px 15px;
   width: 240px;
 }
 

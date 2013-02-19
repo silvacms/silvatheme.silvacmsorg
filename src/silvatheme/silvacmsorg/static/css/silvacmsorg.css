@@ -502,7 +502,7 @@ body.factsheet .maincontent li,
 
 /*   ++++++ page specific styles: About ++++++ */
 
-.section-about h2 {
+.section-about h1, .section-about h2 {
   color: #6F084F;
 }
 
@@ -526,12 +526,24 @@ body.factsheet .maincontent li,
 }
 
 .section-about .slideshow-marker.current:before {
-    background-color: #000;
+  background-color: #000;
+}
+
+.section-about .slideshow-info {
+  width: 280px;
+}
+
+.section-about .slideshow-info p {
+  font-size: 120%;
+}
+
+.section-about .slideshow-image {
+  margin: 0;
 }
 
 /*   ++++++ page specific styles: Get Silva ++++++ */
 
-.section-getsilva h2 {
+.section-getsilva h1 .section-getsilva h2 {
   color: #C93636;
 }
 
@@ -603,7 +615,7 @@ body.factsheet .maincontent li,
 
 /*   ++++++ page specific styles: Documentation ++++++ */
 
-.section-documentation h2 {
+.section-documentation h1, .section-documentation h2 {
   color: #EDA200;
 }
 
@@ -719,7 +731,7 @@ body.factsheet .maincontent li,
 
 /*   ++++++ page specific styles: Support ++++++ */
 
-.section-support h2 {
+.section-support h1, .section-support h2 {
   color: #2378DF;
 }
 
@@ -918,6 +930,10 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 .slideshow {
   clear: both;
+}
+
+.slideshow-info h2 {
+  font-size: 100%;
 }
 
 .slideshow-info {

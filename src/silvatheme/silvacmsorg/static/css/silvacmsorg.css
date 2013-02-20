@@ -104,6 +104,20 @@ li a:link, li a:visited {
   width: 140px;
 }
 
+.silva-navigation a:link, .silva-navigation a:visited {
+  font-weight: normal;
+}
+
+.silva-navigation li.selected {
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.silva-navigation li.selected a:link {
+  color: #000;
+  font-weight: bold;
+}
+
 .silva-content.two-column {
   float: left;
   width: 780px;

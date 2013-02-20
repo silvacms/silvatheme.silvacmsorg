@@ -5,12 +5,12 @@ from zope.cachedescriptors.property import Lazy
 from zope.traversing.browser import absoluteURL
 from zope.component import getUtility
 
-from silva.core.contentlayout.interfaces import IPageAware
 from silva.core import contentlayout
 from silva.core.interfaces import IPublication, IRoot, IFeedEntryProvider
 from silva.core.layout.porto import porto
 from silva.core.services.interfaces import IMetadataService
 from silva.core.views import views as silvaviews
+from silva.core.layout.interfaces import ICustomizableTag
 
 from .interfaces import ISilvaCmsOrg
 
@@ -20,6 +20,11 @@ grok.layer(ISilvaCmsOrg)
 
 class MainLayout(porto.MainLayout):
     grok.template('htmlheadbody')
+
+
+class INoNavigationLayout(ICustomizableTag):
+    """Remove the navigation from the layout
+    """
 
 
 class Layout(porto.Layout):
@@ -62,9 +67,10 @@ class Layout(porto.Layout):
         return 'section-root'
 
 
-class Content(silvaviews.ContentProvider):
-    grok.template('content')
-    grok.context(IPageAware)
+class ContentNavigationLess(silvaviews.ContentProvider):
+    grok.template('contentnavigationless')
+    grok.name('content')
+    grok.context(INoNavigationLayout)
 
 
 class ContentWithNavigation(silvaviews.ContentProvider):
@@ -119,6 +125,6 @@ class FullPage(contentlayout.Design):
     grok.name('fullpage')
     grok.title('Full Page')
 
-    slots = {
-        'fullpage': contentlayout.Slot(css_class='content')}
+    slots = {'fullpage': contentlayout.Slot(css_class='content')}
+    markers = [INoNavigationLayout]
 

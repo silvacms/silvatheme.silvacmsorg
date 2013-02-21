@@ -767,11 +767,6 @@ body.factsheet .maincontent li,
   margin: 0;
 }
 
-.section-support div.image {
-  border: 1px solid #2378DF;
-  margin: 30px 0 0 0;
-}
-
 .section-support section {
   clear: both;
   width: 700px;
@@ -932,10 +927,16 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 /* -- images -- */
 
 .section-documentation div.image, .section-about div.image,
-.section-about div.image, #slot-belowslideshow div.image {
+.section-about div.image, .section-support div.image,
+#slot-belowslideshow div.image {
   border: 1px solid #DDDDDD;
   padding: 10px;
   box-shadow: 1px 1px 5px #aaa;
+}
+
+.section-support div.image {
+  border: 1px solid #2378DF;
+  margin: 30px 0 0 0;
 }
 
 /* -- login page -- */

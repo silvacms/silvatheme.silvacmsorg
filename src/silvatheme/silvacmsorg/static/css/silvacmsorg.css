@@ -101,7 +101,7 @@ li a:link, li a:visited {
 
 .silva-content.two-column {
   float: left;
-  width: 780px;
+  width: 740px;
 }
 /* ++ box styling ++ */
 
@@ -120,7 +120,7 @@ li a:link, li a:visited {
   padding: 10px;
   margin-bottom: 15px;
   float: right;
-  width: 150px;
+  width: 190px;
 }
 
 .silva-navigation h1, .silva-navigation h2, .silva-navigation h3 {
@@ -134,7 +134,7 @@ li a:link, li a:visited {
 }
 
 .silva-navigation ul ul {
-  padding-left: 0.2em;
+  padding-left: 0.5em;
 }
 
 .silva-navigation li {
@@ -143,7 +143,6 @@ li a:link, li a:visited {
 
 .silva-navigation ul li {
   color: #58A714;
-  list-style: square inside none;
   border-bottom: 1px solid #DCDCDC;
 }
 

@@ -146,25 +146,20 @@ li a:link, li a:visited {
   border-bottom: 1px solid #DCDCDC;
 }
 
-.silva-navigation li.selected.level-0 li {
-  border-bottom: none;
+.silva-navigation li.selected {
+  border-bottom: 1px solid #000;
+  color: #000;
 }
 
-.silva-navigation ul li ul li {
+.silva-navigation li.level-1 {
   color: #376D07;
   list-style: none;
-  border-bottom: none;
+  border-bottom: 1px solid #9bb516;
   margin: 2px;
 }
 
-.silva-navigation li.selected {
-  border-bottom: 1px solid #000;
-  color: #000;
-}
-
-.silva-navigation li.selected {
-  border-bottom: 1px solid #000;
-  color: #000;
+.silva-navigation li.selected.level-1 {
+  border-bottom: none;
 }
 
 .silva-navigation a:link, .silva-navigation a:visited {

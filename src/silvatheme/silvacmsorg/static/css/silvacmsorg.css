@@ -53,6 +53,12 @@ a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
   text-decoration: underline;
 }
 
+div.image {
+  border: 1px solid #DDDDDD;
+  padding: 10px;
+  box-shadow: 1px 1px 5px #aaa;
+}
+
 span.image-caption {
   display: block;
   font-size: 0.8em;

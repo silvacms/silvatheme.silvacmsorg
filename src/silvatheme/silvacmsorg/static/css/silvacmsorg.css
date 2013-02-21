@@ -503,6 +503,7 @@ body.factsheet .maincontent p {
 
 body.factsheet .maincontent li,
 .section-about #slot-belowslideshow li,
+.section-about #slot-fullpage li,
 .section-documentation #sysadmins li,
 .section-documentation #developers li {
   background-image: url("../images/green_check.png");

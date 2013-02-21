@@ -186,11 +186,6 @@ li a:link, li a:visited {
   font-weight: bold;
 }
 
-.silva-navigation li.selected.level-0 li a.selected:link,
-.silva-navigation li.selected.level-0 li a.selected:visited {
-  font-weight: normal;
-}
-
 /* page navigation */
 
 .page-navigation {

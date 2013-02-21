@@ -139,6 +139,7 @@ li a:link, li a:visited {
 
 .silva-navigation li {
   margin: 12px 0;
+  background-image: none;
 }
 
 .silva-navigation ul li {

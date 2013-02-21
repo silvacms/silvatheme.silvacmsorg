@@ -523,7 +523,8 @@ body.factsheet .maincontent li,
 .section-about #slot-belowslideshow li,
 .section-about #slot-maincontent li,
 .section-documentation #sysadmins li,
-.section-documentation #developers li {
+.section-documentation #developers li,
+.section-community .silva-content li {
   background-image: url("../images/green_check.png");
   background-repeat: no-repeat;
   background-position: 0px 3px;

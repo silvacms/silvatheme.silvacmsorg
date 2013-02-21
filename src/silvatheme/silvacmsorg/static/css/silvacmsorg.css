@@ -541,22 +541,6 @@ body.factsheet .maincontent li,
   background-color: #000;
 }
 
-.section-about .slideshow-info {
-  width: 280px;
-}
-
-.section-about .slideshow-info h2 {
-  font-size: 185%;
-}
-
-.section-about .slideshow-info p {
-  font-size: 120%;
-}
-
-.section-about .slideshow-image {
-  margin: 0;
-}
-
 /*   ++++++ page specific styles: Get Silva ++++++ */
 
 .section-getsilva h1 .section-getsilva h2 {
@@ -960,6 +944,23 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 #slot-belowslideshow {
   width: 700px;
+}
+
+/* was .section-about */
+.slideshow-info {
+  width: 280px;
+}
+
+.slideshow-info h2 {
+  font-size: 185%;
+}
+
+.slideshow-info p {
+  font-size: 120%;
+}
+
+.slideshow-image {
+  margin: 0;
 }
 
 /* info box styling */

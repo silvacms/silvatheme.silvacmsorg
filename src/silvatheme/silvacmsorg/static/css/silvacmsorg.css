@@ -151,15 +151,15 @@ li a:link, li a:visited {
   color: #000;
 }
 
+.silva-navigation li.selected.level-0 {
+  border-bottom: none;
+}
+
 .silva-navigation li.level-1 {
   color: #376D07;
   list-style: none;
   border-bottom: 1px solid #9bb516;
   margin: 2px;
-}
-
-.silva-navigation li.selected.level-1 {
-  border-bottom: none;
 }
 
 .silva-navigation a:link, .silva-navigation a:visited {

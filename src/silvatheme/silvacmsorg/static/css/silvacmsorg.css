@@ -53,12 +53,6 @@ a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
   text-decoration: underline;
 }
 
-div.image {
-  border: 1px solid #DDDDDD;
-  padding: 10px;
-  box-shadow: 1px 1px 5px #aaa;
-}
-
 span.image-caption {
   display: block;
   font-size: 0.8em;
@@ -913,6 +907,14 @@ footer ul li a:link, footer ul li a:visited {
 
 footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visited:focus {
   color: #E2E2E2;
+}
+
+/* -- images -- */
+
+.section-documentation div.image, #slot-belowslideshow div.image {
+  border: 1px solid #DDDDDD;
+  padding: 10px;
+  box-shadow: 1px 1px 5px #aaa;
 }
 
 /* -- login page -- */

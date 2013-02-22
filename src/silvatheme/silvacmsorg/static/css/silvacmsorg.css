@@ -940,8 +940,8 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 /* -- images -- */
 
-.section-documentation div.image, .section-about div.image,
-.section-about div.image, .section-support div.image,
+.section-documentation div.image,
+.section-support div.image,
 #slot-belowslideshow div.image {
   border: 1px solid #DDDDDD;
   padding: 10px;

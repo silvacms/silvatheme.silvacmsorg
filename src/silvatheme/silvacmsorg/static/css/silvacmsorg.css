@@ -539,6 +539,16 @@ body.factsheet .maincontent li,
   color: #6F084F;
 }
 
+.section-about #slot-one {
+  width: 700px;
+  margin: 0;
+}
+
+.section-about #slot-two {
+  width: 220px;
+  margin: 0;
+}
+
 .section-about .aboutnav a:visited {
   color: #444;
 }

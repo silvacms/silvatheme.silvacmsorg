@@ -487,8 +487,10 @@ body.factsheet h1 {
   border: 1px solid #3E001E;
   color: #FFF;
   font-size: 1.4em;
-  margin: 0; padding: 4px 12px;
+  margin: 0;
+  padding: 4px 12px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+  width: 700px;
 }
 
 body.factsheet .introfacts {
@@ -504,6 +506,7 @@ body.factsheet .introfacts {
   border-bottom: 1px solid #929299;
   height: 280px;
   margin-bottom: 40px;
+  padding: 20px;
 }
 
 body.factsheet .introfacts p {
@@ -539,8 +542,8 @@ body.factsheet .maincontent li,
   color: #6F084F;
 }
 
-.section-about #slot-one {
-  width: 700px;
+.section-about #slot-one, .section-about .maincontent {
+  width: 726px;
   margin: 0;
 }
 

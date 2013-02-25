@@ -529,7 +529,7 @@ body.factsheet .maincontent li,
 .section-documentation #sysadmins li,
 .section-documentation #developers li,
 .section-community .maincontent li {
-  background-image: url("../images/thick.png");
+  background-image: url("../images/tick.png");
   background-repeat: no-repeat;
   background-position: 0px 3px;
   margin: 12px 0;

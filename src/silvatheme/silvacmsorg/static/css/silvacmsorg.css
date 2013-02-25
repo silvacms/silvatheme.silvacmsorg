@@ -528,7 +528,8 @@ body.factsheet .maincontent li,
 .section-about #slot-maincontent li,
 .section-documentation #sysadmins li,
 .section-documentation #developers li,
-.section-community .maincontent li {
+.section-community .maincontent li,
+.sprint-checklist .silva-content {
   background-image: url("../images/tick.png");
   background-repeat: no-repeat;
   background-position: 0px 3px;
@@ -544,7 +545,7 @@ body.factsheet .maincontent li,
   padding-left: 24px;
 }
 
-.blueprint .silva-content li {
+.blueprints .silva-content li {
   background-image: url("../images/blueprint.png");
   background-repeat: no-repeat;
   background-position: 0px 3px;

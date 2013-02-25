@@ -544,6 +544,14 @@ body.factsheet .maincontent li,
   padding-left: 24px;
 }
 
+.blueprint .silva-content li {
+  background-image: url("../images/blueprint.png");
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
 /*   ++++++ page specific styles: About ++++++ */
 
 .section-about h1, .section-about h2 {

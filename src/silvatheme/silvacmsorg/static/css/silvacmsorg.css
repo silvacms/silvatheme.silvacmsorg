@@ -1170,7 +1170,11 @@ table.silvatable.list.package th {
 
 /* search result styling */
 
+.searchresults ul {
+  margin-left: 0;
+}
+
 .searchresult {
   border-bottom: 1px solide #ddd;
-  padding: 0.5em;
+  padding: 0.5em 0;
 }

@@ -532,7 +532,7 @@ body.factsheet .maincontent li,
 .sprint-checklist .silva-content {
   background-image: url("../images/tick.png");
   background-repeat: no-repeat;
-  background-position: 0px 3px;
+  background-position: 0 2px;
   margin: 12px 0;
   padding-left: 24px;
 }
@@ -540,7 +540,7 @@ body.factsheet .maincontent li,
 .develop .silva-content li {
   background-image: url("../images/hammer.png");
   background-repeat: no-repeat;
-  background-position: 0px 3px;
+  background-position: 0 2px;
   margin: 12px 0;
   padding-left: 24px;
 }
@@ -548,7 +548,7 @@ body.factsheet .maincontent li,
 .blueprints .silva-content li {
   background-image: url("../images/blueprint.png");
   background-repeat: no-repeat;
-  background-position: 0px 3px;
+  background-position: 0 2px;
   margin: 12px 0;
   padding-left: 24px;
 }
@@ -616,8 +616,8 @@ body.factsheet .maincontent li,
 .section-getsilva section.box-middle {
   border-top: 1px solid #656565;
   border-bottom: 1px solid #656565;
-  border-left: 0px;
-  border-right: 0px;
+  border-left: 0;
+  border-right: 0;
 }
 
 .section-getsilva section h2 {

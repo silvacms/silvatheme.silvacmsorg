@@ -476,7 +476,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 /* factsheet page */
 
-body.factsheet h1 {
+.factsheet h1 {
   background-color: #7C085C;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#952175), to(#6E004E));
@@ -493,7 +493,7 @@ body.factsheet h1 {
   width: 700px;
 }
 
-body.factsheet .introfacts {
+.factsheet .introfacts {
   background-color: #EFEFEF;
   background-image: none;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
@@ -509,7 +509,7 @@ body.factsheet .introfacts {
   padding: 20px;
 }
 
-body.factsheet .introfacts p {
+.factsheet .introfacts p {
   color: #47092E;
   float: right;
   padding: 10px 15px;
@@ -519,11 +519,16 @@ body.factsheet .introfacts p {
   width: 65%;
 }
 
-body.factsheet .maincontent p {
+.factsheet .maincontent p {
   padding: 0 25px;
 }
 
-body.factsheet .maincontent li,
+.factsheet .section-about #slot-two {
+  margin: -32px 0 0;
+  width: 220px;
+}
+
+.factsheet .maincontent li,
 .section-about #slot-belowslideshow li,
 .section-about #slot-maincontent li,
 .section-documentation #sysadmins li,

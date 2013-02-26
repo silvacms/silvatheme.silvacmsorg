@@ -650,7 +650,7 @@ body.factsheet .maincontent li,
   background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
   background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
   border: 1px solid #E0E0E0;
-  margin-top: 30px; /* wim: was 50px */
+  margin-top: 20px; /* wim: was 50px */
   padding: 10px 20px;
   min-height: 340px; /* wim: was height 160px before */
   width: 380px;

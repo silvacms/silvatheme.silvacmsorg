@@ -1170,7 +1170,7 @@ table.silvatable.list.package th {
 
 /* search result styling */
 
-.barchNav a {
+.batchNav a {
   border: 1px solid;
   padding: 0.1em 0.4em;
 }
@@ -1180,6 +1180,6 @@ table.silvatable.list.package th {
 }
 
 .searchresult {
-  border-bottom: 1px solide #ddd;
+  border-bottom: 1px solid #ddd;
   padding: 0.5em 0;
 }

@@ -1167,3 +1167,10 @@ table.silvatable.list.package {
 table.silvatable.list.package th {
   text-align: center;
 }
+
+/* search result styling */
+
+.searchresult {
+  border-bottom: 1px solide #ddd;
+  padding: 0.5em;
+}

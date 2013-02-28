@@ -764,6 +764,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 50%;
 }
 
+/* ++++ Page specific styling community +++ */
+
+.community .section-community .slideshow {
+  clear: left;
+  float: left;
+  width: 715px;
+}
+
 /* tab styles: user documentation */
 
 .section-documentation #users .documentation-intro {

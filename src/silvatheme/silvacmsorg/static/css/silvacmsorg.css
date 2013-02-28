@@ -24,13 +24,13 @@ body {
 /* heading settings */
 
 h1, h2, h3, h4, h5 {
-  clear: both;
+  /*clear: both;*/
   font-family: 'Roboto', Verdana, Calibri, sans-serif;
   font-weight: normal;
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 h2 {
   font-size: 1.4em;
@@ -101,7 +101,7 @@ li a:link, li a:visited {
 
 .silva-content.two-column {
   float: left;
-  width: 740px;
+  width: 700px;
 }
 /* ++ box styling ++ */
 
@@ -302,6 +302,7 @@ header {
 header .header-form {
   float: right;
   padding: 8px 8px 0 0;
+  margin-right: 95px;
 }
 
 header .header-form button[type="submit"] {
@@ -472,6 +473,81 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding-bottom: 0;
 }
 
+.factsheet .maincontent li,
+.section-about #slot-belowslideshow li,
+.section-about #slot-maincontent li,
+.section-documentation #sysadmins li,
+.section-documentation #developers li,
+.section-community .maincontent li,
+.sprint-checklist .silva-content {
+  background-image: url("../images/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.develop .silva-content li {
+  background-image: url("../images/hammer.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.blueprints .silva-content li {
+  background-image: url("../images/blueprint.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.references .section-community div.image {
+  border: none;
+  padding: 10px;
+  box-shadow: none;
+}
+
+/*   ++++++ page specific styles: About ++++++ */
+
+.section-about h1, .section-about h2 {
+  color: #6F084F;
+}
+
+.section-about #slot-one, .section-about .maincontent {
+  width: 726px;
+  margin: 0;
+}
+
+.section-about #slot-two {
+  width: 220px;
+  margin: 0;
+}
+
+.section-about .aboutnav a:visited {
+  color: #444;
+}
+
+.section-about .aboutnav a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.section-about .menu, .section-about .infoText {
+  border-top: 4px solid #9B277B;
+}
+
+.section-about .slideshow {
+  background-color: #7C085C;
+  border: 1px solid #430E70;
+  box-shadow: 1px 1px 4px #430E70;
+}
+
+.section-about .slideshow-marker.current:before {
+  background-color: #000;
+}
+
 /*   ++++++ page specific styles: Factsheet ++++++ */
 
 /* factsheet page */
@@ -528,83 +604,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 220px;
 }
 
-.factsheet .maincontent li,
-.section-about #slot-belowslideshow li,
-.section-about #slot-maincontent li,
-.section-documentation #sysadmins li,
-.section-documentation #developers li,
-.section-community .maincontent li,
-.sprint-checklist .silva-content {
-  background-image: url("../images/tick.png");
-  background-repeat: no-repeat;
-  background-position: 0 2px;
-  margin: 12px 0;
-  padding-left: 24px;
-}
-
-.develop .silva-content li {
-  background-image: url("../images/hammer.png");
-  background-repeat: no-repeat;
-  background-position: 0 2px;
-  margin: 12px 0;
-  padding-left: 24px;
-}
-
-.blueprints .silva-content li {
-  background-image: url("../images/blueprint.png");
-  background-repeat: no-repeat;
-  background-position: 0 2px;
-  margin: 12px 0;
-  padding-left: 24px;
-}
-
-/*   ++++++ page specific styles: About ++++++ */
-
-.section-about h1, .section-about h2 {
-  color: #6F084F;
-}
-
-.section-about #slot-one, .section-about .maincontent {
-  width: 726px;
-  margin: 0;
-}
-
-.section-about #slot-two {
-  width: 220px;
-  margin: 0;
-}
-
-.section-about .aboutnav a:visited {
-  color: #444;
-}
-
-.section-about .aboutnav a:focus {
-  color: #000;
-  text-decoration: none;
-}
-
-.section-about .menu, .section-about .infoText {
-  border-top: 4px solid #9B277B;
-}
-
-.section-about .slideshow {
-  background-color: #7C085C;
-  border: 1px solid #430E70;
-  box-shadow: 1px 1px 4px #430E70;
-}
-
-.section-about .slideshow-marker.current:before {
-  background-color: #000;
-}
-
 /*   ++++++ page specific styles: Get Silva ++++++ */
 
-.section-getsilva h1 .section-getsilva h2 {
+.section-getsilva h1, .section-getsilva h2 {
   color: #C93636;
 }
 
 .section-getsilva .plain {
-  border-bottom: 2px solid #DDE5E7;
+  border-bottom: 2px solid #DDD;
   font-size: 1.2em;
   margin-top: 15px;
   padding-bottom: 30px;
@@ -915,27 +922,27 @@ footer li [title] {
   padding-left: 21px;
 }
 
-footer li [title="See Silva News"] {
+footer li [title="Silva News"] {
   background-image: url(../images/newspaper.png);
 }
 
-footer li [title="See Silva Tour"] {
+footer li [title="Silva Tour"] {
   background-image: url(../images/map.png);
 }
 
-footer li [title="See Try Silva"] {
+footer li [title="Try Silva"] {
   background-image: url(../images/application-search-result.png);
 }
 
-footer li [title="See Silva Hosting"] {
+footer li [title="Silva Hosting"] {
   background-image: url(../images/server.png);
 }
 
-footer li [title="See Ask a Silva Question"] {
+footer li [title="Ask a Silva Question"] {
   background-image: url(../images/question-balloon.png);
 }
 
-footer li [title="See Sitemap"] {
+footer li [title="Sitemap"] {
   background-image: url(../images/sitemap.png);
 }
 
@@ -971,7 +978,7 @@ div.image.default {
 .section-community div.image,
 .section-documentation div.image,
 .section-support div.image {
-  border: 1px solid #DDDDDD;
+  border: 1px solid #DDD;
   padding: 10px;
   box-shadow: 1px 1px 5px #aaa;
 }

@@ -770,6 +770,15 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   clear: left;
   float: left;
   width: 715px;
+  margin: 0 auto;
+}
+
+.community .section-community .slideshow-info h2 {
+    font-size: 100%;
+}
+
+.community .section-community .slideshow-info p {
+    font-size: 100%;
 }
 
 /* tab styles: user documentation */

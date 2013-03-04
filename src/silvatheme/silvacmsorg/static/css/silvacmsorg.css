@@ -543,6 +543,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   box-shadow: 1px 1px 4px #430E70;
 }
 
+.section-about .slideshow-right-control {
+    background: url("slideshow.png") -90px 170px transparent;
+}
+
+.section-about .slideshow-left-control {
+    background: url("slideshow.png") -60px 170px transparent;
+}
+
 .section-about .slideshow-marker.current:before {
   background-color: #000;
 }

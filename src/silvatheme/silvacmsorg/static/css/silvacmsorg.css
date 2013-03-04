@@ -812,6 +812,12 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   clear: both;
 }
 
+/*   ++++++ page specific styles: Hosting ++++++ */
+
+.hosting .section-about div.image {
+  border: none;
+}
+
 /*   ++++++ page specific styles: Support ++++++ */
 
 .section-support h1, .section-support h2 {

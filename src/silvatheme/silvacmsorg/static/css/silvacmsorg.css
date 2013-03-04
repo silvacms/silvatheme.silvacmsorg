@@ -564,7 +564,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   font-size: 1.4em;
   margin: 0;
   padding: 4px 12px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
   width: 700px;
 }
 
@@ -635,7 +634,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-color: #C93636;
   color: #FFF;
   padding: 4px 12px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 
 .section-getsilva section p, .section-getsilva section h3  {
@@ -859,7 +857,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   float: left;
   height: 100px;
   margin: 0; padding: 10px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
   vertical-align: top;
   width: 175px;
 }
@@ -983,7 +980,6 @@ footer a:link, footer a:visited {
   color: #C0C0C0;
   font-weight: bold;
   font-size: 90%;
-  text-shadow: 0 -1px 1px #050505;
 }
 
 footer ul li a:link, footer ul li a:visited {

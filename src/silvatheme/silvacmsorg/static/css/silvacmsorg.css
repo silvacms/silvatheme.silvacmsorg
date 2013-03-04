@@ -816,6 +816,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .hosting .section-about div.image {
   border: none;
+  box-shadow: none;
 }
 
 /*   ++++++ page specific styles: Support ++++++ */

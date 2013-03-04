@@ -643,7 +643,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 0 16px;
 }
 
-.section-getsilva .image.float-left image-caption {
+.section-getsilva .image.float-left .image-caption {
   padding-left: 15px;
 }
 

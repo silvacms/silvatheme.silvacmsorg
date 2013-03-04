@@ -103,7 +103,6 @@ li a:link, li a:visited {
   float: left;
   width: 700px;
 }
-/* ++ box styling ++ */
 
 /* navigation styling */
 
@@ -410,7 +409,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 }
 
-/* box styling */
+/* ++ box styling ++ */
 
 #features {
   clear: both;
@@ -642,6 +641,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 .section-getsilva section p, .section-getsilva section h3  {
   color: #444;
   padding: 0 16px;
+}
+
+.section-getsilva .image.float-left image-caption {
+  padding-left: 15px;
 }
 
 .section-getsilva .demo {

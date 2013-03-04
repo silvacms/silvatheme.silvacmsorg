@@ -301,7 +301,7 @@ header {
 header .header-form {
   float: right;
   padding: 8px 8px 0 0;
-  margin-right: 95px;
+  margin-right: 7.5%;
 }
 
 header .header-form button[type="submit"] {

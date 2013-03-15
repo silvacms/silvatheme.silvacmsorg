@@ -781,6 +781,12 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   color: #E7E7E7;
 }
 
+.community .silva-navigation {
+  background: none;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
 .community .section-community .slideshow {
   clear: left;
   float: left;

@@ -852,7 +852,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 #block-two .newsitem a:link, #block-two .newsitem a:visited,
 #block-two a:link, #block-two a:visited {
-    color: #2378DF;
+  color: #2378DF;
+  text-shadow: none;
 }
 
 #block-three {
@@ -880,7 +881,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 #block-three .newsitem a:link, #block-three .newsitem a:visited,
 #block-three a:link, #block-three a:visited {
-    color: #EDA200;
+  color: #EDA200;
+  text-shadow: none;
 }
 
 /* tab styles: user documentation */

@@ -800,6 +800,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .community .section-community .slideshow-info p {
   font-size: 100%;
+  color: #333;
 }
 
 /* --- different boxes --- */

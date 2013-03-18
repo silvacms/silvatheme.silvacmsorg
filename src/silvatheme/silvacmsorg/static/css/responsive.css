@@ -1,12 +1,12 @@
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   #slot-sidebar {
-    clear: both;
     width: 100%;
+    max-width: 959px;
   }
 
   #block-one, #block-two, #block-three {
-    width: 32%;
+    width: 30%;
     float: left;
     margin-right: 1%;
   }

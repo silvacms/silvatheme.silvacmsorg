@@ -61,6 +61,15 @@
     display: none;
   }
 
+  footer li {
+    margin-right: 5px;
+    background-image: none !important;
+  }
+
+  footer ul li a:link, footer ul li a:visited {
+    text-transform: none;
+  }
+
 }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */

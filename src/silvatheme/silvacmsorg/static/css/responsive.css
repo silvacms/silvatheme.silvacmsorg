@@ -5,7 +5,7 @@
     width: 100%;
   }
 
-  #block-one, #block-two, #block-three {
+  #block-one, #block-two, #block-three, #slot-sidebar ul.toc {
     width: 22%;
     float: left;
     margin-right: 1%;

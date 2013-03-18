@@ -101,6 +101,13 @@
 
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width: 479px) {
+
+  #block-one, #block-two, #block-three {
+    width: 100%;
+    margin-right: 0;
+  }
+
+
   #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     max-width: 479px;
   }

@@ -34,21 +34,24 @@
     border: 1px solid #3D8C00;
     border-radius: 3px 3px 3px 3px;
     padding: 1px 5px;
+    line-height: 15px;
   }
 
-header nav li a:link:hover, header nav li a:link:focus, 
-header nav li a:visited:hover, header nav li a:visited:focus {
+  header nav li a:link:hover, header nav li a:link:focus,
+  header nav li a:visited:hover, header nav li a:visited:focus {
     border-radius: 3px 3px 3px 3px;
     padding: 1px 5px;
-}
+    line-height: 15px;
+  }
 
   #content {
     margin: 10px auto;
     min-height: auto;
     padding: 5px;
+    max-width: 959px;
   }
 
-  #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
+  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     width: 100%;
     max-width: 949px;
   }
@@ -95,6 +98,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 767px) {
 
+  #content {
+    max-width: 767px;
+  }
+
   #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     max-width: 757px;
   }
@@ -109,13 +116,17 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width: 479px) {
 
-  #block-one, #block-two, #block-three {
-    width: 100%;
-    margin-right: 0;
+  #content {
+    max-width: 479px;
   }
 
   #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     max-width: 469px;
+  }
+
+  #block-one, #block-two, #block-three {
+    width: 100%;
+    margin-right: 0;
   }
 
 }

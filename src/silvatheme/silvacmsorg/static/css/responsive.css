@@ -40,7 +40,7 @@
     min-height: auto;
   }
 
-  #content, #slot-sidebar {
+  #content, #slot-sidebar, footer #legal, footer ul {
     width: 100%;
     max-width: 959px;
   }
@@ -56,6 +56,10 @@
     margin-right: 5px;
   }
 
+  .slideshow {
+    display: none;
+  }
+
 }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -65,11 +69,8 @@
 
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 767px) {
-  .slideshow {
-    display: none;
-  }
 
-  #content, #slot-sidebar {
+  #content, #slot-sidebar, footer #legal, footer ul {
     max-width: 767px;
   }
 
@@ -82,7 +83,7 @@
 
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width: 479px) {
-  #content, #slot-sidebar {
+  #content, #slot-sidebar, footer #legal, footer ul {
     max-width: 479px;
   }
 }

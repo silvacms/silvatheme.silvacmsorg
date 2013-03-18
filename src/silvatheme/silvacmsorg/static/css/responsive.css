@@ -33,7 +33,6 @@
     background-image: linear-gradient(to bottom, #7AB317, #519A0F);
     border: 1px solid #3D8C00;
     border-radius: 3px 3px 3px 3px;
-    padding: 1px 5px;
   }
 
   header nav li a:link:hover, header nav li a:link:focus,

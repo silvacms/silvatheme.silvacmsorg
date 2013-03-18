@@ -48,6 +48,7 @@
     margin: 10px auto;
     min-height: auto;
     padding: 5px;
+    width: 100%;
     max-width: 959px;
   }
 
@@ -99,10 +100,11 @@
   @media only screen and (max-width: 767px) {
 
   #content {
+    width: 100%;
     max-width: 767px;
   }
 
-  #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
+  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     max-width: 757px;
   }
 
@@ -117,10 +119,11 @@
   @media only screen and (max-width: 479px) {
 
   #content {
+    width: 100%;
     max-width: 479px;
   }
 
-  #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
+  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     max-width: 469px;
   }
 

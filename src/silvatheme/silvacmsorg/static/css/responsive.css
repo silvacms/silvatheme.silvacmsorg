@@ -3,6 +3,7 @@
 
   header {
     height: 135px;
+    padding: 5px;
   }
 
   header .header-wrapper {

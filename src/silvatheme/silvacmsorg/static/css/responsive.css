@@ -47,7 +47,6 @@
   #content {
     margin: 10px auto;
     min-height: auto;
-    padding: 5px;
     width: 100%;
     max-width: 959px;
   }
@@ -55,6 +54,7 @@
   #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     width: 100%;
     max-width: 949px;
+    padding: 0 5px;
   }
 
   #block-one, #block-two, #block-three {
@@ -106,6 +106,7 @@
 
   #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     max-width: 757px;
+    padding: 0 5px;
   }
 
 }
@@ -125,6 +126,7 @@
 
   #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     max-width: 469px;
+    padding: 0 5px;
   }
 
   #block-one, #block-two, #block-three {

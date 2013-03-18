@@ -47,7 +47,7 @@
   }
 
   #block-one, #block-two, #block-three {
-    width: 30%;
+    width: 32%;
     float: left;
     margin-right: 1%;
   }
@@ -55,6 +55,10 @@
   #slot-sidebar ul li {
     display: inline-block;
     margin-right: 5px;
+  }
+
+  .community .silva-navigation {
+    padding: 0;
   }
 
   .slideshow {

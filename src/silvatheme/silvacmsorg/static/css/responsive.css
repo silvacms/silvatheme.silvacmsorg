@@ -34,14 +34,12 @@
     border: 1px solid #3D8C00;
     border-radius: 3px 3px 3px 3px;
     padding: 1px 5px;
-    line-height: 15px;
   }
 
   header nav li a:link:hover, header nav li a:link:focus,
   header nav li a:visited:hover, header nav li a:visited:focus {
     border-radius: 3px 3px 3px 3px;
     padding: 1px 5px;
-    line-height: 15px;
   }
 
   #content {

@@ -36,14 +36,21 @@
     padding: 1px 5px;
   }
 
+header nav li a:link:hover, header nav li a:link:focus, 
+header nav li a:visited:hover, header nav li a:visited:focus {
+    border-radius: 3px 3px 3px 3px;
+    padding: 1px 5px;
+}
+
   #content {
     margin: 10px auto;
     min-height: auto;
+    padding: 5px;
   }
 
   #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
     width: 100%;
-    max-width: 959px;
+    max-width: 949px;
   }
 
   #block-one, #block-two, #block-three {
@@ -89,7 +96,7 @@
   @media only screen and (max-width: 767px) {
 
   #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
-    max-width: 767px;
+    max-width: 757px;
   }
 
 }
@@ -107,9 +114,9 @@
     margin-right: 0;
   }
 
-
   #content, #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
-    max-width: 479px;
+    max-width: 469px;
   }
+
 }
 

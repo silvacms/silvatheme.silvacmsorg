@@ -1,6 +1,40 @@
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
 
+  header {
+    height: 135px;
+  }
+
+  header .header-wrapper {
+    float: left;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  header .header-form {
+    float: right;
+    margin-right: 5px;
+    padding: 2px 2px 0 0;
+  }
+
+  header .title {
+    width: 135px;
+  }
+
+  header nav ul li {
+    margin: 0;
+    float: none;
+    line-height: 15px;
+  }
+
+  header nav ul li.selected a {
+    background-color: #59A80F;
+    background-image: linear-gradient(to bottom, #7AB317, #519A0F);
+    border: 1px solid #3D8C00;
+    border-radius: 3px 3px 3px 3px;
+    padding: 1px 5px;
+  }
+
   #content {
     margin: 10px auto;
     min-height: auto;

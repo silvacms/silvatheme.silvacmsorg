@@ -289,6 +289,10 @@ li a:link, li a:visited {
   font-size: 0.9em;
 }
 
+.newsviewer-otherarticles {
+  text-align: center;
+}
+
 /* -- header settings -- */
 
 header {

@@ -19,7 +19,9 @@
 
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 767px) {
-
+  .slideshow {
+    display: none;
+  }
 }
 
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

@@ -854,6 +854,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   margin-bottom: 10px;
 }
 
+#block-two h3.newsitemheading {
+  color: #2378DF;
+}
+
 #block-two .newsitem {
   padding: 0 5px;
   margin: 5px;
@@ -882,6 +886,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   box-shadow: 1px 1px 1px #353535;
   color: #FEFEFE;
   margin-bottom: 10px;
+}
+
+#block-three h3.newsitemheading {
+  color: #EDA200;
 }
 
 #block-three .newsitem {

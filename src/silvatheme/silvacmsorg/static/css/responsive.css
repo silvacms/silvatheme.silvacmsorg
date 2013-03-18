@@ -5,11 +5,17 @@
     width: 100%;
   }
 
-  #block-one, #block-two, #block-three, #slot-sidebar ul.toc {
-    width: 22%;
+  #block-one, #block-two, #block-three {
+    width: 32%;
     float: left;
     margin-right: 1%;
   }
+
+  #slot-sidebar ul li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
 }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */

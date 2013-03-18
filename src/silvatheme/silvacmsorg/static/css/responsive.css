@@ -34,6 +34,11 @@
   .slideshow {
     display: none;
   }
+
+  #content, #slot-sidebar {
+    max-width: 767px;
+  }
+
 }
 
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -44,7 +49,6 @@
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width: 479px) {
   #content, #slot-sidebar {
-    width: 100%;
     max-width: 479px;
   }
 }

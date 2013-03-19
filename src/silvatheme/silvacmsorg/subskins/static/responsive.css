@@ -74,6 +74,11 @@
     margin-right: 5px;
   }
 
+  .silva-navigation li.selected a.selected:link,
+  .silva-navigation li.selected a.selected:visited {
+    color: #fff;
+  }
+
   .section-community .silva-navigation {
     padding: 0;
   }
@@ -87,12 +92,21 @@
     float: none;
   }
 
-  .image-border div.image, .section-about div.image, 
-  .section-community div.image, .section-documentation div.image, 
+  .image-border div.image, .section-about div.image,
+  .section-community div.image, .section-documentation div.image,
   .section-support div.image {
     border: none;
     box-shadow: none;
     padding: 5px;
+  }
+
+  .factsheet .maincontent li, .section-about #slot-belowslideshow li,
+  .section-about #slot-maincontent li, .section-documentation #sysadmins li,
+  .section-documentation #developers li, .section-community .maincontent li,
+  .sprint-checklist .silva-content {
+    background: none;
+    margin: 0;
+    padding-left: 0;
   }
 
   #slot-belowslideshow {

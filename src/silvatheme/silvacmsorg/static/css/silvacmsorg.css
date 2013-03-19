@@ -455,7 +455,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   min-height: 125px;
   background: none;
   border: none;
-  border-bottom: 3px double #303030;
+  border-left: 3px double #ddd;
   border-radius: 0;
   box-shadow: none;
 }
@@ -572,7 +572,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-color: #fff;
   background-image: none;
   border: none;
-  border-bottom: 3px double #58A714;
+  border-bottom: 3px double #CADA6D;
   border-radius: 0;
   box-shadow: none;
   color: #303030;

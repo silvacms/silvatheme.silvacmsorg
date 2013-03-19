@@ -9,13 +9,33 @@ body {
 .section-community .silva-navigation {
   background: none;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 0 5px;
+}
+
+
+.silva-navigation li.selected,
+.silva-navigation li.selected a.selected:link,
+.silva-navigation li.selected a.selected:visited {
+  color: #fff;
 }
 
 .section-community .silva-navigation a:hover,
 .community .silva-navigation a:visited:hover {
     color: #E7E7E7;
     text-decoration: none;
+}
+
+.image-border div.image, .section-community div.image {
+  border: none;
+  box-shadow: none;
+  padding: 5px;
+}
+
+.factsheet .maincontent li, .section-community .maincontent li,
+.sprint-checklist .silva-content {
+  background: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .section-community .slideshow {
@@ -32,10 +52,4 @@ body {
 .section-community .slideshow-info p {
   font-size: 100%;
   color: #333;
-}
-
-.silva-navigation li.selected,
-.silva-navigation li.selected a.selected:link,
-.silva-navigation li.selected a.selected:visited {
-  color: #fff;
 }

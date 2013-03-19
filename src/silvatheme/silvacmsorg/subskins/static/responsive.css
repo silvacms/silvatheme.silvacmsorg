@@ -48,12 +48,13 @@
 
   #content {
     margin: 10px auto;
+    padding: 0;
     min-height: auto;
     width: 100%;
     max-width: 959px;
   }
 
-  .silva-content {
+  .silva-content, .silva-content.two-column {
     padding: 0 5px;
   }
 
@@ -78,10 +79,6 @@
     margin-right: 5px;
   }
 
-  .section-community .silva-navigation {
-    padding: 0;
-  }
-
   .slideshow {
     display: none;
   }
@@ -89,23 +86,6 @@
   .float-right, .float-left {
     clear: both;
     float: none;
-  }
-
-  .image-border div.image, .section-about div.image,
-  .section-community div.image, .section-documentation div.image,
-  .section-support div.image {
-    border: none;
-    box-shadow: none;
-    padding: 5px;
-  }
-
-  .factsheet .maincontent li, .section-about #slot-belowslideshow li,
-  .section-about #slot-maincontent li, .section-documentation #sysadmins li,
-  .section-documentation #developers li, .section-community .maincontent li,
-  .sprint-checklist .silva-content {
-    background: none;
-    margin: 0;
-    padding-left: 0;
   }
 
   #slot-belowslideshow {

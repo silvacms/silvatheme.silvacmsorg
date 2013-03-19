@@ -571,11 +571,11 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 #about-news .newsitem {
   background-color: #ddd;
   background-image: none;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ddd));
-  background-image: -webkit-linear-gradient(top, #eee, #ddd);
-  background-image: -moz-linear-gradient(top, #eee, #ddd);
-  background-image: -o-linear-gradient(top, #eee, #ddd);
-  background-image: linear-gradient(to bottom, #eee, #ddd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#fff));
+  background-image: -webkit-linear-gradient(top, #eee, #fff);
+  background-image: -moz-linear-gradient(top, #eee, #fff);
+  background-image: -o-linear-gradient(top, #eee, #fff);
+  background-image: linear-gradient(to bottom, #eee, #fff);
   border: none;
   border-radius: 0;
   box-shadow: none;

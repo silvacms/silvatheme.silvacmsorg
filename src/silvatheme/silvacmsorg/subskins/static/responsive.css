@@ -112,6 +112,7 @@
 
   footer #legal, footer ul {
     padding: 0 5px;
+    width: auto;
   }
 
   footer li {

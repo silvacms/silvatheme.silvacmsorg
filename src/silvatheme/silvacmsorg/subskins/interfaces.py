@@ -12,4 +12,5 @@ class ISilvaCmsOrgResponsive(ISilvaCmsOrg, ISilvaSkin):
     """Sub skin with responsive changes for community.
     """
     silvaconf.skin("SilvaCmsOrgResponsive")
+    silvaconf.resource("community.css")
     silvaconf.resource("responsive.css")

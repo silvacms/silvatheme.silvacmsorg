@@ -1,0 +1,35 @@
+/* ++++ Page specific styling community +++ */
+
+body {
+  background-image: url(../images/assault.png);
+  background-color: #333;
+  color: #E7E7E7;
+}
+
+.section-community .silva-navigation {
+  background: none;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.section-community .silva-navigation a:hover,
+.community .silva-navigation a:visited:hover {
+    color: #E7E7E7;
+    text-decoration: none;
+}
+
+.section-community .slideshow {
+  clear: left;
+  float: left;
+  width: 715px;
+  margin: 0 auto;
+}
+
+.section-community .slideshow-info h2 {
+  font-size: 100%;
+}
+
+.section-community .slideshow-info p {
+  font-size: 100%;
+  color: #333;
+}

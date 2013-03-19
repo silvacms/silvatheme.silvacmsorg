@@ -816,42 +816,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 50%;
 }
 
-/* ++++ Page specific styling community +++ */
-
-.community {
-  background-image: url(../images/assault.png);
-  background-color: #333;
-  color: #E7E7E7;
-}
-
-.community .silva-navigation {
-  background: none;
-  margin-bottom: 15px;
-  padding: 10px;
-}
-
-.community .silva-navigation a:hover,
-.community .silva-navigation a:visited:hover {
-    color: #E7E7E7;
-    text-decoration: none;
-}
-
-.community .section-community .slideshow {
-  clear: left;
-  float: left;
-  width: 715px;
-  margin: 0 auto;
-}
-
-.community .section-community .slideshow-info h2 {
-  font-size: 100%;
-}
-
-.community .section-community .slideshow-info p {
-  font-size: 100%;
-  color: #333;
-}
-
 /* --- different boxes --- */
 
 #block-one {

@@ -9,7 +9,6 @@ body {
 .section-community .silva-navigation {
   background: none;
   margin-bottom: 15px;
-  padding: 0 5px;
 }
 
 
@@ -21,8 +20,8 @@ body {
 
 .section-community .silva-navigation a:hover,
 .community .silva-navigation a:visited:hover {
-    color: #E7E7E7;
-    text-decoration: none;
+  color: #E7E7E7;
+  text-decoration: none;
 }
 
 .image-border div.image, .section-community div.image {

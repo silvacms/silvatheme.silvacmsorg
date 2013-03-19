@@ -82,6 +82,19 @@
     display: none;
   }
 
+  .float-right, .float-left {
+    clear: both;
+    float: none;
+  }
+
+  .image-border div.image, .section-about div.image, 
+  .section-community div.image, .section-documentation div.image, 
+  .section-support div.image {
+    border: none;
+    box-shadow: none;
+    padding: 5px;
+  }
+
   #slot-belowslideshow {
     float: left;
   }

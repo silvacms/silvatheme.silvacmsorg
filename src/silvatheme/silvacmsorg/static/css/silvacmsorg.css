@@ -578,6 +578,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   margin-right: 1%;
 }
 
+#about-news .newsitem a:link, #about-news .newsitem a:visited {
+  text-shadow: none;
+}
+
 /*   ++++++ page specific styles: Factsheet ++++++ */
 
 /* factsheet page */

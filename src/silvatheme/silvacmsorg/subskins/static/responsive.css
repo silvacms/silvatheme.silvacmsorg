@@ -58,8 +58,12 @@
   }
 
   #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
-  .silva-navigation, img {
+  .silva-navigation {
     width: 100%;
+    max-width: 949px;
+  }
+
+  img {
     max-width: 949px;
   }
 

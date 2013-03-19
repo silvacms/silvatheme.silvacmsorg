@@ -582,7 +582,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   color: #303030;
   margin: 10px 5px;
   min-height: auto;
-  padding: 10px 15px;
+  padding: 0 15px;
   width: 44%;
   float: left;
   min-height: 100px;

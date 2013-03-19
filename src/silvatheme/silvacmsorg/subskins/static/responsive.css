@@ -54,9 +54,9 @@
     max-width: 959px;
   }
 
-  .silva-content, .silva-content.two-column {
+  /*.silva-content, .silva-content.two-column {
     padding: 0 5px;
-  }
+  }*/
 
   #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
   .silva-navigation, .silva-content.two-column {

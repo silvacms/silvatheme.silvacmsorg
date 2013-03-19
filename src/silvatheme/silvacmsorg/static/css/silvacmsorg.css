@@ -559,6 +559,25 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-color: #000;
 }
 
+#about-news {
+  clear:both;
+}
+
+#about-news .newsitem {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #000000;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: none;
+  color: #303030;
+  margin: 15px 5px;
+  min-height: auto;
+  padding: 10px 15px;
+  width: 48%;
+  float: left;
+  margin-right: 1%;
+}
+
 /*   ++++++ page specific styles: Factsheet ++++++ */
 
 /* factsheet page */

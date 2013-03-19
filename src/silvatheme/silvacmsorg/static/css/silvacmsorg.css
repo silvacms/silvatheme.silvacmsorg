@@ -566,8 +566,9 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 #about-news .newsitem {
   background-color: #fff;
   background-image: none;
-  border: 1px solid #000000;
-  border-radius: 3px 3px 3px 3px;
+  border: none;
+  border-left: 3px double #58A714;
+  border-radius: 0;
   box-shadow: none;
   color: #303030;
   margin: 10px 5px;

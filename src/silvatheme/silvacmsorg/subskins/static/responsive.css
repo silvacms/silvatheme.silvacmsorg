@@ -54,9 +54,16 @@
     max-width: 959px;
   }
 
-  .silva-content, .silva-content.two-column {
+  .silva-content {
     padding: 0;
-    padding-left: 5px;
+  }
+
+  .silva-content.two-column {
+    padding: 0;
+  }
+
+  .content {
+    padding: 0 5px;
   }
 
   #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
@@ -77,7 +84,7 @@
 
   .silva-navigation {
     float: none;
-    padding: 0;
+    padding: 0 5px;
   }
 
   .silva-navigation ul {

@@ -66,7 +66,7 @@
     padding: 0 5px;
   }
 
-  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
+  #slot-sidebar, .maincontent, #slot-belowslideshow, #footer-wrapper,
   .silva-navigation, .silva-content, .silva-content.two-column {
     width: 100%;
     max-width: 949px;
@@ -137,7 +137,7 @@
     max-width: 767px;
   }
 
-  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
+  #slot-sidebar, .maincontent, #slot-belowslideshow, #footer-wrapper,
   .silva-navigation, img, .silva-content, .silva-content.two-column {
     max-width: 757px;
   }
@@ -157,7 +157,7 @@
     max-width: 479px;
   }
 
-  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
+  #slot-sidebar, .maincontent, #slot-belowslideshow, #footer-wrapper,
   .silva-navigation, img, .silva-content, .silva-content.two-column {
     max-width: 469px;
   }

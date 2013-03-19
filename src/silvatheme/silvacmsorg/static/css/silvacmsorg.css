@@ -453,6 +453,11 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 #features .box.big {
   width: 96%;
   min-height: 125px;
+  background: none;
+  border: none;
+  border-bottom: 1px double #303030;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 #features .box.big h2 {

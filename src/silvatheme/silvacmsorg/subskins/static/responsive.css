@@ -110,7 +110,7 @@
     float: left;
   }
 
-  #legal, footer ul {
+  footer #legal, footer ul {
     padding: 0 5px;
   }
 
@@ -137,8 +137,8 @@
     max-width: 767px;
   }
 
-  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal,
-  .silva-navigation, footer ul, img, .silva-content, .silva-content.two-column {
+  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
+  .silva-navigation, img, .silva-content, .silva-content.two-column {
     max-width: 757px;
   }
 
@@ -157,8 +157,8 @@
     max-width: 479px;
   }
 
-  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal,
-  .silva-navigation, footer ul, img, .silva-content, .silva-content.two-column {
+  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
+  .silva-navigation, img, .silva-content, .silva-content.two-column {
     max-width: 469px;
   }
 

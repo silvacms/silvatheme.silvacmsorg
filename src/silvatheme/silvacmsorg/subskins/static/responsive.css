@@ -75,7 +75,12 @@
   }
 
   .silva-navigation {
-    flaot: none;
+    float: none;
+  }
+
+  .silva-navigation ul {
+    margin: 0;
+    padding: 0;
   }
 
   .silva-navigation ul li {

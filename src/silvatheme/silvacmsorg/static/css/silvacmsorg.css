@@ -569,10 +569,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 #about-news .newsitem {
-  background-color: #fff;
+  background-color: #ddd;
   background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#858585), to(#ddd));
+  background-image: -webkit-linear-gradient(top, #858585, #ddd);
+  background-image: -moz-linear-gradient(top, #858585, #ddd);
+  background-image: -o-linear-gradient(top, #858585, #ddd);
+  background-image: linear-gradient(to bottom, #858585, #ddd);
   border: none;
-  border-right: 1px solid #C4DA45;
   border-radius: 0;
   box-shadow: none;
   color: #303030;

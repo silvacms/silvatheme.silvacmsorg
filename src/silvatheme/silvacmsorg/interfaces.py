@@ -11,7 +11,6 @@ class ISilvaCmsOrg(ITypography, IPorto):
     """Layer for SilvaCMS.org theme
     """
     silvaconf.resource('css/silvacmsorg.css')
-    silvaconf.resource('css/responsive.css')
     silvaconf.resource(jquery)
     silvaconf.resource('js/jquery.masonry.min.js')
     silvaconf.resource('js/jquery.stickyPanel.min.js')
@@ -29,4 +28,6 @@ class ISilvaSilvaOrgWithNavigation(ISilvaCmsOrg):
 
 class ISilvaCmsOrgSkinWithNavigation(ISilvaSilvaOrgWithNavigation, ISilvaSkin):
     silvaconf.skin('SilvaCMS with navigation')
+
+
 

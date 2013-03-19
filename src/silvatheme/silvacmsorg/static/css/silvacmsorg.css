@@ -585,6 +585,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 #about-news .newsviewer-otherarticles {
   text-align: center;
+  clear: both;
 }
 
 /*   ++++++ page specific styles: Factsheet ++++++ */

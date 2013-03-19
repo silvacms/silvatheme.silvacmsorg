@@ -572,7 +572,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-color: #fff;
   background-image: none;
   border: none;
-  border-bottom: 3px double #CADA6D;
+  border-right: 1px solid #C4DA45;
   border-radius: 0;
   box-shadow: none;
   color: #303030;
@@ -581,7 +581,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 10px 15px;
   width: 44%;
   float: left;
-  min-height: 120px;
+  min-height: 100px;
 }
 
 #about-news .newsitem a:link, #about-news .newsitem a:visited {

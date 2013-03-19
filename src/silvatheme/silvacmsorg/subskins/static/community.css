@@ -33,3 +33,9 @@ body {
   font-size: 100%;
   color: #333;
 }
+
+.silva-navigation li.selected,
+.silva-navigation li.selected a.selected:link,
+.silva-navigation li.selected a.selected:visited {
+  color: #fff;
+}

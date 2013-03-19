@@ -58,7 +58,7 @@
   }
 
   #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul,
-  .silva-navigation {
+  .silva-navigation, img {
     width: 100%;
     max-width: 949px;
   }
@@ -110,7 +110,8 @@
     max-width: 767px;
   }
 
-  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
+  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal,
+  footer ul, img {
     max-width: 757px;
   }
 
@@ -129,7 +130,8 @@
     max-width: 479px;
   }
 
-  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal, footer ul {
+  #slot-sidebar, .maincontent, #slot-belowslideshow, footer #legal,
+  footer ul, img {
     max-width: 469px;
   }
 

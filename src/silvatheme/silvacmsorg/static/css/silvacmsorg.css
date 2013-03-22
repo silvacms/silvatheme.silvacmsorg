@@ -1264,13 +1264,7 @@ div.image.default {
 
 .stickypanel {
   z-index: 9999;
-  background-color: #EFEFEF;
-  background-image: none;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFFFFF), color-stop(1, #F1F1F1));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0%, #F1F1F1 100%);
-  background-image: -moz-linear-gradient(left, #FFFFFF 0%, #F1F1F1 100%);
-  background-image: -o-linear-gradient(left, #FFFFFF 0%, #F1F1F1 100%);
-  background-image: linear-gradient(to right, #FFFFFF 0%, #F1F1F1 100%);
+  background: none;
   text-align: right;
 }
 

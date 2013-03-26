@@ -648,6 +648,12 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 0 25px;
 }
 
+.factsheet .maincontent li {
+  background: none;
+  margin: 0;
+  padding-left: 0;
+}
+
 .factsheet .section-about #slot-two {
   margin: -32px 0 0;
   width: 220px;

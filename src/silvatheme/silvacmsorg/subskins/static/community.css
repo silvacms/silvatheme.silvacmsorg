@@ -30,21 +30,22 @@ body {
   padding: 5px;
 }
 
-.factsheet .maincontent li, .section-community .maincontent li,
+.section-community .maincontent li,
 .sprint-checklist .silva-content {
   background: none;
   margin: 0;
   padding-left: 0;
 }
 
-.section-community #slot-one {
+.section-community #slot-maincontent {
   margin: 0;
   width: 715px;
 }
 
-.section-community #slot-two {
+.section-community #slot-newsfeeds {
   margin: 0;
   width: 220px;
+  float: right;
 }
 
 .section-community .slideshow {

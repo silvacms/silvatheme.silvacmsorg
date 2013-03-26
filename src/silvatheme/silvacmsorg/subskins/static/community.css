@@ -30,6 +30,10 @@ body {
   padding: 5px;
 }
 
+.content {
+  position: relative;
+}
+
 .maincontent li,
 .sprint-checklist .silva-content {
   background: none;

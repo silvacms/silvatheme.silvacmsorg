@@ -158,6 +158,16 @@
     max-width: 479px;
   }
 
+  #slot-toprightnavigation {
+    left: 5px;
+    position: absolute;
+    top: 0;
+  }
+
+  #slot-maincontent {
+    margin-top: 135px;
+  }
+
   #slot-sidebar, #slot-newsfeeds, .maincontent, #slot-belowslideshow, #footer-wrapper,
   .silva-navigation, img, .silva-content, .silva-content.two-column {
     max-width: 469px;

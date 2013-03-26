@@ -7,7 +7,7 @@ body {
   color: #E7E7E7;
 }
 
-.section-community .silva-navigation {
+.silva-navigation {
   background: none;
   margin-bottom: 15px;
 }
@@ -18,48 +18,48 @@ body {
   color: #fff;
 }
 
-.section-community .silva-navigation a:hover,
+.silva-navigation a:hover,
 .community .silva-navigation a:visited:hover {
   color: #E7E7E7;
   text-decoration: none;
 }
 
-.image-border div.image, .section-community div.image {
+.image-border div.image, div.image {
   border: none;
   box-shadow: none;
   padding: 5px;
 }
 
-.section-community .maincontent li,
+.maincontent li,
 .sprint-checklist .silva-content {
   background: none;
   margin: 0;
   padding-left: 0;
 }
 
-.section-community #slot-maincontent {
+.maincontent {
   margin: 0;
   width: 715px;
 }
 
-.section-community #slot-newsfeeds {
+#slot-newsfeeds {
   margin: 0;
   width: 220px;
   float: right;
 }
 
-.section-community .slideshow {
+.slideshow {
   clear: left;
   float: left;
   width: 715px;
   margin: 0 auto;
 }
 
-.section-community .slideshow-info h2 {
+.slideshow-info h2 {
   font-size: 100%;
 }
 
-.section-community .slideshow-info p {
+.slideshow-info p {
   font-size: 100%;
   color: #333;
 }

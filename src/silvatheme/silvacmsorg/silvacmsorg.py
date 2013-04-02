@@ -6,6 +6,7 @@ from zope.traversing.browser import absoluteURL
 from zope.component import getUtility
 
 from silva.core import contentlayout
+from silva.core.interfaces import ISilvaObject
 from silva.core.interfaces import IPublication, IRoot, IFeedEntryProvider
 from silva.core.layout.porto import porto
 from silva.core.services.interfaces import IMetadataService
@@ -59,7 +60,7 @@ class Layout(porto.Layout):
         before = None
         for parent in self.request.PARENTS:
             if IRoot.providedBy(parent):
-                if before is not None:
+                if before is not None and ISilvaObject.providedBy(before):
                     return 'section-{0}'.format(before.getId())
                 else:
                     break

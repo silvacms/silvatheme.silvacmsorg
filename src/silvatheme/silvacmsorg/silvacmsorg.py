@@ -55,7 +55,6 @@ class Layout(porto.Layout):
             return 'selected'
         return ''
 
-
     def current_section_class(self):
         before = None
         for parent in self.request.PARENTS:

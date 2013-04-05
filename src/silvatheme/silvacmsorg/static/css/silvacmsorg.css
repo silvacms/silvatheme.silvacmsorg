@@ -425,6 +425,15 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 900px;
 }
 
+#features .one-column {
+  width: 100%;
+}
+
+#features .two-column {
+  width: 50%;
+  float: left;
+}
+
 #features .box {
   background: #FFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -458,7 +467,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 46%;
   float: left;
   margin-top: 5px;
-  min-height: 110px;
+  min-height: 100px;
   background: none;
   border: none;
   border-left: 3px double #ddd;
@@ -470,17 +479,23 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   margin: 0 15px 0;
 }
 
+#features .box.big p {
+  padding: 10px 15px 0;
+}
+
 #features .listing {
   width: 31%;
   background: #FFF;
   float: left;
-  min-height: 105px;
+  min-height: 100px;
   padding: 0.8em;
   padding-bottom: 0;
 }
 
 #features .listing h3 {
   color: #59A80F;
+  border-bottom: 1px solid #59A80F;
+  margin-top: 0;
 }
 
 #features .listing p {

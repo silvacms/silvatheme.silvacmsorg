@@ -440,9 +440,9 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   float: left;
-  margin: 0 8px 5px;
+  margin: 10px 8px 10px;
   min-height: 120px;
   width: 205px;
 }
@@ -465,10 +465,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 #features .box.big {
-  width: 46%;
+  width: 100%;
   float: left;
   margin-top: 5px;
-  min-height: 125px;
+  min-height: 115px;
   background: none;
   border: none;
   border-left: 3px double #ddd;
@@ -1006,7 +1006,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: -o-linear-gradient(top, #1280E7, #0060C7);
   background-image: linear-gradient(to bottom, #1280E7, #0060C7);
   box-shadow: 0 1px 0 #2378DF;
-  webkit-box-shadow: 0 1px 0 #2378DF;
+  -webkit-box-shadow: 0 1px 0 #2378DF;
   border: 1px solid #0052B9;
   border-radius: 10px 0 0 10px;
   color: #FFF;

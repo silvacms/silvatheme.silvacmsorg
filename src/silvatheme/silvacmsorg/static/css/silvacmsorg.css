@@ -427,6 +427,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 #features .one-column {
   width: 100%;
+  clear: both;
 }
 
 #features .two-column {
@@ -467,7 +468,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 46%;
   float: left;
   margin-top: 5px;
-  min-height: 100px;
+  min-height: 125px;
   background: none;
   border: none;
   border-left: 3px double #ddd;
@@ -476,7 +477,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 #features .box.big h2 {
-  margin: 0 15px 0;
+  margin: 10px 15px 0;
 }
 
 #features .box.big p {

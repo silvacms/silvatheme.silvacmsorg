@@ -440,7 +440,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .three-column.listing.left-border .box {
   margin-top: 5px;
-  min-height: 115px;
+  min-height: 95px;
   background: none;
   border: none;
   border-left: 3px double #ddd;
@@ -715,8 +715,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   border: 1px solid #E0E0E0;
   margin-top: 15px;
   padding: 10px 20px;
-  min-height: 340px;
-  width: 380px;
+  min-height: 155px;
+  width: 415px;
 }
 
 .section-getsilva .block-left {

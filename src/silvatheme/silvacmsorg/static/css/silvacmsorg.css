@@ -1107,7 +1107,7 @@ div.image.default {
   box-shadow: none;
 }
 
-/* --- slideshow page styling --- */
+/* --- slideshow styling --- */
 
 .slideshow {
   clear: both;
@@ -1328,7 +1328,7 @@ table.silvatable.list.package th {
   text-align: center;
 }
 
-/* search result styling */
+/* --- search result styling --- */
 
 .batchNav a {
   border: 1px solid;

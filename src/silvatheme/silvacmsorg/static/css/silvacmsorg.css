@@ -42,11 +42,6 @@ a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
   text-decoration: underline;
 }
 
-span.image-caption {
-  display: block;
-  font-size: 0.8em;
-}
-
 li {
   list-style: none;
 }
@@ -492,7 +487,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding-left: 24px;
 }
 
-.develop .silva-content li {
+.develop .silva-content li, #developers .info li {
   background-image: url("../images/hammer.png");
   background-repeat: no-repeat;
   background-position: 0 2px;
@@ -1086,6 +1081,11 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 /* --- images --- */
 
+span.image-caption {
+  display: block;
+  font-size: 0.8em;
+}
+
 div.image.default {
   display: inline-block;
 }
@@ -1095,9 +1095,9 @@ div.image.default {
 .section-community div.image,
 .section-documentation div.image,
 .section-support div.image {
-  border: 1px solid #DDD;
+  border: 1px solid #58A714;
   padding: 10px;
-  box-shadow: 1px 1px 5px #aaa;
+  box-shadow: 1px 1px 5px #AAAAAA;
 }
 
 .section-support div.image {

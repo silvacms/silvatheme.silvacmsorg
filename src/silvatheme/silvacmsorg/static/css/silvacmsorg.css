@@ -220,13 +220,13 @@ li a:link, li a:visited {
 }
 
 .related-info ul li {
-  background-color: #FFF;
+  background-color: #FFFFFF;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
   background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
   background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
   background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');
   background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
-  border-top: 1px solid #FFF;
+  border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0;
   padding: 4px 10px 6px;
@@ -371,7 +371,7 @@ header nav ul li.selected a {
 }
 
 header nav ul li a:link, header nav ul li a:visited {
-  color: #FFF;
+  color: #FFFFFF;
   display: block;
   font-weight: bold;
   margin: 0;
@@ -389,12 +389,25 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: linear-gradient(to bottom, #7F7F7F, #646464);
   border: 1px solid #000;
   border-radius: 6px;
-  color: #FFF;
+  color: #FFFFFF;
   padding: 2px 11px;
   text-decoration: none;
 }
 
 /* ++ box styling ++ */
+
+.box h3 {
+  background: #59A80F;
+  border-radius: 4px 4px 0 0;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 125%;
+}
+
+.box p {
+  padding: 10px 15px;
+}
 
 #features {
   clear: both;
@@ -421,7 +434,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .three-column .box {
   width: 31%;
-  background: #FFF;
+  background: #FFFFFF;
   float: left;
   min-height: 100px;
   padding: 0.8em;
@@ -450,28 +463,19 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .four-column .box {
-  background: #FFF;
+  background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   float: left;
   margin: 10px 8px 10px;
-  min-height: 120px;
+  min-height: 110px;
   width: 205px;
 }
 
-.box h3 {
-  background: #59A80F;
-  border-radius: 4px 4px 0 0;
-  color: #FFF;
-  margin: 0;
-  padding: 5px 10px;
-  font-size: 125%;
-}
-
-.box p {
-  padding: 10px 15px;
+.four-column .box p {
+  margin-bottom: 0;
 }
 
 .factsheet .maincontent li,
@@ -604,7 +608,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: -o-linear-gradient(top, #952175, #6E004E);
   background-image: linear-gradient(to bottom, #952175, #6E004E);
   border: 1px solid #3E001E;
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 1.4em;
   margin: 0;
   padding: 4px 12px;
@@ -682,7 +686,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .section-getsilva section h2 {
   background-color: #C93636;
-  color: #FFF;
+  color: #FFFFFF;
   padding: 4px 12px;
 }
 
@@ -778,7 +782,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .section-documentation .tab-nav a:link:hover, .section-documentation .tab-nav a:visited:hover,
 .section-documentation .tab-nav a:link:focus, .section-documentation .tab-nav a:visited:focus {
-  background-color: #FFF;
+  background-color: #FFFFFF;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#DEDEDE));
   background-image: -webkit-linear-gradient(top, #FFF, #DEDEDE);
@@ -792,7 +796,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .section-documentation #users, .section-documentation #developers,
 .section-documentation #sysadmins, .section-documentation #tutorials {
-  background-color: #FFF;
+  background-color: #FFFFFF;
   border-color: #EDA200 #BEBEBE #BEBEBE;
   border-style: solid;
   border-width: 5px 1px 1px;
@@ -980,7 +984,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   -webkit-box-shadow: 0 1px 0 #2378DF;
   border: 1px solid #0052B9;
   border-radius: 10px 0 0 10px;
-  color: #FFF;
+  color: #FFFFFF;
   float: left;
   height: 100px;
   margin: 0; padding: 10px;

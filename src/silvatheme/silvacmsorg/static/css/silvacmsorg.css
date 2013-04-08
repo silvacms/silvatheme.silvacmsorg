@@ -414,17 +414,53 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 900px;
 }
 
-#features .one-column {
+.one-column .box {
   width: 100%;
   clear: both;
 }
 
-#features .two-column {
-  width: 50%;
-  float: left;
+.one-column .box h2 {
+  margin: 10px 15px 0;
 }
 
-#features .box {
+.one-column .box p {
+  padding: 10px 15px 0;
+}
+
+.two-column .box {
+  width: 48%;
+}
+
+.three-column .box {
+  width: 31%;
+  background: #FFF;
+  float: left;
+  min-height: 100px;
+  padding: 0.8em;
+  padding-bottom: 0;
+}
+
+.three-column.listing .box h3 {
+  color: #59A80F;
+  border-bottom: 1px solid #59A80F;
+  margin-top: 0;
+}
+
+.thee-column.listing .box p {
+  padding-bottom: 0;
+}
+
+.three-column.left-border.listing .box {
+  margin-top: 5px;
+  min-height: 115px;
+  background: none;
+  border: none;
+  border-left: 3px double #ddd;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.four-column .box {
   background: #FFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -436,7 +472,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 205px;
 }
 
-#features .box h3 {
+.box h3 {
   background: #59A80F;
   border-radius: 4px 4px 0 0;
   color: #FFF;
@@ -445,51 +481,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   font-size: 125%;
 }
 
-#features .box p {
+.box p {
   padding: 10px 15px;
-}
-
-#features .box.medium {
-  width: 48%;
-}
-
-#features .box.big {
-  width: 100%;
-  float: left;
-  margin-top: 5px;
-  min-height: 115px;
-  background: none;
-  border: none;
-  border-left: 3px double #ddd;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-#features .box.big h2 {
-  margin: 10px 15px 0;
-}
-
-#features .box.big p {
-  padding: 10px 15px 0;
-}
-
-#features .listing {
-  width: 31%;
-  background: #FFF;
-  float: left;
-  min-height: 100px;
-  padding: 0.8em;
-  padding-bottom: 0;
-}
-
-#features .listing h3 {
-  color: #59A80F;
-  border-bottom: 1px solid #59A80F;
-  margin-top: 0;
-}
-
-#features .listing p {
-  padding-bottom: 0;
 }
 
 .factsheet .maincontent li,

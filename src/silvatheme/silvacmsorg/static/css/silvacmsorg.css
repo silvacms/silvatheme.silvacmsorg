@@ -1,4 +1,4 @@
-/* -- general settings -- */
+/* --- general settings --- */
 
 body {
   background: #FCFCFC;
@@ -93,7 +93,7 @@ li a:link, li a:visited {
   width: 700px;
 }
 
-/* navigation styling */
+/* --- navigation styling --- */
 
 /* site navigation */
 
@@ -244,7 +244,15 @@ li a:link, li a:visited {
   color: #444;
 }
 
-/* feeds styling */
+/* sticky nav panel  */
+
+.stickypanel {
+  z-index: 9999;
+  background: none;
+  text-align: right;
+}
+
+/* --- news feeds styling --- */
 
 .newsitem {
   background-color: #303030;
@@ -286,7 +294,7 @@ li a:link, li a:visited {
   text-align: center;
 }
 
-/* -- header settings -- */
+/* --- header settings --- */
 
 header {
   background-color: #292A2D;
@@ -386,26 +394,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 900px) {
-
-  header {
-    height: 120px;
-  }
-
-  header .title  {
-    width: 100%;
-  }
-
-  header .header-wrapper nav {
-    float: left;
-  }
-
-  header nav ul li {
-    margin: 14px 15px 0 0;
-  }
-
-}
-
 /* ++ box styling ++ */
 
 #features {
@@ -450,7 +438,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding-bottom: 0;
 }
 
-.three-column.left-border.listing .box {
+.three-column.listing.left-border .box {
   margin-top: 5px;
   min-height: 115px;
   background: none;
@@ -458,6 +446,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   border-left: 3px double #ddd;
   border-radius: 0;
   box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 .four-column .box {
@@ -1018,44 +1007,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 480px;
 }
 
-/* input settings */
-
-input[type="submit"] {
-  background-color: #797979;
-  background-image: none;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
-  background-image: -webkit-linear-gradient(top, #696969, #797979);
-  background-image: -moz-linear-gradient(top, #696969, #797979);
-  background-image: -o-linear-gradient(top, #696969, #797979);
-  background-image: linear-gradient(to bottom, #696969, #797979);
-  border: 1px solid rgba(255,255,255, 0.3);
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-}
-
-input[type="submit"]:hover, input[type="submit"]:focus {
-  background: #519A0F;
-}
-
-input[type="text"] {
-  border: 1px solid #777;
-  border-radius: 5px;
-  padding: 2px;
-}
-
-input[type="text"]:focus {
-  border-color: #000;
-}
-
-input::-webkit-input-placeholder {color: #A1A1A1;}
-input::-webkit-placeholder:hover {color: #555;}
-input:-moz-placeholder {color: #A1A1A1;}
-input:-moz-placeholder:hover {color: #555;}
-input:-ms-placeholder {color: #A1A1A1;}
-input:-ms-placeholder:hover {color: #555;}
-
-/* -- footer settings -- */
+/* --- footer settings --- */
 
 footer {
   background-color: #1D1E21;
@@ -1128,7 +1080,7 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
   color: #E2E2E2;
 }
 
-/* -- images -- */
+/* --- images --- */
 
 div.image.default {
   display: inline-block;
@@ -1155,24 +1107,7 @@ div.image.default {
   box-shadow: none;
 }
 
-/* -- login page -- */
-
-.silva-content div.login-form {
-  margin-left: 100px;
-  padding-top: 50px;
-  height: 100px;
-}
-
-.silva-content div.login-form div.form-title {
-  font-weight: normal;
-}
-
-.silva-content div.login-form div.form-label {
-  font-weight: bold;
-  padding: 2px 0;
-}
-
-/* slideshow page styling */
+/* --- slideshow page styling --- */
 
 .slideshow {
   clear: both;
@@ -1209,7 +1144,7 @@ div.image.default {
   margin: 0;
 }
 
-/* info box styling */
+/* --- info box styling --- */
 
 .information {
   background-color: #292A2D;
@@ -1270,15 +1205,7 @@ div.image.default {
   border-top: 4px solid #2378DF;
 }
 
-/* sticky panel */
-
-.stickypanel {
-  z-index: 9999;
-  background: none;
-  text-align: right;
-}
-
-/* form styling */
+/* --- form styling --- */
 
 .field {
   margin-bottom: 10px;
@@ -1304,7 +1231,61 @@ input:invalid, textarea:invalid {
   border-radius: 5px 5px 5px 5px;
 }
 
-/* software packages */
+/* input settings */
+
+input[type="submit"] {
+  background-color: #797979;
+  background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
+  background-image: -webkit-linear-gradient(top, #696969, #797979);
+  background-image: -moz-linear-gradient(top, #696969, #797979);
+  background-image: -o-linear-gradient(top, #696969, #797979);
+  background-image: linear-gradient(to bottom, #696969, #797979);
+  border: 1px solid rgba(255,255,255, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background: #519A0F;
+}
+
+input[type="text"] {
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+input[type="text"]:focus {
+  border-color: #000;
+}
+
+input::-webkit-input-placeholder {color: #A1A1A1;}
+input::-webkit-placeholder:hover {color: #555;}
+input:-moz-placeholder {color: #A1A1A1;}
+input:-moz-placeholder:hover {color: #555;}
+input:-ms-placeholder {color: #A1A1A1;}
+input:-ms-placeholder:hover {color: #555;}
+
+/* login page */
+
+.silva-content div.login-form {
+  margin-left: 100px;
+  padding-top: 50px;
+  height: 100px;
+}
+
+.silva-content div.login-form div.form-title {
+  font-weight: normal;
+}
+
+.silva-content div.login-form div.form-label {
+  font-weight: bold;
+  padding: 2px 0;
+}
+
+/* --- software packages --- */
 
 /* make generic for all table that list content */
 table.silvatable.list {
@@ -1361,4 +1342,26 @@ table.silvatable.list.package th {
 .searchresult {
   border-bottom: 1px solid #ddd;
   padding: 0.5em 0;
+}
+
+/* --- media queries --- */
+
+@media only screen and (max-width: 900px) {
+
+  header {
+    height: 120px;
+  }
+
+  header .title  {
+    width: 100%;
+  }
+
+  header .header-wrapper nav {
+    float: left;
+  }
+
+  header nav ul li {
+    margin: 14px 15px 0 0;
+  }
+
 }

@@ -414,14 +414,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .twocolumn {
-  min-height: 295px;
+  min-height: 265px;
   padding: 0 10px;
 }
 
 .twocolumn .box {
   width: 48%;
   float: left;
-  min-height: 230px;
+  min-height: 200px;
 }
 
 .threecolumn .box {

@@ -1366,7 +1366,7 @@ table.silvatable.list.package th {
 
 /* --- buttons --- */
 
-a.button {
+.button a {
   display: inline-block;
   text-decoration: none;
   color: #497E0B;
@@ -1376,11 +1376,11 @@ a.button {
   height: 40px;
 }
 
-.button.blue {
+.button.blue a  {
     background-color: #308CF2;
 }
 
-.button.green {
+.button.green a {
     background-color: #58A714;
 }
 

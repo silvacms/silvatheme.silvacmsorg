@@ -128,3 +128,14 @@ class FullPage(contentlayout.Design):
     slots = {'fullpage': contentlayout.Slot(css_class='content')}
     markers = [INoNavigationLayout]
 
+class PresentationPage(contentlayout.Design):
+    grok.name('presentationpage')
+    grok.title('Multi Column Presentation Page')
+
+    slots = {
+        'topbox': contentlayout.Slot(css_class='twocolumn'),
+        'whybox': contentlayout.Slot(css_class='fourcolumn'),
+        'aboutbox': contentlayout.Slot(css_class='threecolumn listing leftborder'),
+        'featuresbox': contentlayout.Slot(css_class='threecolumn listing')
+             }
+    markers = [INoNavigationLayout]

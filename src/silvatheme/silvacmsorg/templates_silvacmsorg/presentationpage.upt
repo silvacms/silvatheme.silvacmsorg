@@ -1,5 +1,5 @@
 
 <tal:content tal:content="structure slot:topbox" />
 <tal:content tal:content="structure slot:whybox" />
-<tal:content tal:content="structure slot:aboutbox" />
 <tal:content tal:content="structure slot:featuresbox" />
+<tal:content tal:content="structure slot:aboutbox" />

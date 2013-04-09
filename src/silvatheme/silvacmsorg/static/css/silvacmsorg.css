@@ -465,7 +465,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   min-height: 110px;
   width: 220px;
   text-align: center;
-  padding-left: 15px;
 }
 
 .fourcolumn .box h3 {
@@ -487,6 +486,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .fourcolumn .box p {
   margin-bottom: 0;
+  padding-left: 15px;
 }
 
 .factsheet .maincontent li,
@@ -1362,6 +1362,26 @@ table.silvatable.list.package th {
 .searchresult {
   border-bottom: 1px solid #DDDDDD;
   padding: 0.5em 0;
+}
+
+/* --- buttons --- */
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #497E0B;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 20px 20px 20px 20px;
+  height: 40px;
+}
+
+.button.blue {
+    background-color: #308CF2;
+}
+
+.button.green {
+    background-color: #58A714;
 }
 
 /* --- media queries --- */

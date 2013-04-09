@@ -353,7 +353,7 @@ header nav ul li a {
 }
 
 header nav ul li.selected a {
-  background-color: #59A80F;
+  background-color: #9DD53A;
   background-image: none;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7AB317), to(#519A0F));
   background-image: -webkit-linear-gradient(top, #7AB317, #519A0F);
@@ -392,7 +392,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 /* ++ box styling ++ */
 
 .box h3 {
-  background: #59A80F;
+  background: #9DD53A;
+  background: -moz-linear-gradient(left, #9DD53A 0%, #a1d54f 50%, #80c217 80%, #7cbc0a 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9DD53A), color-stop(50%,#a1d54f), color-stop(80%,#80c217), color-stop(100%,#7cbc0a));
+  background: -webkit-linear-gradient(left, #9DD53A 0%,#a1d54f 50%,#80c217 80%,#7cbc0a 100%);
+  background: -o-linear-gradient(left, #9DD53A 0%,#a1d54f 50%,#80c217 80%,#7cbc0a 100%);
+  background: -ms-linear-gradient(left, #9DD53A 0%,#a1d54f 50%,#80c217 80%,#7cbc0a 100%);
+  background: linear-gradient(to right, #9DD53A 0%,#a1d54f 50%,#80c217 80%,#7cbc0a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9DD53A', endColorstr='#7cbc0a',GradientType=1 );
   border-radius: 4px 4px 0 0;
   color: #FFFFFF;
   margin: 0;
@@ -437,8 +444,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .three-column.listing .box h3 {
-  color: #59A80F;
-  border-bottom: 1px solid #59A80F;
+  color: #9DD53A;
+  border-bottom: 1px solid #9DD53A;
   margin-top: 0;
 }
 
@@ -1167,7 +1174,7 @@ div.image.default {
   background-color: #292A2D;
   color: #EFEFEF;
   cursor: pointer;
-  border-top: 4px solid #59A80F;
+  border-top: 4px solid #9DD53A;
 }
 
 .infoText {
@@ -1181,7 +1188,7 @@ div.image.default {
   right: 70px;
   top: 160px;
   width: 250px;
-  border-top: 4px solid #59A80F;
+  border-top: 4px solid #9DD53A;
   cursor: pointer;
 }
 

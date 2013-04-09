@@ -391,7 +391,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 /* --- box styling --- */
 
 .box p {
-  padding: 10px 15px;
+  padding: 10px 15px 10px 0;
 }
 
 #features {
@@ -435,6 +435,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   color: #333333;
   border-bottom: 1px solid #DDDDDD;
   margin-top: 0;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .threecolumn.listing .box p {
@@ -463,6 +465,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   min-height: 110px;
   width: 220px;
   text-align: center;
+  padding-left: 15px;
 }
 
 .fourcolumn .box h3 {
@@ -478,7 +481,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   color: #FFFFFF;
   margin: 0;
   padding: 5px 10px;
-  font-size: 125%;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .fourcolumn .box p {

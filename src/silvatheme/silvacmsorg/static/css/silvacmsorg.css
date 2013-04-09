@@ -420,6 +420,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 .twocolumn .box {
   width: 48%;
   float: left;
+  min-height: 230px;
 }
 
 .threecolumn .box {

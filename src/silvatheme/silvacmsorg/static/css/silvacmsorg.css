@@ -467,13 +467,13 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .fourcolumn .box h3 {
   background: #58A714;
-  background: -moz-linear-gradient(left, #58A714 0%, #a1d54f 50%, #80c217 80%, #7cbc0a 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#58A714), color-stop(50%,#a1d54f), color-stop(80%,#80c217), color-stop(100%,#7cbc0a));
-  background: -webkit-linear-gradient(left, #58A714 0%,#a1d54f 50%,#80c217 80%,#7cbc0a 100%);
-  background: -o-linear-gradient(left, #58A714 0%,#a1d54f 50%,#80c217 80%,#7cbc0a 100%);
-  background: -ms-linear-gradient(left, #58A714 0%,#a1d54f 50%,#80c217 80%,#7cbc0a 100%);
-  background: linear-gradient(to left, #58A714 0%,#a1d54f 50%,#80c217 80%,#7cbc0a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58A714', endColorstr='#7cbc0a',GradientType=1 );
+  background: -moz-linear-gradient(left, #9dd53a 0%, #a1d54f 14%, #58a714 46%, #58a714 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9dd53a), color-stop(14%,#a1d54f), color-stop(46%,#58a714), color-stop(100%,#58a714));
+  background: -webkit-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
+  background: -o-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
+  background: -ms-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
+  background: linear-gradient(to left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#58a714',GradientType=1 );
   border-radius: 4px 4px 0 0;
   color: #FFFFFF;
   margin: 0;
@@ -826,7 +826,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 50%;
 }
 
-/* --- different boxes --- */
+/* --- different blocks --- */
 
 #block-one {
   background-color: #303030;
@@ -948,14 +948,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   clear: both;
 }
 
-/*   ++++++ page specific styles: Hosting ++++++ */
+/* --- page specific styles: Hosting --- */
 
 .hosting .section-about div.image {
   border: none;
   box-shadow: none;
 }
 
-/*   ++++++ page specific styles: Support ++++++ */
+/* --- page specific styles: Support --- */
 
 .section-support h1, .section-support h2 {
   color: #2378DF;

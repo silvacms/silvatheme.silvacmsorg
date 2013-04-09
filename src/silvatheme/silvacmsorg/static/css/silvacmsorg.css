@@ -1369,11 +1369,14 @@ table.silvatable.list.package th {
 .button a {
   display: inline-block;
   text-decoration: none;
-  color: #497E0B;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 10px 18px;
   border-radius: 20px 20px 20px 20px;
-  height: 40px;
+}
+
+div.button {
+  float: left;
 }
 
 .button.blue a  {

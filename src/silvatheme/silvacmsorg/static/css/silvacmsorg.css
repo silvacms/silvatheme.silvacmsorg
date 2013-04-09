@@ -13,7 +13,6 @@ body {
 /* heading settings */
 
 h1, h2, h3, h4, h5 {
-  /*clear: both;*/
   font-family: Verdana, Calibri, sans-serif;
   font-weight: normal;
 }
@@ -389,7 +388,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   text-decoration: none;
 }
 
-/* ++ box styling ++ */
+/* --- box styling --- */
 
 .box h3 {
   background: #9DD53A;
@@ -417,24 +416,25 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 900px;
 }
 
-.one-column .box {
+.onecolumn .box {
   width: 100%;
   clear: both;
 }
 
-.one-column .box h2 {
+.onecolumn .box h2 {
   margin: 10px 15px 0;
 }
 
-.one-column .box p {
+.onecolumn .box p {
   padding: 10px 15px 0;
 }
 
-.two-column .box {
+.twocolumn .box {
   width: 48%;
+  float: left;
 }
 
-.three-column .box {
+.threecolumn .box {
   width: 31%;
   background: #FFFFFF;
   float: left;
@@ -443,17 +443,17 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding-bottom: 0;
 }
 
-.three-column.listing .box h3 {
+.threecolumn.listing .box h3 {
   color: #9DD53A;
   border-bottom: 1px solid #9DD53A;
   margin-top: 0;
 }
 
-.thee-column.listing .box p {
+.threecolumn.listing .box p {
   padding-bottom: 0;
 }
 
-.three-column.listing.left-border .box {
+.threecolumn.listing.left-border .box {
   margin-top: 5px;
   min-height: 95px;
   background: none;
@@ -464,7 +464,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   -webkit-box-shadow: none;
 }
 
-.four-column .box {
+.fourcolumn .box {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -476,7 +476,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 205px;
 }
 
-.four-column .box p {
+.fourcolumn .box p {
   margin-bottom: 0;
 }
 

@@ -278,17 +278,7 @@ li a:link, li a:visited {
   font-weight: bold;
   margin-top: 0;
   text-shadow: 1px 1px 1px #000000;
-  background: -webkit-linear-gradient(center bottom , #308CF2, #FFFFFF);
-  background: -moz-linear-gradient(center bottom , #308CF2, #FFFFFF);
-  background: -o-linear-gradient(center bottom , #308CF2, #FFFFFF);
-  background: linear-gradient(center bottom , #308CF2, #FFFFFF);
-  display: inline-block;
-  padding: 10px;
-  width: 220px;
-}
-
-.stickypanel ul li a:hover {
-  text-decoration: none;
+  background: #58a714;
   background: -moz-linear-gradient(left, #9dd53a 0%, #a1d54f 14%, #58a714 46%, #58a714 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9dd53a), color-stop(14%,#a1d54f), color-stop(46%,#58a714), color-stop(100%,#58a714));
   background: -webkit-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
@@ -296,6 +286,21 @@ li a:link, li a:visited {
   background: -ms-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
   background: linear-gradient(to left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#58a714',GradientType=1 );
+  display: inline-block;
+  padding: 10px;
+  width: 220px;
+}
+
+.stickypanel ul li a:hover {
+  text-decoration: none;
+  background: #308CF2;
+  background: -moz-linear-gradient(left, #9dd53a 0%, #a1d54f 14%, #308CF2 46%, #308CF2 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9dd53a), color-stop(14%,#a1d54f), color-stop(46%,#308CF2), color-stop(100%,#308CF2));
+  background: -webkit-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#308CF2 46%,#308CF2 100%);
+  background: -o-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#308CF2 46%,#308CF2 100%);
+  background: -ms-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#308CF2 46%,#308CF2 100%);
+  background: linear-gradient(to left, #9dd53a 0%,#a1d54f 14%,#308CF2 46%,#308CF2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#308CF2',GradientType=1 );
 }
 
 /* --- news feeds styling --- */

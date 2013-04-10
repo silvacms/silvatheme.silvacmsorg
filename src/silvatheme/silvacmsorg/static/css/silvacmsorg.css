@@ -15,14 +15,21 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: Verdana, Calibri, sans-serif;
   font-weight: normal;
+  color: #333333;
 }
 
 h1 {
   font-size: 1.8em;
+  font-size: 50px;
+  line-height: 60px;
 }
+
 h2 {
   font-size: 1.4em;
+  font-size: 20px;
+  line-height: 24px;
 }
+
 h3 {
   font-size: 1.2em;
 }
@@ -51,11 +58,11 @@ li a:link, li a:visited {
 
 ::-selection {
   background: #7CCB38;
-  color:#FFF;
+  color: #FFF;
 }
 ::-moz-selection {
   background: #7CCB38;
-  color:#FFF;
+  color: #FFF;
 }
 
 /* column layout */
@@ -243,7 +250,52 @@ li a:link, li a:visited {
 .stickypanel {
   z-index: 9999;
   background: none;
-  text-align: right;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  width: 240px;
+}
+
+.stickypanel.detached {
+  box-shadow: 1px 1px 6px #BBBBBB;
+}
+
+.stickypanel ul {
+  margin: 0;
+  padding: 0;
+}
+
+.stickypanel ul li {
+  border-bottom: none;
+  color: #333333;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.stickypanel ul li a {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0;
+  text-shadow: 1px 1px 1px #000000;
+  background: -webkit-linear-gradient(center top , #B5B5B5, #DDDDDD);
+  background: -moz-linear-gradient(center top , #B5B5B5, #DDDDDD);
+  background: -o-linear-gradient(center top , #B5B5B5, #DDDDDD);
+  background: linear-gradient(center top , #B5B5B5, #DDDDDD);
+  display: inline-block;
+  padding: 10px;
+  width: 220px;
+}
+
+.stickypanel ul li a:hover {
+  text-decoration: none;
+  background: -moz-linear-gradient(left, #9dd53a 0%, #a1d54f 14%, #58a714 46%, #58a714 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9dd53a), color-stop(14%,#a1d54f), color-stop(46%,#58a714), color-stop(100%,#58a714));
+  background: -webkit-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
+  background: -o-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
+  background: -ms-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
+  background: linear-gradient(to left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#58a714',GradientType=1 );
 }
 
 /* --- news feeds styling --- */
@@ -437,12 +489,9 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 0 10px;
 }
 
-.threecolumn.listing .box h3 {
-  color: #333333;
+.threecolumn.listing .box h2 {
   border-bottom: 1px solid #DDDDDD;
   margin-top: 0;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .threecolumn.listing .box p {

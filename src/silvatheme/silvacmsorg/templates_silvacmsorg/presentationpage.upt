@@ -1,4 +1,3 @@
-<h1 tal:content="design.root.get_title_or_id()">Silva</h1>
 <tal:content tal:content="structure slot:topbox" />
 <tal:content tal:content="structure slot:whybox" />
 <tal:content tal:content="structure slot:featuresbox" />

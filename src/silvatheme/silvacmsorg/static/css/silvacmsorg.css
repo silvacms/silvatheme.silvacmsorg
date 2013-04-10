@@ -596,7 +596,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .section-about #slot-two {
-  width: 220px;
+  width: 240px;
   margin: 0;
 }
 
@@ -679,7 +679,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: linear-gradient(to bottom, #952175, #6E004E);
   border: 1px solid #3E001E;
   color: #FFFFFF;
-  font-size: 1.4em;
   margin: 0;
   padding: 4px 12px;
   width: 700px;
@@ -723,7 +722,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .factsheet .section-about #slot-two {
   margin: -32px 0 0;
-  width: 220px;
 }
 
 /*   ++++++ page specific styles: Get Silva ++++++ */

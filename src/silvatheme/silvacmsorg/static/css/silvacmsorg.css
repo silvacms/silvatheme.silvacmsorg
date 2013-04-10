@@ -498,7 +498,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding-bottom: 0;
 }
 
-.threecolumn.listing.left-border .box {
+.threecolumn.listing.leftborder .box {
   margin-top: 5px;
   min-height: 95px;
   background: none;
@@ -509,7 +509,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   -webkit-box-shadow: none;
 }
 
-.threecolumn.listing.left-border .box h2 {
+.threecolumn.listing.leftborder .box h2 {
   border-bottom: none;
 }
 

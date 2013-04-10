@@ -509,6 +509,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   -webkit-box-shadow: none;
 }
 
+.threecolumn.listing.left-border .box h2 {
+  border-bottom: none;
+}
+
 .fourcolumn .box {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);

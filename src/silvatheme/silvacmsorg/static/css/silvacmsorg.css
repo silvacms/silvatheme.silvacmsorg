@@ -274,14 +274,14 @@ li a:link, li a:visited {
 
 .stickypanel ul li a {
   color: #FFFFFF;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   margin-top: 0;
   text-shadow: 1px 1px 1px #000000;
-  background: -webkit-linear-gradient(center top , #B5B5B5, #DDDDDD);
-  background: -moz-linear-gradient(center top , #B5B5B5, #DDDDDD);
-  background: -o-linear-gradient(center top , #B5B5B5, #DDDDDD);
-  background: linear-gradient(center top , #B5B5B5, #DDDDDD);
+  background: -webkit-linear-gradient(center bottom , #308CF2, #FFFFFF);
+  background: -moz-linear-gradient(center bottom , #308CF2, #FFFFFF);
+  background: -o-linear-gradient(center bottom , #308CF2, #FFFFFF);
+  background: linear-gradient(center bottom , #308CF2, #FFFFFF);
   display: inline-block;
   padding: 10px;
   width: 220px;
@@ -721,7 +721,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .factsheet .section-about #slot-two {
-  margin: -32px 0 0;
+  margin: -70px 0 0;
 }
 
 /*   ++++++ page specific styles: Get Silva ++++++ */

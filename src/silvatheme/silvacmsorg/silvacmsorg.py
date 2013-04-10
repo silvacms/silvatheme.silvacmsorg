@@ -132,6 +132,10 @@ class PresentationPage(contentlayout.Design):
     grok.name('presentationpage')
     grok.title('Multi Column Presentation Page')
 
+    @Lazy
+    def publication_title(self):
+        return self.content.get_publication().get_title()
+
     slots = {
         'topbox': contentlayout.Slot(css_class='twocolumn'),
         'whybox': contentlayout.Slot(css_class='fourcolumn'),

@@ -522,7 +522,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   text-align: center;
 }
 
-.fourcolumn .box h3 {
+.fourcolumn .box h2 {
   background: #58A714;
   background: -moz-linear-gradient(left, #9dd53a 0%, #a1d54f 14%, #58a714 46%, #58a714 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9dd53a), color-stop(14%,#a1d54f), color-stop(46%,#58a714), color-stop(100%,#58a714));

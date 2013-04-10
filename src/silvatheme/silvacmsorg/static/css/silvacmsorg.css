@@ -113,7 +113,7 @@ li a:link, li a:visited {
 }
 
 .silva-navigation h1, .silva-navigation h2, .silva-navigation h3 {
-  font-size: 1.1em;
+  font-size: 17px;
   font-weight: normal;
 }
 
@@ -255,7 +255,7 @@ li a:link, li a:visited {
   width: 240px;
 }
 
-.stickypanel.detached {
+.stickypanel.detached ul {
   box-shadow: 1px 1px 6px #BBBBBB;
 }
 
@@ -294,12 +294,12 @@ li a:link, li a:visited {
 .stickypanel ul li a:hover {
   text-decoration: none;
   background: #58a714;
-  background: -moz-linear-gradient(left, #9dd53a 0%, #a1d54f 28%, #58a714 60%, #58a714 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9dd53a), color-stop(28%,#a1d54f), color-stop(60%,#58a714), color-stop(100%,#58a714));
-  background: -webkit-linear-gradient(left, #9dd53a 0%,#a1d54f 28%,#58a714 60%,#58a714 100%);
-  background: -o-linear-gradient(left, #9dd53a 0%,#a1d54f 28%,#58a714 60%,#58a714 100%);
-  background: -ms-linear-gradient(left, #9dd53a 0%,#a1d54f 28%,#58a714 60%,#58a714 100%);
-  background: linear-gradient(to left, #9dd53a 0%,#a1d54f 28%,#58a714 60%,#58a714 100%);
+  background: -moz-linear-gradient(left, #9dd53a 0%, #a1d54f 90%, #58a714 90%, #58a714 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9dd53a), color-stop(90%,#a1d54f), color-stop(90%,#58a714), color-stop(100%,#58a714));
+  background: -webkit-linear-gradient(left, #9dd53a 0%,#a1d54f 90%,#58a714 90%,#58a714 100%);
+  background: -o-linear-gradient(left, #9dd53a 0%,#a1d54f 90%,#58a714 90%,#58a714 100%);
+  background: -ms-linear-gradient(left, #9dd53a 0%,#a1d54f 90%,#58a714 90%,#58a714 100%);
+  background: linear-gradient(to left, #9dd53a 0%,#a1d54f 90%,#58a714 90%,#58a714 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#58a714',GradientType=1 );
 }
 
@@ -740,6 +740,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   font-size: 1.2em;
   margin-top: 15px;
   padding-bottom: 30px;
+}
+
+.section-getsilva h2.plain {
+  font-size: 20px;
 }
 
 .section-getsilva section.box {

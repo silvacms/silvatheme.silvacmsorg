@@ -5,7 +5,7 @@ body {
 }
 
 #content {
-  margin: 30px auto;
+  margin: 20px auto;
   min-height: 700px;
   width: 980px;
 }
@@ -472,7 +472,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .twocolumn {
-  min-height: 225px;
+  min-height: 275px;
   padding: 0 10px;
 }
 

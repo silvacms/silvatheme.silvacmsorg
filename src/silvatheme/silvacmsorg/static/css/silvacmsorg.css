@@ -520,6 +520,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .threecolumn.listing.leftborder .box h2 {
   border-bottom: none;
+  padding: 0;
 }
 
 .fourcolumn .box {

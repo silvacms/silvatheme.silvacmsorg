@@ -36,10 +36,6 @@ h3 {
   font-size: 1.2em;
 }
 
-p, li {
-  line-height: 19px;
-}
-
 a:link, a:visited {
   color: #58A714;
   text-decoration: none;

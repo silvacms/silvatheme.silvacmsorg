@@ -504,7 +504,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .threecolumn.listing .box p {
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .threecolumn.listing.leftborder .box {
@@ -543,7 +543,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .fourcolumn .box a {
-  bottom: 5px;
+  bottom: 15px;
   left: 0;
   position: absolute;
   width: 215px;
@@ -568,7 +568,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .fourcolumn .box p {
   margin-bottom: 0;
-  padding-left: 15px;
+  padding: 15px;
 }
 
 .factsheet .maincontent li,

@@ -1488,7 +1488,7 @@ div.button {
 
 .button.blue a:hover  {
   text-decoration: none;
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 .button.green a {
@@ -1504,7 +1504,7 @@ div.button {
 
 .button.green a:hover {
   text-decoration: none;
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 /* --- media queries --- */

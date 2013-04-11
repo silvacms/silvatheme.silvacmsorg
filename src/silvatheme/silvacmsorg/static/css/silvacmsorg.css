@@ -484,6 +484,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 48%;
   float: left;
   min-height: 165px;
+  color: #666666;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  line-height: 22px;
 }
 
 .twocolumn .box div.image.float-left {

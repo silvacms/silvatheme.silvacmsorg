@@ -484,6 +484,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   min-height: 165px;
 }
 
+.twocolumn .box div.image.float-left {
+    margin-top: 15px;
+}
+
 .threecolumn .box {
   width: 30%;
   background: #FFFFFF;
@@ -509,7 +513,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .threecolumn.listing.leftborder .box {
   margin-top: 5px;
-  min-height: 95px;
+  min-height: 90px;
   background: none;
   border: none;
   border-left: 3px double #DDDDDD;

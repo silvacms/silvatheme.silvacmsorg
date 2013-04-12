@@ -13,7 +13,7 @@ from silva.core.services.interfaces import IMetadataService
 from silva.core.views import views as silvaviews
 from silva.core.layout.interfaces import ICustomizableTag
 
-from .interfaces import ISilvaCmsOrg
+from .interfaces import ISilvaCmsOrg, ISilvaSilvaOrgWithNavigation
 
 grok.templatedir('templates_silvacmsorg')
 grok.layer(ISilvaCmsOrg)
@@ -67,15 +67,21 @@ class Layout(porto.Layout):
         return 'section-root'
 
 
-class ContentNavigationLess(silvaviews.ContentProvider):
+class ContentNavigationLessMarker(silvaviews.ContentProvider):
     grok.template('contentnavigationless')
     grok.name('content')
     grok.context(INoNavigationLayout)
 
 
+class ContentNavigationLessDefault(silvaviews.ContentProvider):
+    grok.template('contentnavigationless')
+    grok.name('content')
+
+
 class ContentWithNavigation(silvaviews.ContentProvider):
     grok.template('contentwithnavigation')
     grok.name('content')
+    grok.layer(ISilvaSilvaOrgWithNavigation)
 
 
 class Navigation(porto.Navigation):

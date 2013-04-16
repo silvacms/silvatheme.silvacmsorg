@@ -446,7 +446,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 /* --- box styling --- */
 
 #content.section-root {
-  url("../images/content-intro-background.png") repeat-x -38px 0 100%;
+  background: url("../images/home-background.png") repeat-x -38px 0 100%;
 }
 
 .box a:link, .box a:visited {
@@ -484,6 +484,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 48%;
   float: left;
   min-height: 165px;
+}
+
+#slot-leftbox p, #slot-rightbox p {
+  width: 500px;
+}
+
+#slot-leftbox p, #slot-rightbox p {
+  width: 480px;
 }
 
 #slot-leftbox p, #slot-rightbox p {

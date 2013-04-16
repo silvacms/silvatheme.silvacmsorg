@@ -5,7 +5,7 @@ body {
 }
 
 body.silvacms {
-  background: #FAFAFA url("../images/home-background.png") repeat-x;
+  background: #FAFAFA url("../images/home-background.png") repeat-x 0 85px;
 }
 
 #content {
@@ -476,7 +476,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .twocolumn {
-  min-height: 235px;
+  min-height: 215px;
 }
 
 .twocolumn .box {
@@ -1477,6 +1477,7 @@ table.silvatable.list.package th {
 div.button {
   float: left;
   margin-right: 15px;
+  margin-top: -45px;
 }
 
 .button a {

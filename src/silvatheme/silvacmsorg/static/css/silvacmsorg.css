@@ -41,7 +41,8 @@ h3 {
 }
 
 a:link, a:visited {
-  color: #58A714;
+  /* wim color: #58A714;*/
+  color: #1D6C10;
   text-decoration: none;
 }
 
@@ -133,7 +134,8 @@ li a:link, li a:visited {
 }
 
 .silva-navigation ul li {
-  color: #58A714;
+  /* wim color: #58A714;*/
+  color: #1D6C10;
   border-bottom: 1px solid #DCDCDC;
 }
 
@@ -196,7 +198,8 @@ li a:link, li a:visited {
 
 .page-navigation li {
   margin: 12px 8px;
-  color: #58A714;
+  /* wim color: #58A714;*/
+  color: #1D6C10;
   list-style: square inside none;
   border-bottom: 1px solid #DCDCDC;
 }
@@ -232,7 +235,8 @@ li a:link, li a:visited {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0;
   padding: 4px 10px 6px;
-  color: #58A714;
+  /* wim color: #58A714;*/
+  color: #1D6C10;
   list-style: square inside none;
 }
 

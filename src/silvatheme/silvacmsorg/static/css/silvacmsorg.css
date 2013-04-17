@@ -603,7 +603,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 .section-documentation #sysadmins li,
 .section-documentation #developers li,
 .section-community .maincontent li,
-.sprint-checklist .silva-content {
+.sprint-checklist .silva-content li,
+.sprint-tips .silva-content li {
   background-image: url("../images/tick.png");
   background-repeat: no-repeat;
   background-position: 0 2px;

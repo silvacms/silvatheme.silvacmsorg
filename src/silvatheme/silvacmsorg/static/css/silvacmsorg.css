@@ -502,8 +502,15 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   margin-bottom: 0;
 }
 
-.twocolumn .box div.image.float-left {
-    margin-top: 13px;
+#slot-rightbox img {
+  margin-top: -65px;
+  webkit-box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
+  moz-box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
+}
+
+#slot-rightbox div.image.float-right {
+  margin: 0;
 }
 
 .threecolumn .box {
@@ -1471,7 +1478,7 @@ table.silvatable.list.package th {
 div.button {
   float: left;
   margin-right: 15px;
-  margin-top: -35px;
+  margin-top: -53px;
 }
 
 .button a {

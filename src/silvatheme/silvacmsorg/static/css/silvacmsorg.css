@@ -840,9 +840,9 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
   border: 1px solid #E0E0E0;
   margin-top: 15px;
-  padding: 10px 20px;
-  min-height: 155px;
-  width: 415px;
+  padding: 15px;
+  min-height: 145px;
+  width: 445px;
 }
 
 .section-getsilva .block-left {

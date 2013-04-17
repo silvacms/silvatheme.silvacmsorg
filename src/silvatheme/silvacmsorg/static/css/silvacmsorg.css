@@ -754,14 +754,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 20px;
 }
 
-.factsheet .introfacts p {
+.factsheet .maincontent .introfacts p {
   color: #47092E;
-  float: right;
-  padding: 10px 15px;
+  float: left;
+  padding: 0 0 0 10px;
   margin: 0;
   font-size: 1.1em;
-  line-height: 1.8em;
-  width: 65%;
+  line-height: 1.5em;
+  width: 55%;
 }
 
 .factsheet .maincontent p {
@@ -1439,7 +1439,7 @@ div.button {
 /* --- community */
 
 .community .slideshow {
-  margin-top: 85px;
+  margin-top: 70px;
   margin-bottom: 15px;
 }
 

@@ -952,6 +952,9 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 #block-one h1 {
   color: #bbb;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 5px;
 }
 
 #block-one h3.newsitemheading {
@@ -962,12 +965,20 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   min-height: 75px;
 }
 
+#block-one .newsitem a:link, #block-one .newsitem a:visited,
+#block-one a:link, #block-one a:visited {
+  text-shadow: none;
+}
+
 #block-two {
 
 }
 
 #block-two h1 {
   color: #bbb;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 5px;
 }
 
 #block-two h3.newsitemheading {
@@ -980,7 +991,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 #block-two .newsitem a:link, #block-two .newsitem a:visited,
 #block-two a:link, #block-two a:visited {
-
+  text-shadow: none;
 }
 
 #block-three {
@@ -989,6 +1000,9 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 #block-three h1 {
   color: #bbb;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 5px;
 }
 
 #block-three h3.newsitemheading {
@@ -996,12 +1010,12 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 #block-three .newsitem {
-
+  min-height: 75px;
 }
 
 #block-three .newsitem a:link, #block-three .newsitem a:visited,
 #block-three a:link, #block-three a:visited {
-
+  text-shadow: none;
 }
 
 /* tab styles: user documentation */

@@ -521,11 +521,11 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .threecolumn .box {
-  width: 308px;
+  width: 300px;
   margin-right: 30px;
   margin-top: 28px;
   float: left;
-  min-height: 300px;
+  min-height: 120px;
 }
 
 .threecolumn #slot-scaling.box, .threecolumn #slot-opensource.box {

@@ -146,6 +146,6 @@ class PresentationPage(contentlayout.Design):
         'topbox': contentlayout.Slot(css_class='twocolumn'),
         'whybox': contentlayout.Slot(css_class='fourcolumn'),
         'featuresbox': contentlayout.Slot(css_class='threecolumn listing'),
-        'aboutbox': contentlayout.Slot(css_class='threecolumn listing leftborder')
+        'aboutbox': contentlayout.Slot(css_class='threecolumn listing')
         }
     markers = [INoNavigationLayout]

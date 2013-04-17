@@ -1438,6 +1438,12 @@ div.button {
   margin-bottom: 15px;
 }
 
+.community .section-community div.image {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
 /* different news source blocks */
 
 #slot-newsfeeds {

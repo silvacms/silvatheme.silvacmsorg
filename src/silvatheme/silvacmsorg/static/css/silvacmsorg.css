@@ -24,16 +24,10 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 1.8em;
-  font-size: 50px;
-  line-height: 60px;
-  letter-spacing: -1px;
-  margin-bottom: 12px;
 }
 
 h2 {
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.5px;
+  font-size: 1.4em;
 }
 
 h3 {
@@ -646,6 +640,21 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   border: none;
   padding: 10px;
   box-shadow: none;
+}
+
+/*   ++++++ page specific styles: Home ++++++ */
+
+.section-root h1 {
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.section-root h2 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
 }
 
 /*   ++++++ page specific styles: About ++++++ */

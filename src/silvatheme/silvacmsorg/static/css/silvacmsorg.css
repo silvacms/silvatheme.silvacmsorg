@@ -1173,6 +1173,17 @@ div.image.default {
   border: none;
   padding: 0;
   box-shadow: none;
+  border-radius: 10px 0 10px 0;
+}
+
+.image-border div.image.align-center img,
+.section-about div.image.align-center img ,
+.section-community div.image.align-center img,
+.section-documentation div.image.align-center img,
+.section-support div.image.align-center img {
+  border-radius: 10px 0 10px 0;
+  box-shadow: 5px 5px 5px #AAAAAA;
+  margin-bottom: 10px;
 }
 
 /* --- slideshow styling --- */

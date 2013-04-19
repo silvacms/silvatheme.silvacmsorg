@@ -1165,13 +1165,13 @@ div.image.default {
   margin: 30px 0 0 0;
 }
 
-.image.default-border div.image.default,
-.section-about div.image.default,
-.section-community div.image.default,
-.section-documentation div.image.default,
-.section-support div.image.default {
+.image-border div.image.align-center,
+.section-about div.image.align-center,
+.section-community div.image.align-center,
+.section-documentation div.image.align-center,
+.section-support div.image.align-center {
   border: none;
-  padding: 10px;
+  padding: 0;
   box-shadow: none;
 }
 

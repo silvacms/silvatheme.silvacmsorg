@@ -252,6 +252,7 @@ li a:link, li a:visited {
   text-align: center;
   border: 1px solid #FFFFFF;
   width: 240px;
+  float: right;
 }
 
 .stickypanel.detached ul {

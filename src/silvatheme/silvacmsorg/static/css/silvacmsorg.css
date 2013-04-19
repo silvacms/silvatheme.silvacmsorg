@@ -571,6 +571,10 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   position: relative;
 }
 
+.fourcolumn .box div.image.default {
+  padding: 10px;
+}
+
 .fourcolumn #slot-free.box {
   margin-right: 0;
 }

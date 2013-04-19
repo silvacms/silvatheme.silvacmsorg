@@ -1165,7 +1165,11 @@ div.image.default {
   margin: 30px 0 0 0;
 }
 
-.no-image-border div.image {
+.image.default-border div.image.default,
+.section-about div.image.default,
+.section-community div.image.default,
+.section-documentation div.image.default,
+.section-support div.image.default {
   border: none;
   padding: 10px;
   box-shadow: none;

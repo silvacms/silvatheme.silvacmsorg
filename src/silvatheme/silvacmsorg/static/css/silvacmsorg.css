@@ -1196,10 +1196,22 @@ div.image.default {
   clear: both;
 }
 
+.slideshow-slide {
+  width: 655px;
+}
+
 .slideshow-info {
   float: left;
   padding: 5px 15px;
-  width: 240px;
+  width: 230px;
+}
+
+.slideshow-info h2 {
+  font-size: 185%;
+}
+
+.slideshow-image {
+  margin: 0;
 }
 
 .slideshow-control {
@@ -1208,23 +1220,6 @@ div.image.default {
 
 #slot-belowslideshow {
   width: 700px;
-}
-
-/* was .section-about */
-.slideshow-info {
-  width: 280px;
-}
-
-.slideshow-info h2 {
-  font-size: 185%;
-}
-
-.slideshow-info p {
-  font-size: 120%;
-}
-
-.slideshow-image {
-  margin: 0;
 }
 
 /* --- info box styling --- */

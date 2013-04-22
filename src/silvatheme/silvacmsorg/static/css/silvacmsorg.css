@@ -1196,6 +1196,7 @@ div.image.default {
   clear: both;
   float: left;
   width: 715px;
+  margin: 20px auto;
 }
 
 .slideshow-slide {

@@ -1194,6 +1194,8 @@ div.image.default {
 
 .slideshow {
   clear: both;
+  float: left;
+  width: 715px;
 }
 
 .slideshow-slide {

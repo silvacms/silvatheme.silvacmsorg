@@ -44,6 +44,7 @@ a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
   text-decoration: underline;
 }
 
++
 li {
   list-style: none;
 }
@@ -95,13 +96,12 @@ li a:link, li a:visited {
 /* site navigation */
 
 .silva-navigation {
-  background-color: #EFEFEF;
-  background-image: none;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
-  background-image: -webkit-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background-image: -moz-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
+  background: #EFEFEF;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
+  background: -webkit-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background: -moz-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
+  background: linear-gradient(to left, #F1F1F1 0%, #FFFFFF 100%);
   padding: 10px;
   margin-bottom: 15px;
   float: right;
@@ -248,7 +248,12 @@ li a:link, li a:visited {
 
 .stickypanel {
   z-index: 9999;
-  background: none;
+  background: #EFEFEF;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
+  background: -webkit-linear-gradient(right, #F1F1F1 0%, #FFFFFF 100%);
+  background: -moz-linear-gradient(right, #F1F1F1 0%, #FFFFFF 100%);
+  background: -o-linear-gradient(right, #F1F1F1 0%, #FFFFFF 100%);
+  background: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
   text-align: center;
   border: 1px solid #FFFFFF;
   width: 240px;
@@ -265,27 +270,22 @@ li a:link, li a:visited {
 }
 
 .stickypanel ul li {
-  border-bottom: none;
+  border-bottom: 2px solid #BBB;
   color: #333333;
   width: 100%;
   margin-bottom: 0;
-  margin-top: 5px;
+}
+
+.stickypanel ul li:last-child {
+  border-bottom: none;
 }
 
 .stickypanel ul li a {
-  color: #FFFFFF;
+  color: #000;
   font-size: 13px;
   font-weight: bold;
   margin-top: 0;
-  text-shadow: 1px 1px 1px #000000;
-  background: #58a714;
-  background: -moz-linear-gradient(left, #9dd53a 0%, #a1d54f 14%, #58a714 46%, #58a714 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9dd53a), color-stop(14%,#a1d54f), color-stop(46%,#58a714), color-stop(100%,#58a714));
-  background: -webkit-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
-  background: -o-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
-  background: -ms-linear-gradient(left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
-  background: linear-gradient(to left, #9dd53a 0%,#a1d54f 14%,#58a714 46%,#58a714 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#58a714',GradientType=1 );
+  background: #58A714;
   display: inline-block;
   padding: 10px;
   width: 220px;
@@ -1188,7 +1188,7 @@ div.image.default {
 .section-community div.image.align-center img,
 .section-documentation div.image.align-center img,
 .section-support div.image.align-center img {
-  border-radius: 10px 0 10px 0;
+  border-radius: 45px 0 45px 0;
   box-shadow: 5px 5px 5px #AAAAAA;
   margin-bottom: 10px;
 }

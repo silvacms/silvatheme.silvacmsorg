@@ -247,7 +247,6 @@ li a:link, li a:visited {
 
 .stickypanel {
   z-index: 9999;
-  text-align: center;
   border: 1px solid #FFFFFF;
   width: 240px;
   float: right;
@@ -258,12 +257,17 @@ li a:link, li a:visited {
   padding: 0;
 }
 
+.stickypanel.detached {
+  position:absolute;
+  top:50%;
+}
+
 .stickypanel.detached ul {
   box-shadow: 1px 1px 6px #BBBBBB;
 }
 
 .stickypanel ul li {
-  border-bottom: 2px solid #BBBBBB;
+  border-bottom: 1px solid #BBBBBB;
   color: #333333;
   width: 100%;
   margin-bottom: 0;

@@ -1568,6 +1568,12 @@ div.button {
   text-shadow: none;
 }
 
+/* --- css disabled --- */
+
+div.info.plot.pond,
+[source-identifier=cs_rss_atom_feeder] {
+  display: none;
+}
 
 /* --- media queries --- */
 

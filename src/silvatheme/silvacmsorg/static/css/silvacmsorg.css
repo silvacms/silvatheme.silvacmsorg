@@ -1543,6 +1543,14 @@ div.button {
   text-shadow: none;
 }
 
+/* --- package activity --- */
+
+/* main content area */
+
+.content .activity-wrapper {
+  width: 720px;
+}
+
 /* --- css disabled --- */
 
 div.info.plot.pond,

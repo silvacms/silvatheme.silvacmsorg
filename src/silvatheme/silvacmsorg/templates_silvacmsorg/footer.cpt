@@ -3,7 +3,7 @@
         Footer content appears here....
       </tal:snippet>
       <div id="legal">
-        &copy; 2002-${provider.get_current_year()} <a href="http://infrae.com/">
+        &copy; 2002-${provider.get_current_year()} <a href="/copyright">
         All contributors</a>
       </div>
     </div>

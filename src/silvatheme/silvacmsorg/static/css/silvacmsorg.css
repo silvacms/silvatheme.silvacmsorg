@@ -961,34 +961,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 50%;
 }
 
-/* tab styles: user documentation */
-
-.section-documentation #users .documentation-intro {
-  background-color: #EFEFEF;
-  background-image: none;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
-  background-image: -webkit-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background-image: -moz-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background-image: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
-  border: 1px solid #E0E0E0;
-  height: 149px;
-  margin: 30px 0 50px 0;
-}
-
-.section-documentation #users img {
-  float: left;
-}
-
-.section-documentation #users p {
-  float: left;
-  padding: 15px 25px;
-}
-
-.section-documentation #users .info {
-  clear: both;
-}
-
 /* --- page specific styles: Hosting --- */
 
 .hosting .section-about div.image {

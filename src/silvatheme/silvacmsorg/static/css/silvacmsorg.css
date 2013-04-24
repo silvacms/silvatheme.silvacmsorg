@@ -258,8 +258,7 @@ li a:link, li a:visited {
 }
 
 .stickypanel.detached {
-  position:absolute;
-  top:50%;
+  top: 33% !important;
 }
 
 .stickypanel.detached ul {

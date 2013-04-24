@@ -318,6 +318,10 @@ li a:link, li a:visited {
   font-size: 0.7em;
 }
 
+.newsitem h1 {
+  color: #FFFFFF;
+}
+
 .newsitem h4 {
   font-size: 1.1em;
   margin: 0 0 0.4em 0;

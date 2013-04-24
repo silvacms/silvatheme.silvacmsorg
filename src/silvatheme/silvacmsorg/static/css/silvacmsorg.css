@@ -800,6 +800,18 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   color: #C93636;
 }
 
+.section-getsilva h1 a, .section-getsilva h2 a,
+.section-getsilva h1:link a, .section-getsilva h2 a:link,
+.section-getsilva h1 a:visited, .section-getsilva h2 a:visited {
+  color: #C93636;
+  text-decoration: underline;
+}
+
+.section-getsilva h1 a:hover, .section-getsilva h2 a:hover {
+  color: #C93636;
+  text-decoration: none;
+}
+
 .section-getsilva .plain {
   border-bottom: 2px solid #DDDDDD;
   font-size: 1.2em;

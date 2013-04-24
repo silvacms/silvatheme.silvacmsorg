@@ -54,9 +54,12 @@ $(document).ready(function(){
   $('#tabs ul li a').click(function(){
       $('#tabs ul li').removeClass('selected');
       $(this).parent().addClass('selected');
-      var currentTab = $(this).attr('href');
+      var currentAnchor = $(this).attr('href')
+      var currentAnchorParts = currentAnchor.split('#');
+      var currentTab = currentAnchorParts.slice(-1);
+      var currentId = '#' + currentTab;
       $('#tabs section').hide();
-      $(currentTab).show();
+      $(currentId).show();
       return false;
       });
 

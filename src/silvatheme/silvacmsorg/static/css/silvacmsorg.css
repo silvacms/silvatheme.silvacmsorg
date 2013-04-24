@@ -319,7 +319,15 @@ li a:link, li a:visited {
 }
 
 .newsitem h1 {
-  color: #FFFFFF;
+  color: #AAAAAA;
+}
+
+.newsitem h2 {
+  color: #BBBBBB;
+}
+
+.newsitem h3 {
+  color: #DDDDDD;
 }
 
 .newsitem h4 {

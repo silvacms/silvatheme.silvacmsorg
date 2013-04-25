@@ -44,6 +44,10 @@ a:link:hover, a:link:focus, a:visited:focus, a:visited:hover {
   text-decoration: underline;
 }
 
+p {
+  line-height: 1.6em;
+}
+
 li {
   list-style: none;
 }
@@ -791,10 +795,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 55%;
 }
 
-.factsheet .maincontent p {
-  padding: 0 25px;
-}
-
 .factsheet .maincontent li {
   background: none;
   margin: 0;
@@ -984,14 +984,20 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 50%;
 }
 
-/* --- page specific styles: Hosting --- */
+/* ++++++ page specific styles: Community ++++++ */
+
+.section-community h1, .section-community h2 {
+  color: #FF6600;
+}
+
+/* ++++++ page specific styles: Hosting ++++++ */
 
 .hosting .section-about div.image {
   border: none;
   box-shadow: none;
 }
 
-/* --- page specific styles: Support --- */
+/* ++++++ page specific styles: Support ++++++ */
 
 .section-support h1, .section-support h2 {
   color: #2378DF;

@@ -72,7 +72,7 @@ $(document).ready(function(){
 
   // sticky panel
   var stickyPanelOptions = {
-      topPadding: 20,
+      topPadding: 40,
       afterDetachCSSClass: 'detached',
       savePanelSpace: true,
       parentSelector: null

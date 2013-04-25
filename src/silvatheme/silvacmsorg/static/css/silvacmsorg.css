@@ -69,7 +69,7 @@ li a:link, li a:visited {
 
 .maincontent {
   float: left;
-  width: 700px;
+  width: 720px;
 }
 
 .sidebar {
@@ -254,6 +254,7 @@ li a:link, li a:visited {
   border: 1px solid #FFFFFF;
   width: 240px;
   float: right;
+  box-shadow: 1px 1px 6px #BBBBBB;
 }
 
 .stickypanel ul {
@@ -263,10 +264,6 @@ li a:link, li a:visited {
 
 .stickypanel.detached {
   top: 33% !important;
-}
-
-.stickypanel.detached ul {
-  box-shadow: 1px 1px 6px #BBBBBB;
 }
 
 .stickypanel ul li {
@@ -676,7 +673,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .section-about #slot-one, .section-about .maincontent {
-  width: 726px;
+  width: 720px;
   margin: 0;
 }
 
@@ -765,7 +762,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   border: 1px solid #3E001E;
   color: #FFFFFF;
   margin: 0;
-  padding: 4px 12px;
+  padding: 4px 9px;
   width: 700px;
 }
 
@@ -1017,7 +1014,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .section-support section {
   clear: both;
-  width: 700px;
+  width: 720px;
   margin: 20px auto;
 }
 
@@ -1038,7 +1035,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   height: 100px;
   margin: 0; padding: 10px;
   vertical-align: top;
-  width: 175px;
+  width: 185px;
 }
 
 .section-support section p {
@@ -1057,7 +1054,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   margin-bottom: 42px; padding: 10px;
   height: 100px;
   float: left;
-  width: 480px;
+  width: 485px;
 }
 
 /* --- footer settings --- */

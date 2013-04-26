@@ -1133,7 +1133,9 @@ div.image.default {
   box-shadow: none;
 }
 
-/* heading images */
+/* --- heading images --- */
+
+/* centered */
 
 .section-about div.image.align-center,
 .section-community div.image.align-center,
@@ -1153,6 +1155,94 @@ div.image.default {
   border-radius: 45px 0 45px 0;
   box-shadow: 5px 5px 5px #AAAAAA;
   margin-bottom: 10px;
+}
+
+/* small vertical bookmarks */
+
+.one_index .section-about div.image.align-left,
+.one_index .section-community div.image.align-left,
+.one_index .section-documentation div.image.align-left,
+.one_index .section-support div.image.align-left {
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 10px 0 10px 0;
+}
+
+.one_index .image-border div.image.align-left img,
+.one_index .section-about div.image.align-left img ,
+.one_index .section-community div.image.align-left img,
+.one_index .section-documentation div.image.align-left img,
+.one_index .section-support div.image.align-left img {
+  border-radius: 10px 0 0 0;
+  box-shadow: 5px 5px 5px #AAAAAA;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.one_index .section-about div.image.align-right,
+.one_index .section-community div.image.align-right,
+.one_index .section-documentation div.image.align-right,
+.one_index .section-support div.image.align-right {
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 10px 0 10px 0;
+}
+
+.one_index .image-border div.image.align-right img,
+.one_index .section-about div.image.align-right img ,
+.one_index .section-community div.image.align-right img,
+.one_index .section-documentation div.image.align-right img,
+.one_index .section-support div.image.align-right img {
+  border-radius: 0 10px 0 0;
+  box-shadow: 5px 5px 5px #AAAAAA;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+/* small horizontal bookmarks */
+
+.two_index .section-about div.image.align-right,
+.two_index .section-community div.image.align-right,
+.two_index .section-documentation div.image.align-right,
+.two_index .section-support div.image.align-right {
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 10px 0 10px 0;
+  width: 100%;
+}
+
+.two_index .image-border div.image.align-right img,
+.two_index .section-about div.image.align-right img ,
+.two_index .section-community div.image.align-right img,
+.two_index .section-documentation div.image.align-right img,
+.two_index .section-support div.image.align-right img {
+  border-radius: 25px 0 25px 0;
+  box-shadow: 5px 5px 5px #AAAAAA;
+  margin-bottom: 15px;
+}
+
+.two_index .section-about div.image.align-left,
+.two_index .section-community div.image.align-left,
+.two_index .section-documentation div.image.align-left,
+.two_index .section-support div.image.align-left {
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 10px 0 10px 0;
+  width: 100%;
+}
+
+.two_index .image-border div.image.align-left img,
+.two_index .section-about div.image.align-left img ,
+.two_index .section-community div.image.align-left img,
+.two_index .section-documentation div.image.align-left img,
+.two_index .section-support div.image.align-left img {
+  border-radius: 25px 0 25px 0;
+  box-shadow: 5px 5px 5px #AAAAAA;
+  margin-bottom: 15px;
 }
 
 /* --- slideshow styling --- */

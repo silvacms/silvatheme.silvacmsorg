@@ -229,7 +229,8 @@ li a:link, li a:visited {
   background-image: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#F2F2F2');
   background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
   border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+  border-bottom: 1px solid #B7D76F;
   margin: 0;
   padding: 4px 10px 6px;
   /* wim color: #58A714;*/
@@ -242,11 +243,12 @@ li a:link, li a:visited {
 .stickypanel ul li a:hover,
 .stickypanel ul li a:focus {
   background: #F1F1F1;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .related-info ul li a, .stickypanel ul li a {
   color: #444444;
+  display: inline-block;
 }
 
 /* sticky nav panel  */
@@ -256,6 +258,15 @@ li a:link, li a:visited {
   width: 238px;
   float: right;
   box-shadow: 1px 1px 6px #BBBBBB;
+}
+
+.stickypanel ul {
+  margin: 0;
+  width: 234px;
+}
+
+.stickypanel ul li {
+  list-style: none;
 }
 
 .stickypanel.detached {

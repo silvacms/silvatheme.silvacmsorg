@@ -1212,6 +1212,7 @@ div.image.default {
   box-shadow: none;
   border-radius: 10px 0 10px 0;
   width: 100%;
+  text-align: right;
 }
 
 .two_index .image-border div.image.align-right img,
@@ -1221,7 +1222,7 @@ div.image.default {
 .two_index .section-support div.image.align-right img {
   border-radius: 25px 25px 0 0;
   box-shadow: 5px 5px 5px #AAAAAA;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .two_index .section-about div.image.align-left,
@@ -1242,7 +1243,7 @@ div.image.default {
 .two_index .section-support div.image.align-left img {
   border-radius: 25px 25px 0 0;
   box-shadow: 5px 5px 5px #AAAAAA;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 /* --- slideshow styling --- */

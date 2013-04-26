@@ -254,7 +254,14 @@ li a:link, li a:visited {
   border: 1px solid #FFFFFF;
   width: 240px;
   float: right;
+  background: #89d348;
+  opacity: 0.85;
   box-shadow: 1px 1px 6px #BBBBBB;
+}
+
+.stickypanel.detached {
+  top: 33% !important;
+  opacity: 1;
 }
 
 .stickypanel ul {
@@ -262,13 +269,8 @@ li a:link, li a:visited {
   padding: 0;
 }
 
-.stickypanel.detached {
-  top: 33% !important;
-}
-
 .stickypanel ul li {
-  border-bottom: 1px solid #BBBBBB;
-  color: #333333;
+  border-bottom: 1px solid #FFFFFF;
   width: 100%;
   margin-bottom: 0;
 }
@@ -277,16 +279,15 @@ li a:link, li a:visited {
   border-bottom: none;
 }
 
+.stickypanel ul li:first-child {
+  color: #FFFFFF;
+  background: #129512;
+}
+
 .stickypanel ul li a {
-  color: #000;
+  color: #066106;
   font-size: 13px;
   margin-top: 0;
-  background: #EFEFEF;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #F1F1F1), color-stop(1, #FFFFFF));
-  background: -webkit-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background: -moz-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background: -o-linear-gradient(left, #F1F1F1 0%, #FFFFFF 100%);
-  background: linear-gradient(to left, #F1F1F1 0%, #FFFFFF 100%);
   display: inline-block;
   padding: 10px;
   width: 220px;
@@ -1035,7 +1036,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   height: 100px;
   margin: 0; padding: 10px;
   vertical-align: top;
-  width: 185px;
+  width: 190px;
 }
 
 .section-support section p {

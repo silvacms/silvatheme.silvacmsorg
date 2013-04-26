@@ -254,6 +254,7 @@ li a:link, li a:visited {
 .stickypanel {
   z-index: 9999;
   width: 238px;
+  margin-top: 35px;
   float: right;
   box-shadow: 1px 1px 6px #BBBBBB;
 }
@@ -855,8 +856,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: linear-gradient(to right, #F1F1F1 0%, #FFFFFF 100%);
   border: 1px solid #E0E0E0;
   margin-top: 15px;
-  padding: 15px;
-  min-height: 145px;
+  padding: 15px 15px 0 15px;
+  min-height: 165px;
   width: 445px;
 }
 

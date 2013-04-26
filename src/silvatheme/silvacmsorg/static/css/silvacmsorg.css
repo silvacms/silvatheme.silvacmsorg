@@ -881,6 +881,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .section-documentation #tabs {
   margin-top: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .section-documentation .tab-nav li.selected a, .section-documentation .tab-nav li.selected a:hover,

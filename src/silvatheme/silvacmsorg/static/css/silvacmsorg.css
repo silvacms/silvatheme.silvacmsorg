@@ -252,9 +252,8 @@ li a:link, li a:visited {
 .stickypanel {
   z-index: 9999;
   border: 1px solid #FFFFFF;
-  width: 240px;
+  width: 238px;
   float: right;
-  background: #89d348;
   opacity: 0.85;
   box-shadow: 1px 1px 6px #BBBBBB;
 }
@@ -286,6 +285,7 @@ li a:link, li a:visited {
 
 .stickypanel ul li a {
   color: #066106;
+  background: #89d348;
   font-size: 13px;
   margin-top: 0;
   display: inline-block;

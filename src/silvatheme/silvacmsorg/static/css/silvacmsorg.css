@@ -218,7 +218,7 @@ li a:link, li a:visited {
   background-color: #58A714;
   margin: 20px 10px;
   padding: 2px;
-  width: 220px;
+  width: 234px;
 }
 
 .related-info ul li, .stickypanel ul li {
@@ -244,10 +244,6 @@ li a:link, li a:visited {
   text-decoration: underline;
 }
 
-.related-info ul li a, .stickypanel ul li a {
-  display: block;
-}
-
 /* sticky nav panel  */
 
 .stickypanel {
@@ -260,7 +256,6 @@ li a:link, li a:visited {
 
 .stickypanel ul {
   margin: 0;
-  width: 234px;
 }
 
 .stickypanel ul li {

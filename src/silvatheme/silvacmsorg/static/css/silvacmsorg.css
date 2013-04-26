@@ -212,16 +212,16 @@ li a:link, li a:visited {
   text-decoration: none;
 }
 
-/* related info navigation */
+/* related info navigation and sticky navigation */
 
-.related-info ul {
+.related-info ul, .stickypanel ul {
   background-color: #58A714;
   margin: 20px 10px;
-  padding: 1px;
+  padding: 2px;
   width: 220px;
 }
 
-.related-info ul li {
+.related-info ul li, .stickypanel ul {
   background-color: #FFFFFF;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F2F2F2));
   background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
@@ -238,7 +238,9 @@ li a:link, li a:visited {
 }
 
 .related-info ul li a:hover,
-.related-info ul li a:focus {
+.related-info ul li a:focus,
+.stickypanel ul li a:hover,
+.stickypanel ul li a:focus {
   background: #F1F1F1;
   text-decoration: none;
 }
@@ -251,16 +253,13 @@ li a:link, li a:visited {
 
 .stickypanel {
   z-index: 9999;
-  border: 1px solid #FFFFFF;
   width: 238px;
   float: right;
-  opacity: 0.85;
   box-shadow: 1px 1px 6px #BBBBBB;
 }
 
 .stickypanel.detached {
   top: 33% !important;
-  opacity: 1;
 }
 
 .stickypanel ul {
@@ -268,7 +267,7 @@ li a:link, li a:visited {
   padding: 0;
 }
 
-.stickypanel ul li {
+/*.stickypanel ul li {
   border-bottom: 1px solid #FFFFFF;
   width: 100%;
   margin-bottom: 0;
@@ -276,11 +275,6 @@ li a:link, li a:visited {
 
 .stickypanel ul li:last-child {
   border-bottom: none;
-}
-
-.stickypanel ul li:first-child {
-  color: #FFFFFF;
-  background: #129512;
 }
 
 .stickypanel ul li a {
@@ -296,6 +290,7 @@ li a:link, li a:visited {
 .stickypanel ul li a:hover {
   text-decoration: underline;
 }
+*/
 
 /* --- news feeds styling --- */
 

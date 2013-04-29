@@ -1205,14 +1205,11 @@ div.image.default {
 
 /* small horizontal bookmarks */
 
-.two_index .content h2 {
+.features-benefits .content h2 {
   padding-top: 85px;
 }
 
-.two_index .section-about div.image.align-right,
-.two_index .section-community div.image.align-right,
-.two_index .section-documentation div.image.align-right,
-.two_index .section-support div.image.align-right {
+.features-benefits .section-about div.image.align-right {
   border: none;
   padding: 0;
   margin: 0;
@@ -1225,11 +1222,7 @@ div.image.default {
   height: 93px;
 }
 
-.two_index .image-border div.image.align-right img,
-.two_index .section-about div.image.align-right img ,
-.two_index .section-community div.image.align-right img,
-.two_index .section-documentation div.image.align-right img,
-.two_index .section-support div.image.align-right img {
+.features-benefits .image-border div.image.align-right img {
   border-radius: 45px 45px 0 0;
   margin-bottom: -3px;
 }

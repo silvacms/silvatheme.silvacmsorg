@@ -1206,30 +1206,26 @@ div.image.default {
         -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
         -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 14px, #c00 15px),
         -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 14px, #c00 15px);
-    background:
+  background:
          -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
          -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
          -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 14px, #c00 15px),
          -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 14px, #c00 15px);
-    background:
+  background:
          -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
          -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
          -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 14px, #c00 15px),
          -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 14px, #c00 15px);
-    background:
+  background:
          radial-gradient(0 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
          radial-gradient(100% 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
          radial-gradient(100% 0, circle, rgba(204,0,0,0) 14px, #c00 15px),
          radial-gradient(0 0, circle, rgba(204,0,0,0) 14px, #c00 15px);
-}
-
-div, div.round {
-    background-position: bottom left, bottom right, top right, top left;
+  background-position: bottom left, bottom right, top right, top left;
     -moz-background-size: 50% 50%;
     -webkit-background-size: 50% 50%;
     background-size: 50% 50%;
     background-repeat: no-repeat;
-}
 }
 
 /* small horizontal bookmarks */

@@ -778,9 +778,9 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   color: #C93636;
 }
 
-.section-getsilva h1 a, .section-getsilva h2 a,
-.section-getsilva h1:link a, .section-getsilva h2 a:link,
-.section-getsilva h1 a:visited, .section-getsilva h2 a:visited {
+.getsilva .section-getsilva h1 a, .getsilva .section-getsilva h2 a,
+.getsilva .section-getsilva h1:link a, .getsilva .section-getsilva h2 a:link,
+.getsilva .section-getsilva h1 a:visited, .getsilva .section-getsilva h2 a:visited {
   color: #C93636;
   text-decoration: underline;
 }

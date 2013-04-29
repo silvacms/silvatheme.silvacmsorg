@@ -1326,6 +1326,10 @@ div.image.default {
 
 /* --- form styling --- */
 
+form {
+  max-width: 720px;
+}
+
 .field {
   margin-bottom: 10px;
 }

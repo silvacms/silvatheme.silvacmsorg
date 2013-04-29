@@ -587,8 +587,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 .factsheet .maincontent li,
 .section-about #slot-belowslideshow li,
 .section-about #slot-maincontent li,
-.section-documentation #sysadmins li,
-.section-documentation #developers li,
+.section-docs #sysadmins li,
+.section-docs #developers li,
 .section-community .maincontent li,
 .sprint-checklist .silva-content li,
 .sprint-tips .silva-content li {
@@ -865,22 +865,22 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 /*   ++++++ page specific styles: Documentation ++++++ */
 
-.section-documentation h1, .section-documentation h2 {
+.section-docs h1, .section-docs h2 {
   color: #EDA200;
 }
 
-.section-documentation li {
+.section-docs li {
   margin: 0;
 }
 
-.section-documentation #tabs {
+.section-docs #tabs {
   margin-top: 35px;
   padding-left: 70px;
   padding-right: 70px;
 }
 
-.section-documentation .tab-nav li.selected a, .section-documentation .tab-nav li.selected a:hover,
-.section-documentation .tab-nav li.selected a:focus {
+.section-docs .tab-nav li.selected a, .section-docs .tab-nav li.selected a:hover,
+.section-docs .tab-nav li.selected a:focus {
   background-color: #EDA200;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#EDDB3D), to(#EDA200));
@@ -891,7 +891,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   color: #303030;
 }
 
-.section-documentation .tab-nav a:link, #content .tab-nav a:visited {
+.section-docs .tab-nav a:link, #content .tab-nav a:visited {
   background-color: #FEFEFE;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FEFEFE), to(#E6E6E6));
@@ -914,8 +914,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 22%;
 }
 
-.section-documentation .tab-nav a:link:hover, .section-documentation .tab-nav a:visited:hover,
-.section-documentation .tab-nav a:link:focus, .section-documentation .tab-nav a:visited:focus {
+.section-docs .tab-nav a:link:hover, .section-docs .tab-nav a:visited:hover,
+.section-docs .tab-nav a:link:focus, .section-docs .tab-nav a:visited:focus {
   background-color: #FFFFFF;
   background-image: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#DEDEDE));
@@ -928,8 +928,8 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   text-decoration: none;
 }
 
-.section-documentation #users, .section-documentation #developers,
-.section-documentation #sysadmins, .section-documentation #tutorials {
+.section-docs #users, .section-docs #developers,
+.section-docs #sysadmins, .section-docs #tutorials {
   background-color: #FFFFFF;
   border-color: #EDA200 #BEBEBE #BEBEBE;
   border-style: solid;
@@ -937,18 +937,18 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   clear: both;
 }
 
-.section-documentation #content #slot-one {
+.section-docs #content #slot-one {
   display: inline-block;
   margin: 15px 20px 20px 60px;
   width: 510px;
   vertical-align: top;
 }
 
-.section-documentation section {
+.section-docs section {
   padding: 30px 50px;
 }
 
-.section-documentation #users div.related-info {
+.section-docs #users div.related-info {
   float: left;
   width: 50%;
 }
@@ -1115,7 +1115,7 @@ div.image.default {
 .image-border div.image,
 .section-about div.image,
 .section-community div.image,
-.section-documentation div.image,
+.section-docs div.image,
 .section-support div.image {
   border: 1px solid #58A714;
   padding: 10px;
@@ -1139,7 +1139,7 @@ div.image.default {
 
 .section-about div.image.align-center,
 .section-community div.image.align-center,
-.section-documentation div.image.align-center,
+.section-docs div.image.align-center,
 .section-support div.image.align-center {
   border: none;
   padding: 0;
@@ -1150,7 +1150,7 @@ div.image.default {
 .image-border div.image.align-center img,
 .section-about div.image.align-center img ,
 .section-community div.image.align-center img,
-.section-documentation div.image.align-center img,
+.section-docs div.image.align-center img,
 .section-support div.image.align-center img {
   border-radius: 45px 0 45px 0;
   box-shadow: 5px 5px 5px #AAAAAA;
@@ -1161,7 +1161,7 @@ div.image.default {
 
 .one_index .section-about div.image.align-left,
 .one_index .section-community div.image.align-left,
-.one_index .section-documentation div.image.align-left,
+.one_index .section-docs div.image.align-left,
 .one_index .section-support div.image.align-left {
   border: none;
   padding: 0;
@@ -1173,7 +1173,7 @@ div.image.default {
 .one_index .image-border div.image.align-left img,
 .one_index .section-about div.image.align-left img ,
 .one_index .section-community div.image.align-left img,
-.one_index .section-documentation div.image.align-left img,
+.one_index .section-docs div.image.align-left img,
 .one_index .section-support div.image.align-left img {
   border-radius: 35px 0 0 0;
   box-shadow: 2px 2px 2px #AAAAAA;
@@ -1183,7 +1183,7 @@ div.image.default {
 
 .one_index .section-about div.image.align-right,
 .one_index .section-community div.image.align-right,
-.one_index .section-documentation div.image.align-right,
+.one_index .section-docs div.image.align-right,
 .one_index .section-support div.image.align-right {
   border: none;
   padding: 0;
@@ -1195,7 +1195,7 @@ div.image.default {
 .one_index .image-border div.image.align-right img,
 .one_index .section-about div.image.align-right img ,
 .one_index .section-community div.image.align-right img,
-.one_index .section-documentation div.image.align-right img,
+.one_index .section-docs div.image.align-right img,
 .one_index .section-support div.image.align-right img {
   border-radius: 0 35px 0 0;
   box-shadow: 2px 2px 2px #AAAAAA;
@@ -1317,7 +1317,7 @@ div.image.default {
 .section-getsilva .info-box, .section-getsilva .infoText {
   border-top: 4px solid #C93636;
 }
-.section-documentation .info-box, .section-documentation .infoText {
+.section-docs .info-box, .section-docs .infoText {
   border-top: 4px solid #EDDB3D;
 }
 .section-support .info-box, .section-support .infoText {

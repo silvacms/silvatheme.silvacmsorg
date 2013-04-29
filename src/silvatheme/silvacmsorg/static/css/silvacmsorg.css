@@ -1197,35 +1197,10 @@ div.image.default {
 .one_index .section-community div.image.align-right img,
 .one_index .section-documentation div.image.align-right img,
 .one_index .section-support div.image.align-right img {
-  /*border-radius: 0 35px 0 0;*/
+  border-radius: 0 35px 0 0;
   box-shadow: 2px 2px 2px #AAAAAA;
   margin-bottom: 15px;
   margin-left: 15px;
-  background:
-        -moz-radial-gradient(0 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
-        -moz-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
-        -moz-radial-gradient(100% 0, circle, rgba(204,0,0,0) 14px, #c00 15px),
-        -moz-radial-gradient(0 0, circle, rgba(204,0,0,0) 14px, #c00 15px);
-  background:
-         -o-radial-gradient(0 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         -o-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         -o-radial-gradient(100% 0, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         -o-radial-gradient(0 0, circle, rgba(204,0,0,0) 14px, #c00 15px);
-  background:
-         -webkit-radial-gradient(0 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         -webkit-radial-gradient(100% 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         -webkit-radial-gradient(100% 0, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         -webkit-radial-gradient(0 0, circle, rgba(204,0,0,0) 14px, #c00 15px);
-  background:
-         radial-gradient(0 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         radial-gradient(100% 100%, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         radial-gradient(100% 0, circle, rgba(204,0,0,0) 14px, #c00 15px),
-         radial-gradient(0 0, circle, rgba(204,0,0,0) 14px, #c00 15px);
-  background-position: bottom left, bottom right, top right, top left;
-    -moz-background-size: 50% 50%;
-    -webkit-background-size: 50% 50%;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
 }
 
 /* small horizontal bookmarks */
@@ -1243,9 +1218,10 @@ div.image.default {
   margin: 0;
   box-shadow: none;
   border-radius: 0;
+  border-bottom: 2px solid #6F084F;
   width: 100%;
   text-align: right;
-  margin-top: -105px;
+  margin-top: -100px;
 }
 
 .two_index .image-border div.image.align-right img,
@@ -1254,8 +1230,7 @@ div.image.default {
 .two_index .section-documentation div.image.align-right img,
 .two_index .section-support div.image.align-right img {
   border-radius: 45px 45px 0 0;
-  box-shadow: 2px 2px 2px #AAAAAA;
-  margin-bottom: 5px;
+  margin-bottom: -3px;
 }
 
 /* --- slideshow styling --- */

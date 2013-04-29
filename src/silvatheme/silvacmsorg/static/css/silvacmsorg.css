@@ -1206,7 +1206,7 @@ div.image.default {
 /* small horizontal bookmarks */
 
 .features-benefits .content h2 {
-  padding-top: 85px;
+  padding-top: 10px;
 }
 
 .features-benefits .section-about div.image.align-right {
@@ -1218,12 +1218,12 @@ div.image.default {
   border-bottom: 2px solid #6F084F;
   width: 100%;
   text-align: right;
-  margin-top: -100px;
-  height: 93px;
+  margin-top: -50px;
+  height: 46px;
 }
 
 .features-benefits .image-border div.image.align-right img {
-  border-radius: 45px 45px 0 0;
+  border-radius: 15px 15px 0 0;
   margin-bottom: -3px;
 }
 

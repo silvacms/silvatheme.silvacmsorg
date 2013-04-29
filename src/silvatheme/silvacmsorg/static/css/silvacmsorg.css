@@ -595,7 +595,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: url("../images/tick.png");
   background-repeat: no-repeat;
   background-position: 0 2px;
-  margin: 12px 0;
+  margin: 1em 0;
   padding-left: 24px;
 }
 
@@ -603,7 +603,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: url("../images/hammer.png");
   background-repeat: no-repeat;
   background-position: 0 2px;
-  margin: 12px 0;
+  margin: 1em 0;
   padding-left: 24px;
 }
 
@@ -611,7 +611,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-image: url("../images/blueprint.png");
   background-repeat: no-repeat;
   background-position: 0 2px;
-  margin: 12px 0;
+  margin: 1em 0;
   padding-left: 24px;
 }
 

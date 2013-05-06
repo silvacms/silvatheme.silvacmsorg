@@ -135,6 +135,7 @@ class FullPage(contentlayout.Design):
     slots = {'fullpage': contentlayout.Slot(css_class='content')}
     markers = [INoNavigationLayout]
 
+
 class PresentationPage(contentlayout.Design):
     grok.name('presentationpage')
     grok.title('Multi Column Presentation Page')
@@ -152,6 +153,9 @@ class PresentationPage(contentlayout.Design):
     markers = [INoNavigationLayout]
 
 
+SEARCH_TYPES = ['Silva Document', 'Silva Page', 'Silva News Item', \
+                    'Silva Agenda Item']
+
 class NotFoundPage(errors.NotFoundPage):
 
     def update(self):
@@ -160,7 +164,10 @@ class NotFoundPage(errors.NotFoundPage):
         self.suggestions = []
         if path:
             catalog = getUtility(ICatalogService)
-            for brain in catalog(fulltext=path):
+            for brain in catalog(
+                meta_type=SEARCH_TYPES,
+                publication_status="public",
+                fulltext=path):
                 self.suggestions.append({
                         'title': brain.silvamaintitle,
                         'url': absoluteURL(brain, self.request)})

@@ -160,7 +160,7 @@ class NotFoundPage(errors.NotFoundPage):
 
     def update(self):
         url = self.context.error[0]
-        path = urlparse.urlparse(url).path.strip('/').split('/')[1]
+        path = urlparse.urlparse(url).path.strip('/').split('/')[-1]
         self.suggestions = []
         if path:
             catalog = getUtility(ICatalogService)

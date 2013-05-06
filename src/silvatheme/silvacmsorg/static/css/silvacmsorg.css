@@ -1152,9 +1152,8 @@ div.image.default {
 .section-community div.image.align-center img,
 .section-docs div.image.align-center img,
 .section-support div.image.align-center img {
-  border-radius: 45px 0 45px 0;
-  /* ie 10 doesn't like box shadow on rounded corners box-shadow: 5px 5px 5px #AAAAAA; */
-  box-shadow: none;
+  border-radius: 45px 0.1px 45px 0.1px;
+  box-shadow: 5px 5px 5px #AAAAAA;
   margin-bottom: 10px;
 }
 

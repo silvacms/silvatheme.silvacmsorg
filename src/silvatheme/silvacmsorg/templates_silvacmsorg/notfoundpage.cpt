@@ -1,0 +1,12 @@
+<tal:error>
+  <p>Here you can put some unicorns throwing up rainbows.</p>
+  <tal:suggestion tal:condition="view.suggestions">
+    <p>Maybe ya wanna know ?</p>
+    <ul>
+      <li tal:repeat="suggestion view.suggestions">
+        <a href="${suggestion.url}"
+           tal:content="suggestion.title">Title</a>
+      </li>
+    </ul>
+  </tal:suggestion>
+</tal:error>

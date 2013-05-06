@@ -1,4 +1,5 @@
 import datetime
+import urlparse
 
 from five import grok
 from zope.cachedescriptors.property import Lazy
@@ -8,8 +9,8 @@ from zope.component import getUtility
 from silva.core import contentlayout
 from silva.core.interfaces import ISilvaObject
 from silva.core.interfaces import IPublication, IRoot, IFeedEntryProvider
-from silva.core.layout.porto import porto
-from silva.core.services.interfaces import IMetadataService
+from silva.core.layout.porto import porto, errors
+from silva.core.services.interfaces import IMetadataService, ICatalogService
 from silva.core.views import views as silvaviews
 from silva.core.layout.interfaces import ICustomizableTag
 
@@ -149,3 +150,17 @@ class PresentationPage(contentlayout.Design):
         'aboutbox': contentlayout.Slot(css_class='threecolumn listing')
         }
     markers = [INoNavigationLayout]
+
+
+class NotFoundPage(errors.NotFoundPage):
+
+    def update(self):
+        url = self.context.error[0]
+        path = urlparse.urlparse(url).path.strip('/').split('/')[1]
+        self.suggestions = []
+        if path:
+            catalog = getUtility(ICatalogService)
+            for brain in catalog(fulltext=path):
+                self.suggestions.append({
+                        'title': brain.silvamaintitle,
+                        'url': absoluteURL(brain, self.request)})

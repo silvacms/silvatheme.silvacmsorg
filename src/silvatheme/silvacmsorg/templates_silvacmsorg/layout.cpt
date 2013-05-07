@@ -1,8 +1,8 @@
 <header>
   <div class="header-form">
     <form action="${layout.root_url}/search">
-      <input id="toggleBar" placeholder="Search the Silva CMS site" type="text" name="fulltext" />
-        <button id="toggleButton" type="submit" name="search_submit">
+      <input id="search" placeholder="Search the Silva CMS site" type="text" name="fulltext" />
+        <button id="searchtrigger" type="submit" name="search_submit">
         <img tal:attributes="src path:static/images/search.png" />
         </button>
     </form>
@@ -48,8 +48,16 @@
 $(document).ready(function(){
 
   // toggle search bar
-  $("#toggleButton").click(function () {
-    $("#toggleBar").toggle('slow');
+  $("section#search").hide();
+  $("a#searchtrigger").toggle(function(event){
+    event.preventDefault();
+    $(this).addClass('active');
+    $("section#search").slideDown(200);
+    $("section#search input").focus();
+  }, function(event) {
+       event.preventDefault();
+       $(this).removeClass('active');
+       $("section#search").slideUp(200);
   });
 
   // tab navigation

@@ -88,7 +88,7 @@ $(document).ready(function(){
   });
 
   // truncate list
-  var moreLink = $('<li class="show-all button green"><a href="" title="show all results">Show all results</a></li>');
+  var moreLink = $('<li class="show-all button green"><a href="" title="show all results">Show all links</a></li>');
 
   // hiding all list items after the first 5
   $('ul.truncate-list').children('li:gt(4)').hide();

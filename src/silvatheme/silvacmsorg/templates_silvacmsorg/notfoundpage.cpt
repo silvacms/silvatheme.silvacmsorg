@@ -30,12 +30,14 @@
 
   </div>
 
-  <p>Search the site:</p>
+  <div class="search-box">
+    <p>Search the site:</p>
     <form action="${layout.root_url}/search">
       <input placeholder="Search the Silva CMS site" type="text" name="fulltext" />
-        <button type="submit" name="search_submit">
+      <button type="submit" name="search_submit">
         <img tal:attributes="src path:static/images/search.png" />
-        </button>
+      </button>
     </form>
+  </div>
 
 </tal:error>

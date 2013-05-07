@@ -94,7 +94,7 @@ li a:link, li a:visited {
   width: 720px;
 }
 
-.two-column.column {
+.two-column .column {
   width: 50%;
   float: left;
 }
@@ -1515,8 +1515,8 @@ div.button {
 .button.blue a:hover {
   text-decoration: none;
   opacity: 0.6;
-}
 
+}
 .button.green a {
   background-color: #58A714;
   background: -moz-linear-gradient(bottom, #9dd53a 0%, #a1d54f 14%, #58a714 46%, #58a714 100%);

@@ -4,7 +4,7 @@
 
   <h2 class="uppercase">[error 404]</h2>
 
-  <p>... but we think we can help you</p>
+  <h3>... but we think we can help you</h3>
 
   <div class="two-column">
 
@@ -31,7 +31,7 @@
   </div>
 
   <div class="search-box">
-    <p>Search the site:</p>
+    <h3>Search the site</h3>
     <form action="${layout.root_url}/search">
       <input placeholder="Search the site" type="text" name="fulltext" />
       <button type="submit" name="search_submit">

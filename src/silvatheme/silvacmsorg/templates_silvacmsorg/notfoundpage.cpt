@@ -1,12 +1,27 @@
 <tal:error>
-  <p>Here you can put some unicorns throwing up rainbows.</p>
-  <tal:suggestion tal:condition="view.suggestions">
-    <p>Maybe ya wanna know ?</p>
+
+  <h1>The page you requested is not available [error 404]</h1>
+
+  <p>... but we tink we can help you</p>
+
+  <div class="column" tal:condition="view.suggestions">
+    <p>We think you will find one of the following links useful:</p>
     <ul>
       <li tal:repeat="suggestion view.suggestions">
         <a href="${suggestion.url}"
            tal:content="suggestion.title">Title</a>
       </li>
     </ul>
-  </tal:suggestion>
+  </div>
+
+  <div class="column">
+    <p>You may not be able to find this page beacause of:</p>
+    <ol>
+      <li>An <strong>out-of-date bookmark/favourite</strong></li>
+      <li>A search engine that has an <strong>out-of-date listing</strong> for our page</li>
+      <li>A <strong>mis-typed address (URL)</strong></li>
+      <li>A page that <strong>no longer exists</strong></li>
+    </ol>
+  </div>
+
 </tal:error>

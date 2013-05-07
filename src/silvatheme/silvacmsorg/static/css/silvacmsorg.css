@@ -1384,7 +1384,7 @@ input:invalid, textarea:invalid {
 
 /* input settings */
 
-input[type="submit"] {
+input[type="submit"], input[type="button"] {
   background-color: #797979;
   background-image: none;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#696969), to(#797979));
@@ -1398,7 +1398,8 @@ input[type="submit"] {
   font-weight: bold;
 }
 
-input[type="submit"]:hover, input[type="submit"]:focus {
+input[type="submit"]:hover, input[type="submit"]:focus,
+input[type="button"]:hover, input[type="button"]:focus {
   background: #519A0F;
 }
 
@@ -1434,6 +1435,13 @@ input:-ms-placeholder:hover {color: #555;}
 .silva-content div.login-form div.form-label {
   font-weight: bold;
   padding: 2px 0;
+}
+
+div.login-form div.form-actions input.cancel {
+    font-weight: bold;
+    height: 1.8em;
+    margin-top: 0.4em;
+    float: none;
 }
 
 /* --- software packages --- */

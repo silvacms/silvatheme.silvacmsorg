@@ -1496,8 +1496,13 @@ table.silvatable.list.package th {
   margin-left: 0;
 }
 
-.searchresult {
+body div#content div.searchresults ul li {
+  margin: 0 0 0 0.5em;
+}
+
+div.searchresult {
   border-bottom: 1px solid #DDDDDD;
+  margin-top: 0;
   padding: 0.5em 0;
 }
 

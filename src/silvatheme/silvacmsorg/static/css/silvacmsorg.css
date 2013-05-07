@@ -327,6 +327,7 @@ header {
   border-bottom: 2px solid #151515;
   box-shadow: 0 2px 10px #9C9C9C;
   height: 78px;
+  width: 100%;
 }
 
 header .header-form {
@@ -1037,6 +1038,7 @@ footer {
   color: #B0B0B0;
   height: 90px;
   position: relative;
+  width: 100%;
 }
 
 footer #legal, footer ul {

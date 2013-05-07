@@ -47,6 +47,11 @@
 
 $(document).ready(function(){
 
+  // toggle search bar
+  $("#toggleButton").click(function () {
+    $("#toggleBar").toggle('slow');
+  });
+
   // tab navigation
   $('#tabs section').hide();
   $('#tabs section:first').show();

@@ -1044,6 +1044,21 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   clear: both;
 }
 
+.search-box input[type="text"] {
+  margin-right: 10px;
+  padding: 6px;
+  float: left;
+}
+
+.search-box button {
+  margin-top: -1px;
+  padding-top: 2px;
+}
+
+.search-box .button.small a {
+  margin-top: 10px;
+}
+
 /* --- footer settings --- */
 
 footer {

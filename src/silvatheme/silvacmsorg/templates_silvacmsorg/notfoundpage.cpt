@@ -1,8 +1,10 @@
 <tal:error>
 
-  <h1>The page you requested is not available [error 404]</h1>
+  <h1>The page you requested is not available</h1>
 
-  <p>... but we tink we can help you</p>
+  <h2>[error 404]</h2>
+
+  <p>... but we think we can help you</p>
 
   <div class="two-column">
 

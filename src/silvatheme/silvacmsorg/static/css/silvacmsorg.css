@@ -1035,6 +1035,12 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   width: 485px;
 }
 
+/*   ++++++ page specific styles: Error ++++++ */
+
+.search-box {
+  clear: both;
+}
+
 /* --- footer settings --- */
 
 footer {

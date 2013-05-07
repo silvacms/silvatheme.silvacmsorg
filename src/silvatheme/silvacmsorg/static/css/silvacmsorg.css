@@ -1438,10 +1438,8 @@ input:-ms-placeholder:hover {color: #555;}
 }
 
 div.login-form div.form-actions input.cancel {
-    font-weight: bold;
-    height: 1.8em;
-    margin-top: 0.4em;
-    float: none;
+  font-weight: normal;
+  background: #aaa;
 }
 
 /* --- software packages --- */

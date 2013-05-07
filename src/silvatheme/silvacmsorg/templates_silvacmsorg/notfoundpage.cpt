@@ -6,7 +6,7 @@
 
   <div class="column" tal:condition="view.suggestions">
     <p>We think you will find one of the following links useful:</p>
-    <ul>
+    <ul class="truncate-list">
       <li tal:repeat="suggestion view.suggestions">
         <a href="${suggestion.url}"
            tal:content="suggestion.title">Title</a>

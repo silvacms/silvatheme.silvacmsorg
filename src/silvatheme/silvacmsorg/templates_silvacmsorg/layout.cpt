@@ -89,7 +89,7 @@ $(document).ready(function(){
 
   // truncate list
 
-  var items = $("ul.tuncate-list").children().length;
+  var items = $('ul.truncate-list').children().length;
 
   var moreLink = $('<li class="show-all button green small"><a href="" title="show all results">Show all ' + items + ' links</a></li>');
 

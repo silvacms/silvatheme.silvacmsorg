@@ -1,8 +1,8 @@
 <tal:error>
 
-  <h1 class="uppercase">The page you requested is not available</h1>
+  <h1>The page you requested is not available</h1>
 
-  <h2 class="uppercase">[error 404]</h2>
+  <h2>[error 404]</h2>
 
   <h3>... but we think we can help you</h3>
 

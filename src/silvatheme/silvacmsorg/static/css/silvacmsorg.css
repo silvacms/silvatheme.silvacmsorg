@@ -4,10 +4,6 @@ body {
   background: #FAFAFA;
 }
 
-body.silvacms {
-  background: #FAFAFA url("../images/new-home-background.jpg") repeat-x 0 80px;
-}
-
 #content {
   margin: 50px auto;
   min-height: 700px;
@@ -1504,7 +1500,6 @@ table.silvatable.list.package th {
 div.button {
   float: left;
   margin-right: 15px;
-  margin-top: -15px;
 }
 
 .button a {

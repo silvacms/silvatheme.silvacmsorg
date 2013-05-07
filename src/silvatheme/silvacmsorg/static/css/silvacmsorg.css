@@ -1494,7 +1494,7 @@ div.button {
   font-size: 20px;
 }
 
-.button.small {
+.button.small a {
   border-radius: 10px 10px 10px 10px;
   font-size: 15px;
   height: 15px;
@@ -1512,7 +1512,7 @@ div.button {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#308cf2',GradientType=0 );
 }
 
-.button.blue a:hover  {
+.button.blue a:hover {
   text-decoration: none;
   opacity: 0.6;
 }

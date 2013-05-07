@@ -1,6 +1,7 @@
 <tal:headinsert
-  tal:define="siteurl layout.root_url;">    <!-- Custom head elements -->
-    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+  tal:define="siteurl layout.root_url;">
+    <!-- Custom head elements -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="10 days" />
     <!-- Related links -->

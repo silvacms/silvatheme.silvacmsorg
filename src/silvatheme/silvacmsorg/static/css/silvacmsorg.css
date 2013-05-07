@@ -1521,6 +1521,11 @@ div.button {
   padding: 5px 9px 7px;
 }
 
+.truncate-list .button.small a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .button.blue a  {
   background-color: #308CF2;
   background: -moz-linear-gradient(top, #b3dced 0%, #308cf2 60%, #308cf2 100%);

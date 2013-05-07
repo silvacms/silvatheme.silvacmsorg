@@ -35,7 +35,6 @@ h3 {
 }
 
 a:link, a:visited {
-  /* wim color: #58A714;*/
   color: #1D6C10;
   text-decoration: none;
 }
@@ -54,6 +53,10 @@ li {
 
 li a:link, li a:visited {
   text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 ::-selection {

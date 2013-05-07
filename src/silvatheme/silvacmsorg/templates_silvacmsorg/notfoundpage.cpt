@@ -1,8 +1,8 @@
 <tal:error>
 
-  <h1>The page you requested is not available</h1>
+  <h1 class="uppercase">The page you requested is not available</h1>
 
-  <h2>[error 404]</h2>
+  <h2 class="uppercase">[error 404]</h2>
 
   <p>... but we think we can help you</p>
 
@@ -21,7 +21,7 @@
     <div class="column">
       <p>You may not be able to find this page because of:</p>
       <ol>
-        <li>An <strong>out-of-date bookmark/favourite</strong></li>
+        <li>An <strong>out-of-date bookmark/favorite</strong></li>
         <li>A search engine that has an <strong>out-of-date listing</strong> for our page</li>
         <li>A <strong>mis-typed address (URL)</strong></li>
         <li>A page that <strong>no longer exists</strong></li>

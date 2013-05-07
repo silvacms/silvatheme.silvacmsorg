@@ -1,7 +1,9 @@
 <tal:presentation>
-  <h1 tal:content="design.page_title">Presentation</h1>
-  <tal:content tal:content="structure slot:topbox" />
-  <tal:content tal:content="structure slot:whybox" />
-  <tal:content tal:content="structure slot:featuresbox" />
-  <tal:content tal:content="structure slot:aboutbox" />
+  <div class="presentation">
+    <h1 tal:content="design.page_title">Presentation</h1>
+    <tal:content tal:content="structure slot:topbox" />
+    <tal:content tal:content="structure slot:whybox" />
+    <tal:content tal:content="structure slot:featuresbox" />
+    <tal:content tal:content="structure slot:aboutbox" />
+  </div>
 </tal:presentation>

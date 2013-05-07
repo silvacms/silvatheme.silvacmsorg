@@ -629,14 +629,14 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 /*   ++++++ page specific styles: Home ++++++ */
 
-.section-root h1 {
+.presentation h1 {
   font-size: 50px;
   line-height: 60px;
   letter-spacing: -1px;
   margin-bottom: 12px;
 }
 
-.section-root h2 {
+.presentation h2 {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.5px;

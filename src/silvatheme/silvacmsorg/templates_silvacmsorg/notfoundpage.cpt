@@ -2,9 +2,9 @@
 
   <h1>The page you requested is not available</h1>
 
-  <h2>[error 404]</h2>
+  <h2>[Error 404]</h2>
 
-  <h3>... but we think we can help you</h3>
+  <h3>...but maybe we can help you.</h3>
 
   <div class="two-column">
 
@@ -23,7 +23,7 @@
       <ol>
         <li>An <strong>out-of-date bookmark/favorite</strong></li>
         <li>A search engine that has an <strong>out-of-date listing</strong> for our page</li>
-        <li>A <strong>mistyped address (URL)</strong></li>
+        <li>A <strong>mistyped address</strong> (URL)</li>
         <li>A page that <strong>no longer exists</strong></li>
       </ol>
     </div>

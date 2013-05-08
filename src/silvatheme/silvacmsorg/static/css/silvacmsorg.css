@@ -1503,7 +1503,7 @@ body div#content div.searchresults ul li {
 div.searchresult {
   border-bottom: 1px solid #DDDDDD;
   margin-top: 0;
-  padding: 0.5em 0;
+  padding: 0.8em 0 1em;
 }
 
 /* --- buttons --- */

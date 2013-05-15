@@ -13,7 +13,7 @@ body {
 /* heading settings */
 
 h1, h2, h3, h4, h5 {
-  font-family: sans-serif;
+  font-family: 'Roboto',sans-serif;
   font-weight: normal;
   color: #333333;
 }

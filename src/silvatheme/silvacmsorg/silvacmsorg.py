@@ -4,15 +4,18 @@ import urlparse
 from five import grok
 from zope.cachedescriptors.property import Lazy
 from zope.traversing.browser import absoluteURL
-from zope.component import getUtility
+from zope.component import getUtility, queryMultiAdapter
 
+from silva.app.document.interfaces import IDocumentDetails
 from silva.core import contentlayout
-from silva.core.interfaces import ISilvaObject
 from silva.core.interfaces import IPublication, IRoot, IFeedEntryProvider
+from silva.core.interfaces import ISilvaObject, IGhost, IContainer
+from silva.core.layout.interfaces import ICustomizableTag
 from silva.core.layout.porto import porto, errors
 from silva.core.services.interfaces import IMetadataService, ICatalogService
 from silva.core.views import views as silvaviews
-from silva.core.layout.interfaces import ICustomizableTag
+
+from silva.app.redirectlink.interfaces import IPermanentRedirectLink
 
 from .interfaces import ISilvaCmsOrg, ISilvaSilvaOrgWithNavigation
 
@@ -97,6 +100,27 @@ class Footer(porto.Footer):
     """Silvacms.org site footer.
     """
     grok.name('footer')
+
+    def search_document(self, name):
+        if not hasattr(self.context, name):
+            return None
+        content = getattr(self.context, name).get_silva_object()
+        if IContainer.provided(content):
+            content = content.get_default()
+            if content is None:
+                return None
+        if IPermanentRedirectLink.providedBy(content):
+            return None
+        version = content.get_viewable()
+        if IGhost.providedBy(content):
+            content = version.get_haunted()
+            version = content.get_viewable()
+        if version is not None:
+            details = queryMultiAdapter(
+                (version, self.request), IDocumentDetails)
+            if details is not None:
+                return details.get_text()
+        return None
 
     def get_current_year(self):
         current_year = datetime.datetime.now().year

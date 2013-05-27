@@ -1,5 +1,5 @@
     <div id="footer-wrapper">
-      <tal:snippet tal:replace="structure path:context/footer/@@content.html | default">
+      <tal:snippet tal:replace="structure provider.search_document('footer')">
         Footer content appears here....
       </tal:snippet>
       <div id="legal">

@@ -105,7 +105,7 @@ class Footer(porto.Footer):
         if not hasattr(self.context, name):
             return None
         content = getattr(self.context, name).get_silva_object()
-        if IContainer.provided(content):
+        if IContainer.providedBy(content):
             content = content.get_default()
             if content is None:
                 return None

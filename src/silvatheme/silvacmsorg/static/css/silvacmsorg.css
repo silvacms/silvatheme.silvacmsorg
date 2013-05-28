@@ -678,11 +678,11 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 }
 
 .section-about .slideshow-right-control {
-  background: url("slideshow.png") -90px 170px transparent;
+  background-position: -90px 170px;
 }
 
 .section-about .slideshow-left-control {
-  background: url("slideshow.png") -60px 170px transparent;
+  background-position: -60px 170px;
 }
 
 .section-about .slideshow-marker.current:before {

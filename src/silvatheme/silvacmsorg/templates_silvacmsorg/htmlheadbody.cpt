@@ -6,6 +6,7 @@
   <head>
     <title tal:content="layout.title">Title</title>
     <base tal:attributes="href path:context/@@absolute_url">
+    <meta charset="UTF-8" />
     <meta name="collection" content="MetaExtensions" />
     <meta name="subject"
           tal:define="subject metadata.subject | None"

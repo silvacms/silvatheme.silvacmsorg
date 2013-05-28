@@ -1,9 +1,9 @@
 <header>
   <div class="header-form">
     <form action="${layout.root_url}/search">
-      <input id="" placeholder="Search the site" type="text" name="fulltext" />
-        <button id="" type="submit" name="search_submit">
-        <img tal:attributes="src path:static/images/search.png" />
+      <input placeholder="Search the site" type="text" name="fulltext" />
+        <button type="submit" name="search_submit">
+        <img tal:attributes="src path:static/images/search.png" alt="search button" />
         </button>
     </form>
   </div>

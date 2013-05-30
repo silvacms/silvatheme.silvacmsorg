@@ -183,15 +183,18 @@ SEARCH_TYPES = ['Silva Document', 'Silva Page', 'Silva News Item', \
 class NotFoundPage(errors.NotFoundPage):
 
     def update(self):
-        url = self.context.error[0]
-        path = urlparse.urlparse(url).path.strip('/').split('/')[-1]
         self.suggestions = []
-        if path:
-            catalog = getUtility(ICatalogService)
-            for brain in catalog(
-                meta_type=SEARCH_TYPES,
-                publication_status="public",
-                fulltext=path):
-                self.suggestions.append({
-                        'title': brain.silvamaintitle,
-                        'url': absoluteURL(brain, self.request)})
+        if len(self.context.error.args):
+            url = self.context.error.args[0]
+            path = urlparse.urlparse(url).path.strip('/').split('/')[-1]
+            if path:
+                catalog = getUtility(ICatalogService)
+                for brain in catalog(
+                    meta_type=SEARCH_TYPES,
+                    publication_status="public",
+                    fulltext=path):
+                    title = getattr(brain, 'silvamaintitle', None)
+                    if title is not None:
+                        self.suggestions.append({
+                                'title': title,
+                                'url': absoluteURL(brain, self.request)})

@@ -37,7 +37,7 @@ class ContactForm(silvaforms.PublicForm):
      grok.context(IContainer)
 
      label = _(u'Contact')
-     description = _(u'You can contact us using this form')
+     description = _(u'You can contact us using this form.')
      fields = silvaforms.Fields(IContactFields)
 
      @silvaforms.action(_(u"Contact us!"), identifier='contact', accesskey='c')
@@ -53,5 +53,5 @@ class ContactForm(silvaforms.PublicForm):
          if success is not None:
              self.response.redirect(absoluteURL(success, self.request))
          else:
-             self.status = _(u'Thank you for your request.')
+             self.status = _(u'Thank you for your message.')
          return silvaforms.SUCCESS

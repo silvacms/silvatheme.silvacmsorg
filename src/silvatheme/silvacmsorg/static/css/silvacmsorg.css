@@ -1424,11 +1424,16 @@ input:-moz-placeholder:hover {color: #555;}
 input:-ms-placeholder {color: #A1A1A1;}
 input:-ms-placeholder:hover {color: #555;}
 
-div.login-form div.form-actions
+div.public-form div.form-actions
   padding: 0.3em 0;
 }
 
 /* login page */
+
+div.public-form,
+div.login-form {
+  width: 32em;
+}
 
 .silva-content div.login-form {
   margin-left: 100px;

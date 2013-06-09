@@ -1363,17 +1363,6 @@ form {
   margin-bottom: 10px;
 }
 
-textarea {
-  width: 340px;
-  border: 1px solid #777;
-  border-radius: 5px 5px 5px 5px;
-}
-
-input:invalid, textarea:invalid {
-  box-shadow: 0 0 5px #DDDDDD;
-  border-radius: 5px 5px 5px 5px;
-}
-
 .form-status {
   font-weight: bold;
   border: 1px solid #58A714;
@@ -1406,15 +1395,23 @@ input[type="button"]:hover, input[type="button"]:focus {
 
 input[type="text"],
 input[type="email"],
-input[type="password"],
+input[type="password"]
 {
   border: 1px solid #777;
-  border-radius: 5px;
   padding: 2px;
 }
 
 input[type="text"]:focus {
   border-color: #000;
+}
+
+textarea {
+  width: 340px;
+  border: 1px solid #777;
+}
+
+input:invalid, textarea:invalid {
+  border-bottom: 2px solid #C93636;
 }
 
 input::-webkit-input-placeholder {color: #A1A1A1;}

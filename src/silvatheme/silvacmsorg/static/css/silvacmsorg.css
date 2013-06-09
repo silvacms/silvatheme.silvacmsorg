@@ -1402,7 +1402,6 @@ input[type="email"],
 input[type="password"]
 {
   border: 1px solid #777;
-  padding: 2px;
 }
 
 input[type="text"]:focus {
@@ -1424,6 +1423,10 @@ input:-moz-placeholder {color: #A1A1A1;}
 input:-moz-placeholder:hover {color: #555;}
 input:-ms-placeholder {color: #A1A1A1;}
 input:-ms-placeholder:hover {color: #555;}
+
+div.login-form div.form-actions
+  padding: 0.3em 0;
+}
 
 /* login page */
 

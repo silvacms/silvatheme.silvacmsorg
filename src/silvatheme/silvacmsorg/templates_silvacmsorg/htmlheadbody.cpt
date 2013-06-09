@@ -27,7 +27,7 @@
     <meta name="revisit-after" content="10 days" />
     <meta name="twitter:card" value="summary" />
     <meta name="twitter:domain" value="silvacms.org" />
-    <meta name="twitter:site" value="@silvacms" />
+    <meta name="twitter:site" value="@silvacmsorg" />
     <meta name="twitter:url" tal:attributes="content path:context/@@absolute_url" />
     <meta name="twitter:title" tal:attributes="content path:context/get_title" />
     <meta name="twitter:description"

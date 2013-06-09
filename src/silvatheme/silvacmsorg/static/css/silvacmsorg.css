@@ -1358,10 +1358,15 @@ div.image.default {
 form {
   max-width: 720px;
 }
-/*.field {
-  margin-bottom: 10px;
+
+div.public-form .field {
+  margin-bottom: 1em;
 }
-*/
+
+div.public-form br {
+  display: none;
+}
+
 .form-status {
   font-weight: bold;
   border: 1px solid #58A714;

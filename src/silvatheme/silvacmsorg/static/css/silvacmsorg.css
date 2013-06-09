@@ -1404,7 +1404,10 @@ input[type="button"]:hover, input[type="button"]:focus {
   background: #519A0F;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+{
   border: 1px solid #777;
   border-radius: 5px;
   padding: 2px;

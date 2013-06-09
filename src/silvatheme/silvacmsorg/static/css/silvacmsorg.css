@@ -1424,7 +1424,7 @@ input:-moz-placeholder:hover {color: #555;}
 input:-ms-placeholder {color: #A1A1A1;}
 input:-ms-placeholder:hover {color: #555;}
 
-div.public-form div.form-actions
+div.public-form .actions
   padding: 0.3em 0;
 }
 

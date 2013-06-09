@@ -1432,7 +1432,19 @@ div.public-form .actions {
 
 div.public-form,
 div.login-form {
-  width: 32em;
+  width: 35em;
+}
+
+div.form {
+  padding: 2em 2.2em 1em 2em;
+}
+
+div.form-title {
+  height: 2.5em;
+}
+
+div.form-label label {
+  text-align: right;
 }
 
 .silva-content div.login-form {

@@ -1,11 +1,31 @@
 <tal:headinsert
   tal:define="siteurl layout.root_url;">
     <!-- Custom head elements -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,latin-ext" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="10 days" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <meta name="twitter:card" value="summary" />
+    <meta name="twitter:domain" value="silvacms.org" />
+    <meta name="twitter:site" value="@silvacms" />
+    <meta name="twitter:url" tal:attributes="content path:context/@@absolute_url" />
+    <meta name="twitter:title" tal:attributes="content path:context/get_title" />
+    <meta name="twitter:description"
+      tal:define="description metadata.subject | None"
+      tal:condition="description"
+      tal:attributes="content description" />
+    <meta name="twitter:image:src" content="http://silvacms.org/images/silva-logos/silva_logo_150.png" />
+    <meta property="og:url" tal:attributes="content path:context/@@absolute_url" />
+    <meta property="og:site_name" content="silvacms.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" tal:attributes="content path:context/get_title" />
+    <meta property="og:description"
+      tal:define="description metadata.content_description | None"
+      tal:condition="description"
+      tal:attributes="content description" />
+    <meta property="og:image" content="http://silvacms.org/images/silva-logos/silva_logo_150.png" />
     <!-- Related links -->
+    <link rel="canonical" tal:attributes="href path:context/@@absolute_url" />
     <link rel="apple-touch-icon" href="/mobicon.png"
       tal:attributes="href path:static/mobicon.png" />
     <link rel="copyright" title="Copyright"

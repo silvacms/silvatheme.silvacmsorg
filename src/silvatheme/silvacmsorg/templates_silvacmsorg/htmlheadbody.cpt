@@ -44,7 +44,6 @@
       tal:condition="description"
       tal:attributes="content description" />
     <meta property="og:image" content="http://silvacms.org/images/silva-logos/silva_logo_150.png" />
-    <!-- Related links -->
     <link rel="canonical" tal:attributes="href path:context/@@absolute_url" />
     <link rel="apple-touch-icon" href="/mobicon.png"
       tal:attributes="href path:static/mobicon.png" />

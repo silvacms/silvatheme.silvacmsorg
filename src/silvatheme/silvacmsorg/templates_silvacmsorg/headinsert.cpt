@@ -34,14 +34,4 @@
     <link rel="copyright" title="Copyright"
       tal:attributes="href string:${siteurl}/copyright" />
     <link rel="alternate" type="application/x-wiki" href="./edit" title="Edit this page (login required)" />
-  <tal:feeds tal:condition="viewlet.have_feeds">    <!-- Feeds are active -->
-    <link rel="alternate" type="application/atom+xml"
-      tal:attributes="
-        href string:${viewlet.feed_url}/atom.xml;
-        title string:Infrae: ${context.get_title()} Atom feed;" />
-    <link rel="alternate" type="application/rss+xml"
-      tal:attributes="
-        href string:${viewlet.feed_url}/rss.xml;
-        title string:Infrae: ${context.get_title()} RSS feed;" />
-  </tal:feeds>
 </tal:headinsert>

@@ -39,7 +39,6 @@ class CloudForm(silvaforms.PublicForm):
      grok.context(IContainer)
 
      label = _(u'Cloud instance')
-     title = _(u'Get Silva in a cloud')
      description = _(u"""You can request a cloud instance using this form. The instance will usually be setup in less than a business day. Once your instance is setup you'll be sent a URL, e.g.: http://yourname.silvacms.org/. Then you'll have your own Silva sandbox and you can give Silva an extensive test drive.""")
      fields = silvaforms.Fields(IContactFields)
 

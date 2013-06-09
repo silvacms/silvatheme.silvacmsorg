@@ -37,7 +37,7 @@ class ContactForm(silvaforms.PublicForm):
      grok.context(IContainer)
 
      label = _(u'Contact')
-     description = _(u'You can contact us using this form.')
+     description = _(u'You can contact the Community Manager with this form.')
      fields = silvaforms.Fields(IContactFields)
 
      @silvaforms.action(_(u"Contact us!"), identifier='contact', accesskey='c')

@@ -1425,25 +1425,20 @@ input:-ms-placeholder {color: #A1A1A1;}
 input:-ms-placeholder:hover {color: #555;}
 
 div.public-form .actions {
-  padding: 0.3em 0;
+  padding: 0.6em 0;
 }
 
 /* login page */
 
-div.public-form,
-div.login-form {
-  width: 35em;
-}
-
-div.form {
+div.public-form div.form {
   padding: 2em 2.2em 1em 2em;
 }
 
-div.form-title {
+div.public-form div.form-title {
   height: 2.5em;
 }
 
-div.form-label label {
+div.public-form div.form-label label {
   text-align: right;
 }
 

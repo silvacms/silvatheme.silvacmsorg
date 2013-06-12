@@ -1368,12 +1368,26 @@ div.public-form br {
 }
 
 .form-status {
-  font-weight: bold;
   border: 1px solid #58A714;
   padding: 10px;
-  width: 320px;
-  box-shadow: 0 0 5px #DDDDDD;
-  border-radius: 5px 5px 5px 5px;
+  background-color: #F5FFEA;
+  box-shadow: 0 0 5px #ddd;
+  font-weight: bold;
+}
+
+div.form-error {
+  font-weight: bold;
+  border: 1px solid #a00;
+  padding: 10px;
+  box-shadow: 0 0 5px #ddd;
+  background-color: #FFE0F0;
+}
+
+p.field-error { /* in form, needs tuning */
+  border: 1px solid rgb(170, 0, 0);
+  padding: 0px 0.5em;
+  background-color: #FFE0F0;
+  color: #222;
 }
 
 /* input settings */

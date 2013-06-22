@@ -1393,14 +1393,6 @@ div.form-error p {
   margin-bottom: 0;
 }
 
-
-  color: #FFFFFF;
-  display: block;
-  font-weight: bold;
-  margin: 0;
-  text-decoration: none;
-
-
 /* input settings */
 
 input[type="submit"], input[type="button"] {
@@ -1420,6 +1412,13 @@ input[type="submit"], input[type="button"] {
 input[type="submit"]:hover, input[type="submit"]:focus,
 input[type="button"]:hover, input[type="button"]:focus {
   background: #519A0F;
+}
+
+body.cloud-order input[type="submit"] {
+  background-color: #58A714;
+}
+body.cloud-order input[type="submit"]:hover {
+  background-color: #797979;
 }
 
 input[type="text"],

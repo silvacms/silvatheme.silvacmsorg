@@ -1359,6 +1359,18 @@ form {
   max-width: 720px;
 }
 
+div.public-form div.form {
+  padding: 2em 2.2em 1em 2em;
+}
+
+div.public-form div.form-title {
+  height: 2.5em;
+}
+
+div.public-form div.form-label label {
+  text-align: right;
+}
+
 div.public-form .field {
   margin-bottom: 1em;
 }
@@ -1449,7 +1461,27 @@ div.public-form .actions {
   padding: 0.6em 0;
 }
 
-/* login page */
+div.public-form input[type="submit"] {
+  background-color: #58A714;
+  background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7AB317), to(#519A0F));
+  background-image: -webkit-linear-gradient(top, #7AB317, #519A0F);
+  background-image: -moz-linear-gradient(top, #7AB317, #519A0F);
+  background-image: -o-linear-gradient(top, #7AB317, #519A0F);
+  background-image: linear-gradient(to bottom, #7AB317, #519A0F);
+}
+
+div.public-form input[type="submit"]:hover {
+  background-color: #606060;
+  background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7F7F7F), to(#646464));
+  background-image: -webkit-linear-gradient(top, #7F7F7F, #646464);
+  background-image: -moz-linear-gradient(top, #7F7F7F, #646464);
+  background-image: -o-linear-gradient(top, #7F7F7F, #646464);
+  background-image: linear-gradient(to bottom, #7F7F7F, #646464);
+}
+
+/* login form */
 
 .silva-content div.login-form {
   margin-left: 100px;
@@ -1592,26 +1624,6 @@ div.button {
   text-decoration: none;
   opacity: 0.6;
 }
-
-body.cloud-order input[type="submit"] {
-  background-color: #58A714;
-  background-image: none;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7AB317), to(#519A0F));
-  background-image: -webkit-linear-gradient(top, #7AB317, #519A0F);
-  background-image: -moz-linear-gradient(top, #7AB317, #519A0F);
-  background-image: -o-linear-gradient(top, #7AB317, #519A0F);
-  background-image: linear-gradient(to bottom, #7AB317, #519A0F);
-}
-body.cloud-order input[type="submit"]:hover {
-  background-color: #606060;
-  background-image: none;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7F7F7F), to(#646464));
-  background-image: -webkit-linear-gradient(top, #7F7F7F, #646464);
-  background-image: -moz-linear-gradient(top, #7F7F7F, #646464);
-  background-image: -o-linear-gradient(top, #7F7F7F, #646464);
-  background-image: linear-gradient(to bottom, #7F7F7F, #646464);
-}
-
 
 /* --- community */
 

@@ -1376,7 +1376,6 @@ div.public-form br {
 }
 
 div.form-error {
-  font-weight: bold;
   border: 1px solid #a00;
   padding: 10px;
   box-shadow: 0 0 5px #ddd;
@@ -1388,6 +1387,10 @@ p.field-error { /* in form, needs tuning */
   padding: 0px 0.5em;
   background-color: #FFF5F5;
   color: #a00;
+}
+
+div.form-error p {
+  margin-bottom: 0;
 }
 
 /* input settings */

@@ -1,4 +1,4 @@
-<tal:feeds tal:condition="viewlet.have_feeds">    <!-- Feeds are active -->
+<tal:feeds tal:condition="viewlet.have_feeds"><!-- Feeds are active -->
 <link rel="alternate" type="application/atom+xml"
   tal:attributes="
     href string:${viewlet.feed_url}/atom.xml;

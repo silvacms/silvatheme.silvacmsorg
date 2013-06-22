@@ -1385,13 +1385,21 @@ div.form-error {
 p.field-error { /* in form, needs tuning */
   border: 1px solid #a00;
   padding: 0px 0.5em;
-  background-color: ##fff8f8;
+  background-color: #fff8f8;
   color: #a00;
 }
 
 div.form-error p {
   margin-bottom: 0;
 }
+
+
+  color: #FFFFFF;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+
 
 /* input settings */
 
@@ -1609,6 +1617,14 @@ div.button {
   text-decoration: none;
   opacity: 0.6;
 }
+
+input[name="form.action.cloud"] {
+  background-color: #58A714;
+}
+input[name="form.action.cloud"]:hover {
+  background: #797979;
+}
+
 
 /* --- community */
 

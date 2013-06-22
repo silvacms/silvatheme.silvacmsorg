@@ -1414,13 +1414,6 @@ input[type="button"]:hover, input[type="button"]:focus {
   background: #519A0F;
 }
 
-body.cloud-order input[type="submit"] {
-  background-color: #58A714;
-}
-body.cloud-order input[type="submit"]:hover {
-  background-color: #797979;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -1622,6 +1615,13 @@ input[name="form.action.cloud"] {
 }
 input[name="form.action.cloud"]:hover {
   background: #797979;
+}
+
+body.cloud-order input[type="submit"] {
+  background-image: linear-gradient(to bottom, rgb(122, 179, 23), rgb(81, 154, 15));
+}
+body.cloud-order input[type="submit"]:hover {
+  background-image: linear-gradient(to bottom, rgb(127, 127, 127), rgb(100, 100, 100));
 }
 
 

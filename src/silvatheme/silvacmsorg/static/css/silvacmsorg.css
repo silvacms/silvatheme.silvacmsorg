@@ -1451,31 +1451,14 @@ div.public-form .actions {
 
 /* login page */
 
-div.public-form div.form {
-  padding: 2em 2.2em 1em 2em;
-}
-
-div.public-form div.form-title {
-  height: 2.5em;
-}
-
-div.public-form div.form-label label {
-  text-align: right;
-}
-
 .silva-content div.login-form {
   margin-left: 100px;
   padding-top: 50px;
   height: 100px;
 }
 
-.silva-content div.login-form div.form-title {
-  font-weight: normal;
-}
-
 .silva-content div.login-form div.form-label {
-  font-weight: bold;
-  padding: 2px 0;
+  padding-bottom: 8px;
 }
 
 div.login-form div.form-actions input.cancel {

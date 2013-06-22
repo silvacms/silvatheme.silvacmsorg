@@ -1385,7 +1385,7 @@ div.form-error {
 p.field-error { /* in form, needs tuning */
   border: 1px solid #a00;
   padding: 0px 0.5em;
-  background-color: #FFF5F5;
+  background-color: ##fff8f8;
   color: #a00;
 }
 
@@ -1416,12 +1416,8 @@ input[type="button"]:hover, input[type="button"]:focus {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-  border: 1px solid #777;
-}
-
+input[type="password"],
 textarea {
-  width: 340px;
   border: 1px solid #777;
 }
 
@@ -1435,6 +1431,7 @@ textarea:focus {
 
 input:invalid, textarea:invalid {
   border: 1px solid #C93636;
+  background-color: #fff8f8;
 }
 
 input::-webkit-input-placeholder {color: #A1A1A1;}
@@ -1443,6 +1440,10 @@ input:-moz-placeholder {color: #A1A1A1;}
 input:-moz-placeholder:hover {color: #555;}
 input:-ms-placeholder {color: #A1A1A1;}
 input:-ms-placeholder:hover {color: #555;}
+
+textarea {
+  width: 340px;
+}
 
 div.public-form .actions {
   padding: 0.6em 0;

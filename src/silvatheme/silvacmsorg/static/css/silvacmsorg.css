@@ -1379,7 +1379,7 @@ div.form-error {
   border: 1px solid #a00;
   padding: 10px;
   box-shadow: 0 0 5px #ddd;
-  background-color: #FFF5F5;
+  background-color: #fff8f8;
 }
 
 p.field-error { /* in form, needs tuning */
@@ -1416,13 +1416,8 @@ input[type="button"]:hover, input[type="button"]:focus {
 
 input[type="text"],
 input[type="email"],
-input[type="password"]
-{
+input[type="password"] {
   border: 1px solid #777;
-}
-
-input[type="text"]:focus {
-  border-color: #000;
 }
 
 textarea {
@@ -1430,8 +1425,16 @@ textarea {
   border: 1px solid #777;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #000;
+  background-color: #fffff0;
+}
+
 input:invalid, textarea:invalid {
-  border-bottom: 2px solid #C93636;
+  border: 1px solid #C93636;
 }
 
 input::-webkit-input-placeholder {color: #A1A1A1;}

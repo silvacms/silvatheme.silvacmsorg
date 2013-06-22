@@ -1593,18 +1593,23 @@ div.button {
   opacity: 0.6;
 }
 
-input[name="form.action.cloud"] {
-  background-color: #58A714;
-}
-input[name="form.action.cloud"]:hover {
-  background: #797979;
-}
-
 body.cloud-order input[type="submit"] {
-  background-image: linear-gradient(to bottom, rgb(122, 179, 23), rgb(81, 154, 15));
+  background-color: #58A714;
+  background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7AB317), to(#519A0F));
+  background-image: -webkit-linear-gradient(top, #7AB317, #519A0F);
+  background-image: -moz-linear-gradient(top, #7AB317, #519A0F);
+  background-image: -o-linear-gradient(top, #7AB317, #519A0F);
+  background-image: linear-gradient(to bottom, #7AB317, #519A0F);
 }
 body.cloud-order input[type="submit"]:hover {
-  background-image: linear-gradient(to bottom, rgb(127, 127, 127), rgb(100, 100, 100));
+  background-color: #606060;
+  background-image: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7F7F7F), to(#646464));
+  background-image: -webkit-linear-gradient(top, #7F7F7F, #646464);
+  background-image: -moz-linear-gradient(top, #7F7F7F, #646464);
+  background-image: -o-linear-gradient(top, #7F7F7F, #646464);
+  background-image: linear-gradient(to bottom, #7F7F7F, #646464);
 }
 
 

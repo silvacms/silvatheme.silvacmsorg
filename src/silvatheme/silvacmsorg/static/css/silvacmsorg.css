@@ -1359,6 +1359,10 @@ form {
   max-width: 720px;
 }
 
+div.public-form textarea {
+  width: 295px;
+}
+
 div.public-form div.form {
   padding: 2em 2.2em 1em 2em;
 }

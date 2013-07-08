@@ -8,7 +8,7 @@ from Products.Silva.mail import sendmail
 from silva.translations import translate as _
 from zope.traversing.browser import absoluteURL
 
-TEMPLATE="""
+TEMPLATE=u"""
 You have a new contact request!
 
 From: {name}

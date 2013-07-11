@@ -7,7 +7,7 @@
 <title tal:content="layout.title">Title</title>
 <base tal:attributes="href path:context/@@absolute_url" />
 <meta charset="UTF-8" />
-<meta name="subject"
+<dc:subject
   tal:define="subject metadata.subject | None"
   tal:condition="subject"
   tal:attributes="content subject" />
@@ -25,16 +25,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <meta name="robots" content="index, follow" />
 <meta name="revisit-after" content="10 days" />
-<meta name="twitter:card" value="summary" />
-<meta name="twitter:domain" value="silvacms.org" />
-<meta name="twitter:site" value="@silvacmsorg" />
-<meta name="twitter:url" tal:attributes="content path:context/@@absolute_url" />
-<meta name="twitter:title" tal:attributes="content path:context/get_title" />
-<meta name="twitter:description"
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:domain" content="silvacms.org" />
+<meta property="twitter:site" content="@silvacmsorg" />
+<meta property="twitter:url" tal:attributes="content path:context/@@absolute_url" />
+<meta property="twitter:title" tal:attributes="content path:context/get_title" />
+<meta property="twitter:description"
   tal:define="description metadata.subject | None"
   tal:condition="description"
   tal:attributes="content description" />
-<meta name="twitter:image:src" content="http://silvacms.org/images/silva-logos/silva_logo_150.png" />
+<meta property="twitter:image:src" content="http://silvacms.org/images/silva-logos/silva_logo_150.png" />
 <meta property="og:url" tal:attributes="content path:context/@@absolute_url" />
 <meta property="og:site_name" content="silvacms.org" />
 <meta property="og:type" content="website" />

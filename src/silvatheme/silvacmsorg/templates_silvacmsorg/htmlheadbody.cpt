@@ -7,7 +7,11 @@
 <title tal:content="layout.title">Title</title>
 <base tal:attributes="href path:context/@@absolute_url" />
 <meta charset="UTF-8" />
-<dc:subject
+<meta name="generator" content="Silva" />
+<tal:resource tal:replace="structure provider:resources" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,latin-ext" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<meta name="dcterms.subject"
   tal:define="subject metadata.subject | None"
   tal:condition="subject"
   tal:attributes="content subject" />
@@ -15,13 +19,10 @@
   tal:define="keywords metadata.keywords | None"
   tal:condition="keywords"
   tal:attributes="content keywords" />
-<meta name="description"
+<meta name="dcterms.abstract"
   tal:define="description metadata.content_description | None"
   tal:condition="description"
   tal:attributes="content description" />
-<meta name="generator" content="Silva" />
-<tal:resource tal:replace="structure provider:resources" />
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,latin-ext" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <meta name="robots" content="index, follow" />
 <meta name="revisit-after" content="10 days" />

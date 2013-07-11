@@ -44,6 +44,10 @@
   tal:condition="description"
   tal:attributes="content description" />
 <meta property="og:image" content="http://silvacms.org/images/silva-logos/silva_logo_150.png" />
+<meta name="geo.region" content="NL-ZH" />
+<meta name="geo.placename" content="Rotterdam" />
+<meta name="geo.position" content="51.927423;4.466578" />
+<meta name="ICBM" content="51.927423, 4.466578" />
 <link rel="canonical" tal:attributes="href path:context/@@absolute_url" />
 <link rel="apple-touch-icon" href="/mobicon.png"
   tal:attributes="href path:static/mobicon.png" />

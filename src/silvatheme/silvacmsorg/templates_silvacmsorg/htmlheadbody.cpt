@@ -24,8 +24,6 @@
   tal:condition="description"
   tal:attributes="content description" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-<meta name="robots" content="index, follow" />
-<meta name="revisit-after" content="10 days" />
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:domain" content="silvacms.org" />
 <meta property="twitter:site" content="@silvacmsorg" />

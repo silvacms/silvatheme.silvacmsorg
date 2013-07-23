@@ -1717,15 +1717,24 @@ div.button {
 
 /* 404 not found page */
 
+.not-found {
+  background: url("../images/not-found.jpg") no-repeat bottom center;
+  padding-bottom: 380px;
+}
+
 .not-found .two-column .column {
   width: 48%;
   padding-right: 2%;
   float: left;
 }
 
-.not-found {
-  background: url("../images/not-found.jpg") no-repeat bottom center;
-  padding-bottom: 380px;
+.not-found h2 {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+
+.not-found h4 {
+  padding-bottom: 10px;
 }
 
 /* --- package activity --- */

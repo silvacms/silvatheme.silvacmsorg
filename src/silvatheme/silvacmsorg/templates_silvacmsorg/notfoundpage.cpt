@@ -6,14 +6,24 @@
 
   <h2>[Error 404]</h2>
 
-  <h3>...but maybe we can help you.</h3>
+  <h3>...but maybe we can help you!</h3>
 
   <div class="two-column">
 
+    <div class="column">
+      <h4>You may not be able to find this page because of:</h4>
+      <ol>
+        <li>a <strong>mistyped address</strong> (URL), try double checking the spelling.</li>
+        <li>an <strong>out-of-date bookmark/favorite.</strong></li>
+        <li>a search engine that has an <strong>out-of-date listing</strong> for our page.</li>
+        <li>a page that <strong>no longer exists.</strong></li>
+      </ol>
+    </div>
+
     <div class="column" tal:condition="not: view.suggestions">
-      <h4>Not finding what you are looking for?</h4>
+      <h4>Still not finding what you are looking for?</h4>
       <p>
-        <a href="${layout.root_url}/support/contact.html">Contact</a> us and
+        <strong><a href="${layout.root_url}/support/contact.html">Contact</a></strong> us and
            we'll help you in finding the information you are looking
            for.
       </p>
@@ -27,16 +37,6 @@
              tal:content="suggestion.title">Title</a>
         </li>
       </ul>
-    </div>
-
-    <div class="column">
-      <h4>You may not be able to find this page because of:</h4>
-      <ol>
-        <li>An <strong>out-of-date bookmark/favorite</strong></li>
-        <li>A search engine that has an <strong>out-of-date listing</strong> for our page</li>
-        <li>A <strong>mistyped address</strong> (URL)</li>
-        <li>A page that <strong>no longer exists</strong></li>
-      </ol>
     </div>
 
   </div>

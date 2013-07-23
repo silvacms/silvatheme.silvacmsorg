@@ -1,6 +1,8 @@
 <tal:error>
 
-  <h1>The page you requested is not available</h1>
+<div class="not-found">
+
+  <h1>We're sorry, the page you requested is not available</h1>
 
   <h2>[Error 404]</h2>
 
@@ -8,8 +10,17 @@
 
   <div class="two-column">
 
+    <div class="column" tal:condition="not: view.suggestions">
+      <h4>Not finding what you are looking for?</h4>
+      <p>
+        <a href="${layout.root_url}/support/contact.html">Contact</a> us and
+           we'll help you in finding the information you are looking
+           for.
+      </p>
+    </div>
+
     <div class="column" tal:condition="view.suggestions">
-      <p>We think you will find one of the following links useful:</p>
+      <h4>We think you will find one of the following links useful:</h4>
       <ul class="truncate-list">
         <li tal:repeat="suggestion view.suggestions">
           <a href="${suggestion.url}"
@@ -19,7 +30,7 @@
     </div>
 
     <div class="column">
-      <p>You may not be able to find this page because of:</p>
+      <h4>You may not be able to find this page because of:</h4>
       <ol>
         <li>An <strong>out-of-date bookmark/favorite</strong></li>
         <li>A search engine that has an <strong>out-of-date listing</strong> for our page</li>
@@ -39,5 +50,7 @@
       </button>
     </form>
   </div>
+
+</div>
 
 </tal:error>

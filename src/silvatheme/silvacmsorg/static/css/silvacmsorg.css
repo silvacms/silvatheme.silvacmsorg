@@ -1715,6 +1715,19 @@ div.button {
   text-shadow: none;
 }
 
+/* 404 not found page */
+
+.not-found .two-column .column {
+  width: 48%;
+  padding-right: 2%;
+  float: left;
+}
+
+.not-found {
+  background: url("../images/not-found.jpg") no-repeat bottom center;
+  padding-bottom: 380px;
+}
+
 /* --- package activity --- */
 
 /* main content area */

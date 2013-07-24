@@ -1,6 +1,5 @@
 (function($) {
     $(document).ready(function(){
-
         // tab navigation
         $('#tabs section').hide();
         $('#tabs section:first').show();
@@ -43,7 +42,6 @@
 
         // truncate list
         var items = $('ul.truncate-list').children().length;
-
         var moreLink = $('<li class="show-all button green small"><a href="" title="show all results">Show all ' + items + ' links</a></li>');
 
         // hiding all list items after the first 5

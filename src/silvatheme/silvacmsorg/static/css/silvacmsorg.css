@@ -1629,7 +1629,7 @@ div.button {
   opacity: 0.6;
 }
 
-.button.demo a {
+.button.press a {
   position: relative;
   color: #fff;
   text-decoration: none;
@@ -1654,7 +1654,7 @@ div.button {
   transition: all .1s ease;
 }
 
-.button.demo a:active {
+.button.press a:active {
   -webkit-box-shadow: 0px 3px 0px #B3DCED, 0px 3px 6px rgba(0,0,0,.9);
   -moz-box-shadow: 0px 3px 0px #B3DCED, 0px 3px 6px rgba(0,0,0,.9);
   box-shadow: 0px 3px 0px #B3DCED, 0px 3px 6px rgba(0,0,0,.9);

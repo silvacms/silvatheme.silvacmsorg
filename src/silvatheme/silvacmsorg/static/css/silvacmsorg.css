@@ -1633,17 +1633,24 @@ div.button {
   position: relative;
   color: #fff;
   text-decoration: none;
-  background-color: #308CF2;
   font-weight: 700;
   font-size: 2.5em;
   display: block;
   padding: 15px;
+  background-color: #308cf2;
+  background: -moz-linear-gradient(top, #b3dced 0%, #308cf2 60%, #308cf2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3dced), color-stop(60%,#308cf2), color-stop(100%,#308cf2));
+  background: -webkit-linear-gradient(top, #b3dced 0%,#308cf2 60%,#308cf2 100%);
+  background: -o-linear-gradient(top, #b3dced 0%,#308cf2 60%,#308cf2 100%);
+  background: -ms-linear-gradient(top, #b3dced 0%,#308cf2 60%,#308cf2 100%);
+  background: linear-gradient(to bottom, #b3dced 0%,#308cf2 60%,#308cf2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#308cf2',GradientType=0 );
   -webkit-border-radius: 45px;
   -moz-border-radius: 45px;
   border-radius: 45px;
-  -webkit-box-shadow: 0px 9px 0px #B3DCED, 0px 6px 25px rgba(0,0,0,.7);
-  -moz-box-shadow: 0px 9px 0px #B3DCED, 0px 6px 25px rgba(0,0,0,.7);
-  box-shadow: 0px 9px 0px #B3DCED, 0px 6px 25px rgba(0,0,0,.7);
+  -webkit-box-shadow: 0px 6px 0px #b3dced, 0px 6px 20px rgba(0,0,0,.7);
+  -moz-box-shadow: 0px 6px 0px #b3dced, 0px 6px 25px rgba(0,0,0,.7);
+  box-shadow: 0px 6px 0px #b3dced, 0px 6px 25px rgba(0,0,0,.7);
   width: 200px;
   height: auto;
   line-height: 1em;
@@ -1656,9 +1663,9 @@ div.button {
 }
 
 .button.press a:active {
-  -webkit-box-shadow: 0px 3px 0px #B3DCED, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #B3DCED, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #B3DCED, 0px 3px 6px rgba(0,0,0,.9);
+  -webkit-box-shadow: 0px 3px 0px #b3dced, 0px 3px 6px rgba(0,0,0,.9);
+  -moz-box-shadow: 0px 3px 0px #b3dced, 0px 3px 6px rgba(0,0,0,.9);
+  box-shadow: 0px 3px 0px #b3dced, 0px 3px 6px rgba(0,0,0,.9);
   position: relative;
   top: 6px;
 }

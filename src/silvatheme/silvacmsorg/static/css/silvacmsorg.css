@@ -1629,6 +1629,11 @@ div.button {
   opacity: 0.6;
 }
 
+div.button.press {
+  float: none;
+  margin-right: 0;
+}
+
 .button.press a {
   position: relative;
   color: #fff;
@@ -1637,6 +1642,7 @@ div.button {
   font-size: 2.5em;
   display: block;
   padding: 15px;
+  margin: 0 auto;
   background-color: #308cf2;
   background: -moz-linear-gradient(top, #b3dced 0%, #308cf2 60%, #308cf2 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3dced), color-stop(60%,#308cf2), color-stop(100%,#308cf2));
@@ -1648,9 +1654,6 @@ div.button {
   -webkit-border-radius: 45px;
   -moz-border-radius: 45px;
   border-radius: 45px;
-  -webkit-box-shadow: 0px 6px 0px #b3dced, 0px 6px 20px rgba(0,0,0,.7);
-  -moz-box-shadow: 0px 6px 0px #b3dced, 0px 6px 25px rgba(0,0,0,.7);
-  box-shadow: 0px 6px 0px #b3dced, 0px 6px 25px rgba(0,0,0,.7);
   width: 200px;
   height: auto;
   line-height: 1em;
@@ -1660,14 +1663,6 @@ div.button {
   -ms-transition: all .1s ease;
   -o-transition: all .1s ease;
   transition: all .1s ease;
-}
-
-.button.press a:active {
-  -webkit-box-shadow: 0px 3px 0px #b3dced, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #b3dced, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #b3dced, 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 6px;
 }
 
 /* --- community */

@@ -1660,6 +1660,11 @@ div.button.press {
   text-align: center;
 }
 
+.button.press a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
 /* --- community */
 
 .community .section-community div.image {

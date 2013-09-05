@@ -1791,6 +1791,23 @@ div.button.press {
   padding-bottom: 10px;
 }
 
+/* --- gallery styling */
+
+#gallery div.content {
+  width: 800px;
+}
+
+.section-about #gallery .slideshow {
+  background-color: none;
+  border: none;
+  box-shadow: none;
+}
+#gallery .slideshow {
+  height: auto;
+  margin: 0 auto;
+  width: 100%;;
+}
+
 /* --- package activity --- */
 
 /* main content area */

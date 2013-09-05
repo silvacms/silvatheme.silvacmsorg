@@ -828,11 +828,11 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 4px 12px;
 }
 
-.section-getsilva section h2 a:link,
-.section-getsilva section h2 a:visited,
-.section-getsilva section h2 a:visited:hover,
-.section-getsilva section h2 a:link:hover,
-.section-getsilva section h2 a:hover {
+.getsilva .section-getsilva h2 a:link,
+.getsilva .section-getsilva h2 a:visited,
+.getsilva .section-getsilva h2 a:visited:hover,
+.getsilva .section-getsilva h2 a:link:hover,
+.getsilva .section-getsilva h2 a:hover {
   background-color: #C93636;
   color: #FFFFFF;
 }
@@ -858,6 +858,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 .section-getsilva .demo h2 a:link,
 .section-getsilva .demo h2 a:visited {
     color: #C93636;
+    text-decoration: none;
 }
 
 .section-getsilva .block {

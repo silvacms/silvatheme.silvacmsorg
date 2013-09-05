@@ -828,6 +828,15 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 4px 12px;
 }
 
+.section-getsilva section h2 a:link,
+.section-getsilva section h2 a:visited,
+.section-getsilva section h2 a:visited:hover,
+.section-getsilva section h2 a:link:hover,
+.section-getsilva section h2 a:hover {
+  background-color: #C93636;
+  color: #FFFFFF;
+}
+
 .section-getsilva section p, .section-getsilva section h3  {
   color: #444;
   padding: 0 16px;
@@ -844,6 +853,11 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 10px 15px;
   width: 170px;
   float: right;
+}
+
+.section-getsilva .demo h2 a:link,
+.section-getsilva .demo h2 a:visited {
+    color: #C93636;
 }
 
 .section-getsilva .block {

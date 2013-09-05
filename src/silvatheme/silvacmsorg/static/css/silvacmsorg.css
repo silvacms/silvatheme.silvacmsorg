@@ -828,6 +828,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   padding: 4px 12px;
 }
 
+.getsilva .section-getsilva h2 a,
 .getsilva .section-getsilva h2 a:link,
 .getsilva .section-getsilva h2 a:visited,
 .getsilva .section-getsilva h2 a:visited:hover,
@@ -835,6 +836,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 .getsilva .section-getsilva h2 a:hover {
   background-color: #C93636;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .section-getsilva section p, .section-getsilva section h3  {

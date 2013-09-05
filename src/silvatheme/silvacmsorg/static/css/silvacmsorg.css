@@ -784,15 +784,29 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   color: #C93636;
 }
 
-.getsilva .section-getsilva h1 a, .getsilva .section-getsilva h2 a,
-.getsilva .section-getsilva h1:link a, .getsilva .section-getsilva h2 a:link,
-.getsilva .section-getsilva h1 a:visited, .getsilva .section-getsilva h2 a:visited {
+.getsilva .section-getsilva h1 a,
+.getsilva .section-getsilva h2 a,
+.getsilva .section-getsilva h1:link a,
+.getsilva .section-getsilva h2 a:link,
+.getsilva .section-getsilva h1 a:visited,
+.getsilva .section-getsilva h2 a:visited {
   color: #C93636;
   text-decoration: underline;
 }
 
 .section-getsilva h1 a:hover, .section-getsilva h2 a:hover {
   color: #C93636;
+  text-decoration: none;
+}
+
+.getsilva .section-getsilva h2 a,
+.getsilva .section-getsilva h2 a:link,
+.getsilva .section-getsilva h2 a:visited,
+.getsilva .section-getsilva h2 a:visited:hover,
+.getsilva .section-getsilva h2 a:link:hover,
+.getsilva .section-getsilva h2 a:hover {
+  background-color: #C93636;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -826,17 +840,6 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   background-color: #C93636;
   color: #FFFFFF;
   padding: 4px 12px;
-}
-
-.getsilva .section-getsilva h2 a,
-.getsilva .section-getsilva h2 a:link,
-.getsilva .section-getsilva h2 a:visited,
-.getsilva .section-getsilva h2 a:visited:hover,
-.getsilva .section-getsilva h2 a:link:hover,
-.getsilva .section-getsilva h2 a:hover {
-  background-color: #C93636;
-  color: #FFFFFF;
-  text-decoration: none;
 }
 
 .section-getsilva section p, .section-getsilva section h3  {
@@ -1696,10 +1699,6 @@ div.button.press {
   clear:both;
 }
 
-#block-one {
-
-}
-
 #block-one h1 {
   color: #bbb;
   font-size: 30px;
@@ -1720,10 +1719,6 @@ div.button.press {
   text-shadow: none;
 }
 
-#block-two {
-
-}
-
 #block-two h1 {
   color: #bbb;
   font-size: 30px;
@@ -1742,10 +1737,6 @@ div.button.press {
 #block-two .newsitem a:link, #block-two .newsitem a:visited,
 #block-two a:link, #block-two a:visited {
   text-shadow: none;
-}
-
-#block-three {
-
 }
 
 #block-three h1 {

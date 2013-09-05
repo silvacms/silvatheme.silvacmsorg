@@ -889,6 +889,16 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   float: right;
 }
 
+
+.getsilva .section-getsilva #slot-hosting h2 a,
+.getsilva .section-getsilva #slot-hosting h2 a:link,
+.getsilva .section-getsilva #slot-hosting h2 a:visited,
+.getsilva .section-getsilva #slot-softwareextensions h2 a,
+.getsilva .section-getsilva #slot-softwareextensions h2 a:link,
+.getsilva .section-getsilva #slot-softwareextensions h2 a:visited {
+    text-decoration: none;
+}
+
 /*   ++++++ page specific styles: Documentation ++++++ */
 
 .section-docs h1, .section-docs h2 {

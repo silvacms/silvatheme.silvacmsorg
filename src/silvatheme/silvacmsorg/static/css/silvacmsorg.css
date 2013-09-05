@@ -1793,15 +1793,15 @@ div.button.press {
 
 /* --- gallery styling */
 
-#gallery div.content {
+div#gallery.content {
   width: 800px;
 }
 
 .section-about #gallery .slideshow {
-  background-color: none;
+  background: none;
   border: none;
-  box-shadow: none;
 }
+
 #gallery .slideshow {
   height: auto;
   margin: 0 auto;

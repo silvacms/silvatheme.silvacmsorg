@@ -605,6 +605,13 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   letter-spacing: -0.5px;
 }
 
+.fourcolumn .box h2 a,
+.fourcolumn .box h2 a:link,
+.fourcolumn .box h2 a:visited,
+.fourcolumn .box h2 a:hover {
+  color: #FFFFFF;
+}
+
 .fourcolumn .box p {
   margin-bottom: 0;
   padding: 15px 15px 0 15px;

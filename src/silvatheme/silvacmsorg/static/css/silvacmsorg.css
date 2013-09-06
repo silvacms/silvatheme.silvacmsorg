@@ -578,7 +578,7 @@ header nav li a:visited:hover, header nav li a:visited:focus {
   margin-right: 0;
 }
 
-.fourcolumn .box a {
+.fourcolumn .box .more a {
   bottom: 15px;
   left: 0;
   position: absolute;

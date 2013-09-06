@@ -1800,12 +1800,17 @@ div#gallery.content {
 .section-about #gallery .slideshow {
   background: none;
   border: none;
+  box-shadow: none;
 }
 
 #gallery .slideshow {
   height: auto;
   margin: 0 auto;
   width: 100%;;
+}
+
+div.content a.advance-link {
+  color: #1D6C10;
 }
 
 /* --- package activity --- */

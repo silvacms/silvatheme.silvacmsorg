@@ -1898,8 +1898,12 @@ div#gallery.content {
   width: 100%;;
 }
 
-div.content a.advance-link {
+#gallery div.controls a {
   color: #1D6C10;
+}
+
+div.content a.advance-link {
+  display: block;
 }
 
 /* --- package activity --- */

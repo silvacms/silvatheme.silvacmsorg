@@ -32,7 +32,7 @@ h3 {
 }
 
 a:link, a:visited {
-  color: #1D6C10;
+  color: #549A2E;
   text-decoration: none;
 }
 
@@ -1045,6 +1045,11 @@ header nav li a:visited:hover, header nav li a:visited:focus {
 
 .section-support h1, .section-support h2 {
   color: #2378DF;
+}
+
+.section-support section.box h2 a:link,
+.section-support section.box h2 a:visited {
+  color: #fff;
 }
 
 .section-support p.plain {

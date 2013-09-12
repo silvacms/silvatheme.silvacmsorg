@@ -320,7 +320,7 @@ li a:link, li a:visited {
 
 .newsitem a:link, .newsitem a:visited {
   color: #7BCA37;
-  text-shadow: 1px 2px 0 #000;
+  text-shadow: 1px 1px 0 #000;
 }
 
 .newsitem p.newslead {
@@ -1215,7 +1215,7 @@ footer a:link:hover, footer a:link:focus, footer a:visited:hover, footer a:visit
 
 span.image-caption {
   display: block;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 div.image.default {

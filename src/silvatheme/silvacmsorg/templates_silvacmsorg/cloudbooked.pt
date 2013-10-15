@@ -1,0 +1,8 @@
+<div>
+  <h1>Cloud site requested</h1>
+  <p>
+    Your cloud site has been requested. If you do not get feedback in
+    two days, please use the <a href="#" tal:attributes="href string:${context/absolute_url}/contact.html">contact form</a> to
+    request a status.
+  </p>
+</div>

@@ -34,15 +34,16 @@ class InvalidDomain(Exception):
 
 
 def validate_subdomain(value):
+    value = value.strip()
     if not value:
         return True
-    if '.' in value:
-        raise InvalidDomain("The subdomain cannot contain dots.")
+    if '.' in value or ' ' in value or '\t' in value:
+        raise InvalidDomain("The subdomain cannot contain dots or spaces.")
     if value.startswith('manage_'):
         raise InvalidDomain("The subdomain cannot start with manage_.")
     if not value[0].isalnum():
         raise InvalidDomain("The subdomain need to start with a letter or a digit.")
-    if value in ('silva', 'test'):
+    if value in ('silva', 'test', 'silvacms', 'infrae'):
         raise InvalidDomain("This subdomain is reserved and cannot be used.")
     return True
 

@@ -1,4 +1,4 @@
-from zope.publisher.interfaces.browser import IDefaultBrowserLayer
+
 from silva.core import conf as silvaconf
 from silva.core.layout.interfaces import ISilvaSkin
 from silva.core.layout.porto.interfaces import IPorto
@@ -6,18 +6,13 @@ from silva.core.layout.porto.interfaces import IPorto
 from js.jquery import jquery
 
 
-class IReset(IDefaultBrowserLayer):
-    silvaconf.resource('css/html5reset.css')
-    silvaconf.resource('js/modernizr-1.7.min.js')
 
-
-class ITypography(IReset):
-    silvaconf.resource('css/typography.css')
-
-
-class ISilvaCmsOrg(ITypography, IPorto):
+class ISilvaCmsOrg(IPorto):
     """Layer for SilvaCMS.org theme
     """
+    silvaconf.resource('css/html5reset.css')
+    silvaconf.resource('js/modernizr-1.7.min.js')
+    silvaconf.resource('css/typography.css')
     silvaconf.resource('css/silvacmsorg.css')
     silvaconf.resource(jquery)
     silvaconf.resource('js/jquery.masonry.min.js')

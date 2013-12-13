@@ -9,7 +9,7 @@ version = '1.0dev'
 
 setup(name='silvatheme.silvacmsorg',
       version=version,
-      description="silvacms.org website Skin",
+      description="silvacms.org Silva theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
@@ -19,7 +19,7 @@ setup(name='silvatheme.silvacmsorg',
       keywords='skin silva',
       author='Infrae',
       author_email='info@infrae.com',
-      url='http://silvacms.org',
+      url='https://github.com/silvacms/silvatheme.silvacmsorg',
       license='BSD',
       package_dir={'': 'src'},
       packages=find_packages('src'),
